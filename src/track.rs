@@ -22,4 +22,3 @@ impl fmt::Display for Track {
         )
     }
 }
-

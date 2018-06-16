@@ -5,3 +5,4 @@ authors = ["Adam Harries <harries.adam@gmail.com>"]
 
 [dependencies]
 plist = "0.2"
+histogram = "0.6.9"
