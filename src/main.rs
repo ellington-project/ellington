@@ -8,29 +8,24 @@ use std::fs::File;
 
 use track::Track;
 
-fn extract_track(pldict: plist::Plist) -> Option<Track> {
-    return pldict.as_dictionary().and_then(|dict| -> Option<Track> {
-        // extract information from the dict
-        let (itunes_id, trackinfo) = dict.iter().next().unwrap();
-        let itunes_id: u32 = itunes_id.parse::<u32>().unwrap();
+fn extract_track(trackpl: &plist::Plist) -> Option<Track> {
+    // assert the track plist is a dictionary
+    let trackinfo = trackpl.as_dictionary()?;
 
-        // get more info from the trackinfo dict
-        let trackinfo = trackinfo.as_dictionary()?;
-
-        Some(Track {
-            itunes_id: itunes_id,
-            // not exactly the semantics we want, but good enough...
-            bpm: trackinfo
-                .get("BPM")
-                .and_then(|bpm| bpm.as_string()?.parse::<u32>().ok()),
-            // simpler operations for the rest, just string conversions
-            name: trackinfo.get("Name")?.as_string().map(|s| s.to_string()),
-            location: trackinfo
-                .get("Location")?
-                .as_string()
-                .map(|s| s.to_string()),
-        })
-    });
+    // build a track with information extracted from the dict
+    // bail out (and return None) if we fail to get any of: 
+    // - track id
+    // - name
+    // - location
+    // fill the BPM with "none" if no bpm found
+    Some(Track {
+        itunes_id: trackinfo.get("Track ID")?.as_integer()?,
+        bpm: trackinfo.get("BPM").and_then(|b| b.as_integer()),
+        name: trackinfo.get("Name")?.as_string()?.to_string(),
+        location: trackinfo
+            .get("Location")?
+            .as_string()?.to_string(),
+    })
 }
 
 fn read_plist(filename: &str) -> () {
@@ -38,10 +33,7 @@ fn read_plist(filename: &str) -> () {
 
     let plist = Plist::read(file).unwrap();
 
-    // println!("Overall Plist: {:?}", &plist);
-
     // get the tracks from the PList:
-
     let tracks = plist.as_dictionary().unwrap().get("Tracks").unwrap();
 
     println!(
@@ -49,17 +41,19 @@ fn read_plist(filename: &str) -> () {
         tracks.as_dictionary().unwrap().len()
     );
 
-    // println!("Tracks: {:?}", tracks);
+    let tracks = tracks
+        .as_dictionary()
+        .unwrap()
+        .values()
+        .map(extract_track);
 
-    for (id, track) in tracks.as_dictionary().unwrap().iter() {
-        println!("Found track, id: {}:", id);
-        // get the dictionary for the track:
-        let dict = track.as_dictionary().unwrap();
-        println!("Name: {:?}", dict.get("Name").unwrap());
-        println!("BPM: {:?}", dict.get("BPM").unwrap());
-        // println!("\t{:?}", track);
-        println!("---");
+    for t in tracks {
+        match t {
+            Some(track) => println!("Track: {}", track),
+            None => println!("Got bad track.")
+        }
     }
+
 }
 
 fn main() {
