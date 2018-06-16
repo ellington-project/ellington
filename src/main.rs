@@ -1,15 +1,13 @@
 extern crate plist; 
 
+mod track;
+
 use plist::Plist; 
 
 use std::fs::File; 
 
-struct Track {
-    iTunesID: u32,
-    bpm: u32,
-    name: String, 
-    location: String,  
-}
+// use track::Track;
+
 
 fn extract_track(pldict: plist::Plist) -> Option<Track> {
 
