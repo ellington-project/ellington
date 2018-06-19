@@ -1,11 +1,11 @@
 use byteorder::*;
-use std::io::Cursor;
 use memmap::Mmap;
+use std::io::Cursor;
 
-use std::io::*;
 use std::fs::File;
 use std::io::Read;
 use std::io::Result;
+use std::io::*;
 use std::path::Path;
 
 use std::process::Command;
@@ -20,8 +20,8 @@ fn read_u32_f32_into(data: &Vec<u8>) -> Result<Vec<f32>> {
     assert_eq!(data.len() % 4, 0);
 
     let mut datac = Cursor::new(data);
-  
-    let mut vf32 : Vec<f32> = Vec::with_capacity(data.len() / 4);
+
+    let mut vf32: Vec<f32> = Vec::with_capacity(data.len() / 4);
     datac.read_f32_into::<LittleEndian>(&mut vf32)?;
 
     return Ok(vf32);
@@ -67,7 +67,6 @@ fn read_binary_file(filename: &Path) -> Vec<f32> {
 
 // Ignore this one for now...
 fn mmap_binary_file(filename: &Path) -> () {
-
     let file = File::open(filename).expect("failed to open the file");
 
     let mmap = unsafe { Mmap::map(&file).expect("failed to map the file") };
@@ -84,15 +83,14 @@ fn mmap_binary_file(filename: &Path) -> () {
     stdout()
         .write_all(&mmap[..])
         .expect("failed to output the file contents");
-        //     let file_mmap = Mmap::open_path("./src/book.txt", Protection::Read).unwrap();
-        // let bytes: &[u8] = unsafe { file_mmap.as_slice() };
-        // let mut p = 0;
-        // while p < bytes.len()-CHUNK_SIZE  {
-        //     println!("{}:\t{}",p,str::from_utf8(&bytes[p..p+CHUNK_SIZE]).unwrap());
-        //     p+=CHUNK_SIZE;
-        // }
-        // Ok(())
-
+    //     let file_mmap = Mmap::open_path("./src/book.txt", Protection::Read).unwrap();
+    // let bytes: &[u8] = unsafe { file_mmap.as_slice() };
+    // let mut p = 0;
+    // while p < bytes.len()-CHUNK_SIZE  {
+    //     println!("{}:\t{}",p,str::from_utf8(&bytes[p..p+CHUNK_SIZE]).unwrap());
+    //     p+=CHUNK_SIZE;
+    // }
+    // Ok(())
 }
 
 pub fn run_sox_and_read_file(mp3: &Path, dat: &Path) -> Vec<f32> {
