@@ -6,3 +6,8 @@ authors = ["Adam Harries <harries.adam@gmail.com>"]
 [dependencies]
 plist = "0.2"
 histogram = "0.6.9"
+once = "*"
+byteorder = "1"
+time = "*"
+rayon = "1.0"
+memmap = "0.6.2"

@@ -1,7 +1,11 @@
 extern crate histogram;
 extern crate plist;
+extern crate byteorder;
+extern crate memmap;
 
 mod track;
+mod audio_in;
+mod itunes;
 
 use std::fs::File;
 use std::num::ParseFloatError;
@@ -13,6 +17,8 @@ use plist::Plist;
 use histogram::Histogram;
 
 use track::Track;
+
+use itunes::*;
 
 fn extract_track(trackpl: &plist::Plist) -> Option<Track> {
     // assert the track plist is a dictionary
@@ -32,7 +38,7 @@ fn extract_track(trackpl: &plist::Plist) -> Option<Track> {
     })
 }
 
-fn bpm_track(track: Track) -> Result<f64, ParseFloatError> {
+fn bpm_track(track: &Track) -> Result<f64, ParseFloatError> {
     let command = format!(
         "tools/bpm-tools/bpm-print -e tools/bpm-tools/bpm -m 10 -x 500 \"{}\"",
         track.location.replace("%20", " ").replace("file://", "")
@@ -60,21 +66,24 @@ fn percent_err(gold: f64, trial: f64) -> f64 {
     return ((gold - trial).abs() / gold) * 100.0;
 }
 
-fn print_histogram(h: &Histogram) -> () {
+fn print_histogram(h: &Histogram, div: f64) -> () {
     println!(
-        "Running stats -- Min: {} Avg: {} Max: {} StdDev: {} ",
-        h.minimum().unwrap_or(9999999) as f64 / 1000.0,
-        h.mean().unwrap_or(9999999) as f64 / 1000.0,
-        h.maximum().unwrap_or(9999999) as f64 / 1000.0,
-        h.stddev().unwrap_or(9999999) as f64 / 1000.0
+        "\tRunning stats -- Min: {} Avg: {} Max: {} StdDev: {} ",
+        h.minimum().unwrap_or(9999999) as f64 / div,
+        h.mean().unwrap_or(9999999) as f64 / div,
+        h.maximum().unwrap_or(9999999) as f64 / div,
+        h.stddev().unwrap_or(9999999) as f64 / div
     );
 
     println!(
-        "Percentiles -- 25: {} 50: {} 75: {} 99: {}",
-        h.percentile(25.0).unwrap_or(9999999) as f64 / 1000.0,
-        h.percentile(50.0).unwrap_or(9999999) as f64 / 1000.0,
-        h.percentile(75.0).unwrap_or(9999999) as f64 / 1000.0,
-        h.percentile(90.0).unwrap_or(9999999) as f64 / 1000.0
+        "\tPercentiles -- 5: {} 10: {} 25: {} 50: {} 75: {} 90: {} 95: {}",
+        h.percentile(5.0).unwrap_or(9999999) as f64 / div,
+        h.percentile(10.0).unwrap_or(9999999) as f64 / div,
+        h.percentile(25.0).unwrap_or(9999999) as f64 / div,
+        h.percentile(50.0).unwrap_or(9999999) as f64 / div,
+        h.percentile(75.0).unwrap_or(9999999) as f64 / div,
+        h.percentile(90.0).unwrap_or(9999999) as f64 / div,
+        h.percentile(95.0).unwrap_or(9999999) as f64 / div
     );
 }
 
@@ -94,37 +103,45 @@ fn process_library(filename: &str) -> () {
     let tracks = tracks.as_dictionary().unwrap().values().map(extract_track);
 
     // create a histogram:
-    let mut histogram = Histogram::new();
+    let mut error_hist = Histogram::new();
+    let mut bpm_hist = Histogram::new();
 
     for t in tracks {
         match t {
             Some(track) => {
-                // for now, ignore a track if it doesn't have a bpm.
-                // see the comment above for the easier (i.e. flat_map)
-                // way of doing this.
+                println!("Track: {}", track);
+                let calculated_bpm = bpm_track(&track).unwrap_or(0.0);
+                if calculated_bpm != 0.0 {
+                    match bpm_hist.increment(calculated_bpm as u64) {
+                        _ => {}
+                    }
+                }
                 match track.bpm {
                     Some(bpm) => {
-                        println!("Track: {}", track);
+                        let error = percent_err(bpm as f64, calculated_bpm);
+                        println!(
+                            "calculated: {}, actual: {}, error: {}",
+                            calculated_bpm, bpm, error
+                        );
 
-                        let calculated_bpm = bpm_track(track);
-                        match calculated_bpm {
-                            Ok(cbpm) => {
-                                let error = percent_err(bpm as f64, cbpm);
-                                println!(
-                                    "calculated_bpm: {}, actual: {}, error: {}",
-                                    cbpm, bpm, error
-                                );
-
-                                // get the error as an integer
-                                let error_i = (error * 1000.0) as u64;
-                                histogram.increment(error_i);
-                                print_histogram(&histogram);
-                            }
-                            Err(_) => {}
-                        }
+                        // get the error as an integer
+                        let error_i = (error * 1000.0) as u64;
+                        match error_hist.increment(error_i) {
+                            _ => {}
+                        };
+                        
                     }
-                    None => {}
+                    None => {
+                        println!(
+                            "calculated: {}, actual: -, error: -",
+                            calculated_bpm
+                        );
+                    }
                 }
+                println!("bpms:");
+                print_histogram(&bpm_hist, 1.0);
+                println!("errors:");
+                print_histogram(&error_hist, 1000.0);
             }
             None => println!("Got bad track."),
         }
