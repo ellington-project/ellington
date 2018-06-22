@@ -5,42 +5,15 @@ extern crate plist;
 
 mod audio_in;
 mod itunes;
-mod soxcall; 
+mod shelltools;
 
 use itunes::library::Library;
-use itunes::track::Track;
-use std::fs::File;
-use std::num::ParseFloatError;
 
-use std::process::Command;
-
-use plist::Plist;
+use shelltools::bpm::bpm_track;
 
 use histogram::Histogram;
 
-fn bpm_track(track: &Track) -> Result<f64, ParseFloatError> {
-    let command = format!(
-        "tools/bpm-tools/bpm-print -e tools/bpm-tools/bpm -m 10 -x 500 \"{}\"",
-        track.location.replace("%20", " ").replace("file://", "")
-    );
 
-    let res = Command::new("sh")
-        .arg("-c")
-        .arg(command)
-        .output()
-        .expect("failed to execute process");
-
-    // let errors = String::from_utf8_lossy(&res.stderr);
-
-    let result = String::from_utf8_lossy(&res.stdout).replace("\n", "");
-    // parse the result into an f64, discarding accuracy.
-
-    // return match result {
-    //     Ok(f) => Some(f),
-    //     Err(e) => {println!("Got error {:?} wile parsing", e); None}
-    // };
-    return result.parse::<f64>();
-}
 
 fn percent_err(gold: f64, trial: f64) -> f64 {
     return ((gold - trial).abs() / gold) * 100.0;
@@ -68,17 +41,6 @@ fn print_histogram(h: &Histogram, div: f64) -> () {
 }
 
 fn process_library(filename: &str) -> () {
-    // let file = File::open(filename).unwrap();
-
-    // let plist = Plist::read(file).unwrap();
-
-    // // get the tracks from the PList:
-    // let tracks = plist.as_dictionary().unwrap().get("Tracks").unwrap();
-
-    // println!(
-    //     "Found {} tracks in the tracklist",
-    //     tracks.as_dictionary().unwrap().len()
-    // );
 
     let library = Library::from_filename(filename).unwrap();
 

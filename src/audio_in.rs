@@ -15,14 +15,42 @@ fn call_and_read(command: &mut Command) -> Vec<u8> {
     command.output().expect("Failed to execute process").stdout
 }
 
-fn read_u32_f32_into(data: &Vec<u8>) -> Result<Vec<f32>> {
+pub fn read_u8_f32_into(data: &Vec<u8>) -> Result<Vec<f32>> {
     // assert that it's the right size
     assert_eq!(data.len() % 4, 0);
+
+    println!("Got {} bytes of data.", data.len());
+
+    println!("Expecting {} floats out", data.len() / 4);
 
     let mut datac = Cursor::new(data);
 
     let mut vf32: Vec<f32> = Vec::with_capacity(data.len() / 4);
     datac.read_f32_into::<LittleEndian>(&mut vf32)?;
+
+    println!("Container is {} long", vf32.len());
+
+    return Ok(vf32);
+}
+
+pub fn read_u8_f32_into_slow(data: &Vec<u8>) -> Result<Vec<f32>> {
+    // super slow, I guess?
+    assert_eq!(data.len() % 4, 0);
+
+    println!("Got {} bytes of data.", data.len());
+
+    println!("Expecting {} floats out", data.len() / 4);
+
+    let mut datac = Cursor::new(data);
+
+    let mut vf32: Vec<f32> = Vec::with_capacity(data.len() / 4);
+    datac.read_f32_into::<LittleEndian>(&mut vf32)?;
+
+    let vf32 : Vec<f32> = data.chunks(4)
+        .map(|c| Cursor::new(c).read_f32::<LittleEndian>().unwrap())
+        .collect();
+
+    println!("Container is {} long", vf32.len());
 
     return Ok(vf32);
 }
