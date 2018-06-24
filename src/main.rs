@@ -2,7 +2,7 @@
 #![plugin(flamer)]
 
 extern crate flame;
-
+extern crate rand;
 extern crate byteorder;
 extern crate histogram;
 extern crate memmap;
@@ -12,8 +12,13 @@ extern crate clap;
 mod audio_in;
 mod itunes;
 mod shelltools;
+mod analysers;
 
-use shelltools::sox::test_sox_calls_equal;
+use audio_in::AudioBuffer;
+use analysers::bpmtools::BpmTools;
+
+use shelltools::sox::call_sox_and_read_f32;
+
 use itunes::library::Library;
 
 use shelltools::bpm::bpm_track;
@@ -66,7 +71,11 @@ fn process_library(filename: &str) -> () {
         println!("Track: {}", track);
         let calculated_bpm = bpm_track(&track).unwrap_or(0.0);
 
-        test_sox_calls_equal(&track);
+        let AudioBuffer(sox_data) = call_sox_and_read_f32(&track);
+
+        let rust_bpm = BpmTools::default().analyse(&sox_data);
+
+        println!("Calculate the bpm as {} with rust, compared to {} with C", rust_bpm, calculated_bpm);
 
         if calculated_bpm != 0.0 {
             match bpm_hist.increment(calculated_bpm as u64) {

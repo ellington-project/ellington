@@ -1,227 +1,176 @@
-
 // pure rust implementation of a bpm analysis algorithm
 // derived/copied from Mark Hill's implementation, available
-// at http://www.pogo.org.uk/~mark/bpm-tools/ contact 
+// at http://www.pogo.org.uk/~mark/bpm-tools/ contact
 // mark@xwax.org for more information.
 
-use audio_in::AudioBuffer;
+use rand::ThreadRng;
+use std::f32;
+use rand::{Rng, thread_rng};
+use rand::distributions::Uniform;
 
-// #define RATE 44100 /* of input data */
-// #define LOWER 84.0
-// #define UPPER 146.0
+#[derive(Debug)]
+pub struct BpmTools {
+    // tunable parameters for the algorithm.
+    pub lower: f32,
+    pub upper: f32,
+    pub block: u32,
+    pub interval: u64,
+    pub rate: f32,
+    pub steps: u32, 
+    pub samples: u32, 
+    rng: ThreadRng
 
-// #define BLOCK 4096
-// #define INTERVAL 128
-
-// #define ARRAY_SIZE(x) (sizeof(x) / sizeof(*(x)))
-
-/*
- * Sample from the metered energy
- *
- * No need to interpolate and it makes a tiny amount of difference; we
- * take a random sample of samples, any errors are averaged out.
- */
-
-/*
-static double sample(float nrg[], size_t len, double offset)
-{
-    double n;
-    size_t i;
-
-    n = floor(offset);
-    i = (size_t)n;
-
-    return (n >= 0.0 && n < (double)len) ? nrg[i] : 0.0;
 }
-*/
 
-/*
- * Test an autodifference for the given interval
- */
-
-/* 
-double autodifference(float nrg[], size_t len, double interval)
-{
-    size_t n;
-    double mid, v, diff, total;
-    static const double beats[] = { -32, -16, -8, -4, -2, -1,
-                    1, 2, 4, 8, 16, 32 },
-            nobeats[] = { -0.5, -0.25, 0.25, 0.5 };
-
-    mid = drand48() * len;
-    v = sample(nrg, len, mid);
-
-    diff = 0.0;
-    total = 0.0;
-
-    for (n = 0; n < ARRAY_SIZE(beats); n++) {
-        double y, w;
-
-        y = sample(nrg, len, mid + beats[n] * interval);
-
-        w = 1.0 / fabs(beats[n]);
-        diff += w * fabs(y - v);
-        total += w;
-    }
-
-    for (n = 0; n < ARRAY_SIZE(nobeats); n++) {
-        double y, w;
-
-        y = sample(nrg, len, mid + nobeats[n] * interval);
-
-        w = fabs(nobeats[n]);
-        diff -= w * fabs(y - v);
-        total += w;
-    }
-
-    return diff / total;
-}
-*/
-
-/*
- * Beats-per-minute to a sampling interval in energy space
- */
-
-/*
-double bpm_to_interval(double bpm)
-{
-    double beats_per_second, samples_per_beat;
-
-    beats_per_second = bpm / 60;
-    samples_per_beat = RATE / beats_per_second;
-    return samples_per_beat / INTERVAL;
-}
-*/
-
-/*
- * Sampling interval in enery space to beats-per-minute
- */
-/*
-double interval_to_bpm(double interval)
-{
-    double samples_per_beat, beats_per_second;
-
-    samples_per_beat = interval * INTERVAL;
-    beats_per_second = (double)RATE / samples_per_beat;
-    return beats_per_second * 60;
-}
-*/
-
-/*
- * Scan a range of BPM values for the one with the
- * minimum autodifference
- */
-
-/*
-double scan_for_bpm(float nrg[], size_t len,
-        double slowest, double fastest,
-        unsigned int steps,
-        unsigned int samples,
-        FILE *file)
-{
-    double step, interval, trough, height;
-    unsigned int s;
-
-    slowest = bpm_to_interval(slowest);
-    fastest = bpm_to_interval(fastest);
-    step = (slowest - fastest) / steps;
-
-    height = INFINITY;
-    trough = NAN;
-
-    for (interval = fastest; interval <= slowest; interval += step) {
-        double t;
-
-        t = 0.0;
-        for (s = 0; s < samples; s++)
-            t += autodifference(nrg, len, interval);
-
-        if (file != NULL) {
-            fprintf(file, "%lf\t%lf\n",
-                interval_to_bpm(interval),
-                t / samples);
-        }
-
-        /* Track the lowest value */
-
-        if (t < height) {
-            trough = interval;
-            height = t;
+impl BpmTools {
+    pub fn default() -> BpmTools {
+        BpmTools {
+            lower: 50.0,
+            upper: 450.0,
+            block: 4096,
+            interval: 128,
+            rate: 44100.0,
+            steps: 1024, 
+            samples: 1024, 
+            rng: thread_rng()
         }
     }
 
-    return interval_to_bpm(trough);
-}
-*/
+    /* 
+     * main analysis function
+     */
+     #[flame]
+    pub fn analyse(self: &mut BpmTools, samples: &Vec<f32>) -> f32 { 
+        /* Maintain an energy meter (similar to PPM), and 
+         * at regular intervals, sample the energy to give a
+         * low-resolution overview of the track 
+         */
+        let mut nrg : Vec<f32> = Vec::with_capacity(samples.len() / self.interval as usize);
+        let mut n : u64 = 0; 
 
-// main scanning function
-/*
-int main(int argc, char *argv[])
-{
-    float *nrg = NULL;
-    size_t len = 0, buf = 0;
-    off_t n = 0;
-    double bpm, min = LOWER, max = UPPER, v = 0.0;
-    const char *format = "%0.3f";
-    FILE *fdiff = NULL, *fnrg = NULL;
-
-    argv += optind;
-    argc -= optind;
-
-    if (argc > 0) {
-        fprintf(stderr, "%s: Too many arguments\n", NAME);
-        return EX_USAGE;
-    }
-
-    for (;;) {
-        float z;
-
-        if (fread(&z, sizeof z, 1, stdin) != 1)
-            break;
-
-        /* Maintain an energy meter (similar to PPM) */
-
-        z = fabsf(z);
-        if (z > v) {
-            v += (z - v) / 8;
-        } else {
-            v -= (v - z) / 512;
-        }
-
-        /* At regular intervals, sample the energy to give a
-         * low-resolution overview of the track */
-
-        n++;
-        if (n != INTERVAL)
-            continue;
-
-        n = 0;
-
-        if (len == buf) {
-            size_t n;
-
-            n = buf + BLOCK;
-            nrg = realloc(nrg, n * sizeof(*nrg));
-            if (nrg == NULL) {
-                perror("realloc");
-                return -1;
+        let mut v : f32 = 0.0;
+        for s in samples.iter() {
+            let z = s.abs();
+            if z > v {
+                v += (z - v) / 8.0;
+            }else {
+                v -= (v - z) / 512.0;
             }
-            buf = n;
-        }
 
-        if (fnrg != NULL) {
-            fprintf(fnrg, "%lf\t%lf\n",
-                (double)len * INTERVAL / RATE, v);
+            n += 1;
+            if n == self.interval {
+                n = 0; 
+                nrg.push(v);
+            }
         }
-
-        nrg[len++] = v;
+        self.scan_for_bpm(&nrg)
     }
 
-    bpm = scan_for_bpm(nrg, len, min, max, 1024, 1024, fdiff);
+    /*
+     * Scan a range of BPM values for the one with the
+     * minimum autodifference
+     */
+     #[flame]
+    fn scan_for_bpm(self: &mut BpmTools, nrg: &Vec<f32>) -> f32 {
+        let slowest = self.bpm_to_interval(self.lower);
+        let fastest = self.bpm_to_interval(self.upper);
+        let step = (slowest - fastest) / self.steps as f32;
 
-    printf(format, bpm);
-    putc('\n', stdout);
+        let mut height = f32::INFINITY;
+        let mut trough = f32::NAN;
 
+        // rust won't let us iterate over floats :(
+        // write the iteration as a for loop instead
+        let mut interval = fastest;
+        while interval <= slowest {
+            let mut t = 0.0;
+            for _ in 0..self.samples {
+                t += self.autodifference(&nrg, interval);
+            }
 
-    return 0;
-} */
+            if t < height {
+                trough = interval;
+                height = t;
+            }
+
+            // finish iteration
+            interval += step;
+        }
+        self.interval_to_bpm(trough)
+    }
+
+    /*
+     * Test an autodifference for the given interval
+     */
+    fn autodifference(self: &mut BpmTools, nrg: &Vec<f32>, interval: f32) -> f32 {
+        // define some arrays of constants
+        const BEATS: [f32; 12] = [
+            -32.0, -16.0, -8.0, -4.0, -2.0, -1.0, 1.0, 2.0, 4.0, 8.0, 16.0, 32.0,
+        ];
+        const NOBEATS: [f32; 4] = [-0.5, -0.25, 0.25, 0.5];
+
+        // until we can generate random numbers, use the mean of the uniform distribution over [0.0, 1.0]
+        let side = Uniform::new(0.0, 1.0);
+        // const RANDOM_NUMBER: f32 = 0.5;
+        let mid: f32 = self.rng.sample(side) * nrg.len() as f32;
+        let v: f32 = BpmTools::sample(&nrg, mid);
+
+        let mut diff: f32 = 0.0;
+        let mut total: f32 = 0.0;
+
+        for n in 0..BEATS.len() {
+            let y: f32 = BpmTools::sample(&nrg, mid + BEATS[n] * interval);
+            let w = 1.0 / BEATS[n].abs();
+
+            diff += w * (y - v).abs();
+            total += w;
+        }
+
+        for n in 0..NOBEATS.len() {
+            let y = BpmTools::sample(&nrg, mid + NOBEATS[n] * interval);
+            let w = NOBEATS[n].abs();
+
+            diff -= w * (y - v).abs();
+            total += w;
+        }
+
+        diff / total
+    }
+
+    /*
+     * Sample from the metered energy
+     *
+     * No need to interpolate and it makes a tiny amount of difference; we
+     * take a random sample of samples, any errors are averaged out.
+     */
+    fn sample(nrg: &Vec<f32>, offset: f32) -> f32 {
+        let n: f32 = offset.floor();
+        let i: usize = n as usize; // does this do (in c terms) `i = (u32) n`?
+
+        if n >= 0.0 && n < nrg.len() as f32 {
+            nrg[i]
+        } else {
+            0.0
+        }
+    }
+
+    
+
+    /*
+     * Beats-per-minute to a sampling interval in energy space
+     */
+    fn bpm_to_interval(self: &BpmTools, bpm: f32) -> f32 {
+        let beats_per_second: f32 = bpm / 60.0;
+        let samples_per_beat: f32 = self.rate / beats_per_second;
+        samples_per_beat / self.interval as f32
+    }
+
+    /*
+     * Sampling interval in enery space to beats-per-minute
+     */
+    fn interval_to_bpm(self: &BpmTools, interval: f32) -> f32 {
+        let samples_per_beat: f32 = interval * self.interval as f32;
+        let beats_per_second: f32 = self.rate / samples_per_beat;
+        beats_per_second * 60.0
+    }
+}
