@@ -10,6 +10,7 @@ pub struct Library {
 }
 
 impl Library {
+    #[flame]
     pub fn from_filename(filename: &str) -> Option<Library> {
         let file = File::open(filename).ok()?;
 

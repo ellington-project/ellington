@@ -1,3 +1,6 @@
+use shelltools::generic::EscapedFilename;
+use std::path::PathBuf;
+use std::path::Path;
 use plist::Plist;
 use std::fmt;
 
@@ -6,7 +9,7 @@ pub struct Track {
     pub itunes_id: i64,
     pub bpm: Option<i64>, // we might not have a bpm value
     pub name: String,
-    pub location: String,
+    pub location: PathBuf,
 }
 
 impl fmt::Display for Track {
@@ -25,6 +28,11 @@ impl fmt::Display for Track {
 }
 
 impl Track {
+
+    fn url_to_path(location: &String) -> PathBuf {
+        PathBuf::from(location.replace("%20", " ").replace("file://", ""))
+    }
+
     pub fn new(plist: &Plist) -> Option<Track> {
         // assert the track plist is a dictionary
         let trackinfo = plist.as_dictionary()?;
@@ -39,7 +47,11 @@ impl Track {
             itunes_id: trackinfo.get("Track ID")?.as_integer()?,
             bpm: trackinfo.get("BPM").and_then(|b| b.as_integer()),
             name: trackinfo.get("Name")?.as_string()?.to_string(),
-            location: trackinfo.get("Location")?.as_string()?.to_string(),
+            location: Track::url_to_path(&trackinfo.get("Location")?.as_string()?.to_string()),
         })
+    }
+
+    pub fn escaped_location(self: &Track) -> EscapedFilename {
+        EscapedFilename::new(&self.location.to_str().unwrap().to_string())
     }
 }

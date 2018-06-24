@@ -13,6 +13,7 @@ impl EscapedFilename {
                 .replace("%20", " ")
                 .replace("file://", "")
                 .replace(" ", "\\ ")
+                .replace("!", "\\!")
                 .replace("'", "\\'"),
         }
     }

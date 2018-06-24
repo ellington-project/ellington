@@ -1,24 +1,37 @@
+#![feature(plugin, custom_attribute)]
+#![plugin(flamer)]
+
+extern crate flame;
+
 extern crate byteorder;
 extern crate histogram;
 extern crate memmap;
 extern crate plist;
+extern crate clap;
 
 mod audio_in;
 mod itunes;
 mod shelltools;
 
+use shelltools::sox::test_sox_calls_equal;
 use itunes::library::Library;
 
 use shelltools::bpm::bpm_track;
 
 use histogram::Histogram;
 
+use clap::{Arg, App};
+
+use std::fs::File;
 
 
+
+#[flame]
 fn percent_err(gold: f64, trial: f64) -> f64 {
     return ((gold - trial).abs() / gold) * 100.0;
 }
 
+#[flame]
 fn print_histogram(h: &Histogram, div: f64) -> () {
     println!(
         "\tRunning stats -- Min: {} Avg: {} Max: {} StdDev: {} ",
@@ -40,6 +53,7 @@ fn print_histogram(h: &Histogram, div: f64) -> () {
     );
 }
 
+#[flame]
 fn process_library(filename: &str) -> () {
 
     let library = Library::from_filename(filename).unwrap();
@@ -51,6 +65,9 @@ fn process_library(filename: &str) -> () {
     for track in library.tracks {
         println!("Track: {}", track);
         let calculated_bpm = bpm_track(&track).unwrap_or(0.0);
+
+        test_sox_calls_equal(&track);
+
         if calculated_bpm != 0.0 {
             match bpm_hist.increment(calculated_bpm as u64) {
                 _ => {}
@@ -82,7 +99,25 @@ fn process_library(filename: &str) -> () {
 }
 
 fn main() {
-    process_library("res/partialLibrary.xml");
+    let matches = App::new("ellington")
+        .version("0.1.0")
+        .author("Adam Harries <harries.adam@gmail.com>")
+        .about("Automated BPM calculation for swing dance DJs")
+        .arg(Arg::with_name("library")
+                .short("l")
+                .long("library")
+                .value_name("library")
+                .required(true)
+                .takes_value(true)
+                .index(1)
+                .help("The iTunes library file with track information.")) 
+        .get_matches();
+
+    let library_file = matches.value_of("library").unwrap();
+    process_library(library_file);
+
+    flame::dump_html(&mut File::create("flame-graph.html").unwrap()).unwrap();
+    // process_library("res/partialLibrary.xml");
     // process_library("/Users/adam/Music/iTunes/iTunes Music Library.xml");
-    // println!("Hello, world!");
+    // process_library("/Users/adam/Music/iTunes/iTunes Music Library.xml");
 }

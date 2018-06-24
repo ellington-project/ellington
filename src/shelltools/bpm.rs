@@ -34,10 +34,11 @@ impl ShellProgram for BpmCall {
     }
 }
 
+#[flame]
 pub fn bpm_track(track: &Track) -> Result<f64, ParseFloatError> {
     // pipe together a sox and a bpm call
     let overall_call = PipeCommand {
-        source: &SoxCall::default(EscapedFilename::new(&track.location)),
+        source: &SoxCall::default(EscapedFilename::new(&track.location.to_str().unwrap().to_string())),
         sink: &BpmCall::default(),
     };
 
