@@ -41,6 +41,7 @@
             <key>Artist</key><string>Dizzy Birds</string>
             <key>Album Artist</key><string>Dizzy Birds</string>
             <key>Album</key><string>I'm gonna pick you up in  a red dress, baby!</string>
+            <key>Comments</key><string>slow vocal intro</string>
             <key>Kind</key><string>MPEG audio file</string>
             <key>Location</key><string>file:///Users/adam/Music/Dizzy%20Birds%20-%20I'm%20gonna%20pick%20you%20up%20in%20a%20red%20dress-%20baby!/Dizzy%20Birds%20-%20I'm%20gonna%20pick%20you%20up%20in%20a%20red%20dress,%20baby!%20-%2001%20Rumba%20Negro.mp3</string>
         </dict>
@@ -73,6 +74,7 @@
             <key>Artist</key><string>Dizzy Birds</string>
             <key>Album Artist</key><string>Dizzy Birds</string>
             <key>Album</key><string>I'm gonna pick you up in  a red dress, baby!</string>
+            <key>Comments</key><string>slow vocal intro</string>
             <key>Kind</key><string>MPEG audio file</string>
             <key>Location</key><string>file:///Users/adam/Music/Dizzy%20Birds%20-%20I'm%20gonna%20pick%20you%20up%20in%20a%20red%20dress-%20baby!/Dizzy%20Birds%20-%20I'm%20gonna%20pick%20you%20up%20in%20a%20red%20dress,%20baby!%20-%2002%20Blues%20My%20Naughty%20Sweetie.mp3</string>
         </dict>
@@ -106,6 +108,7 @@
             <key>Artist</key><string>Dizzy Birds</string>
             <key>Album Artist</key><string>Dizzy Birds</string>
             <key>Album</key><string>I'm gonna pick you up in  a red dress, baby!</string>
+            <key>Comments</key><string>slow vocal intro</string>
             <key>Kind</key><string>MPEG audio file</string>
             <key>Location</key><string>file:///Users/adam/Music/Dizzy%20Birds%20-%20I'm%20gonna%20pick%20you%20up%20in%20a%20red%20dress-%20baby!/Dizzy%20Birds%20-%20I'm%20gonna%20pick%20you%20up%20in%20a%20red%20dress,%20baby!%20-%2003%20Sentimental%20Gentleman%20From%20Georgia.mp3</string>
         </dict>

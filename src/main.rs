@@ -9,6 +9,9 @@ extern crate itertools;
 extern crate memmap;
 extern crate plist;
 extern crate rand;
+extern crate id3;
+extern crate url;
+extern crate percent_encoding;
 
 mod analysers;
 mod input;
@@ -62,49 +65,64 @@ fn process_library(filename: &str) -> () {
     let library = Library::from_filename(filename).unwrap();
 
     // create a histogram:
-    let mut error_hist = Histogram::new();
-    let mut bpm_hist = Histogram::new();
+    let mut _error_hist = Histogram::new();
+    let mut _bpm_hist = Histogram::new();
 
     for track in library.tracks {
-        println!("Track: {}", track);
+        
+        match &track.comment {
+            Some(c) => {
+                if track.location.extension().unwrap() == "mp3" {
+                println!("Track: {}", track);
+                println!("Comment: {:?}", c);
+                println!("Id3 information: ");
+                println!("(Reading from path: {:?})", track.location);
+                let tag = id3::Tag::read_from_path(track.location).unwrap();
+                // or print it the easy way
+                  println!("Id3artist: {}", tag.artist().unwrap());
+                  // println!("{}", tag.comments().unwrap());
+}
+            }, 
+            None => {}
+        }
 
-        flame::start("streamed_call");
-        let sox_stream = AudioStream::from_stream(SoxCall::default(track.escaped_location()).run());
-        let calculated_bpm = BpmTools::default().analyse(sox_stream);
-        flame::end("streamed_call");
-
+        // flame::start("streamed_call");
         // let sox_stream = AudioStream::from_stream(SoxCall::default(track.escaped_location()).run());
         // let calculated_bpm = BpmTools::default().analyse(sox_stream);
+        // flame::end("streamed_call");
 
-        if calculated_bpm != 0.0 {
-            match bpm_hist.increment(calculated_bpm as u64) {
-                _ => {}
-            }
-        }
+        // // let sox_stream = AudioStream::from_stream(SoxCall::default(track.escaped_location()).run());
+        // // let calculated_bpm = BpmTools::default().analyse(sox_stream);
 
-        match track.bpm {
-            Some(bpm) => {
-                let error = percent_err(bpm as f64, calculated_bpm as f64);
+        // if calculated_bpm != 0.0 {
+        //     match bpm_hist.increment(calculated_bpm as u64) {
+        //         _ => {}
+        //     }
+        // }
 
-                println!(
-                    "calculated: {}, actual: {}, error: {}",
-                    calculated_bpm, bpm, error
-                );
+        // match track.bpm {
+        //     Some(bpm) => {
+        //         let error = percent_err(bpm as f64, calculated_bpm as f64);
 
-                // get the error as an integer
-                let error_i = (error * 1000.0) as u64;
-                match error_hist.increment(error_i) {
-                    _ => {}
-                };
-            }
-            None => {
-                println!("calculated: {}, actual: -, error: -", calculated_bpm);
-            }
-        }
-        println!("bpms:");
-        print_histogram(&bpm_hist, 1.0);
-        println!("errors:");
-        print_histogram(&error_hist, 1000.0);
+        //         println!(
+        //             "calculated: {}, actual: {}, error: {}",
+        //             calculated_bpm, bpm, error
+        //         );
+
+        //         // get the error as an integer
+        //         let error_i = (error * 1000.0) as u64;
+        //         match error_hist.increment(error_i) {
+        //             _ => {}
+        //         };
+        //     }
+        //     None => {
+        //         println!("calculated: {}, actual: -, error: -", calculated_bpm);
+        //     }
+        // }
+        // println!("bpms:");
+        // print_histogram(&bpm_hist, 1.0);
+        // println!("errors:");
+        // print_histogram(&error_hist, 1000.0);
     }
 }
 

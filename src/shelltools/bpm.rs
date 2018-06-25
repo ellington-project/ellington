@@ -22,6 +22,7 @@ impl BpmCall {
 }
 
 impl ShellProgram for BpmCall {
+    // update this for whatever system we're on
     const COMMAND_NAME: &'static str = "tools/bpm-tools/bpm";
 
     fn as_args(self: &BpmCall) -> Vec<String> {
