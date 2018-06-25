@@ -8,20 +8,21 @@ extern crate histogram;
 extern crate memmap;
 extern crate plist;
 extern crate clap;
+extern crate itertools;
 
-mod audio_in;
 mod itunes;
 mod shelltools;
 mod analysers;
+mod input; 
 
-use audio_in::AudioBuffer;
+use input::audiobuffer::AudioBuffer;
+use input::audiostream::AudioStream;
+
 use analysers::bpmtools::BpmTools;
 
-use shelltools::sox::call_sox_and_read_f32;
+use shelltools::sox::*;
 
 use itunes::library::Library;
-
-use shelltools::bpm::bpm_track;
 
 use histogram::Histogram;
 
@@ -69,22 +70,24 @@ fn process_library(filename: &str) -> () {
 
     for track in library.tracks {
         println!("Track: {}", track);
-        let calculated_bpm = bpm_track(&track).unwrap_or(0.0);
+        
+        // AudioBuffer 
+        let AudioBuffer(sox_data) = AudioBuffer::from_stream(SoxCall::default(track.escaped_location()).run());
+        let calculated_bpm = BpmTools::default().analyse(sox_data.into_iter());
 
-        let AudioBuffer(sox_data) = call_sox_and_read_f32(&track);
-
-        let rust_bpm = BpmTools::default().analyse(&sox_data);
-
-        println!("Calculate the bpm as {} with rust, compared to {} with C", rust_bpm, calculated_bpm);
+        // let sox_stream = AudioStream::from_stream(SoxCall::default(track.escaped_location()).run());
+        // let calculated_bpm = BpmTools::default().analyse(sox_stream);
 
         if calculated_bpm != 0.0 {
             match bpm_hist.increment(calculated_bpm as u64) {
                 _ => {}
             }
         }
+
         match track.bpm {
             Some(bpm) => {
-                let error = percent_err(bpm as f64, calculated_bpm);
+                let error = percent_err(bpm as f64, calculated_bpm as f64);
+
                 println!(
                     "calculated: {}, actual: {}, error: {}",
                     calculated_bpm, bpm, error

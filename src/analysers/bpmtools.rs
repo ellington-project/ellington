@@ -13,7 +13,6 @@ pub struct BpmTools {
     // tunable parameters for the algorithm.
     pub lower: f32,
     pub upper: f32,
-    pub block: u32,
     pub interval: u64,
     pub rate: f32,
     pub steps: u32, 
@@ -27,8 +26,7 @@ impl BpmTools {
         BpmTools {
             lower: 50.0,
             upper: 450.0,
-            block: 4096,
-            interval: 128,
+            interval: 64,
             rate: 44100.0,
             steps: 1024, 
             samples: 1024, 
@@ -38,19 +36,22 @@ impl BpmTools {
 
     /* 
      * main analysis function
+     * We currently have the fairly major (imho) limitation that the entire
+     * vector of amples must be read into memory before we can process it. 
      */
-     #[flame]
-    pub fn analyse(self: &mut BpmTools, samples: &Vec<f32>) -> f32 { 
+    #[flame]
+    pub fn analyse<T>(self: &mut BpmTools, samples: T) -> f32 
+    where T: Iterator<Item=f32>, { 
         /* Maintain an energy meter (similar to PPM), and 
          * at regular intervals, sample the energy to give a
          * low-resolution overview of the track 
          */
-        let mut nrg : Vec<f32> = Vec::with_capacity(samples.len() / self.interval as usize);
+        let mut nrg : Vec<f32> = Vec::new(); //with_capacity(samples.len() / self.interval as usize);
         let mut n : u64 = 0; 
 
         let mut v : f32 = 0.0;
-        for s in samples.iter() {
-            let z = s.abs();
+        for s in samples {
+            let z : f32 = s.abs();
             if z > v {
                 v += (z - v) / 8.0;
             }else {

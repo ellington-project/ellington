@@ -1,4 +1,5 @@
-use audio_in::AudioBuffer;
+use std::process::ChildStdout;
+use std::io::Read;
 use super::generic::*;
 
 use flame;
@@ -108,6 +109,18 @@ impl SoxCall {
             bits: Bits::Sixteen,
         }
     }
+
+    #[flame]
+    pub fn run(self: &SoxCall) -> ChildStdout {
+        flame::start("spawn call");
+        let child = self.call()
+            .stdout(Stdio::piped())
+            .spawn()
+            .expect("Failed to execute standalone sox call");
+        flame::end("spawn call");
+
+        child.stdout.unwrap()
+    }
 }
 
 impl ShellProgram for SoxCall {
@@ -139,62 +152,4 @@ impl ShellProgram for SoxCall {
             .map(|s| s.to_string())
             .collect()
     }
-}
-
-#[flame]
-pub fn call_sox_and_read_f32(track: &Track) -> AudioBuffer {
-    flame::start("spawn call");
-    let standalone = SoxCall::default(track.escaped_location())
-        .call()
-        .stdout(Stdio::piped())
-        .spawn()
-        .expect("Failed to execute standalone sox call");
-        flame::end("spawn call");
-
-    AudioBuffer::from_stream(standalone.stdout.unwrap())
-}
-
-#[flame]
-pub fn run_sox_and_read_file(mp3: &String, dat: &String) -> AudioBuffer {
-    // Get the data using the sox command
-    let command = format!(
-        // "sox -V1 \"{:?}\" -L -r 48000 -e float -b 16 -t raw \"{:?}\"",
-        "sox -V1 {} -r 44100 -e float -c 1 -b 16 -t raw {}",
-        EscapedFilename::new(mp3).filename, EscapedFilename::new(dat).filename
-    );
-
-    flame::start("run raw sox command");
-    let output = Command::new("sh")
-        .arg("-c")
-        .arg(command)
-        .output()
-        .expect("failed to execute process");
-    flame::end("run raw sox command");
-
-    assert!(output.status.success());
-
-    AudioBuffer::from_file(dat)
-}
-
-#[flame]
-pub fn test_sox_calls_equal(track: &Track) -> () {
-    // first with a call to a file...
-    // call sox, and read the data: 
-    // first, escape the mp3, and dat filenames:
-
-    let mp3 = &track.location.to_str().unwrap().to_string();
-    let dat = Path::new(&mp3).with_extension("txt").to_str().unwrap().to_string();
-
-    let file_buffer = run_sox_and_read_file(&mp3, &dat);
-
-    // now, run the equivalent sox pipe call
-    let pipe_buffer = call_sox_and_read_f32(track);
-
-    let AudioBuffer(pdata) = pipe_buffer;
-    let AudioBuffer(fdata) = file_buffer;
-
-    flame::start("comparing results");
-    assert_eq!(pdata, fdata);
-    flame::end("comparing results");
-
 }
