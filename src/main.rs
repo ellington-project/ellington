@@ -1,22 +1,23 @@
 #![feature(plugin, custom_attribute)]
 #![plugin(flamer)]
 
-extern crate flame;
-extern crate rand;
 extern crate byteorder;
+extern crate clap;
+extern crate flame;
 extern crate histogram;
+extern crate itertools;
 extern crate memmap;
 extern crate plist;
-extern crate clap;
-extern crate itertools;
+extern crate rand;
 
+mod analysers;
+mod input;
 mod itunes;
 mod shelltools;
-mod analysers;
-mod input; 
 
 use input::audiobuffer::AudioBuffer;
 use input::audiostream::AudioStream;
+use input::audiostream::BruteForceStream;
 
 use analysers::bpmtools::BpmTools;
 
@@ -26,11 +27,9 @@ use itunes::library::Library;
 
 use histogram::Histogram;
 
-use clap::{Arg, App};
+use clap::{App, Arg};
 
 use std::fs::File;
-
-
 
 #[flame]
 fn percent_err(gold: f64, trial: f64) -> f64 {
@@ -61,7 +60,6 @@ fn print_histogram(h: &Histogram, div: f64) -> () {
 
 #[flame]
 fn process_library(filename: &str) -> () {
-
     let library = Library::from_filename(filename).unwrap();
 
     // create a histogram:
@@ -70,10 +68,24 @@ fn process_library(filename: &str) -> () {
 
     for track in library.tracks {
         println!("Track: {}", track);
-        
-        // AudioBuffer 
-        let AudioBuffer(sox_data) = AudioBuffer::from_stream(SoxCall::default(track.escaped_location()).run());
-        let calculated_bpm = BpmTools::default().analyse(sox_data.into_iter());
+
+        // AudioBuffer
+        flame::start("buffered_call");
+        let sox_data =
+            AudioBuffer::from_stream(SoxCall::default(track.escaped_location()).run());
+        let calculated_bpm = BpmTools::default().analyse(sox_data);
+        flame::end("buffered_call");
+
+        if calculated_bpm != 0.0 {
+            match bpm_hist.increment(calculated_bpm as u64) {
+                _ => {}
+            }
+        }
+
+        flame::start("streamed_call");
+        let sox_stream = BruteForceStream::from_stream(SoxCall::default(track.escaped_location()).run());
+        let calculated_bpm = BpmTools::default().analyse(sox_stream);
+        flame::end("streamed_call");
 
         // let sox_stream = AudioStream::from_stream(SoxCall::default(track.escaped_location()).run());
         // let calculated_bpm = BpmTools::default().analyse(sox_stream);
@@ -115,14 +127,16 @@ fn main() {
         .version("0.1.0")
         .author("Adam Harries <harries.adam@gmail.com>")
         .about("Automated BPM calculation for swing dance DJs")
-        .arg(Arg::with_name("library")
+        .arg(
+            Arg::with_name("library")
                 .short("l")
                 .long("library")
                 .value_name("library")
                 .required(true)
                 .takes_value(true)
                 .index(1)
-                .help("The iTunes library file with track information.")) 
+                .help("The iTunes library file with track information."),
+        )
         .get_matches();
 
     let library_file = matches.value_of("library").unwrap();

@@ -4,5 +4,5 @@
 
 trait Analyser<T> {
     // add code here
-    fn analyse(input: T) -> f32 ;
+    fn analyse(input: T) -> f32;
 }

@@ -1,6 +1,6 @@
-use std::process::ChildStdout;
-use std::io::Read;
 use super::generic::*;
+use std::io::Read;
+use std::process::ChildStdout;
 
 use flame;
 
@@ -9,7 +9,6 @@ use std::path::Path;
 use std::process::Command;
 
 use std::process::Stdio;
-
 
 #[derive(Debug)]
 pub enum Channels {
@@ -113,7 +112,8 @@ impl SoxCall {
     #[flame]
     pub fn run(self: &SoxCall) -> ChildStdout {
         flame::start("spawn call");
-        let child = self.call()
+        let child = self
+            .call()
             .stdout(Stdio::piped())
             .spawn()
             .expect("Failed to execute standalone sox call");

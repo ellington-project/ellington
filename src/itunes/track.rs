@@ -1,8 +1,8 @@
-use shelltools::generic::EscapedFilename;
-use std::path::PathBuf;
-use std::path::Path;
 use plist::Plist;
+use shelltools::generic::EscapedFilename;
 use std::fmt;
+use std::path::Path;
+use std::path::PathBuf;
 
 #[derive(Debug)]
 pub struct Track {
@@ -28,7 +28,6 @@ impl fmt::Display for Track {
 }
 
 impl Track {
-
     fn url_to_path(location: &String) -> PathBuf {
         PathBuf::from(location.replace("%20", " ").replace("file://", ""))
     }

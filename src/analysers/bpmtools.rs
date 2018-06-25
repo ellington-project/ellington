@@ -3,10 +3,10 @@
 // at http://www.pogo.org.uk/~mark/bpm-tools/ contact
 // mark@xwax.org for more information.
 
-use rand::ThreadRng;
-use std::f32;
-use rand::{Rng, thread_rng};
 use rand::distributions::Uniform;
+use rand::ThreadRng;
+use rand::{thread_rng, Rng};
+use std::f32;
 
 #[derive(Debug)]
 pub struct BpmTools {
@@ -15,10 +15,9 @@ pub struct BpmTools {
     pub upper: f32,
     pub interval: u64,
     pub rate: f32,
-    pub steps: u32, 
-    pub samples: u32, 
-    rng: ThreadRng
-
+    pub steps: u32,
+    pub samples: u32,
+    rng: ThreadRng,
 }
 
 impl BpmTools {
@@ -28,39 +27,41 @@ impl BpmTools {
             upper: 450.0,
             interval: 64,
             rate: 44100.0,
-            steps: 1024, 
-            samples: 1024, 
-            rng: thread_rng()
+            steps: 1024,
+            samples: 1024,
+            rng: thread_rng(),
         }
     }
 
-    /* 
+    /*
      * main analysis function
      * We currently have the fairly major (imho) limitation that the entire
-     * vector of amples must be read into memory before we can process it. 
+     * vector of amples must be read into memory before we can process it.
      */
     #[flame]
-    pub fn analyse<T>(self: &mut BpmTools, samples: T) -> f32 
-    where T: Iterator<Item=f32>, { 
-        /* Maintain an energy meter (similar to PPM), and 
+    pub fn analyse<T>(self: &mut BpmTools, samples: T) -> f32
+    where
+        T: Iterator<Item = f32>,
+    {
+        /* Maintain an energy meter (similar to PPM), and
          * at regular intervals, sample the energy to give a
-         * low-resolution overview of the track 
+         * low-resolution overview of the track
          */
-        let mut nrg : Vec<f32> = Vec::new(); //with_capacity(samples.len() / self.interval as usize);
-        let mut n : u64 = 0; 
+        let mut nrg: Vec<f32> = Vec::new(); //with_capacity(samples.len() / self.interval as usize);
+        let mut n: u64 = 0;
 
-        let mut v : f32 = 0.0;
+        let mut v: f32 = 0.0;
         for s in samples {
-            let z : f32 = s.abs();
+            let z: f32 = s.abs();
             if z > v {
                 v += (z - v) / 8.0;
-            }else {
+            } else {
                 v -= (v - z) / 512.0;
             }
 
             n += 1;
             if n == self.interval {
-                n = 0; 
+                n = 0;
                 nrg.push(v);
             }
         }
@@ -71,7 +72,7 @@ impl BpmTools {
      * Scan a range of BPM values for the one with the
      * minimum autodifference
      */
-     #[flame]
+    #[flame]
     fn scan_for_bpm(self: &mut BpmTools, nrg: &Vec<f32>) -> f32 {
         let slowest = self.bpm_to_interval(self.lower);
         let fastest = self.bpm_to_interval(self.upper);
@@ -154,8 +155,6 @@ impl BpmTools {
             0.0
         }
     }
-
-    
 
     /*
      * Beats-per-minute to a sampling interval in energy space
