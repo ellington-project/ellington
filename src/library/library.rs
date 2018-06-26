@@ -1,8 +1,8 @@
+use library::track::Track;
 use std::fs::File;
 
 use plist::Plist;
 
-use itunes::track::Track;
 
 #[derive(Debug)]
 pub struct Library {

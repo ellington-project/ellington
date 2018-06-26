@@ -26,7 +26,7 @@ extern crate lazy_static;
 mod analysers;
 mod comment_data;
 mod input;
-mod itunes;
+mod library;
 mod shelltools;
 
 use comment_data::BpmInfo;
@@ -38,8 +38,8 @@ use analysers::bpmtools::BpmTools;
 
 use shelltools::sox::*;
 
-use itunes::library::Library;
-use itunes::track::AudioFormat;
+use library::library::Library;
+use library::track::AudioFormat;
 
 use histogram::Histogram;
 

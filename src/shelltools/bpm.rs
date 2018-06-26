@@ -4,7 +4,7 @@
     information!
 */
 
-use itunes::track::Track;
+use library::track::Track;
 use shelltools::pipe::PipeCommand;
 
 use super::generic::*;
