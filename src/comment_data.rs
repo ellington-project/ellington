@@ -14,6 +14,7 @@ pub struct CommentData {
 }
 
 impl CommentData {
+    #[flame]
     pub fn parse_data(track: &Track) -> Option<CommentData> {
         lazy_static! {
             static ref RE: Regex = Regex::new(r"\[ed#(.*)#de\]").unwrap();
@@ -35,6 +36,7 @@ impl CommentData {
         serde_json::from_str(json_string).ok()
     }
 
+    #[flame]
     pub fn write_data(self: &Self, track: &Track) -> Option<Track> {
         lazy_static! {
             static ref RE: Regex = Regex::new(r"\[ed#.*#de\]").unwrap();

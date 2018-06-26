@@ -56,6 +56,7 @@ impl fmt::Display for Track {
 
 impl Track {
     // TODO: Better error handling!
+    #[flame]
     fn url_to_path(location: &String) -> PathBuf {
         let parsedurl = Url::parse(location).unwrap();
         let path_str = parsedurl.path();
@@ -68,6 +69,7 @@ impl Track {
         PathBuf::from(decoded)
     }
 
+    #[flame]
     pub fn new(plist: &Plist) -> Option<Track> {
         // assert the track plist is a dictionary
         let trackinfo = plist.as_dictionary()?;
