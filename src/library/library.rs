@@ -1,3 +1,4 @@
+use std::path::PathBuf;
 use library::track::Track;
 use std::fs::File;
 
@@ -10,8 +11,11 @@ pub struct Library {
 }
 
 impl Library {
+    /*
+        Read a library from an itunes xml/plist file
+     */
     #[flame]
-    pub fn from_filename(filename: &str) -> Option<Library> {
+    pub fn from_itunes_xml(filename: &str) -> Option<Library> {
         let file = File::open(filename).ok()?;
 
         let plist = Plist::read(file).ok()?;
@@ -33,5 +37,23 @@ impl Library {
             .collect();
 
         Some(Library { tracks: tracks })
+    }
+
+    /*
+        Read a library as a list of audio files, with one
+        audio file path per line
+     */
+    #[flame]
+    pub fn from_stdin() -> Option<Library> {
+        unimplemented!()
+    }
+
+    /*
+        Read a library from a directory, recursively exploring the 
+        file hierarchy, and finding audio files.
+     */
+    #[flame]
+    pub fn from_directory_rec(path: &PathBuf) -> Option<Library> {
+        unimplemented!()
     }
 }

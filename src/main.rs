@@ -76,7 +76,7 @@ fn print_histogram(h: &Histogram, div: f64) -> () {
 
 #[flame]
 fn process_library(filename: &str) -> () {
-    let library = Library::from_filename(filename).unwrap();
+    let library = Library::from_itunes_xml(filename).unwrap();
 
     // create a histogram:
     let mut error_hist = Histogram::new();
