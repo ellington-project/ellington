@@ -1,4 +1,4 @@
-#![feature(associated_constants)]
+use std::path::PathBuf;
 use std::process::Command;
 
 #[derive(Debug)]
@@ -7,11 +7,11 @@ pub struct EscapedFilename {
 }
 
 impl EscapedFilename {
-    pub fn new(unescaped: &String) -> EscapedFilename {
+    pub fn new(unescaped: &PathBuf) -> EscapedFilename {
         EscapedFilename {
             filename: unescaped
-                .replace("%20", " ")
-                .replace("file://", "")
+                .to_str()
+                .unwrap()
                 .replace(" ", "\\ ")
                 .replace("!", "\\!")
                 .replace("'", "\\'"),

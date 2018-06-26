@@ -1,3 +1,9 @@
+/*
+    Officially deprecated, but useful in case anyone wants to use the 
+    "ShellProgram" infrastructure to call other programs to calculate BPM 
+    information!
+*/
+
 use itunes::track::Track;
 use shelltools::pipe::PipeCommand;
 
@@ -12,6 +18,7 @@ pub struct BpmCall {
     pub minbpm: f32,
 }
 
+#[allow(dead_code)]
 impl BpmCall {
     pub fn default() -> BpmCall {
         BpmCall {
@@ -36,12 +43,11 @@ impl ShellProgram for BpmCall {
 }
 
 #[flame]
+#[allow(dead_code)]
 pub fn bpm_track(track: &Track) -> Result<f64, ParseFloatError> {
     // pipe together a sox and a bpm call
     let overall_call = PipeCommand {
-        source: &SoxCall::default(EscapedFilename::new(
-            &track.location.to_str().unwrap().to_string(),
-        )),
+        source: &SoxCall::default(&track.location),
         sink: &BpmCall::default(),
     };
 

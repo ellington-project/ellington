@@ -1,16 +1,14 @@
 use super::generic::*;
-use std::io::Read;
+use std::path::PathBuf;
+
 use std::process::ChildStdout;
 
 use flame;
 
-use itunes::track::Track;
-use std::path::Path;
-use std::process::Command;
-
 use std::process::Stdio;
 
 #[derive(Debug)]
+#[allow(dead_code)]
 pub enum Channels {
     Mono,
     Stereo,
@@ -30,6 +28,7 @@ impl ShellArg for Channels {
 }
 
 #[derive(Debug)]
+#[allow(dead_code)]
 pub enum Encoding {
     Float,
     SignedInteger,
@@ -52,6 +51,7 @@ impl ShellArg for Encoding {
 
 // bits per sample
 #[derive(Debug)]
+#[allow(dead_code)]
 pub enum Bits {
     Eight,
     Sixteen,
@@ -72,6 +72,7 @@ impl ShellArg for Bits {
 }
 
 #[derive(Debug)]
+#[allow(dead_code)]
 pub enum SampleRate {
     Ffo,
     FortyTwoK,
@@ -99,9 +100,9 @@ pub struct SoxCall {
 }
 
 impl SoxCall {
-    pub fn default(filename: EscapedFilename) -> SoxCall {
+    pub fn default(filename: &PathBuf) -> SoxCall {
         SoxCall {
-            filename: filename,
+            filename: EscapedFilename::new(filename),
             samplerate: SampleRate::Ffo,
             channels: Channels::Mono,
             encoding: Encoding::Float,

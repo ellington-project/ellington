@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Major Version</key><integer>1</integer>
+    <key>Minor Version</key><integer>1</integer>
+    <key>Application Version</key><string>12.7.5.9</string>
+    <key>Date</key><date>2018-06-13T20:15:38Z</date>
+    <key>Features</key><integer>5</integer>
+    <key>Show Content Ratings</key><true/>
+    <key>Library Persistent ID</key><string>8925BDB974B1643E</string>
+    <key>Tracks</key>
+    <dict>
+        <key>838</key>
+        <dict>
+            <key>Track ID</key><integer>838</integer>
+            <key>Size</key><integer>6373680</integer>
+            <key>Total Time</key><integer>155088</integer>
+            <key>Track Number</key><integer>1</integer>
+            <key>Year</key><integer>2017</integer>
+            <key>BPM</key><integer>218</integer>
+            <key>Date Modified</key><date>2018-06-25T18:06:11Z</date>
+            <key>Date Added</key><date>2017-04-07T14:27:14Z</date>
+            <key>Bit Rate</key><integer>320</integer>
+            <key>Sample Rate</key><integer>44100</integer>
+            <key>Play Count</key><integer>2</integer>
+            <key>Play Date</key><integer>3574838262</integer>
+            <key>Play Date UTC</key><date>2017-04-12T09:37:42Z</date>
+            <key>Skip Count</key><integer>2</integer>
+            <key>Skip Date</key><date>2017-08-13T19:38:33Z</date>
+            <key>Rating</key><integer>40</integer>
+            <key>Rating Computed</key><true/>
+            <key>Album Rating</key><integer>40</integer>
+            <key>Album Rating Computed</key><true/>
+            <key>Artwork Count</key><integer>1</integer>
+            <key>Persistent ID</key><string>65E6403753783B55</string>
+            <key>Track Type</key><string>File</string>
+            <key>File Folder Count</key><integer>-1</integer>
+            <key>Library Folder Count</key><integer>-1</integer>
+            <key>Name</key><string>Don't Trip!</string>
+            <key>Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album</key><string>Candy Jacket Jazz Band</string>
+            <key>Kind</key><string>MPEG audio file</string>
+            <key>Comments</key><string>Some, Other, Data, Here[ed#{}#de]</string>
+            <key>Location</key><string>file:///Users/adam/Music/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band%20-%2001%20Don't%20Trip!.mp3</string>
+        </dict>
+        <key>840</key>
+        <dict>
+            <key>Track ID</key><integer>840</integer>
+            <key>Size</key><integer>8952488</integer>
+            <key>Total Time</key><integer>219559</integer>
+            <key>Track Number</key><integer>2</integer>
+            <key>Year</key><integer>2017</integer>
+            <key>BPM</key><integer>140</integer>
+            <key>Date Modified</key><date>2018-06-25T18:06:11Z</date>
+            <key>Date Added</key><date>2017-04-07T14:27:14Z</date>
+            <key>Bit Rate</key><integer>320</integer>
+            <key>Sample Rate</key><integer>44100</integer>
+            <key>Play Count</key><integer>2</integer>
+            <key>Play Date</key><integer>3574838481</integer>
+            <key>Play Date UTC</key><date>2017-04-12T09:41:21Z</date>
+            <key>Skip Count</key><integer>3</integer>
+            <key>Skip Date</key><date>2018-05-16T21:37:33Z</date>
+            <key>Rating</key><integer>40</integer>
+            <key>Rating Computed</key><true/>
+            <key>Album Rating</key><integer>40</integer>
+            <key>Album Rating Computed</key><true/>
+            <key>Artwork Count</key><integer>1</integer>
+            <key>Persistent ID</key><string>51559C57C470DD51</string>
+            <key>Track Type</key><string>File</string>
+            <key>File Folder Count</key><integer>-1</integer>
+            <key>Library Folder Count</key><integer>-1</integer>
+            <key>Name</key><string>Vonnie</string>
+            <key>Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album</key><string>Candy Jacket Jazz Band</string>
+            <key>Kind</key><string>MPEG audio file</string>
+            <key>Comments</key><string>Some, Other, Data, Here[ed#{}#de]</string>
+            <key>Location</key><string>file:///Users/adam/Music/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band%20-%2002%20Vonnie.mp3</string>
+        </dict>
+        <key>842</key>
+        <dict>
+            <key>Track ID</key><integer>842</integer>
+            <key>Size</key><integer>9852145</integer>
+            <key>Total Time</key><integer>242050</integer>
+            <key>Track Number</key><integer>3</integer>
+            <key>Year</key><integer>2017</integer>
+            <key>BPM</key><integer>210</integer>
+            <key>Date Modified</key><date>2018-06-25T18:06:11Z</date>
+            <key>Date Added</key><date>2017-04-07T14:27:14Z</date>
+            <key>Bit Rate</key><integer>320</integer>
+            <key>Sample Rate</key><integer>44100</integer>
+            <key>Play Count</key><integer>2</integer>
+            <key>Play Date</key><integer>3574838723</integer>
+            <key>Play Date UTC</key><date>2017-04-12T09:45:23Z</date>
+            <key>Skip Count</key><integer>1</integer>
+            <key>Skip Date</key><date>2018-04-04T12:52:14Z</date>
+            <key>Rating</key><integer>40</integer>
+            <key>Rating Computed</key><true/>
+            <key>Album Rating</key><integer>40</integer>
+            <key>Album Rating Computed</key><true/>
+            <key>Artwork Count</key><integer>1</integer>
+            <key>Persistent ID</key><string>60CBF60D50EB830D</string>
+            <key>Track Type</key><string>File</string>
+            <key>File Folder Count</key><integer>-1</integer>
+            <key>Library Folder Count</key><integer>-1</integer>
+            <key>Name</key><string>Here's The Deal</string>
+            <key>Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album</key><string>Candy Jacket Jazz Band</string>
+            <key>Kind</key><string>MPEG audio file</string>
+            <key>Comments</key><string>Some, Other, Data, Here[ed#{}#de]</string>
+            <key>Location</key><string>file:///Users/adam/Music/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band%20-%2003%20Here's%20The%20Deal.mp3</string>
+        </dict>
+        <key>844</key>
+        <dict>
+            <key>Track ID</key><integer>844</integer>
+            <key>Size</key><integer>9822888</integer>
+            <key>Total Time</key><integer>241319</integer>
+            <key>Track Number</key><integer>4</integer>
+            <key>Year</key><integer>2017</integer>
+            <key>BPM</key><integer>125</integer>
+            <key>Date Modified</key><date>2018-06-25T18:06:11Z</date>
+            <key>Date Added</key><date>2017-04-07T14:27:14Z</date>
+            <key>Bit Rate</key><integer>320</integer>
+            <key>Sample Rate</key><integer>44100</integer>
+            <key>Play Count</key><integer>3</integer>
+            <key>Play Date</key><integer>3590427134</integer>
+            <key>Play Date UTC</key><date>2017-10-09T19:52:14Z</date>
+            <key>Skip Count</key><integer>3</integer>
+            <key>Skip Date</key><date>2018-01-15T15:56:14Z</date>
+            <key>Rating</key><integer>40</integer>
+            <key>Album Rating</key><integer>40</integer>
+            <key>Album Rating Computed</key><true/>
+            <key>Artwork Count</key><integer>1</integer>
+            <key>Persistent ID</key><string>7F55CD21F10131AD</string>
+            <key>Track Type</key><string>File</string>
+            <key>File Folder Count</key><integer>-1</integer>
+            <key>Library Folder Count</key><integer>-1</integer>
+            <key>Name</key><string>March of the Candy Jackets</string>
+            <key>Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album</key><string>Candy Jacket Jazz Band</string>
+            <key>Kind</key><string>MPEG audio file</string>
+            <key>Comments</key><string>Some, Other, Data, Here[ed#{}#de]</string>
+            <key>Location</key><string>file:///Users/adam/Music/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band%20-%2004%20March%20of%20the%20Candy%20Jackets.mp3</string>
+        </dict>
+        <key>846</key>
+        <dict>
+            <key>Track ID</key><integer>846</integer>
+            <key>Size</key><integer>9023541</integer>
+            <key>Total Time</key><integer>221335</integer>
+            <key>Track Number</key><integer>5</integer>
+            <key>Year</key><integer>2017</integer>
+            <key>BPM</key><integer>196</integer>
+            <key>Date Modified</key><date>2018-06-25T18:06:11Z</date>
+            <key>Date Added</key><date>2017-04-07T14:27:14Z</date>
+            <key>Bit Rate</key><integer>320</integer>
+            <key>Sample Rate</key><integer>44100</integer>
+            <key>Play Count</key><integer>2</integer>
+            <key>Play Date</key><integer>3574839598</integer>
+            <key>Play Date UTC</key><date>2017-04-12T09:59:58Z</date>
+            <key>Skip Count</key><integer>2</integer>
+            <key>Skip Date</key><date>2018-01-15T18:54:07Z</date>
+            <key>Rating</key><integer>40</integer>
+            <key>Rating Computed</key><true/>
+            <key>Album Rating</key><integer>40</integer>
+            <key>Album Rating Computed</key><true/>
+            <key>Artwork Count</key><integer>1</integer>
+            <key>Persistent ID</key><string>42CF3BC14AAF53F5</string>
+            <key>Track Type</key><string>File</string>
+            <key>File Folder Count</key><integer>-1</integer>
+            <key>Library Folder Count</key><integer>-1</integer>
+            <key>Name</key><string>From Bop to Swing</string>
+            <key>Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album</key><string>Candy Jacket Jazz Band</string>
+            <key>Kind</key><string>MPEG audio file</string>
+            <key>Comments</key><string>Some, Other, Data, Here[ed#{}#de]</string>
+            <key>Location</key><string>file:///Users/adam/Music/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band%20-%2005%20From%20Bop%20to%20Swing.mp3</string>
+        </dict>
+        <key>848</key>
+        <dict>
+            <key>Track ID</key><integer>848</integer>
+            <key>Size</key><integer>10098741</integer>
+            <key>Total Time</key><integer>248215</integer>
+            <key>Track Number</key><integer>6</integer>
+            <key>Year</key><integer>2017</integer>
+            <key>BPM</key><integer>140</integer>
+            <key>Date Modified</key><date>2018-06-25T18:06:11Z</date>
+            <key>Date Added</key><date>2017-04-07T14:27:14Z</date>
+            <key>Bit Rate</key><integer>320</integer>
+            <key>Sample Rate</key><integer>44100</integer>
+            <key>Play Count</key><integer>4</integer>
+            <key>Play Date</key><integer>3579358442</integer>
+            <key>Play Date UTC</key><date>2017-06-03T17:14:02Z</date>
+            <key>Skip Count</key><integer>10</integer>
+            <key>Skip Date</key><date>2018-05-16T21:38:09Z</date>
+            <key>Rating</key><integer>40</integer>
+            <key>Rating Computed</key><true/>
+            <key>Album Rating</key><integer>40</integer>
+            <key>Album Rating Computed</key><true/>
+            <key>Artwork Count</key><integer>1</integer>
+            <key>Persistent ID</key><string>D1E52EFD457CC13D</string>
+            <key>Track Type</key><string>File</string>
+            <key>File Folder Count</key><integer>-1</integer>
+            <key>Library Folder Count</key><integer>-1</integer>
+            <key>Name</key><string>Monday Blues</string>
+            <key>Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album</key><string>Candy Jacket Jazz Band</string>
+            <key>Genre</key><string>Swing</string>
+            <key>Kind</key><string>MPEG audio file</string>
+            <key>Comments</key><string>Some, Other, Data, Here[ed#{}#de]</string>
+            <key>Location</key><string>file:///Users/adam/Music/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band%20-%2006%20Monday%20Blues.mp3</string>
+        </dict>
+        <key>850</key>
+        <dict>
+            <key>Track ID</key><integer>850</integer>
+            <key>Size</key><integer>7386186</integer>
+            <key>Total Time</key><integer>180401</integer>
+            <key>Track Number</key><integer>7</integer>
+            <key>Year</key><integer>2017</integer>
+            <key>BPM</key><integer>235</integer>
+            <key>Date Modified</key><date>2018-06-25T18:06:11Z</date>
+            <key>Date Added</key><date>2017-04-07T14:27:14Z</date>
+            <key>Bit Rate</key><integer>320</integer>
+            <key>Sample Rate</key><integer>44100</integer>
+            <key>Play Count</key><integer>3</integer>
+            <key>Play Date</key><integer>3602186012</integer>
+            <key>Play Date UTC</key><date>2018-02-22T23:13:32Z</date>
+            <key>Skip Count</key><integer>5</integer>
+            <key>Skip Date</key><date>2018-06-08T16:23:25Z</date>
+            <key>Rating</key><integer>40</integer>
+            <key>Rating Computed</key><true/>
+            <key>Album Rating</key><integer>40</integer>
+            <key>Album Rating Computed</key><true/>
+            <key>Artwork Count</key><integer>1</integer>
+            <key>Persistent ID</key><string>E6259BB2C2921B9E</string>
+            <key>Track Type</key><string>File</string>
+            <key>File Folder Count</key><integer>-1</integer>
+            <key>Library Folder Count</key><integer>-1</integer>
+            <key>Name</key><string>Stompin' with Pomp</string>
+            <key>Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album</key><string>Candy Jacket Jazz Band</string>
+            <key>Kind</key><string>MPEG audio file</string>
+            <key>Comments</key><string>Some, Other, Data, Here[ed#{}#de]</string>
+            <key>Location</key><string>file:///Users/adam/Music/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band%20-%2007%20Stompin'%20with%20Pomp.mp3</string>
+        </dict>
+        <key>852</key>
+        <dict>
+            <key>Track ID</key><integer>852</integer>
+            <key>Size</key><integer>8912782</integer>
+            <key>Total Time</key><integer>218566</integer>
+            <key>Track Number</key><integer>8</integer>
+            <key>Year</key><integer>2017</integer>
+            <key>BPM</key><integer>141</integer>
+            <key>Date Modified</key><date>2018-06-25T18:06:11Z</date>
+            <key>Date Added</key><date>2017-04-07T14:27:14Z</date>
+            <key>Bit Rate</key><integer>320</integer>
+            <key>Sample Rate</key><integer>44100</integer>
+            <key>Play Count</key><integer>6</integer>
+            <key>Play Date</key><integer>3588158059</integer>
+            <key>Play Date UTC</key><date>2017-09-13T13:34:19Z</date>
+            <key>Skip Count</key><integer>8</integer>
+            <key>Skip Date</key><date>2018-05-16T21:37:29Z</date>
+            <key>Rating</key><integer>40</integer>
+            <key>Rating Computed</key><true/>
+            <key>Album Rating</key><integer>40</integer>
+            <key>Album Rating Computed</key><true/>
+            <key>Artwork Count</key><integer>1</integer>
+            <key>Persistent ID</key><string>7C9862C30163D8B8</string>
+            <key>Track Type</key><string>File</string>
+            <key>File Folder Count</key><integer>-1</integer>
+            <key>Library Folder Count</key><integer>-1</integer>
+            <key>Name</key><string>Relume the Riff</string>
+            <key>Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album</key><string>Candy Jacket Jazz Band</string>
+            <key>Kind</key><string>MPEG audio file</string>
+            <key>Comments</key><string>Some, Other, Data, Here[ed#{}#de]</string>
+            <key>Location</key><string>file:///Users/adam/Music/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band%20-%2008%20Relume%20the%20Riff.mp3</string>
+        </dict>
+        <key>854</key>
+        <dict>
+            <key>Track ID</key><integer>854</integer>
+            <key>Size</key><integer>8027753</integer>
+            <key>Total Time</key><integer>196440</integer>
+            <key>Track Number</key><integer>9</integer>
+            <key>Year</key><integer>2017</integer>
+            <key>BPM</key><integer>120</integer>
+            <key>Date Modified</key><date>2018-06-25T18:06:11Z</date>
+            <key>Date Added</key><date>2017-04-07T14:27:14Z</date>
+            <key>Bit Rate</key><integer>320</integer>
+            <key>Sample Rate</key><integer>44100</integer>
+            <key>Play Count</key><integer>3</integer>
+            <key>Play Date</key><integer>3579359291</integer>
+            <key>Play Date UTC</key><date>2017-06-03T17:28:11Z</date>
+            <key>Skip Count</key><integer>2</integer>
+            <key>Skip Date</key><date>2017-10-30T18:11:56Z</date>
+            <key>Rating</key><integer>40</integer>
+            <key>Rating Computed</key><true/>
+            <key>Album Rating</key><integer>40</integer>
+            <key>Album Rating Computed</key><true/>
+            <key>Artwork Count</key><integer>1</integer>
+            <key>Persistent ID</key><string>74327425E90576E1</string>
+            <key>Track Type</key><string>File</string>
+            <key>File Folder Count</key><integer>-1</integer>
+            <key>Library Folder Count</key><integer>-1</integer>
+            <key>Name</key><string>Amborella</string>
+            <key>Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album</key><string>Candy Jacket Jazz Band</string>
+            <key>Kind</key><string>MPEG audio file</string>
+            <key>Comments</key><string>Some, Other, Data, Here[ed#{}#de]</string>
+            <key>Location</key><string>file:///Users/adam/Music/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band%20-%2009%20Amborella.mp3</string>
+        </dict>
+        <key>856</key>
+        <dict>
+            <key>Track ID</key><integer>856</integer>
+            <key>Size</key><integer>11736096</integer>
+            <key>Total Time</key><integer>289149</integer>
+            <key>Track Number</key><integer>10</integer>
+            <key>Year</key><integer>2017</integer>
+            <key>BPM</key><integer>175</integer>
+            <key>Date Modified</key><date>2018-06-25T18:06:11Z</date>
+            <key>Date Added</key><date>2017-04-07T14:27:14Z</date>
+            <key>Bit Rate</key><integer>320</integer>
+            <key>Sample Rate</key><integer>44100</integer>
+            <key>Play Count</key><integer>2</integer>
+            <key>Play Date</key><integer>3574840730</integer>
+            <key>Play Date UTC</key><date>2017-04-12T10:18:50Z</date>
+            <key>Skip Count</key><integer>3</integer>
+            <key>Skip Date</key><date>2018-03-07T21:37:45Z</date>
+            <key>Rating</key><integer>40</integer>
+            <key>Rating Computed</key><true/>
+            <key>Album Rating</key><integer>40</integer>
+            <key>Album Rating Computed</key><true/>
+            <key>Artwork Count</key><integer>1</integer>
+            <key>Persistent ID</key><string>921F0CC6649A8BEE</string>
+            <key>Track Type</key><string>File</string>
+            <key>File Folder Count</key><integer>-1</integer>
+            <key>Library Folder Count</key><integer>-1</integer>
+            <key>Name</key><string>Giggle in the Wiggle</string>
+            <key>Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album</key><string>Candy Jacket Jazz Band</string>
+            <key>Kind</key><string>MPEG audio file</string>
+            <key>Comments</key><string>Some, Other, Data, Here[ed#{}#de]</string>
+            <key>Location</key><string>file:///Users/adam/Music/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band%20-%2010%20Giggle%20in%20the%20Wiggle.mp3</string>
+        </dict>
+        <key>858</key>
+        <dict>
+            <key>Track ID</key><integer>858</integer>
+            <key>Size</key><integer>7885647</integer>
+            <key>Total Time</key><integer>192888</integer>
+            <key>Track Number</key><integer>11</integer>
+            <key>Year</key><integer>2017</integer>
+            <key>BPM</key><integer>230</integer>
+            <key>Date Modified</key><date>2018-06-25T18:06:26Z</date>
+            <key>Date Added</key><date>2017-04-07T14:27:14Z</date>
+            <key>Bit Rate</key><integer>320</integer>
+            <key>Sample Rate</key><integer>44100</integer>
+            <key>Play Count</key><integer>2</integer>
+            <key>Play Date</key><integer>3574840923</integer>
+            <key>Play Date UTC</key><date>2017-04-12T10:22:03Z</date>
+            <key>Skip Count</key><integer>3</integer>
+            <key>Skip Date</key><date>2017-11-08T09:33:25Z</date>
+            <key>Rating</key><integer>40</integer>
+            <key>Rating Computed</key><true/>
+            <key>Album Rating</key><integer>40</integer>
+            <key>Album Rating Computed</key><true/>
+            <key>Artwork Count</key><integer>1</integer>
+            <key>Persistent ID</key><string>BA45BA879165F3AC</string>
+            <key>Track Type</key><string>File</string>
+            <key>File Folder Count</key><integer>-1</integer>
+            <key>Library Folder Count</key><integer>-1</integer>
+            <key>Name</key><string>Alva's Fine Cutlery</string>
+            <key>Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album Artist</key><string>Candy Jacket Jazz Band</string>
+            <key>Album</key><string>Candy Jacket Jazz Band</string>
+            <key>Kind</key><string>MPEG audio file</string>
+            <key>Comments</key><string>Some, Other, Data, Here[ed#{}#de]</string>
+            <key>Location</key><string>file:///Users/adam/Music/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band/Candy%20Jacket%20Jazz%20Band%20-%20Candy%20Jacket%20Jazz%20Band%20-%2011%20Alva's%20Fine%20Cutlery.mp3</string>
+        </dict>
+    </dict>
+    <key>Music Folder</key><string>file:///Users/adam/Music/iTunes/iTunes%20Media/</string>
+</dict>
+</plist>
+
