@@ -1,6 +1,10 @@
-use super::generic::*;
-use std::path::PathBuf;
+use std::io::{Error, ErrorKind};
 
+use super::generic::*;
+use std::io::Read;
+use std::marker::PhantomData;
+use std::path::PathBuf;
+use std::process::Child;
 use std::process::ChildStdout;
 
 use flame;
@@ -91,7 +95,7 @@ impl ShellArg for SampleRate {
 }
 
 #[derive(Debug)]
-pub struct SoxCall {
+pub struct SoxCommand {
     pub filename: EscapedFilename,
     pub samplerate: SampleRate,
     pub channels: Channels,
@@ -99,9 +103,9 @@ pub struct SoxCall {
     pub bits: Bits,
 }
 
-impl SoxCall {
-    pub fn default(filename: &PathBuf) -> SoxCall {
-        SoxCall {
+impl SoxCommand {
+    pub fn default(filename: &PathBuf) -> SoxCommand {
+        SoxCommand {
             filename: EscapedFilename::new(filename),
             samplerate: SampleRate::Ffo,
             channels: Channels::Mono,
@@ -111,8 +115,9 @@ impl SoxCall {
     }
 
     #[flame]
-    pub fn run(self: &SoxCall) -> ChildStdout {
+    pub fn run<'a>(self: &Self) -> Child {
         flame::start("spawn call");
+
         let child = self
             .call()
             .stdout(Stdio::piped())
@@ -120,14 +125,14 @@ impl SoxCall {
             .expect("Failed to execute standalone sox call");
         flame::end("spawn call");
 
-        child.stdout.unwrap()
+        child
     }
 }
 
-impl ShellProgram for SoxCall {
+impl ShellProgram for SoxCommand {
     const COMMAND_NAME: &'static str = "sox";
 
-    fn as_args(self: &SoxCall) -> Vec<String> {
+    fn as_args(self: &Self) -> Vec<String> {
         vec![
             // the first sox argument is the input filename
             "-V1",
@@ -154,3 +159,31 @@ impl ShellProgram for SoxCall {
             .collect()
     }
 }
+
+// #[derive(Debug)]
+// pub struct SoxStream {
+//     config: SoxCommand,
+//     pub child: Child,
+// }
+
+// impl SoxStream {
+
+// }
+
+// impl Drop for SoxStream {
+//     fn drop(&mut self) {
+//         println!("Dropping!");
+//         self.child.wait().expect("failed to wait on child");
+//     }
+// }
+
+// impl  Read for SoxStream {
+//     fn read(self: &mut Self, buffer: &mut [u8]) -> Result<usize, Error> {
+//         match &self.child.stdout {
+//             Some(s) => s.read(&mut buffer[..]),
+//             None => Err(Error::new(ErrorKind::Other, "oh no!"))
+//         }
+//         // self.child.stdout.unwrap().read(&mut buffer[..])
+//     }
+
+// }

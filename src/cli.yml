@@ -1,0 +1,34 @@
+name: ellington
+version: "0.1.0"
+author: Adam Harries <harries.adam@gmail.com>
+about: Automated BPM calculation for swing dance DJs
+args:
+    - library:
+        short: l
+        long: library
+        value_name: library
+        required: true
+        takes_value: true
+        help: The iTunes library file with track information.
+    - directory: 
+        short: d 
+        long: directory
+        value_name: directory
+        required: false
+        takes_value: true
+        help: A directory containing (recursively) audio files to process
+    - stream: 
+        short: s 
+        long: stream 
+        value_name: stream 
+        required: false
+        takes_value: false 
+        help: Enable filename streaming, rather than recursive folder reading or an explicit library.
+requires:
+    - library
+    - directory
+    - stream
+conflicts_with:
+    - library
+    - directory
+    - stream

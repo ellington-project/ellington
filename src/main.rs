@@ -3,6 +3,8 @@
 #![feature(associated_constants)]
 
 extern crate byteorder;
+
+#[macro_use]
 extern crate clap;
 extern crate flame;
 extern crate histogram;
@@ -27,10 +29,11 @@ mod analysers;
 mod comment_data;
 mod input;
 mod library;
+mod profiling;
 mod shelltools;
-mod profiling; 
 
 use profiling::Profile;
+use std::io::Read;
 
 use comment_data::BpmInfo;
 use comment_data::CommentData;
@@ -46,7 +49,7 @@ use library::track::AudioFormat;
 
 use histogram::Histogram;
 
-use clap::{App, Arg};
+use clap::App;
 
 use std::fs::File;
 
@@ -127,58 +130,57 @@ fn process_library(filename: &str) -> () {
                     };
 
                     flame::start("streamed_call");
-                    let sox_stream =
-                        AudioStream::from_stream(SoxCall::default(&track.location).run());
-                    let calculated_bpm = BpmTools::default().analyse(sox_stream);
-                    flame::end("streamed_call");
+                    let mut call = SoxCommand::default(&track.location);
+                    let mut child = call.run();
 
-                    if calculated_bpm != 0.0 {
-                        match bpm_hist.increment(calculated_bpm as u64) {
-                            _ => {}
+                    {
+                        let sox_stream = match &mut child.stdout {
+                            Some(s) => Some(AudioStream::from_stream(s)),
+                            None => None,
+                        }.unwrap();
+
+                        let calculated_bpm = BpmTools::default().analyse(sox_stream);
+
+                        flame::end("streamed_call");
+
+                        if calculated_bpm != 0.0 {
+                            match bpm_hist.increment(calculated_bpm as u64) {
+                                _ => {}
+                            }
                         }
+
+                        let error = percent_err(*b as f64, calculated_bpm as f64);
+
+                        println!(
+                            "calculated: {}, actual: {}, error: {}",
+                            calculated_bpm, b, error
+                        );
+
+                        // get the error as an integer
+                        let error_i = (error * 1000.0) as u64;
+                        match error_hist.increment(error_i) {
+                            _ => {}
+                        };
+
+                        println!("bpms:");
+                        print_histogram(&bpm_hist, 1.0);
+                        println!("errors:");
+                        print_histogram(&error_hist, 1000.0);
+                        println!("===== ===== ===== ===== =====");
                     }
-
-                    let error = percent_err(*b as f64, calculated_bpm as f64);
-
-                    println!(
-                        "calculated: {}, actual: {}, error: {}",
-                        calculated_bpm, b, error
-                    );
-
-                    // get the error as an integer
-                    let error_i = (error * 1000.0) as u64;
-                    match error_hist.increment(error_i) {
-                        _ => {}
-                    };
-
-                    println!("bpms:");
-                    print_histogram(&bpm_hist, 1.0);
-                    println!("errors:");
-                    print_histogram(&error_hist, 1000.0);
-                    println!("===== ===== ===== ===== =====");
+                    child.wait().expect("failed to wait on child");
                 }
             }
-            _ => {}
+            _ => {
+                println!("Ignore... {}", track.name);
+            }
         }
     }
 }
 
 fn main() {
-    let matches = App::new("ellington")
-        .version("0.1.0")
-        .author("Adam Harries <harries.adam@gmail.com>")
-        .about("Automated BPM calculation for swing dance DJs")
-        .arg(
-            Arg::with_name("library")
-                .short("l")
-                .long("library")
-                .value_name("library")
-                .required(true)
-                .takes_value(true)
-                .index(1)
-                .help("The iTunes library file with track information."),
-        )
-        .get_matches();
+    let yaml = load_yaml!("cli.yml");
+    let matches = App::from_yaml(yaml).get_matches();
 
     let library_file = matches.value_of("library").unwrap();
     process_library(library_file);

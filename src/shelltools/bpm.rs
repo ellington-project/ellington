@@ -47,7 +47,7 @@ impl ShellProgram for BpmCall {
 pub fn bpm_track(track: &Track) -> Result<f64, ParseFloatError> {
     // pipe together a sox and a bpm call
     let overall_call = PipeCommand {
-        source: &SoxCall::default(&track.location),
+        source: &SoxCommand::default(&track.location),
         sink: &BpmCall::default(),
     };
 

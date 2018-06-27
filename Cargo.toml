@@ -9,7 +9,7 @@ plist = "0.2"
 histogram = "0.6.9"
 byteorder = "1"
 memmap = "0.6.2"
-clap = "2.31.2"
+clap = {version = "2.31.2", features = ["yaml"]}
 flame = "0.2.2"
 flamer = "^0.2.2"
 rand = "0.5.2"

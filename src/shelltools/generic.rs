@@ -14,6 +14,8 @@ impl EscapedFilename {
                 .unwrap()
                 .replace(" ", "\\ ")
                 .replace("!", "\\!")
+                .replace("[", "\\[")
+                .replace("]", "\\]")
                 .replace("'", "\\'"),
         }
     }
