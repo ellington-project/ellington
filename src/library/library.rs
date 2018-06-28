@@ -18,27 +18,17 @@ impl Library {
     pub fn from_itunes_xml(filename: &str) -> Option<Library> {
         let file = File::open(filename).ok()?;
 
-        flame::start("Plist::read");
         let plist = Plist::read(file).ok()?;
-        flame::end("Plist::read");
 
         // get the tracks from the PList:
-        flame::start("plist.as_dictionary()?.get");
         let tracks = plist.as_dictionary()?.get("Tracks")?;
-        flame::end("plist.as_dictionary()?.get");
 
         // note, flat_map will (I assume?) discard failed tracks
-        flame::start("tracks.as_dictionary()");
         let tracks_d = tracks.as_dictionary().unwrap();
-        flame::end("tracks.as_dictionary()");
 
-        flame::start("tracks_d.values()");
         let tracks_v = tracks_d.values();
-        flame::end("tracks_d.values()");
 
-        flame::start("tracks_v.flat_map()");
         let tracks_new = tracks_v.flat_map(Track::new).collect();
-        flame::end("tracks_v.flat_map()");
 
         Some(Library { tracks: tracks_new })
     }

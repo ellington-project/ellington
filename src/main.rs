@@ -53,12 +53,10 @@ use clap::App;
 
 use std::fs::File;
 
-#[flame]
 fn percent_err(gold: f64, trial: f64) -> f64 {
     return ((gold - trial).abs() / gold) * 100.0;
 }
 
-#[flame]
 fn print_histogram(h: &Histogram, div: f64) -> () {
     println!(
         "\tRunning stats -- Min: {} Avg: {} Max: {} StdDev: {} ",
@@ -101,6 +99,7 @@ fn process_library(filename: &str) -> () {
     let mut bpm_hist = Histogram::new();
 
     for track in library.tracks {
+        flame::start("process_track");
         match (&track.comment, &track.bpm) {
             (Some(c), Some(b)) => {
                 if track.audioformat == AudioFormat::Mp3 {
@@ -129,11 +128,12 @@ fn process_library(filename: &str) -> () {
                         None => println!("Could not parse ellington data section"),
                     };
 
-                    flame::start("streamed_call");
+                    
                     let mut call = SoxCommand::default(&track.location);
                     let mut child = call.run();
 
                     {
+                        
                         let sox_stream = match &mut child.stdout {
                             Some(s) => Some(AudioStream::from_stream(s)),
                             None => None,
@@ -141,7 +141,7 @@ fn process_library(filename: &str) -> () {
 
                         let calculated_bpm = BpmTools::default().analyse(sox_stream);
 
-                        flame::end("streamed_call");
+                        
 
                         if calculated_bpm != 0.0 {
                             match bpm_hist.increment(calculated_bpm as u64) {
@@ -175,6 +175,7 @@ fn process_library(filename: &str) -> () {
                 println!("Ignore... {}", track.name);
             }
         }
+        flame::end("process_track");
     }
 }
 
@@ -183,6 +184,9 @@ fn main() {
     let matches = App::from_yaml(yaml).get_matches();
 
     let library_file = matches.value_of("library").unwrap();
+
+    println!("Processing from library: {:?}", library_file);
+
     process_library(library_file);
 
     let profile = Profile::from_spans(flame::spans());

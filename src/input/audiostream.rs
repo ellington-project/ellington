@@ -17,7 +17,6 @@ pub struct AudioStream<T: Read> {
 }
 
 impl<T: Read> AudioStream<T> {
-    #[flame]
     pub fn from_stream(stream: T) -> AudioStream<T> {
         AudioStream {
             stream: stream,

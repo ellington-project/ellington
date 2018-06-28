@@ -65,6 +65,7 @@ impl BpmTools {
                 nrg.push(v);
             }
         }
+
         self.scan_for_bpm(&nrg)
     }
 
@@ -104,7 +105,6 @@ impl BpmTools {
     /*
      * Test an autodifference for the given interval
      */
-    #[flame]
     fn autodifference(self: &mut BpmTools, nrg: &Vec<f32>, interval: f32) -> f32 {
         // define some arrays of constants
         const BEATS: [f32; 12] = [

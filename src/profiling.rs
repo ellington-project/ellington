@@ -93,12 +93,12 @@ impl Profile {
 
         // iterate over the spans, print the names, times, and percentages
         println!(
-            "{0: <30} | {1: ^20.10} | {2: ^10.10} | {3: ^20.10} | {4: ^20.10}",
+            "{0: <30} | {1: ^20.10} | {2: ^10.10} | {3: ^15.10} | {4: ^20.10}",
             "Span name", "time (s)", "calls", "time/call (s)", "percentage"
         );
         for s in span_vec.iter() {
             println!(
-                "{0: <30} | {1: ^20.10} | {2: ^10.10} | {3: ^10.10} | {4: ^20.10}",
+                "{0: <30} | {1: ^20.10} | {2: ^10.10} | {3: ^15.10} | {4: ^20.10}",
                 s.name,
                 Profile::seconds(s.time),
                 s.calls,

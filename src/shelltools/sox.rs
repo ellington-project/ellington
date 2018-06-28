@@ -7,7 +7,7 @@ use std::path::PathBuf;
 use std::process::Child;
 use std::process::ChildStdout;
 
-use flame;
+// use flame;
 
 use std::process::Stdio;
 
@@ -114,19 +114,18 @@ impl SoxCommand {
         }
     }
 
-    #[flame]
     pub fn run<'a>(self: &Self) -> Child {
-        flame::start("spawn call");
 
         let child = self
             .call()
             .stdout(Stdio::piped())
             .spawn()
             .expect("Failed to execute standalone sox call");
-        flame::end("spawn call");
 
         child
     }
+
+    // pub fn run_with(self: &Self, )
 }
 
 impl ShellProgram for SoxCommand {
