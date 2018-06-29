@@ -1,11 +1,6 @@
-use std::io::{Error, ErrorKind};
-
 use super::generic::*;
-use std::io::Read;
-use std::marker::PhantomData;
 use std::path::PathBuf;
 use std::process::Child;
-use std::process::ChildStdout;
 
 // use flame;
 
@@ -115,7 +110,6 @@ impl SoxCommand {
     }
 
     pub fn run<'a>(self: &Self) -> Child {
-
         let child = self
             .call()
             .stdout(Stdio::piped())

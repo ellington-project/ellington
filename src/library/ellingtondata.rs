@@ -1,43 +1,37 @@
-use library::track::Track;
 use regex::Regex;
 use serde_json;
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct BpmInfo {
     pub bpm: f32,
     pub alg: String,
 }
 
-#[derive(Serialize, Deserialize, Debug)]
-pub struct CommentData {
+#[derive(Serialize, Deserialize, Debug, Clone)]
+pub struct EllingtonData {
     pub algs: Vec<BpmInfo>,
 }
 
-impl CommentData {
+impl EllingtonData {
     #[flame]
-    pub fn parse_data(track: &Track) -> Option<CommentData> {
+    pub fn parse_data(comment: &String) -> Option<EllingtonData> {
         lazy_static! {
             static ref RE: Regex = Regex::new(r"\[ed#(.*)#de\]").unwrap();
         }
 
-        let comment = match &track.comment {
-            Some(c) => Some(c),
-            None => None,
-        };
+        println!("Original comment: {}", comment);
 
-        println!("Original comment: {}", comment?);
-
-        let captures = RE.captures(comment?.as_str())?;
-        // let ellington_data = captures.get(0)?.as_str();
+        let captures = RE.captures(comment.as_str())?;
+        
         let json_string = captures.get(1)?.as_str();
 
-        println!("Read: {}", json_string);
+        println!("Read data: {}", json_string);
 
         serde_json::from_str(json_string).ok()
     }
 
     #[flame]
-    pub fn write_data(self: &Self, track: &Track) -> Option<Track> {
+    pub fn update_data(self: &Self, comment: &String) -> Option<String> { 
         lazy_static! {
             static ref RE: Regex = Regex::new(r"\[ed#.*#de\]").unwrap();
         }
@@ -46,16 +40,12 @@ impl CommentData {
 
         println!("Serialised: {}", serialised);
 
-        let comment = match &track.comment {
-            Some(c) => Some(c.clone()),
-            None => None,
-        }?;
-
         println!("Original comment: {}", comment);
 
         let captures = RE.captures(comment.as_str())?;
 
         let ellington_data = captures.get(0)?.as_str();
+
         println!("ellington_data: {}", ellington_data);
 
         let new_data = format!("[ed#{}#de]", serialised);
@@ -64,9 +54,6 @@ impl CommentData {
 
         println!("Writing: {}", result);
 
-        Some(Track {
-            comment: Some(result.into_owned()),
-            ..track.clone()
-        })
+        Some(result.to_string())
     }
 }

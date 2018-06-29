@@ -1,99 +1,39 @@
-use std::ffi::OsStr;
-
-use plist::Plist;
-
+use std::fmt::Debug;
 use std::fmt;
-
-use percent_encoding;
+use library::ellingtondata::EllingtonData;
+use std::ffi::OsStr;
 use std::path::PathBuf;
-use url::Url;
+use library::format::{Mp3, UnknownFile};
 
-#[derive(Debug, PartialEq, Clone)]
-pub enum AudioFormat {
-    Mp3,
-    Mp4,
-    M4a,
-    Flac,
-    Unknown,
+#[derive(Debug, Clone)]
+pub struct TrackImpl {
+    pub location: PathBuf,
+    // metadata. Should this be handled separately?
+    // these are from the "file", as in, read, from the file metadata
+    pub name: String,
+    pub bpm: Option<i64>,        // we might not have a bpm value
+    pub comment: Option<String>, // or a comment!
+    // we also have ellington metadata, that we want to manage
+    pub metadata: Option<EllingtonData>,
 }
 
-impl AudioFormat {
-    pub fn from_path(location: &PathBuf) -> AudioFormat {
+pub trait Track : fmt::Display + Debug { 
+    fn location(self: &Self) -> PathBuf;
+    fn name(self: &Self) -> Option<String>;
+    fn bpm(self: &Self) -> Option<i64>; 
+    fn comment(self: &Self) -> Option<String>; 
+    fn from_file_impl(path: &PathBuf) -> Option<Box<Track + 'static>> where Self: Sized;
+}
+
+impl Track { 
+    pub fn from_file(location: &PathBuf) -> Option<Box<Track + 'static>> {
         match location.extension().and_then(OsStr::to_str) {
-            Some("mp3") => AudioFormat::Mp3,
-            Some("mp4") => AudioFormat::Mp4,
-            Some("m4a") => AudioFormat::M4a,
-            Some("flac") => AudioFormat::Flac,
-            _ => AudioFormat::Unknown,
+            Some("mp3") => Mp3::from_file_impl(location),
+            Some("mp4") => UnknownFile::from_file_impl(location),
+            Some("m4a") => UnknownFile::from_file_impl(location),
+            Some("flac") => UnknownFile::from_file_impl(location),
+            _ => UnknownFile::from_file_impl(location),
         }
     }
 }
 
-#[derive(Debug, Clone)]
-pub struct Track {
-    pub itunes_id: i64,
-    pub bpm: Option<i64>,        // we might not have a bpm value
-    pub comment: Option<String>, // or a comment!
-    pub name: String,
-    pub location: PathBuf,
-    pub audioformat: AudioFormat,
-}
-
-impl fmt::Display for Track {
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        // All this formatting might be slow...
-        let bpm_s = match self.bpm {
-            Some(bpm) => format!("{:?}", bpm),
-            None => " - ".to_string(),
-        };
-        write!(
-            f,
-            "(id: {} // bpm: {} // name: {} // loc : [...])",
-            self.itunes_id, bpm_s, self.name
-        )
-    }
-}
-
-impl Track {
-    // TODO: Better error handling!
-    fn url_to_path(location: &String) -> PathBuf {
-        let parsedurl = Url::parse(location).unwrap();
-        let path_str = parsedurl.path();
-        let path_bytes: Vec<u8> = path_str.bytes().collect();
-        // decode it
-        let decoded = percent_encoding::percent_decode(&path_bytes[..])
-            .decode_utf8()
-            .unwrap()
-            .into_owned();
-        PathBuf::from(decoded)
-    }
-
-    pub fn new(plist: &Plist) -> Option<Track> {
-        // assert the track plist is a dictionary
-        let trackinfo = plist.as_dictionary()?;
-
-        // build a track with information extracted from the dict
-        // bail out (and return None) if we fail to get any of:
-        // - track id
-        // - name
-        // - location
-        // fill the BPM with "none" if no bpm found
-        let itunes_id = trackinfo.get("Track ID")?.as_integer()?;
-        let bpm = trackinfo.get("BPM").and_then(|b| b.as_integer());
-        let comment = trackinfo
-            .get("Comments")
-            .and_then(|c| c.as_string())
-            .and_then(|s| Some(s.to_string()));
-        let name = trackinfo.get("Name")?.as_string()?.to_string();
-        let location = Track::url_to_path(&trackinfo.get("Location")?.as_string()?.to_string());
-        let audioformat = AudioFormat::from_path(&location);
-        Some(Track {
-            itunes_id: itunes_id,
-            bpm: bpm,
-            comment: comment,
-            name: name,
-            location: location,
-            audioformat: audioformat,
-        })
-    }
-}

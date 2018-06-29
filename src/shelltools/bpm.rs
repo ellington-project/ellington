@@ -44,10 +44,10 @@ impl ShellProgram for BpmCall {
 
 // #[flame]
 #[allow(dead_code)]
-pub fn bpm_track(track: &Track) -> Result<f64, ParseFloatError> {
+pub fn bpm_track<T>(track: &Track) -> Result<f64, ParseFloatError> {
     // pipe together a sox and a bpm call
     let overall_call = PipeCommand {
-        source: &SoxCommand::default(&track.location),
+        source: &SoxCommand::default(&track.location()),
         sink: &BpmCall::default(),
     };
 

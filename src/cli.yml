@@ -7,7 +7,7 @@ args:
         short: l
         long: library
         value_name: library
-        required: true
+        required: false
         takes_value: true
         help: The iTunes library file with track information.
     - directory: 
@@ -20,10 +20,15 @@ args:
     - stream: 
         short: s 
         long: stream 
-        value_name: stream 
         required: false
         takes_value: false 
         help: Enable filename streaming, rather than recursive folder reading or an explicit library.
+    - library_metadata: 
+        short: m 
+        long: library_metadata
+        requires: library
+        takes_value: false
+        help: Prompts ellington to read metadata information (i.e. not just file location information) from the iTunes library provided.
 requires:
     - library
     - directory

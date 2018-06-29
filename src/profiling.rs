@@ -1,7 +1,6 @@
 use flame::*;
 use std::cmp::Ordering;
 use std::collections::BTreeMap;
-use std::ops::Add;
 
 #[derive(Debug)]
 pub struct Profile {

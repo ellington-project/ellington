@@ -1,15 +1,16 @@
-use flame;
 use library::track::Track;
+use percent_encoding;
 use std::fs::File;
 use std::path::PathBuf;
+use url::Url;
 
 use plist::Plist;
 
 #[derive(Debug)]
 pub struct Library {
-    pub tracks: Vec<Track>,
+    pub tracks: Vec<Box<Track>>,
 }
-
+    
 impl Library {
     /*
         Read a library from an itunes xml/plist file
@@ -21,16 +22,50 @@ impl Library {
         let plist = Plist::read(file).ok()?;
 
         // get the tracks from the PList:
-        let tracks = plist.as_dictionary()?.get("Tracks")?;
+        let tracks = plist
+            .as_dictionary()?
+            .get("Tracks")?
+            .as_dictionary()?
+            .values()
+            .flat_map(|track_plist: &Plist| -> Option<Box<Track>> {
+                // assert the track plist is a dictionary
+                let trackinfo = track_plist.as_dictionary()?;
 
-        // note, flat_map will (I assume?) discard failed tracks
-        let tracks_d = tracks.as_dictionary().unwrap();
+                // extract the location from the dictionary.
+                let location =
+                    Library::url_to_path(&trackinfo.get("Location")?.as_string()?.to_string());
 
-        let tracks_v = tracks_d.values();
+                // read the metadata from the file, rather than iTunes, in case there
+                // are any discrepancies.
+                // TODO: Control this with a flag?
+                Track::from_file(&location)
 
-        let tracks_new = tracks_v.flat_map(Track::new).collect();
+                // build a track with information extracted from the dict
+                // bail out (and return None) if we fail to get any of:
+                // - track id
+                // - name
+                // - location
+                // fill the BPM with "none" if no bpm found
+                // let bpm = trackinfo.get("BPM").and_then(|b| b.as_integer());
+                // let comment : Option<String> = trackinfo
+                //     .get("Comments")
+                //     .and_then(|c| c.as_string())
+                //     .and_then(|s| Some(s.to_string()));
+                // let name = trackinfo.get("Name")?.as_string()?.to_string();
+                // let audioformat = AudioFormat::from_path(&location);
+                // let ellingtondata = comment.clone().and_then(|s| EllingtonData::parse_data(&s));
+                // Some(Box::new(Track {
+                //     bpm: bpm,
+                //     comment: comment,
+                //     name: name,
+                //     location: location,
+                //     audioformat: audioformat,
+                //     metadata: ellingtondata
+                // }))
+            })
+            .collect();
 
-        Some(Library { tracks: tracks_new })
+        Some(Library { tracks: tracks })
     }
 
     /*
@@ -51,5 +86,20 @@ impl Library {
     #[allow(dead_code, unused_variables)]
     pub fn from_directory_rec(path: &PathBuf) -> Option<Library> {
         unimplemented!()
+    }
+
+    /*
+        General utitlity functions
+     */
+    fn url_to_path(location: &String) -> PathBuf {
+        let parsedurl = Url::parse(location).unwrap();
+        let path_str = parsedurl.path();
+        let path_bytes: Vec<u8> = path_str.bytes().collect();
+        // decode it
+        let decoded = percent_encoding::percent_decode(&path_bytes[..])
+            .decode_utf8()
+            .unwrap()
+            .into_owned();
+        PathBuf::from(decoded)
     }
 }

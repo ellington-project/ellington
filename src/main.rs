@@ -26,17 +26,18 @@ extern crate regex;
 extern crate lazy_static;
 
 mod analysers;
-mod comment_data;
 mod input;
 mod library;
 mod profiling;
 mod shelltools;
 
-use profiling::Profile;
-use std::io::Read;
 
-use comment_data::BpmInfo;
-use comment_data::CommentData;
+
+use clap::ArgMatches;
+use profiling::Profile;
+
+use library::ellingtondata::BpmInfo;
+use library::ellingtondata::EllingtonData;
 // use input::audiobuffer::AudioBuffer;
 use input::audiostream::AudioStream;
 
@@ -45,7 +46,6 @@ use analysers::bpmtools::BpmTools;
 use shelltools::sox::*;
 
 use library::library::Library;
-use library::track::AudioFormat;
 
 use histogram::Histogram;
 
@@ -94,100 +94,122 @@ fn print_histogram(h: &Histogram, div: f64) -> () {
 fn process_library(filename: &str) -> () {
     let library = Library::from_itunes_xml(filename).unwrap();
 
+    println!("Successfully parsed {} tracks.", library.tracks.len()); 
     // create a histogram:
     let mut error_hist = Histogram::new();
     let mut bpm_hist = Histogram::new();
 
     for track in library.tracks {
         flame::start("process_track");
-        match (&track.comment, &track.bpm) {
+
+        println!("Track! {:?}", track);
+        match (track.comment(), track.bpm()) {
             (Some(c), Some(b)) => {
-                if track.audioformat == AudioFormat::Mp3 {
                     println!("Track: {}", track);
                     println!("Comment: {:?}", c);
-                    println!("Id3 information: ");
-                    // println!("\t(Reading from path: {:?})", track.location);
-                    let tag = id3::Tag::read_from_path(&track.location).unwrap();
-                    println!("Id3artist: {}", tag.artist().unwrap());
-                    // println!("{}", tag.comments().unwrap());
-
-                    // build a commentdata from the track
-                    let cd = CommentData {
-                        algs: vec![BpmInfo {
-                            bpm: 64.0,
-                            alg: String::from("bpmish"),
-                        }],
-                    };
-
-                    match cd.write_data(&track) {
-                        Some(new_track) => {
-                            let parsed_data = CommentData::parse_data(&new_track);
-
-                            println!("Parsed data: {:?}", parsed_data);
-                        }
-                        None => println!("Could not parse ellington data section"),
-                    };
-
                     
-                    let mut call = SoxCommand::default(&track.location);
-                    let mut child = call.run();
+    //                 // build a commentdata from the track
+    //                 let cd = EllingtonData {
+    //                     algs: vec![BpmInfo {
+    //                         bpm: 64.0,
+    //                         alg: String::from("bpmish"),
+    //                     }],
+    //                 };
 
-                    {
-                        
-                        let sox_stream = match &mut child.stdout {
-                            Some(s) => Some(AudioStream::from_stream(s)),
-                            None => None,
-                        }.unwrap();
+    //                 match cd.update_data(&c) {
+    //                     Some(new_comment) => {
+    //                         let parsed_data = EllingtonData::parse_data(&new_comment);
 
-                        let calculated_bpm = BpmTools::default().analyse(sox_stream);
+    //                         println!("Parsed data: {:?}", parsed_data);
+    //                     }
+    //                     None => println!("Could not parse ellington data section"),
+    //                 };
 
-                        
+    //                 let mut call = SoxCommand::default(&track.location);
+    //                 let mut child = call.run();
 
-                        if calculated_bpm != 0.0 {
-                            match bpm_hist.increment(calculated_bpm as u64) {
-                                _ => {}
-                            }
-                        }
+    //                 {
+    //                     let sox_stream = match &mut child.stdout {
+    //                         Some(s) => Some(AudioStream::from_stream(s)),
+    //                         None => None,
+    //                     }.unwrap();
 
-                        let error = percent_err(*b as f64, calculated_bpm as f64);
+    //                     let calculated_bpm = BpmTools::default().analyse(sox_stream);
 
-                        println!(
-                            "calculated: {}, actual: {}, error: {}",
-                            calculated_bpm, b, error
-                        );
+    //                     if calculated_bpm != 0.0 {
+    //                         match bpm_hist.increment(calculated_bpm as u64) {
+    //                             _ => {}
+    //                         }
+    //                     }
 
-                        // get the error as an integer
-                        let error_i = (error * 1000.0) as u64;
-                        match error_hist.increment(error_i) {
-                            _ => {}
-                        };
+    //                     let error = percent_err(*b as f64, calculated_bpm as f64);
 
-                        println!("bpms:");
-                        print_histogram(&bpm_hist, 1.0);
-                        println!("errors:");
-                        print_histogram(&error_hist, 1000.0);
-                        println!("===== ===== ===== ===== =====");
-                    }
-                    child.wait().expect("failed to wait on child");
-                }
+    //                     println!(
+    //                         "calculated: {}, actual: {}, error: {}",
+    //                         calculated_bpm, b, error
+    //                     );
+
+    //                     // get the error as an integer
+    //                     let error_i = (error * 1000.0) as u64;
+    //                     match error_hist.increment(error_i) {
+    //                         _ => {}
+    //                     };
+
+    //                     println!("bpms:");
+    //                     print_histogram(&bpm_hist, 1.0);
+    //                     println!("errors:");
+    //                     print_histogram(&error_hist, 1000.0);
+    //                     println!("===== ===== ===== ===== =====");
+    //                 }
+    //                 child.wait().expect("failed to wait on child");
+    //             }
             }
             _ => {
-                println!("Ignore... {}", track.name);
+                println!("Ignore... {:?}", track.name());
             }
         }
         flame::end("process_track");
     }
 }
 
+#[flame]
+fn dispatch(matches: ArgMatches) -> () {
+    // first hope that we have an iTunes library file
+    match matches.value_of("library") {
+        Some(library_file) => {
+            println!("Processing from library: {:?}", library_file);
+            process_library(library_file);
+            return;
+        }
+        None => {} // some other arg must match
+    }
+
+    // otherwise, we may have been given a directory to process
+    match matches.value_of("directory") {
+        Some(directory) => {
+            // process a library from a directory.
+            return;
+        }
+        None => {} // some other arg must match
+    }
+
+    match matches.is_present("stream") {
+        true => {
+            //do stuff from stdin
+        }
+        false => {}
+    }
+}
+
 fn main() {
+    flame::start("parsing options");
     let yaml = load_yaml!("cli.yml");
     let matches = App::from_yaml(yaml).get_matches();
+    flame::end("parsing options");
 
-    let library_file = matches.value_of("library").unwrap();
+    dispatch(matches);
 
-    println!("Processing from library: {:?}", library_file);
-
-    process_library(library_file);
+    // let library_file = matches.value_of("library").unwrap();
 
     let profile = Profile::from_spans(flame::spans());
     profile.print();
