@@ -29,6 +29,12 @@ args:
         requires: library
         takes_value: false
         help: Prompts ellington to read metadata information (i.e. not just file location information) from the iTunes library provided.
+    - overwrite: 
+        short: o 
+        long: overwrite
+        takes_value: false
+        help: Prompts ellington to overwrite ellington data in comment fields of audio files located.
+
 requires:
     - library
     - directory

@@ -11,3 +11,5 @@ stats.txt
 **/*.DS_Store
 
 flame-graph.html
+
+playground

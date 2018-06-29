@@ -10,7 +10,7 @@ use plist::Plist;
 pub struct Library {
     pub tracks: Vec<Box<Track>>,
 }
-    
+
 impl Library {
     /*
         Read a library from an itunes xml/plist file
@@ -93,6 +93,7 @@ impl Library {
      */
     fn url_to_path(location: &String) -> PathBuf {
         let parsedurl = Url::parse(location).unwrap();
+
         let path_str = parsedurl.path();
         let path_bytes: Vec<u8> = path_str.bytes().collect();
         // decode it

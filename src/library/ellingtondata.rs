@@ -3,13 +3,13 @@ use serde_json;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct BpmInfo {
-    pub bpm: f32,
+    pub bpm: i64,
     pub alg: String,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct EllingtonData {
-    pub algs: Vec<BpmInfo>,
+    pub algs: Option<Vec<BpmInfo>>,
 }
 
 impl EllingtonData {
@@ -19,40 +19,29 @@ impl EllingtonData {
             static ref RE: Regex = Regex::new(r"\[ed#(.*)#de\]").unwrap();
         }
 
-        println!("Original comment: {}", comment);
-
         let captures = RE.captures(comment.as_str())?;
-        
-        let json_string = captures.get(1)?.as_str();
 
-        println!("Read data: {}", json_string);
+        let json_string = captures.get(1)?.as_str().replace("#", ":");
 
-        serde_json::from_str(json_string).ok()
+        serde_json::from_str(&json_string).ok()
     }
 
     #[flame]
-    pub fn update_data(self: &Self, comment: &String) -> Option<String> { 
+    pub fn update_data(self: &Self, comment: &String) -> Option<String> {
         lazy_static! {
             static ref RE: Regex = Regex::new(r"\[ed#.*#de\]").unwrap();
         }
 
-        let serialised = serde_json::to_string(self).unwrap();
+        // replace all the ":" characters in the JSON string with "#", as id3tags do not support colons in comment data.
+        let serialised = serde_json::to_string(self).unwrap().replace(":", "#");
+    
+        // let captures = RE.captures(comment.as_str())?;
 
-        println!("Serialised: {}", serialised);
-
-        println!("Original comment: {}", comment);
-
-        let captures = RE.captures(comment.as_str())?;
-
-        let ellington_data = captures.get(0)?.as_str();
-
-        println!("ellington_data: {}", ellington_data);
-
+        // let ellington_data = captures.get(0)?.as_str();
+    
         let new_data = format!("[ed#{}#de]", serialised);
 
         let result = RE.replace(comment.as_str(), new_data.as_str());
-
-        println!("Writing: {}", result);
 
         Some(result.to_string())
     }

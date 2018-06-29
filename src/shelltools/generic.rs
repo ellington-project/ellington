@@ -9,14 +9,15 @@ pub struct EscapedFilename {
 impl EscapedFilename {
     pub fn new(unescaped: &PathBuf) -> EscapedFilename {
         EscapedFilename {
-            filename: unescaped
-                .to_str()
-                .unwrap()
-                .replace(" ", "\\ ")
-                .replace("!", "\\!")
-                .replace("[", "\\[")
-                .replace("]", "\\]")
-                .replace("'", "\\'"),
+            filename: unescaped.to_str().unwrap().to_string()
+            // unescaped
+            //     .to_str()
+            //     .unwrap()
+            //     .replace(" ", "\\ ")
+            //     .replace("!", "\\!")
+            //     .replace("[", "\\[")
+            //     .replace("]", "\\]")
+            //     .replace("'", "\\'"),
         }
     }
 }
