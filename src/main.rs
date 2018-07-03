@@ -42,13 +42,13 @@ use input::audiostream::AudioStream;
 use analysers::bpmtools::BpmTools;
 
 use shelltools::sox::*;
+use shelltools::ffmpeg::*;
 
 use library::library::Library;
 
 use histogram::Histogram;
 
 use clap::App;
-
 use std::fs::File;
 
 #[flame]
@@ -91,6 +91,25 @@ fn process_library(filename: &str) -> () {
                 println!("Comment: {:#?}", track.comments());
                 println!("Ed: {:#?}", ed);
 
+                let mut call = FfmpegCommand::default(&track.location());
+                let mut child = call.run();
+
+                let cbpm = {
+                    let sox_stream = match &mut child.stdout {
+                        Some(s) => Some(AudioStream::from_stream(s)),
+                        None => None,
+                    }.unwrap();
+
+                    let calculated_bpm = 
+                        BpmTools::default().analyse(sox_stream);
+
+                    calculated_bpm
+                };
+
+                child.wait().expect("failed to wait on child");
+
+                println!("Calculated ffmpeg bpm: {}", cbpm);
+
                 let mut call = SoxCommand::default(&track.location());
                 let mut child = call.run();
 
@@ -108,22 +127,22 @@ fn process_library(filename: &str) -> () {
 
                 child.wait().expect("failed to wait on child");
 
-                println!("Calculated bpm: {}", cbpm);
+                println!("Calculated sox bpm: {}", cbpm);
 
                 // build some ellington data 
-                let new_data = EllingtonData { 
-                    algs: Some (
-                        vec![BpmInfo{
-                            bpm: cbpm as i64, 
-                            alg: "naive".to_string()
-                        }]
-                    )
-                };
+                // let new_data = EllingtonData { 
+                //     algs: Some (
+                //         vec![BpmInfo{
+                //             bpm: cbpm as i64, 
+                //             alg: "naive".to_string()
+                //         }]
+                //     )
+                // };
 
-                match track.write_data(new_data) {
-                    Some(_) => println!("Successfully written data."), 
-                    None => println!("Failed to write id3 data for some reason.")
-                }
+                // match track.write_data(new_data) {
+                //     Some(_) => println!("Successfully written data."), 
+                //     None => println!("Failed to write id3 data for some reason.")
+                // }
                 
                 println!("===== ===== ===== ===== =====\n");
             }

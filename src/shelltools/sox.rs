@@ -105,7 +105,7 @@ impl SoxCommand {
             samplerate: SampleRate::Ffo,
             channels: Channels::Mono,
             encoding: Encoding::Float,
-            bits: Bits::Sixteen,
+            bits: Bits::ThirtyTwo,
         }
     }
 

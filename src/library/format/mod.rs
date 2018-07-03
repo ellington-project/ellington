@@ -7,6 +7,9 @@ use std::path::PathBuf;
 pub use self::mp3::Mp3;
 mod mp3;
 
+pub use self::alac::Alac;
+mod alac;
+
 // a default "unknown", or erroring file type
 #[derive(Debug)]
 pub struct UnknownFile {
