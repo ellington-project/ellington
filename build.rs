@@ -17,40 +17,40 @@ fn main() {
 
     if !testdata_raw.as_path().exists() {
         // make a folder for our testdata
-        let output = Command::new("mkdir")
-            .arg("-p")
-            .arg(testdata_folder.to_str().unwrap())
-            .output()
-            .expect("Failed to make testdata directory!");
-        assert!(output.status.success());
+        // let output = Command::new("mkdir")
+        //     .arg("-p")
+        //     .arg(testdata_folder.to_str().unwrap())
+        //     .output()
+        //     .expect("Failed to make testdata directory!");
+        // assert!(output.status.success());
 
-        // download the data to that folder.
-        let output = Command::new("wget")
-            .arg(testdata_url)
-            .arg("-O")
-            .arg(testdata_mp3.to_str().unwrap())
-            .output()
-            .expect("Failed to download test data");
-        assert!(output.status.success());
+        // // download the data to that folder.
+        // let output = Command::new("wget")
+        //     .arg(testdata_url)
+        //     .arg("-O")
+        //     .arg(testdata_mp3.to_str().unwrap())
+        //     .output()
+        //     .expect("Failed to download test data");
+        // assert!(output.status.success());
 
-        // finally make some raw data
-        let output = Command::new("sox")
-            .arg("-V1")
-            .arg(testdata_mp3)
-            .arg("-r")
-            .arg("44100")
-            .arg("-e")
-            .arg("float")
-            .arg("-c")
-            .arg("1")
-            .arg("-b")
-            .arg("16")
-            .arg("-t")
-            .arg("raw")
-            .arg(testdata_raw)
-            .output()
-            .expect("Failed to run sox command successfully");
+        // // finally make some raw data
+        // let output = Command::new("sox")
+        //     .arg("-V1")
+        //     .arg(testdata_mp3)
+        //     .arg("-r")
+        //     .arg("44100")
+        //     .arg("-e")
+        //     .arg("float")
+        //     .arg("-c")
+        //     .arg("1")
+        //     .arg("-b")
+        //     .arg("16")
+        //     .arg("-t")
+        //     .arg("raw")
+        //     .arg(testdata_raw)
+        //     .output()
+        //     .expect("Failed to run sox command successfully");
 
-        assert!(output.status.success());
+        // assert!(output.status.success());
     }
 }
