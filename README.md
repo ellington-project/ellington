@@ -6,15 +6,29 @@ Ellington is an experimental project to automate the calculation of beats-per-mi
 
 2) Provide a tool, or set of tools, for automatically processing libraries of swing jazz music, and reporting BPM information. 
 
-## Current progress. 
+## Feature Targets
 
-The current progress of the project, in terms of the two aims above, is as follows: 
+**0.1.0-alpha** (current master): 
+  - Audio file discovery through iTunes based libraries
+  - mp3 decoding through `SOX` and `ffmpeg`
+  - Naive BPM calculation algorithm acting on raw audio data
+  - Draft json-based ellington-data format for ephemeral bpm information
+  - Tag support for mp3 through id3v2lib. 
+  - Support for ellington-data read/write to mp3 files.
+  
+**0.1.0**: 
+  - Audio file discovery through recursive directory enumeration
+  - Audio file discovery through `stdin`
+  - Support for generic tagging using `taglib`
+  - Support for generic audio decoding using `ffmpeg`
+  
+**0.2.0**: 
+  - Integration of static `ffmpeg` libraries instead of system calls
+  - Standalone binary, without dynamic dependencies (including external programs)
 
-### Experimentation
-
-- Support for the "bpm-tools" implementation of a BPM algorithm. See `tools/bpm-tools/bpm.c` for the implementation. 
-- Partial support for audio input using the `sox` audio library.
-
-### Tooling
-
-- Support for iTunes library information, iterating tracks, and passing information to BPM routines. 
+**1.0.0**:
+  - Stable release of *Ellington*. 
+  - Windows support
+  
+**2.0.0**: 
+  - Neural network based bpm classifier
