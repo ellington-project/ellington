@@ -27,6 +27,8 @@ Audio discovery is currently only possible using a valid iTunes xml library. Ell
 
     cargo run -- --library path/to/iTunes/Library.xml
 
+In future, Ellington will support other media discovery methodologies. 
+
 ## Feature Targets
 
 **0.1.0-alpha** (current master): 
