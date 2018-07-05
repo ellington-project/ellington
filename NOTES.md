@@ -21,3 +21,7 @@ Documentation: http://madmom.readthedocs.io/en/latest/
 (same as above, but in thesis form)
 
 Thesis: http://mir.minimoog.org/sb-diploma-thesis
+
+**Audio signal processing by neural networks**
+
+https://www.sciencedirect.com/science/article/pii/S0925231203003953
