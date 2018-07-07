@@ -4,8 +4,6 @@
 /target
 **/*.rs.bk
 
-data
-
 stats.txt
 
 **/*.DS_Store

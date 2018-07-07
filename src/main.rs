@@ -1,12 +1,12 @@
 #![feature(plugin, custom_attribute)]
-#![plugin(flamer)]
+// #![plugin(flamer)]
 #![feature(associated_constants)]
 
 extern crate byteorder;
 
 #[macro_use]
 extern crate clap;
-extern crate flame;
+// extern crate flame;
 extern crate histogram;
 extern crate id3;
 extern crate itertools;
@@ -17,6 +17,7 @@ extern crate rand;
 extern crate serde;
 extern crate serde_json;
 extern crate url;
+extern crate walkdir;
 
 #[macro_use]
 extern crate serde_derive;
@@ -32,7 +33,7 @@ mod profiling;
 mod shelltools;
 
 use clap::ArgMatches;
-use profiling::Profile;
+// use profiling::Profile;
 
 use library::ellingtondata::BpmInfo;
 use library::ellingtondata::EllingtonData;
@@ -49,14 +50,14 @@ use library::library::Library;
 use histogram::Histogram;
 
 use clap::App;
-use std::fs::File;
+use std::path::PathBuf;
 
-#[flame]
+// #[flame]
 fn percent_err(gold: f64, trial: f64) -> f64 {
     return ((gold - trial).abs() / gold) * 100.0;
 }
 
-#[flame]
+// #[flame]
 fn print_histogram(h: &Histogram, div: f64) -> () {
     println!(
         "Percentiles -- 75: {} 80: {} 85: {} 90: {} 95: {}",
@@ -68,11 +69,11 @@ fn print_histogram(h: &Histogram, div: f64) -> () {
     );
 }
 
-#[flame]
-fn process_library(filename: &str) -> () {
+// #[flame]
+fn process_library(library: Library) -> () {
 
     // Parse the library from an itunes file
-    let library = Library::from_itunes_xml(filename).unwrap();
+    // let library = Library::from_itunes_xml(filename).unwrap();
 
     println!("Successfully parsed {} tracks.", library.tracks.len());
     
@@ -80,7 +81,7 @@ fn process_library(filename: &str) -> () {
 
     // Iterate over the tracks.
     for track in library.tracks {
-        flame::start("process_track");
+        // flame::start("process_track");
 
         // Match the tracks that contain ellington data
         match track.ellington_data() {
@@ -151,17 +152,18 @@ fn process_library(filename: &str) -> () {
             }
         }
 
-        flame::end("process_track");
+        // flame::end("process_track");
     }
 }
 
-#[flame]
+// #[flame]
 fn dispatch(matches: ArgMatches) -> () {
     // first hope that we have an iTunes library file
     match matches.value_of("library") {
         Some(library_file) => {
             println!("Processing from library: {:?}", library_file);
-            process_library(library_file);
+            let library = Library::from_itunes_xml(library_file).unwrap();
+            process_library(library);
             return;
         }
         None => {} // some other arg must match
@@ -171,6 +173,8 @@ fn dispatch(matches: ArgMatches) -> () {
     match matches.value_of("directory") {
         Some(directory) => {
             // process a library from a directory.
+            let _library = Library::from_directory_rec(&PathBuf::from(directory));
+            
             return;
         }
         None => {} // some other arg must match
@@ -192,8 +196,8 @@ fn main() {
 
     // let library_file = matches.value_of("library").unwrap();
 
-    let profile = Profile::from_spans(flame::spans());
-    profile.print();
+    // let profile = Profile::from_spans(flame::spans());
+    // profile.print();
 
-    flame::dump_html(&mut File::create("flame-graph.html").unwrap()).unwrap();
+    // flame::dump_html(&mut File::create("flame-graph.html").unwrap()).unwrap();
 }

@@ -48,7 +48,7 @@ impl Track for Alac {
         self.0.comments.clone()
     }
 
-    #[flame]
+    // #[flame]
     fn ellington_data(self: &Alac) -> Option<Vec<EllingtonData>> {
         // and the same for ellington data
         match &self.0.comments {
@@ -66,7 +66,7 @@ impl Track for Alac {
         }
     }
 
-    #[flame]
+    // #[flame]
     fn from_file_impl(path: &PathBuf) -> Option<Box<Track + 'static>> {
         let location = path.canonicalize().ok()?;
         let tag = Tag::read_from_path(path).ok()?;
@@ -89,7 +89,7 @@ impl Track for Alac {
         })))
     }
 
-    #[flame]
+    // #[flame]
 fn write_data(self: &Self, new_data: EllingtonData) -> Option<()> {
         // get a reference to the tag
 

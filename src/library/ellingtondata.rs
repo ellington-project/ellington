@@ -13,7 +13,7 @@ pub struct EllingtonData {
 }
 
 impl EllingtonData {
-    #[flame]
+    // #[flame]
     pub fn parse_data(comment: &String) -> Option<EllingtonData> {
         lazy_static! {
             static ref RE: Regex = Regex::new(r"\[ed#(.*)#de\]").unwrap();
@@ -26,7 +26,7 @@ impl EllingtonData {
         serde_json::from_str(&json_string).ok()
     }
 
-    #[flame]
+    // #[flame]
     pub fn update_data(self: &Self, comment: &String) -> Option<String> {
         lazy_static! {
             static ref RE: Regex = Regex::new(r"\[ed#.*#de\]").unwrap();

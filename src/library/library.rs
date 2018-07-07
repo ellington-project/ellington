@@ -3,6 +3,7 @@ use percent_encoding;
 use std::fs::File;
 use std::path::PathBuf;
 use url::Url;
+use walkdir::WalkDir;
 
 use plist::Plist;
 
@@ -15,7 +16,7 @@ impl Library {
     /*
         Read a library from an itunes xml/plist file
      */
-    #[flame]
+    // #[flame]
     pub fn from_itunes_xml(filename: &str) -> Option<Library> {
         let file = File::open(filename).ok()?;
 
@@ -72,7 +73,7 @@ impl Library {
         Read a library as a list of audio files, with one
         audio file path per line
      */
-    #[flame]
+    // #[flame]
     #[allow(dead_code)]
     pub fn from_stdin() -> Option<Library> {
         unimplemented!()
@@ -82,10 +83,13 @@ impl Library {
         Read a library from a directory, recursively exploring the 
         file hierarchy, and finding audio files.
      */
-    #[flame]
+    // #[flame]
     #[allow(dead_code, unused_variables)]
     pub fn from_directory_rec(path: &PathBuf) -> Option<Library> {
-        unimplemented!()
+        for entry in WalkDir::new("foo").into_iter().filter_map(|e| e.ok()) {
+            println!("{}", entry.path().display());
+        }
+        None
     }
 
     /*

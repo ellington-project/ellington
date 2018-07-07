@@ -38,7 +38,7 @@ impl BpmTools {
      * We currently have the fairly major (imho) limitation that the entire
      * vector of amples must be read into memory before we can process it.
      */
-    #[flame]
+    // #[flame]
     pub fn analyse<T>(self: &mut BpmTools, samples: T) -> f32
     where
         T: Iterator<Item = f32>,
@@ -73,7 +73,7 @@ impl BpmTools {
      * Scan a range of BPM values for the one with the
      * minimum autodifference
      */
-    #[flame]
+    // #[flame]
     fn scan_for_bpm(self: &mut BpmTools, nrg: &Vec<f32>) -> f32 {
         let slowest = self.bpm_to_interval(self.lower);
         let fastest = self.bpm_to_interval(self.upper);
