@@ -29,6 +29,14 @@ Audio discovery is currently only possible using a valid iTunes xml library. Ell
 
 In future, Ellington will support other media discovery methodologies. 
 
+## Test data
+
+Ellington includes a number of test files in its repository. These files can be found in `$ellington/data`. The files fall (roughly) into one of two categories: 
+  - Audio test data, for testing decoding and tagging.
+  - Library test data, for testing library enumeration. 
+
+Audio data can be found in `data/flac` and `data/mp3` for flac and mp3 test data, respectively. All audio data is open source, royalty free, and sourced from archive.org. See my [archive.org favourites](https://archive.org/details/fav-harries_adam) for more good royalty free audio files. 
+
 ## Feature Targets
 
 **0.1.0-alpha** (current master): 
