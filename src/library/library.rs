@@ -86,10 +86,20 @@ impl Library {
     // #[flame]
     #[allow(dead_code, unused_variables)]
     pub fn from_directory_rec(path: &PathBuf) -> Option<Library> {
-        for entry in WalkDir::new("foo").into_iter().filter_map(|e| e.ok()) {
-            println!("{}", entry.path().display());
+        let tracks: Vec<Box<Track>> = WalkDir::new(path).into_iter().filter_map(|e| e.ok()).filter_map(|f| {
+            println!("{}", f.path().display());
+            Track::from_file(&f.path().to_path_buf())
+        }).collect();
+
+        match tracks.len() { 
+            0 => {
+                println!("No tracks found in directory!");
+                None
+            } ,
+            _ => {
+                Some(Library {tracks : tracks})
+            }
         }
-        None
     }
 
     /*

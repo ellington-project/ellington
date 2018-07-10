@@ -158,34 +158,28 @@ fn process_library(library: Library) -> () {
 
 // #[flame]
 fn dispatch(matches: ArgMatches) -> () {
-    // first hope that we have an iTunes library file
-    match matches.value_of("library") {
-        Some(library_file) => {
+
+    let library = match (matches.value_of("library"), matches.value_of("directory"), matches.is_present("stream")) { 
+        (Some(library_file), _, _ ) => {
             println!("Processing from library: {:?}", library_file);
-            let library = Library::from_itunes_xml(library_file).unwrap();
-            process_library(library);
-            return;
+            Library::from_itunes_xml(library_file)
         }
-        None => {} // some other arg must match
-    }
+        (_, Some(directory), _ ) => {
+            println!("Reading from directory: {}", directory);
+            Library::from_directory_rec(&PathBuf::from(directory))
+        }
+        (_, _, true) => {
+            println!("Reading track file names from stdin.");
+            None
+        }
+        _ => {
+            println!("Should not reach here!"); 
+            None
+        }
+    };
 
-    // otherwise, we may have been given a directory to process
-    match matches.value_of("directory") {
-        Some(directory) => {
-            // process a library from a directory.
-            let _library = Library::from_directory_rec(&PathBuf::from(directory));
-            
-            return;
-        }
-        None => {} // some other arg must match
-    }
-
-    match matches.is_present("stream") {
-        true => {
-            //do stuff from stdin
-        }
-        false => {}
-    }
+    println!("Got library: {:?}", library);
+    // process_library(library.unwrap());
 }
 
 fn main() {

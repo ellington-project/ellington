@@ -37,6 +37,8 @@ Ellington includes a number of test files in its repository. These files can be 
 
 Audio data can be found in `data/flac` and `data/mp3` for flac and mp3 test data, respectively. All audio data is open source, royalty free, and sourced from archive.org. See my [archive.org favourites](https://archive.org/details/fav-harries_adam) for more good royalty free audio files. 
 
+Test data is managed using *git lfs*. This may require extra effort to download 
+
 ## Feature Targets
 
 **0.1.0-alpha** (current master): 
