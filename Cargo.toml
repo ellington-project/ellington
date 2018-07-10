@@ -23,3 +23,8 @@ lazy_static = "1.0.1"
 taglib = "0.2.0"
 walkdir = "2"
 taglib-rs = { git = "https://github.com/AdamHarries/taglib-rs.git" }
+log = "0.4"
+env_logger  = "0.5.1"
+slog = "2.2.3"
+slog-term = "2.4.0"
+slog-scope = "4.0.1"

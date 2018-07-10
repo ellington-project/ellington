@@ -87,16 +87,16 @@ impl Library {
     #[allow(dead_code, unused_variables)]
     pub fn from_directory_rec(path: &PathBuf) -> Option<Library> {
         let tracks: Vec<Box<Track>> = WalkDir::new(path).into_iter().filter_map(|e| e.ok()).filter_map(|f| {
-            println!("{}", f.path().display());
             Track::from_file(&f.path().to_path_buf())
         }).collect();
 
         match tracks.len() { 
             0 => {
-                println!("No tracks found in directory!");
+                info!("No tracks found in directory!");
                 None
             } ,
-            _ => {
+            a => {
+                info!("Found {:?} tracks", a);
                 Some(Library {tracks : tracks})
             }
         }

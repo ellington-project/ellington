@@ -69,7 +69,9 @@ impl Track for Mp3 {
     // #[flame]
     fn from_file_impl(path: &PathBuf) -> Option<Box<Track + 'static>> {
         let location = path.canonicalize().ok()?;
+        info!("Reading mp3 from location {:?}", location);
         let tag = Tag::read_from_path(path).ok()?;
+        info!("Reading tag: {:?}", tag);
         let name = tag.title()?;
         let bpm = tag.get("TBPM").and_then(|f| f.content().text()).and_then(|s| s.parse::<i64>().ok());
 
@@ -115,9 +117,9 @@ impl Track for Mp3 {
 
                     let out = String::from_utf8_lossy(&res.stdout).replace("\n", "");
                     let err = String::from_utf8_lossy(&res.stderr).replace("\n", "");
-                    println!("Call result: {} / {}", out, err);
+                    info!("Call result: {} / {}", out, err);
                 }
-                None => println!("No ellington data found in comment!"),
+                None => info!("No ellington data found in comment!"),
             };
         }
         Some(())
