@@ -2,20 +2,27 @@ use std::path::PathBuf;
 use std::process::Command;
 
 fn main() {
+    println!("cargo:rustc-link-lib=static=tag_c");
+    println!("cargo:rustc-flags=-l dylib=stdc++");
+    println!("cargo:rustc-flags=-l dylib=z");
+    // println!("cargo:rustc-flags=-l tag_c -l tag");
+
+    println!("cargo:rustc-link-lib=c++");
+
     // Download some data for our tests.
-    let testdata_url =
-        "https://archive.org/download/78_little-brown-jug_glenn-miller-and-his-orchestra-glenn-miller_gbia0015205a/Little%20Brown%20Jug%20-%20Glenn%20Miller%20and%20his%20Orchestra.mp3";
+    // let testdata_url =
+    //     "https://archive.org/download/78_little-brown-jug_glenn-miller-and-his-orchestra-glenn-miller_gbia0015205a/Little%20Brown%20Jug%20-%20Glenn%20Miller%20and%20his%20Orchestra.mp3";
 
-    let mut testdata_folder = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
-    testdata_folder.push("data");
+    // let mut testdata_folder = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
+    // testdata_folder.push("data");
 
-    let mut testdata_mp3 = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
-    testdata_mp3.push("data/test.mp3");
+    // let mut testdata_mp3 = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
+    // testdata_mp3.push("data/test.mp3");
 
-    let mut testdata_raw = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
-    testdata_raw.push("data/test.raw");
+    // let mut testdata_raw = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
+    // testdata_raw.push("data/test.raw");
 
-    if !testdata_raw.as_path().exists() {
+    // if !testdata_raw.as_path().exists() {
         // make a folder for our testdata
         // let output = Command::new("mkdir")
         //     .arg("-p")
@@ -52,5 +59,5 @@ fn main() {
         //     .expect("Failed to run sox command successfully");
 
         // assert!(output.status.success());
-    }
+    // }
 }
