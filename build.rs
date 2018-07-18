@@ -6,10 +6,24 @@ use std::path::PathBuf;
 use std::process::Command;
 use std::env; 
 
-fn main() {
+#[cfg(target_os = "linux")]
+fn print_linker_arguments() {
+    println!("Printing linker arguments for Linux");
     println!("cargo:rustc-link-lib=static=tag_c");
     println!("cargo:rustc-link-lib=static=stdc++");
     println!("cargo:rustc-link-lib=static=z");
+}
+
+#[cfg(target_os = "macos")]
+fn print_linker_arguments() {
+    println!("Printing linker arguments for OSX");
+    println!("cargo:rustc-link-lib=static=tag_c");
+    println!("cargo:rustc-link-lib=static=stdc++");
+    println!("cargo:rustc-link-lib=static=z");
+}
+
+fn main() {
+    print_linker_arguments();
 
     let flac_urls = vec![
         "https://archive.org/download/78_countless-blues_the-kansas-city-six-eddie-druham-freddie-green-walter-paige-joe-jon_gbia0004728a/Countless%20Blues%20-%20The%20Kansas%20City%20Six%20-%20Eddie%20Druham.flac",
