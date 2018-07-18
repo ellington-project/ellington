@@ -34,6 +34,8 @@ extern crate regex;
 #[macro_use]
 extern crate lazy_static;
 
+extern crate taglib;
+
 mod analysers;
 mod input;
 mod library;
