@@ -7,6 +7,10 @@ use std::process::Command;
 use std::env; 
 
 fn main() {
+    println!("cargo:rustc-link-lib=static=tag_c");
+    println!("cargo:rustc-link-lib=static=stdc++");
+    println!("cargo:rustc-link-lib=static=z");
+
     let flac_urls = vec![
         "https://archive.org/download/78_countless-blues_the-kansas-city-six-eddie-druham-freddie-green-walter-paige-joe-jon_gbia0004728a/Countless%20Blues%20-%20The%20Kansas%20City%20Six%20-%20Eddie%20Druham.flac",
         "https://archive.org/download/78_crazy-rhythm_coleman-hawkins-and-his-all-star-jam-band-coleman-hawkins-alix-combe_gbia0004564b/Crazy%20Rhythm%20-%20Coleman%20Hawkins%20and%20his%20All-Star%20%22Jam%22%20Band.flac",
@@ -53,12 +57,7 @@ fn main() {
         }
     };
 
-    println!("cargo:rustc-link-lib=static=tag_c");
-    println!("cargo:rustc-flags=-l dylib=stdc++");
-    println!("cargo:rustc-flags=-l dylib=z");
-    // println!("cargo:rustc-flags=-l tag_c -l tag");
-
-    println!("cargo:rustc-link-lib=c++");
+    
 
     // Download some data for our tests.
     // let testdata_url =
