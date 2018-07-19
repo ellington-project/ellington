@@ -34,3 +34,4 @@ commandspec = "0.10"
 [features]
 # This will download lots of data! 
 data_driven_tests = []
+extended_tests = []

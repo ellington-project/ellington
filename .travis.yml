@@ -3,15 +3,12 @@ rust:
   - stable
   - beta
   - nightly 
+script:
+  - cargo test --verbose --features data-dependent-tests
 matrix: 
   allow_failures:
     - rust: nightly
   fast_finish: true
-before_install:
-  - sudo apt-get update
-  - sudo apt-get install libz-dev
-# cache: cargo
-# script: 
-#   - cargo test -vv --all
-# env:
-#   - RUST_LOG=info
+cache: 
+  directories: 
+    - data
