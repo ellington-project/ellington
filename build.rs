@@ -17,9 +17,10 @@ fn print_linker_arguments() {
 #[cfg(target_os = "macos")]
 fn print_linker_arguments() {
     println!("Printing linker arguments for OSX");
-    println!("cargo:rustc-link-lib=static=tag_c");
-    println!("cargo:rustc-link-lib=static=stdc++");
-    println!("cargo:rustc-link-lib=static=z");
+    println!("cargo:rustc-flags=-l dylib=z");
+    println!("cargo:rustc-flags=-l tag_c -l tag");
+    println!("cargo:rustc-link-lib=c++");
+
 }
 
 fn main() {
