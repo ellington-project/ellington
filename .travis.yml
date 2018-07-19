@@ -8,7 +8,7 @@ matrix:
     - rust: nightly
   fast_finish: true
 cache: cargo
-script: 
-  - cargo test -vv --all
-env:
-  - RUST_LOG=info
+# script: 
+#   - cargo test -vv --all
+# env:
+#   - RUST_LOG=info
