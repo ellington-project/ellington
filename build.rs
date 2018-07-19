@@ -20,7 +20,6 @@ fn print_linker_arguments() {
     println!("cargo:rustc-flags=-l dylib=z");
     println!("cargo:rustc-flags=-l tag_c -l tag");
     println!("cargo:rustc-link-lib=c++");
-
 }
 
 fn main() {
