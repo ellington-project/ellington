@@ -1,4 +1,4 @@
-#![feature(plugin, custom_attribute)]
+// #![feature(plugin, custom_attribute)]
 // #![plugin(flamer)]
 
 extern crate byteorder;
