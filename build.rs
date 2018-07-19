@@ -10,8 +10,9 @@ use std::env;
 fn print_linker_arguments() {
     println!("Printing linker arguments for Linux");
     // println!("cargo:rustc-link-lib=static=z");
-    println!("cargo:rustc-link-lib=static=tag_c");
+    // println!("cargo:rustc-link-lib=static=tag_c");
     println!("cargo:rustc-link-lib=static=stdc++");
+    println!("cargo:rustc-flags=-l tag_c -l tag -l z");
 }
 
 #[cfg(target_os = "macos")]
@@ -70,10 +71,16 @@ fn main() {
             println!("Did not detect data driven tests.");
         }
     };
+}
 
-    
-
-    // Download some data for our tests.
+fn download(url: &String, path: &PathBuf) -> () { 
+    println!("Downloading: {}", url );
+    execute!(
+        "echo \"Hello from {url} world to {path}\"", 
+        url = url.clone(), 
+        path = path.to_str(),
+    );
+     // Download some data for our tests.
     // let testdata_url =
     //     "https://archive.org/download/78_little-brown-jug_glenn-miller-and-his-orchestra-glenn-miller_gbia0015205a/Little%20Brown%20Jug%20-%20Glenn%20Miller%20and%20his%20Orchestra.mp3";
 
@@ -124,13 +131,4 @@ fn main() {
 
         // assert!(output.status.success());
     // }
-}
-
-fn download(url: &String, path: &PathBuf) -> () { 
-    println!("Downloading: {}", url );
-    execute!(
-        "echo \"Hello from {url} world to {path}\"", 
-        url = url.clone(), 
-        path = path.to_str(),
-    );
 }
