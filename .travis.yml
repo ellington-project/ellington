@@ -7,7 +7,7 @@ matrix:
   allow_failures:
     - rust: nightly
   fast_finish: true
-cache: cargo
+# cache: cargo
 # script: 
 #   - cargo test -vv --all
 # env:
