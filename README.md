@@ -1,4 +1,4 @@
-# Ellington
+# Ellington [![Build Status](https://travis-ci.org/AdamHarries/ellington.svg?branch=master)](https://travis-ci.org/AdamHarries/ellington)
 
 Ellington is an experimental project to automate the calculation of beats-per-minute (BPM) information for swing jazz music, such as the works of Duke Ellington - the project's namesake. BPM information for swing jazz music is notoriously hard to calculate automatically, as the two-beat groove and subtle rhythms mean that standard algorithms (which are often optimised for four-on-the-floor feel music) report inaccurate times. As such, this project has two main goals: 
 
