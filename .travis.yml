@@ -9,7 +9,6 @@ matrix:
   fast_finish: true
 cache: cargo
 script: 
-  - cargo build -vv --all
   - cargo test -vv --all
 env:
   - RUST_LOG=info
