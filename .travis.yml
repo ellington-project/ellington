@@ -4,7 +4,7 @@ rust:
   - beta
   - nightly 
 script:
-  - cargo test --verbose --features data_driven_tests
+  - cargo test -vv --features data_driven_tests
 matrix: 
   allow_failures:
     - rust: nightly
