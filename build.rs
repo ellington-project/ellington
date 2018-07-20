@@ -52,13 +52,15 @@ fn main() {
         "https://archive.org/download/78_milenberg-joys_the-6-alarm-six-rappolo-jellyroll-morton-mares_gbia0001104a/Milenberg%20Joys%20-%20The%206-Alarm%20Six%20-%20Rappolo.mp3"
     ];
     // Query the CFG option to see if we want to do data-based tests. 
-    let data_driven_tests = env::var("CARGO_FEATURE_DATA_DRIVEN_TESTS");
-    match data_driven_tests  {
+    match env::var("CARGO_FEATURE_DATA_DRIVEN_TESTS")  {
         // if it's set
         Ok(_) => { 
             // Create a folder to store test data
             let mut testdata_folder = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
             testdata_folder.push("data");
+            if testdata_folder.exists() {
+                println!("Data already exists! Skipping download...");
+            }else{ 
             println!("Downloading to folder: {}", testdata_folder.to_str().unwrap());
             // Download data for our tests. 
 
@@ -72,6 +74,7 @@ fn main() {
             flac_folder.push("flac");            
             for url in flac_urls { 
                 download(&url.to_string(), &flac_folder);
+            }
             }
         }, 
         // else
