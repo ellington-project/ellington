@@ -1,0 +1,14 @@
+language: rust
+rust: 
+  - stable
+  - beta
+  - nightly 
+script:
+  - cargo test -vv --features data_driven_tests
+matrix: 
+  allow_failures:
+    - rust: nightly
+  fast_finish: true
+cache: 
+  directories: 
+    - data
