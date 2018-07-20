@@ -35,26 +35,28 @@ extern crate lazy_static;
 
 extern crate taglib;
 
-mod analysers;
-mod input;
-mod library;
-mod profiling;
-mod shelltools;
+extern crate libellington as le;
+
+// mod analysers;
+// mod le::input;
+// mod library;
+// mod profiling;
+// mod shelltools;
 
 use clap::ArgMatches;
 // use profiling::Profile;
 
-use library::ellingtondata::BpmInfo;
-use library::ellingtondata::EllingtonData;
+use le::library::ellingtondata::BpmInfo;
+use le::library::ellingtondata::EllingtonData;
 // use input::audiobuffer::AudioBuffer;
-use input::audiostream::AudioStream;
+use le::input::audiostream::AudioStream;
 
-use analysers::bpmtools::BpmTools;
+use le::analysers::bpmtools::BpmTools;
 
-use shelltools::sox::*;
-use shelltools::ffmpeg::*;
+use le::shelltools::sox::*;
+use le::shelltools::ffmpeg::*;
 
-use library::library::Library;
+use le::library::library::Library;
 
 use histogram::Histogram;
 
