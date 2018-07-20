@@ -1,0 +1,6 @@
+[package]
+name = "libellington"
+version = "0.1.0"
+authors = ["Adam Harries <harries.adam@gmail.com>"]
+
+[dependencies]
