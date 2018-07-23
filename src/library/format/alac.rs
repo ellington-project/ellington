@@ -71,7 +71,10 @@ impl Track for Alac {
         let location = path.canonicalize().ok()?;
         let tag = Tag::read_from_path(path).ok()?;
         let name = tag.title()?;
-        let bpm = tag.get("TBPM").and_then(|f| f.content().text()).and_then(|s| s.parse::<i64>().ok());
+        let bpm = tag
+            .get("TBPM")
+            .and_then(|f| f.content().text())
+            .and_then(|s| s.parse::<i64>().ok());
 
         // get the list of comments
         let comment_v: Vec<String> = tag.comments().map(|c: &Comment| c.text.clone()).collect();
@@ -90,7 +93,7 @@ impl Track for Alac {
     }
 
     // #[flame]
-fn write_data(self: &Self, new_data: EllingtonData) -> Option<()> {
+    fn write_data(self: &Self, new_data: EllingtonData) -> Option<()> {
         // get a reference to the tag
 
         let tag = Tag::read_from_path(&self.0.location).ok()?;

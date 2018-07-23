@@ -44,7 +44,7 @@ impl Track for UnknownFile {
         None
     }
 
-    fn ellington_data(self: &UnknownFile) -> Option<Vec<EllingtonData>> { 
+    fn ellington_data(self: &UnknownFile) -> Option<Vec<EllingtonData>> {
         None
     }
 
@@ -54,7 +54,7 @@ impl Track for UnknownFile {
             error: "Cannot handle files of this type!",
         }))
     }
-    fn write_data(self: &Self, _new_data: EllingtonData) -> Option<()>{
+    fn write_data(self: &Self, _new_data: EllingtonData) -> Option<()> {
         println!("Cannot yet write data for this kind of file!");
         None
     }

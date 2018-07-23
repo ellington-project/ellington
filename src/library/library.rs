@@ -1,13 +1,14 @@
-use std::path::Path;
 use library::track::Track;
 use percent_encoding;
+use plist::Plist;
+use std::collections::BTreeSet;
 use std::fs::File;
+use std::io::{self, BufRead};
+use std::path::Path;
 use std::path::PathBuf;
 use url::Url;
-use walkdir::WalkDir;
 use walkdir::DirEntry;
-
-use plist::Plist;
+use walkdir::WalkDir;
 
 #[derive(Debug)]
 pub struct Library {
@@ -42,29 +43,6 @@ impl Library {
                 // are any discrepancies.
                 // TODO: Control this with a flag?
                 Track::from_file(&location)
-
-                // build a track with information extracted from the dict
-                // bail out (and return None) if we fail to get any of:
-                // - track id
-                // - name
-                // - location
-                // fill the BPM with "none" if no bpm found
-                // let bpm = trackinfo.get("BPM").and_then(|b| b.as_integer());
-                // let comment : Option<String> = trackinfo
-                //     .get("Comments")
-                //     .and_then(|c| c.as_string())
-                //     .and_then(|s| Some(s.to_string()));
-                // let name = trackinfo.get("Name")?.as_string()?.to_string();
-                // let audioformat = AudioFormat::from_path(&location);
-                // let ellingtondata = comment.clone().and_then(|s| EllingtonData::parse_data(&s));
-                // Some(Box::new(Track {
-                //     bpm: bpm,
-                //     comment: comment,
-                //     name: name,
-                //     location: location,
-                //     audioformat: audioformat,
-                //     metadata: ellingtondata
-                // }))
             })
             .collect();
 
@@ -78,7 +56,26 @@ impl Library {
     // #[flame]
     #[allow(dead_code)]
     pub fn from_stdin() -> Option<Library> {
-        unimplemented!()
+        // each line in stdin is assumed to be a path to a track name
+        let stdin = io::stdin();
+        let mut lines = 0;
+        let tracks: Vec<Box<Track>> = stdin
+            .lock()
+            .lines()
+            .map(|l| {
+                info!("Got line: {:?}", l);
+                lines += 1;
+                l
+            })
+            .filter_map(|l| l.ok())
+            .filter_map(|line| Track::from_file(&PathBuf::from(line)))
+            .collect();
+        info!(
+            "Successfully read {} tracks from stdin, out of {} lines",
+            tracks.len(),
+            lines
+        );
+        Some(Library { tracks: tracks })
     }
 
     /*
@@ -88,56 +85,54 @@ impl Library {
     // #[flame]
     #[allow(dead_code, unused_variables)]
     pub fn from_directory_rec(path: &PathBuf) -> Option<Library> {
-        let mut files = 0;
-        let mut directories = 0;
-        let mut total_tracks = 0; 
-        let mut failed_tracks = 0;
-        let tracks : Vec<Option<PathBuf>> = WalkDir::new(path).contents_first(true).into_iter()
+        let mut entries = 0;
+        let mut io_errors = 0;
+        let mut io_successes = 0;
+        let mut bad_files: BTreeSet<PathBuf> = BTreeSet::new();
+        let mut audio_files = 0;
+        let tracks: Vec<Box<Track>> = WalkDir::new(path)
+            .max_open(1)
+            .contents_first(true)
+            .into_iter()
+            .map(|e| {
+                info!("Got entry: {:?}", e);
+                match e {
+                    Ok(ref e) => {
+                        bad_files.remove(&e.path().to_path_buf());
+                        io_successes += 1
+                    }
+                    Err(ref e) => {
+                        bad_files.insert(e.path().unwrap().to_path_buf());
+                        io_errors += 1;
+                    }
+                }
+                entries += 1;
+                e
+            })
             .filter_map(|e| e.ok())
             .filter_map(|e| Self::is_audio_file(e))
             .map(|f| {
-                info!("Reading from path {:?}", f.path());
-                match f.file_type().is_dir() { 
-                    true => {
-                        directories += 1;
-                        None
-                    }, 
-                    false => {
-                        files += 1;
-                        Some(f.path().to_path_buf())
-                    }
-                }
-            }).collect();
-        // let tracks: Vec<Box<Track>> = WalkDir::new(path).contents_first(true)
-        //     .into_iter()
-        
-        //     .filter_map(|e| e.ok())
-        //     .filter_map(|f| {
-        //         info!("Reading track from path: ${:#?}", f);
-        //         total_tracks += 1; 
-        //         match Track::from_file(&f.path().to_path_buf()) {
-        //             None => {
-        //                 error!("Could not read tag from ${:#?}", f);
-        //                 failed_tracks += 1;
-        //                 None
-        //             }, 
-        //             t => t
-        //         }
-        //     })
-        //     .collect();
+                info!("Got audio file: {:?}", f);
+                audio_files += 1;
+                f
+            })
+            .filter_map(|f| Track::from_file(&f.path().to_path_buf()))
+            .collect();
 
-        error!("Failed to read {:?} tracks out of {:?}, with {:?} files, {:?} directories", failed_tracks, total_tracks, files, directories);
-        None
-        // match tracks.len() {
-        //     0 => {
-        //         info!("No tracks found in directory!");
-        //         None
-        //     }
-        //     a => {
-        //         info!("Found {:?} tracks", a);
-        //         Some(Library { tracks: tracks })
-        //     }
-        // }
+        info!(
+            "Got {} IO errors from too many open files, and {} successfully opened files, with permanently failed paths: \n{:#?}",
+            io_errors, io_successes, bad_files
+        );
+
+        info!(
+            "Successfully read {} tracks from directory {:?}, with {} entries, and {} audio files",
+            tracks.len(),
+            path,
+            entries,
+            audio_files
+        );
+
+        Some(Library { tracks: tracks })
     }
 
     /*
@@ -157,22 +152,20 @@ impl Library {
     }
 
     fn is_audio_file(de: DirEntry) -> Option<DirEntry> {
-        if de.file_type().is_dir() { 
+        if de.file_type().is_dir() {
             None
-        }else{
+        } else {
             let d = de.clone();
-            de.path().extension().and_then(|ext| 
-                match ext.to_str() { 
-                    Some("flac") => Some(d),
-                    Some("m4a") => Some(d),
-                    Some("m4p") => Some(d),
-                    Some("mp3") => Some(d),
-                    Some("mp4") => Some(d),
-                    Some("wav") => Some(d),
-                    Some("alac") => Some(d), 
-                    _ => None
-                }
-            )
+            de.path().extension().and_then(|ext| match ext.to_str() {
+                Some("flac") => Some(d),
+                Some("m4a") => Some(d),
+                Some("m4p") => Some(d),
+                Some("mp3") => Some(d),
+                Some("mp4") => Some(d),
+                Some("wav") => Some(d),
+                Some("alac") => Some(d),
+                _ => None,
+            })
         }
     }
 }

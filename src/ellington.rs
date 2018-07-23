@@ -2,7 +2,6 @@
     ellington - the ellington tool for processing and bpming audio libraries
 */
 
-
 use std::path::PathBuf;
 
 #[macro_use]
@@ -25,9 +24,8 @@ extern crate libellington as le;
 // use le::analysers::bpmtools::BpmTools;
 // use le::shelltools::sox::*;
 // use le::shelltools::ffmpeg::*;
-use le::library::library::Library;
 use le::actions::*;
-
+use le::library::library::Library;
 
 // #[flame]
 // fn process_library(library: Library) -> () {
@@ -54,7 +52,7 @@ use le::actions::*;
 //                         None => None,
 //                     }.unwrap();
 
-//                     let calculated_bpm = 
+//                     let calculated_bpm =
 //                         BpmTools::default().analyse(sox_stream);
 
 //                     calculated_bpm
@@ -73,7 +71,7 @@ use le::actions::*;
 //                         None => None,
 //                     }.unwrap();
 
-//                     let calculated_bpm = 
+//                     let calculated_bpm =
 //                         BpmTools::default().analyse(sox_stream);
 
 //                     calculated_bpm
@@ -83,21 +81,21 @@ use le::actions::*;
 
 //                 info!("Calculated sox bpm: {}", cbpm);
 
-//                 // build some ellington data 
-//                 // let new_data = EllingtonData { 
+//                 // build some ellington data
+//                 // let new_data = EllingtonData {
 //                 //     algs: Some (
 //                 //         vec![BpmInfo{
-//                 //             bpm: cbpm as i64, 
+//                 //             bpm: cbpm as i64,
 //                 //             alg: "naive".to_string()
 //                 //         }]
 //                 //     )
 //                 // };
 
 //                 // match track.write_data(new_data) {
-//                 //     Some(_) => info!("Successfully written data."), 
+//                 //     Some(_) => info!("Successfully written data."),
 //                 //     None => info!("Failed to write id3 data for some reason.")
 //                 // }
-                
+
 //                 info!("===== ===== ===== ===== =====\n");
 //             }
 //             _ => {
@@ -111,19 +109,22 @@ use le::actions::*;
 
 // #[flame]
 fn initalise_library(matches: &ArgMatches) -> () {
-
-    let library = match (matches.value_of("library"), matches.value_of("directory"), matches.is_present("stream")) { 
-        (Some(library_file), _, _ ) => {
+    let library = match (
+        matches.value_of("library"),
+        matches.value_of("directory"),
+        matches.is_present("stream"),
+    ) {
+        (Some(library_file), _, _) => {
             info!("Processing from library: {:?}", library_file);
             Library::from_itunes_xml(library_file)
         }
-        (_, Some(directory), _ ) => {
+        (_, Some(directory), _) => {
             info!("Reading from directory: {}", directory);
             Library::from_directory_rec(&PathBuf::from(directory))
         }
         _ => {
-            info!("Reading tracks from stdin"); 
-            None
+            info!("Reading tracks from stdin");
+            Library::from_stdin()
         }
     };
 
@@ -142,12 +143,9 @@ fn main() {
 
     info!("Application started");
 
-    match subcommands { 
-        ("init", Some(sub)) => initalise_library(sub), 
-        ("bpm", Some(sub)) => error!("BPM command not yet implemented!"), 
-        _ => error!("No subcommand given!")
+    match subcommands {
+        ("init", Some(sub)) => initalise_library(sub),
+        ("bpm", Some(sub)) => error!("BPM command not yet implemented!"),
+        _ => error!("No subcommand given!"),
     }
-
-
-
 }

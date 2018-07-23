@@ -28,14 +28,14 @@ extern crate lazy_static;
 
 extern crate taglib;
 
-pub mod analysers;
-pub mod input; 
-pub mod library; 
-pub mod shelltools;
 pub mod actions;
+pub mod analysers;
+pub mod input;
+pub mod library;
+pub mod shelltools;
 
-pub fn trueish() -> bool{ 
-    true 
+pub fn trueish() -> bool {
+    true
 }
 
 #[cfg(test)]

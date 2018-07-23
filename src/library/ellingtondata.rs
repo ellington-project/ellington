@@ -34,11 +34,11 @@ impl EllingtonData {
 
         // replace all the ":" characters in the JSON string with "#", as id3tags do not support colons in comment data.
         let serialised = serde_json::to_string(self).unwrap().replace(":", "#");
-    
+
         // let captures = RE.captures(comment.as_str())?;
 
         // let ellington_data = captures.get(0)?.as_str();
-    
+
         let new_data = format!("[ed#{}#de]", serialised);
 
         let result = RE.replace(comment.as_str(), new_data.as_str());

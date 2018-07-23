@@ -22,7 +22,7 @@ pub trait Track: fmt::Display + Debug {
     fn bpm(self: &Self) -> Option<i64>;
     fn comments(self: &Self) -> Option<Vec<String>>;
     fn ellington_data(self: &Self) -> Option<Vec<EllingtonData>>;
-    fn write_data(self: &Self, new_data: EllingtonData) -> Option<()>; 
+    fn write_data(self: &Self, new_data: EllingtonData) -> Option<()>;
     fn from_file_impl(path: &PathBuf) -> Option<Box<Track + 'static>>
     where
         Self: Sized;
@@ -41,17 +41,15 @@ impl Track {
     }
 }
 
-
 #[derive(Debug)]
 pub struct GenericTrack {
-    pub location: PathBuf, 
-    pub name: String, 
-    pub bpm: Option<i64>, 
-    pub comments: Option<Vec<String>>, 
+    pub location: PathBuf,
+    pub name: String,
+    pub bpm: Option<i64>,
+    pub comments: Option<Vec<String>>,
     // track dependent stuff.
-    filemetadata: TagLibFile
+    filemetadata: TagLibFile,
 }
-
 
 impl fmt::Display for GenericTrack {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
@@ -70,25 +68,20 @@ impl fmt::Display for GenericTrack {
     }
 }
 
-
 impl Track for GenericTrack {
     fn location(self: &GenericTrack) -> PathBuf {
         self.location.clone()
     }
-    fn name(self: &Self) -> Option<String>
-    {
+    fn name(self: &Self) -> Option<String> {
         Some(self.name.clone())
     }
-    fn bpm(self: &Self) -> Option<i64>
-    {
+    fn bpm(self: &Self) -> Option<i64> {
         self.bpm
     }
-    fn comments(self: &Self) -> Option<Vec<String>>
-    {
+    fn comments(self: &Self) -> Option<Vec<String>> {
         self.comments.clone()
     }
-    fn ellington_data(self: &Self) -> Option<Vec<EllingtonData>>
-    {
+    fn ellington_data(self: &Self) -> Option<Vec<EllingtonData>> {
         match &self.comments {
             Some(cs) => {
                 let ed: Vec<EllingtonData> = cs
@@ -103,10 +96,9 @@ impl Track for GenericTrack {
             None => None,
         }
     }
-    fn write_data(self: &Self, new_data: EllingtonData) -> Option<()>
-    {
+    fn write_data(self: &Self, new_data: EllingtonData) -> Option<()> {
         unimplemented!()
-    } 
+    }
     fn from_file_impl(path: &PathBuf) -> Option<Box<Track + 'static>> {
         let location = path.canonicalize().ok()?;
         info!("Reading tag from location {:?}", location);
@@ -120,7 +112,7 @@ impl Track for GenericTrack {
         info!("Got bpm: [{:?}]", bpm);
         let bpm = match bpm {
             Some(b) => Some(b as i64),
-            None => None
+            None => None,
         };
         let comment = tagf.tag().comment();
         info!("Got comment: [{:?}]", comment);
@@ -128,23 +120,22 @@ impl Track for GenericTrack {
             Ok(s) => Some(vec![s]),
             Err(e) => {
                 error!("Got error: {:?}, decoding the comment", e);
-                return None
+                return None;
             }
         };
 
         Some(Box::new(GenericTrack {
             location: location,
             name: name,
-            bpm: bpm, 
+            bpm: bpm,
             comments: comment,
-    // track dependent stuff.
-            filemetadata: tagf
+            // track dependent stuff.
+            filemetadata: tagf,
         }))
-
 
         // let tag = Tag::read_from_path(path);
         // // print out the tag result, as we can't put logging inside id3lib
-        // match &tag { 
+        // match &tag {
         //     Ok(t) => info!("Decoded tag for track: [{}]", t.title().unwrap_or("unknown")),
         //     Err(e) => error!("Got tag decoding error: {}", e)
         // };
@@ -167,6 +158,4 @@ impl Track for GenericTrack {
         //     comments: comments,
         // })))
     }
-
-
 }

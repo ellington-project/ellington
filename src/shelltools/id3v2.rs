@@ -1,15 +1,14 @@
-
 use super::generic::*;
 
 #[derive(Debug)]
 pub struct Id3Comment {
-    pub description: String, 
+    pub description: String,
     pub comment: String,
     pub lang: String,
 }
 
 impl Id3Comment {
-    fn as_arg(self: &Self) -> String { 
+    fn as_arg(self: &Self) -> String {
         format!("{}:{}:{}", self.description, self.comment, self.lang)
     }
 }

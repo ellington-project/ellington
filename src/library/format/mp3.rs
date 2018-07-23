@@ -72,14 +72,20 @@ impl Track for Mp3 {
         info!("Reading mp3 from location {:?}", location);
         let tag = Tag::read_from_path(path);
         // print out the tag result, as we can't put logging inside id3lib
-        match &tag { 
-            Ok(t) => info!("Decoded tag for track: [{}]", t.title().unwrap_or("unknown")),
-            Err(e) => error!("Got tag decoding error: {}", e)
+        match &tag {
+            Ok(t) => info!(
+                "Decoded tag for track: [{}]",
+                t.title().unwrap_or("unknown")
+            ),
+            Err(e) => error!("Got tag decoding error: {}", e),
         };
 
         let tag = tag.ok()?;
         let name = tag.title()?;
-        let bpm = tag.get("TBPM").and_then(|f| f.content().text()).and_then(|s| s.parse::<i64>().ok());
+        let bpm = tag
+            .get("TBPM")
+            .and_then(|f| f.content().text())
+            .and_then(|s| s.parse::<i64>().ok());
 
         // get the list of comments
         let comment_v: Vec<String> = tag.comments().map(|c: &Comment| c.text.clone()).collect();

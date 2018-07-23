@@ -29,17 +29,17 @@ impl ShellArg for Channels {
 #[derive(Debug)]
 #[allow(dead_code)]
 pub enum Format {
-    F32le
+    F32le,
 }
 
 impl ShellArg for Format {
-    fn flag() -> &'static str { 
+    fn flag() -> &'static str {
         "-f"
     }
 
-    fn value(self: &Format) -> &'static str { 
-        match self { 
-            Format::F32le => "f32le"
+    fn value(self: &Format) -> &'static str {
+        match self {
+            Format::F32le => "f32le",
         }
     }
 }
@@ -47,17 +47,17 @@ impl ShellArg for Format {
 #[derive(Debug)]
 #[allow(dead_code)]
 pub enum Codec {
-    PCM_F32le
+    PCM_F32le,
 }
 
 impl ShellArg for Codec {
-    fn flag() -> &'static str { 
+    fn flag() -> &'static str {
         "-acodec"
     }
 
-    fn value(self: &Codec) -> &'static str { 
+    fn value(self: &Codec) -> &'static str {
         match self {
-            Codec::PCM_F32le => "pcm_f32le"
+            Codec::PCM_F32le => "pcm_f32le",
         }
     }
 }
@@ -96,8 +96,8 @@ impl FfmpegCommand {
             filename: EscapedFilename::new(filename),
             samplerate: SampleRate::Ffo,
             channels: Channels::Mono,
-            codec: Codec::PCM_F32le, 
-            format: Format::F32le
+            codec: Codec::PCM_F32le,
+            format: Format::F32le,
         }
     }
 
@@ -124,11 +124,11 @@ impl ShellProgram for FfmpegCommand {
             // the first ffmpeg argument is the input filename
             "-i",
             self.filename.filename.as_str(),
-            // next, the format of the output, 
-            Format::flag(), 
+            // next, the format of the output,
+            Format::flag(),
             self.format.value(),
             // then the codec
-            Codec::flag(), 
+            Codec::flag(),
             self.codec.value(),
             // then the number of channels in the output
             Channels::flag(),
@@ -137,7 +137,7 @@ impl ShellProgram for FfmpegCommand {
             SampleRate::flag(),
             self.samplerate.value(),
             // finally, tell ffmpeg to write to stdout
-            "pipe:1"
+            "pipe:1",
         ].iter()
             .map(|s| s.to_string())
             .collect()

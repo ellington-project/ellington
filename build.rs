@@ -2,9 +2,9 @@
 extern crate commandspec;
 use commandspec::*; // .execute() method on Command
 
+use std::env;
 use std::path::PathBuf;
 use std::process::Command;
-use std::env; 
 
 #[cfg(target_os = "linux")]
 fn print_linker_arguments() {
@@ -50,41 +50,44 @@ fn main() {
         // "https://archive.org/download/78_when-the-saints-go-marching-in_pete-dailys-dixieland-band-pete-daily-warren-smith_gbia0001062b/When%20The%20Saints%20Go%20Marching%20In%20-%20Pete%20Daily%27s%20Dixieland%20Band.mp3",
         "https://archive.org/download/78_milenberg-joys_the-6-alarm-six-rappolo-jellyroll-morton-mares_gbia0001104a/Milenberg%20Joys%20-%20The%206-Alarm%20Six%20-%20Rappolo.mp3"
     ];
-    // Query the CFG option to see if we want to do data-based tests. 
-    match env::var("CARGO_FEATURE_DATA_DRIVEN_TESTS")  {
+    // Query the CFG option to see if we want to do data-based tests.
+    match env::var("CARGO_FEATURE_DATA_DRIVEN_TESTS") {
         // if it's set
-        Ok(_) => { 
+        Ok(_) => {
             // Create a folder to store test data
             let mut testdata_folder = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
             testdata_folder.push("data");
             if testdata_folder.exists() {
                 println!("Data already exists! Skipping download...");
-            }else{ 
-            println!("Downloading to folder: {}", testdata_folder.to_str().unwrap());
-            // Download data for our tests. 
+            } else {
+                println!(
+                    "Downloading to folder: {}",
+                    testdata_folder.to_str().unwrap()
+                );
+                // Download data for our tests.
 
-            let mut mp3_folder = testdata_folder.clone();
-            mp3_folder.push("mp3");            
-            for url in mp3_urls { 
-                download(&url.to_string(), &mp3_folder);
-            }
+                let mut mp3_folder = testdata_folder.clone();
+                mp3_folder.push("mp3");
+                for url in mp3_urls {
+                    download(&url.to_string(), &mp3_folder);
+                }
 
-            let mut flac_folder = testdata_folder.clone();
-            flac_folder.push("flac");            
-            for url in flac_urls { 
-                download(&url.to_string(), &flac_folder);
+                let mut flac_folder = testdata_folder.clone();
+                flac_folder.push("flac");
+                for url in flac_urls {
+                    download(&url.to_string(), &flac_folder);
+                }
             }
-            }
-        }, 
+        }
         // else
-        Err(_) => { 
+        Err(_) => {
             println!("Did not detect data driven tests.");
         }
     };
 }
 
-fn download(url: &String, path: &PathBuf) -> () { 
-    println!("Downloading: {}", url );
+fn download(url: &String, path: &PathBuf) -> () {
+    println!("Downloading: {}", url);
 
     sh_execute!(
         r#"
@@ -93,11 +96,11 @@ fn download(url: &String, path: &PathBuf) -> () {
             echo "Made path {path}"; 
             wget -P {path} {url};
         "#,
-        url = url.clone(), 
+        url = url.clone(),
         path = path.to_str().unwrap(),
-    ); 
+    );
     // {
-    //     Ok(c) => println!("Ran command {} successfully", c), 
+    //     Ok(c) => println!("Ran command {} successfully", c),
     //     Err(c) => println!("Got error {:?} while running!", c)
     // };
 }
