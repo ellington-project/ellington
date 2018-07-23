@@ -13,14 +13,19 @@ use walkdir::WalkDir;
 
 pub struct Entry {
     pub location: PathBuf,
+    pub filedata: FileMetadata,
     pub metadata: Option<TrackMetadata>,
     pub eldata: Option<EllingtonData>,
 }
 
 impl Entry {
     pub fn from_file(path: PathBuf) -> Entry {
+        // try to read some metadata from the track
+        let filedata = FileMetadata::from_path(&path);
+
         Entry {
             location: path,
+            filedata: filedata,
             metadata: None,
             eldata: None,
         }

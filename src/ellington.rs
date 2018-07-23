@@ -109,10 +109,7 @@ use le::library::library::Library;
 
 // #[flame]
 fn initalise_library(matches: &ArgMatches) -> () {
-    let _library = match (
-        matches.value_of("library"),
-        matches.value_of("directory"),
-    ) {
+    let _library = match (matches.value_of("library"), matches.value_of("directory")) {
         (Some(library_file), _) => {
             info!("Processing from library: {:?}", library_file);
             Library::from_itunes_xml(library_file)
