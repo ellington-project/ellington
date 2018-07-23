@@ -12,4 +12,5 @@
 *.raw filter=lfs diff=lfs merge=lfs -text
 *.wav filter=lfs diff=lfs merge=lfs -text
 *.wma filter=lfs diff=lfs merge=lfs -text
+test-data/** filter=lfs diff=lfs merge=lfs -text
 data/** filter=lfs diff=lfs merge=lfs -text
