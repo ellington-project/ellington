@@ -1,9 +1,11 @@
+use std::path::Path;
 use library::track::Track;
 use percent_encoding;
 use std::fs::File;
 use std::path::PathBuf;
 use url::Url;
 use walkdir::WalkDir;
+use walkdir::DirEntry;
 
 use plist::Plist;
 
@@ -86,20 +88,56 @@ impl Library {
     // #[flame]
     #[allow(dead_code, unused_variables)]
     pub fn from_directory_rec(path: &PathBuf) -> Option<Library> {
-        let tracks: Vec<Box<Track>> = WalkDir::new(path).into_iter().filter_map(|e| e.ok()).filter_map(|f| {
-            Track::from_file(&f.path().to_path_buf())
-        }).collect();
+        let mut files = 0;
+        let mut directories = 0;
+        let mut total_tracks = 0; 
+        let mut failed_tracks = 0;
+        let tracks : Vec<Option<PathBuf>> = WalkDir::new(path).contents_first(true).into_iter()
+            .filter_map(|e| e.ok())
+            .filter_map(|e| Self::is_audio_file(e))
+            .map(|f| {
+                info!("Reading from path {:?}", f.path());
+                match f.file_type().is_dir() { 
+                    true => {
+                        directories += 1;
+                        None
+                    }, 
+                    false => {
+                        files += 1;
+                        Some(f.path().to_path_buf())
+                    }
+                }
+            }).collect();
+        // let tracks: Vec<Box<Track>> = WalkDir::new(path).contents_first(true)
+        //     .into_iter()
+        
+        //     .filter_map(|e| e.ok())
+        //     .filter_map(|f| {
+        //         info!("Reading track from path: ${:#?}", f);
+        //         total_tracks += 1; 
+        //         match Track::from_file(&f.path().to_path_buf()) {
+        //             None => {
+        //                 error!("Could not read tag from ${:#?}", f);
+        //                 failed_tracks += 1;
+        //                 None
+        //             }, 
+        //             t => t
+        //         }
+        //     })
+        //     .collect();
 
-        match tracks.len() { 
-            0 => {
-                info!("No tracks found in directory!");
-                None
-            } ,
-            a => {
-                info!("Found {:?} tracks", a);
-                Some(Library {tracks : tracks})
-            }
-        }
+        error!("Failed to read {:?} tracks out of {:?}, with {:?} files, {:?} directories", failed_tracks, total_tracks, files, directories);
+        None
+        // match tracks.len() {
+        //     0 => {
+        //         info!("No tracks found in directory!");
+        //         None
+        //     }
+        //     a => {
+        //         info!("Found {:?} tracks", a);
+        //         Some(Library { tracks: tracks })
+        //     }
+        // }
     }
 
     /*
@@ -116,5 +154,25 @@ impl Library {
             .unwrap()
             .into_owned();
         PathBuf::from(decoded)
+    }
+
+    fn is_audio_file(de: DirEntry) -> Option<DirEntry> {
+        if de.file_type().is_dir() { 
+            None
+        }else{
+            let d = de.clone();
+            de.path().extension().and_then(|ext| 
+                match ext.to_str() { 
+                    Some("flac") => Some(d),
+                    Some("m4a") => Some(d),
+                    Some("m4p") => Some(d),
+                    Some("mp3") => Some(d),
+                    Some("mp4") => Some(d),
+                    Some("wav") => Some(d),
+                    Some("alac") => Some(d), 
+                    _ => None
+                }
+            )
+        }
     }
 }

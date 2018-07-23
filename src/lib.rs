@@ -1,17 +1,9 @@
 extern crate byteorder;
 
 #[macro_use]
-extern crate clap;
-
-#[macro_use]
 extern crate log;
 extern crate env_logger;
 
-// extern crate slog; 
-// extern crate slog_term; 
-// extern crate slog_scope; 
-// extern crate flame;
-extern crate histogram;
 extern crate id3;
 extern crate itertools;
 extern crate memmap;
@@ -36,6 +28,7 @@ pub mod analysers;
 pub mod input; 
 pub mod library; 
 pub mod shelltools;
+pub mod actions;
 
 pub fn trueish() -> bool{ 
     true 

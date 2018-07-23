@@ -4,11 +4,15 @@ version = "0.1.0"
 authors = ["Adam Harries <harries.adam@gmail.com>"]
 build = "build.rs"
 
-[workspace]
-members = ["libellington"]
+[lib]
+name = "libellington"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ellington"
+path = "src/ellington.rs"
 
 [dependencies]
-libellington = {path = "libellington"}
 plist = "0.2"
 histogram = "0.6.9"
 byteorder = "1"
