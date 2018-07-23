@@ -47,7 +47,7 @@ impl ShellArg for Format {
 #[derive(Debug)]
 #[allow(dead_code)]
 pub enum Codec {
-    PCM_F32le,
+    PcmF32le,
 }
 
 impl ShellArg for Codec {
@@ -57,7 +57,7 @@ impl ShellArg for Codec {
 
     fn value(self: &Codec) -> &'static str {
         match self {
-            Codec::PCM_F32le => "pcm_f32le",
+            Codec::PcmF32le => "pcm_f32le",
         }
     }
 }
@@ -96,7 +96,7 @@ impl FfmpegCommand {
             filename: EscapedFilename::new(filename),
             samplerate: SampleRate::Ffo,
             channels: Channels::Mono,
-            codec: Codec::PCM_F32le,
+            codec: Codec::PcmF32le,
             format: Format::F32le,
         }
     }

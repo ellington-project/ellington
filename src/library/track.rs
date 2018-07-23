@@ -1,5 +1,4 @@
 use library::ellingtondata::EllingtonData;
-use library::format::{Mp3, UnknownFile};
 use std::ffi::OsStr;
 use std::fmt;
 use std::fmt::Debug;
@@ -22,7 +21,7 @@ pub trait Track: fmt::Display + Debug {
     fn bpm(self: &Self) -> Option<i64>;
     fn comments(self: &Self) -> Option<Vec<String>>;
     fn ellington_data(self: &Self) -> Option<Vec<EllingtonData>>;
-    fn write_data(self: &Self, new_data: EllingtonData) -> Option<()>;
+    fn write_data(self: &Self, _new_data: EllingtonData) -> Option<()>;
     fn from_file_impl(path: &PathBuf) -> Option<Box<Track + 'static>>
     where
         Self: Sized;
@@ -96,7 +95,7 @@ impl Track for GenericTrack {
             None => None,
         }
     }
-    fn write_data(self: &Self, new_data: EllingtonData) -> Option<()> {
+    fn write_data(self: &Self, _new_data: EllingtonData) -> Option<()> {
         unimplemented!()
     }
     fn from_file_impl(path: &PathBuf) -> Option<Box<Track + 'static>> {

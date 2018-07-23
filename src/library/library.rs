@@ -1,14 +1,31 @@
+use library::ellingtondata::EllingtonData;
+use library::filemetadata::FileMetadata;
 use library::track::Track;
+use library::trackmetadata::TrackMetadata;
 use percent_encoding;
 use plist::Plist;
 use std::collections::BTreeSet;
 use std::fs::File;
 use std::io::{self, BufRead};
-use std::path::Path;
 use std::path::PathBuf;
 use url::Url;
-use walkdir::DirEntry;
 use walkdir::WalkDir;
+
+pub struct Entry {
+    pub location: PathBuf,
+    pub metadata: Option<TrackMetadata>,
+    pub eldata: Option<EllingtonData>,
+}
+
+impl Entry {
+    pub fn from_file(path: PathBuf) -> Entry {
+        Entry {
+            location: path,
+            metadata: None,
+            eldata: None,
+        }
+    }
+}
 
 #[derive(Debug)]
 pub struct Library {
@@ -25,6 +42,19 @@ impl Library {
 
         let plist = Plist::read(file).ok()?;
 
+        fn url_to_path(location: &String) -> PathBuf {
+            let parsedurl = Url::parse(location).unwrap();
+
+            let path_str = parsedurl.path();
+            let path_bytes: Vec<u8> = path_str.bytes().collect();
+            // decode it
+            let decoded = percent_encoding::percent_decode(&path_bytes[..])
+                .decode_utf8()
+                .unwrap()
+                .into_owned();
+            PathBuf::from(decoded)
+        }
+
         // get the tracks from the PList:
         let tracks = plist
             .as_dictionary()?
@@ -36,8 +66,7 @@ impl Library {
                 let trackinfo = track_plist.as_dictionary()?;
 
                 // extract the location from the dictionary.
-                let location =
-                    Library::url_to_path(&trackinfo.get("Location")?.as_string()?.to_string());
+                let location = url_to_path(&trackinfo.get("Location")?.as_string()?.to_string());
 
                 // read the metadata from the file, rather than iTunes, in case there
                 // are any discrepancies.
@@ -110,7 +139,7 @@ impl Library {
                 e
             })
             .filter_map(|e| e.ok())
-            .filter_map(|e| Self::is_audio_file(e))
+            .filter_map(|e| FileMetadata::seq_audio_file(e.clone(), &e.path()))
             .map(|f| {
                 info!("Got audio file: {:?}", f);
                 audio_files += 1;
@@ -133,39 +162,5 @@ impl Library {
         );
 
         Some(Library { tracks: tracks })
-    }
-
-    /*
-        General utitlity functions
-     */
-    fn url_to_path(location: &String) -> PathBuf {
-        let parsedurl = Url::parse(location).unwrap();
-
-        let path_str = parsedurl.path();
-        let path_bytes: Vec<u8> = path_str.bytes().collect();
-        // decode it
-        let decoded = percent_encoding::percent_decode(&path_bytes[..])
-            .decode_utf8()
-            .unwrap()
-            .into_owned();
-        PathBuf::from(decoded)
-    }
-
-    fn is_audio_file(de: DirEntry) -> Option<DirEntry> {
-        if de.file_type().is_dir() {
-            None
-        } else {
-            let d = de.clone();
-            de.path().extension().and_then(|ext| match ext.to_str() {
-                Some("flac") => Some(d),
-                Some("m4a") => Some(d),
-                Some("m4p") => Some(d),
-                Some("mp3") => Some(d),
-                Some("mp4") => Some(d),
-                Some("wav") => Some(d),
-                Some("alac") => Some(d),
-                _ => None,
-            })
-        }
     }
 }

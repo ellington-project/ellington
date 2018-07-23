@@ -24,7 +24,7 @@ extern crate libellington as le;
 // use le::analysers::bpmtools::BpmTools;
 // use le::shelltools::sox::*;
 // use le::shelltools::ffmpeg::*;
-use le::actions::*;
+// use le::actions::*;
 use le::library::library::Library;
 
 // #[flame]
@@ -109,16 +109,15 @@ use le::library::library::Library;
 
 // #[flame]
 fn initalise_library(matches: &ArgMatches) -> () {
-    let library = match (
+    let _library = match (
         matches.value_of("library"),
         matches.value_of("directory"),
-        matches.is_present("stream"),
     ) {
-        (Some(library_file), _, _) => {
+        (Some(library_file), _) => {
             info!("Processing from library: {:?}", library_file);
             Library::from_itunes_xml(library_file)
         }
-        (_, Some(directory), _) => {
+        (_, Some(directory)) => {
             info!("Reading from directory: {}", directory);
             Library::from_directory_rec(&PathBuf::from(directory))
         }
@@ -145,7 +144,7 @@ fn main() {
 
     match subcommands {
         ("init", Some(sub)) => initalise_library(sub),
-        ("bpm", Some(sub)) => error!("BPM command not yet implemented!"),
+        ("bpm", Some(_sub)) => error!("BPM command not yet implemented!"),
         _ => error!("No subcommand given!"),
     }
 }
