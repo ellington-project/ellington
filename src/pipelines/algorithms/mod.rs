@@ -1,12 +1,12 @@
 // pub mod analyser;
-pub mod bpmtools;
+pub mod naive;
 
-use std::path::Path;
-use library::ellingtondata::BpmInfo;
+// use std::path::Path;
+// use library::ellingtondata::BpmInfo;
 
 /*
   Define a trait for "analysers" to give a standardised interface to the various methods that we might want to employ.
 */
-trait Analyser<T> {
-    fn analyse(self: &mut Self, input: T) -> f32;
-}
+// trait Analyser<T> {
+//     fn analyse(self: &mut Self, input: T) -> f32;
+// }

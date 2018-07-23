@@ -9,10 +9,13 @@ pub struct BpmInfo {
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct EllingtonData {
-    pub algs: Option<Vec<BpmInfo>>,
+    pub algs: Vec<BpmInfo>,
 }
 
 impl EllingtonData {
+    pub fn empty() -> EllingtonData { 
+        EllingtonData { algs: Vec::new() } 
+    }
     // #[flame]
     pub fn parse_data(comment: &String) -> Option<EllingtonData> {
         lazy_static! {

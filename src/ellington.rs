@@ -16,6 +16,7 @@ use clap::ArgMatches;
 extern crate libellington as le;
 
 use le::library::Library;
+use le::pipelines::FfmpegNaivePipeline;
     
 // #[flame]
 fn initalise_library(matches: &ArgMatches) -> () {
@@ -59,8 +60,11 @@ fn bpm_library(matches: &ArgMatches) -> () {
         }
     };
 
-    let library = Library::from_file(&PathBuf::from(library_file)).unwrap();
-    
+    let mut library = Library::from_file(&PathBuf::from(library_file)).unwrap();
+
+    library.run_pipeline::<FfmpegNaivePipeline>();
+
+    library.write_to_file(&PathBuf::from(library_file));
 }
 
 fn main() {
@@ -75,7 +79,7 @@ fn main() {
 
     match subcommands {
         ("init", Some(sub)) => initalise_library(sub),
-        ("bpm", Some(_sub)) => error!("BPM command not yet implemented!"),
+        ("bpm", Some(sub)) => bpm_library(sub),
         _ => error!("No subcommand given!"),
     }
 }

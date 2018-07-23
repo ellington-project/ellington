@@ -9,7 +9,7 @@ use rand::{thread_rng, Rng};
 use std::f32;
 
 #[derive(Debug)]
-pub struct BpmTools {
+pub struct Naive {
     // tunable parameters for the algorithm.
     pub lower: f32,
     pub upper: f32,
@@ -20,9 +20,9 @@ pub struct BpmTools {
     rng: ThreadRng,
 }
 
-impl BpmTools {
-    pub fn default() -> BpmTools {
-        BpmTools {
+impl Naive {
+    pub fn default() -> Naive {
+        Naive {
             lower: 50.0,
             upper: 450.0,
             interval: 64,
@@ -39,7 +39,7 @@ impl BpmTools {
      * vector of amples must be read into memory before we can process it.
      */
     // #[flame]
-    pub fn analyse<T>(self: &mut BpmTools, samples: T) -> f32
+    pub fn analyse<T>(self: &mut Naive, samples: T) -> f32
     where
         T: Iterator<Item = f32>,
     {
@@ -74,7 +74,7 @@ impl BpmTools {
      * minimum autodifference
      */
     // #[flame]
-    fn scan_for_bpm(self: &mut BpmTools, nrg: &Vec<f32>) -> f32 {
+    fn scan_for_bpm(self: &mut Naive, nrg: &Vec<f32>) -> f32 {
         let slowest = self.bpm_to_interval(self.lower);
         let fastest = self.bpm_to_interval(self.upper);
         let step = (slowest - fastest) / self.steps as f32;
@@ -105,7 +105,7 @@ impl BpmTools {
     /*
      * Test an autodifference for the given interval
      */
-    fn autodifference(self: &mut BpmTools, nrg: &Vec<f32>, interval: f32) -> f32 {
+    fn autodifference(self: &mut Naive, nrg: &Vec<f32>, interval: f32) -> f32 {
         // define some arrays of constants
         const BEATS: [f32; 12] = [
             -32.0, -16.0, -8.0, -4.0, -2.0, -1.0, 1.0, 2.0, 4.0, 8.0, 16.0, 32.0,
@@ -116,13 +116,13 @@ impl BpmTools {
         let side = Uniform::new(0.0, 1.0);
         // const RANDOM_NUMBER: f32 = 0.5;
         let mid: f32 = self.rng.sample(side) * nrg.len() as f32;
-        let v: f32 = BpmTools::sample(&nrg, mid);
+        let v: f32 = Naive::sample(&nrg, mid);
 
         let mut diff: f32 = 0.0;
         let mut total: f32 = 0.0;
 
         for n in 0..BEATS.len() {
-            let y: f32 = BpmTools::sample(&nrg, mid + BEATS[n] * interval);
+            let y: f32 = Naive::sample(&nrg, mid + BEATS[n] * interval);
             let w = 1.0 / BEATS[n].abs();
 
             diff += w * (y - v).abs();
@@ -130,7 +130,7 @@ impl BpmTools {
         }
 
         for n in 0..NOBEATS.len() {
-            let y = BpmTools::sample(&nrg, mid + NOBEATS[n] * interval);
+            let y = Naive::sample(&nrg, mid + NOBEATS[n] * interval);
             let w = NOBEATS[n].abs();
 
             diff -= w * (y - v).abs();
@@ -160,7 +160,7 @@ impl BpmTools {
     /*
      * Beats-per-minute to a sampling interval in energy space
      */
-    fn bpm_to_interval(self: &BpmTools, bpm: f32) -> f32 {
+    fn bpm_to_interval(self: &Naive, bpm: f32) -> f32 {
         let beats_per_second: f32 = bpm / 60.0;
         let samples_per_beat: f32 = self.rate / beats_per_second;
         samples_per_beat / self.interval as f32
@@ -169,7 +169,7 @@ impl BpmTools {
     /*
      * Sampling interval in enery space to beats-per-minute
      */
-    fn interval_to_bpm(self: &BpmTools, interval: f32) -> f32 {
+    fn interval_to_bpm(self: &Naive, interval: f32) -> f32 {
         let samples_per_beat: f32 = interval * self.interval as f32;
         let beats_per_second: f32 = self.rate / samples_per_beat;
         beats_per_second * 60.0

@@ -2,7 +2,8 @@ pub mod ellingtondata;
 pub mod filemetadata;
 pub mod trackmetadata;
 
-use library::ellingtondata::EllingtonData;
+use pipelines::Pipeline;
+use library::ellingtondata::{EllingtonData, BpmInfo};
 use library::filemetadata::FileMetadata;
 use library::trackmetadata::*;
 
@@ -24,7 +25,7 @@ pub struct Entry {
     pub location: PathBuf,
     pub filedata: FileMetadata,
     pub metadata: Option<TrackMetadata>,
-    pub eldata: Option<EllingtonData>,
+    pub eldata: EllingtonData,
 }
 
 impl Entry {
@@ -36,7 +37,7 @@ impl Entry {
             location: path,
             filedata: filedata,
             metadata: metadata,
-            eldata: None,
+            eldata: EllingtonData::empty(),
         }
     }
 }
@@ -214,6 +215,21 @@ impl Library {
             Err(e) => {
                 error!("Error writing ellington library file to {:?}, got io error {:?}", path, e);
                 None
+            }
+        }
+     }
+
+     pub fn run_pipeline<P: Pipeline>(self: &mut Self) -> () { 
+        // iterate over our tracks, and run the pipeline
+        for entry in &mut self.tracks { 
+            // get the pipeline result. 
+            match P::run(&entry.location) {
+                Some(calculated_bpm) => { 
+                    entry.eldata.algs.push(BpmInfo{ bpm: calculated_bpm, alg: P::NAME.to_string()});
+                }, 
+                None => {
+                    error!("Failed to calculate bpm for entry: {:?}", entry);
+                }
             }
         }
      }

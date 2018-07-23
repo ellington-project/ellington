@@ -29,8 +29,7 @@ extern crate lazy_static;
 extern crate taglib;
 
 // pub mod actions;
-pub mod analysers;
-pub mod input;
+pub mod pipelines;
 pub mod library;
 pub mod shelltools;
 
