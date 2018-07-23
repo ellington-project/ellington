@@ -36,9 +36,6 @@ slog = "2.2.3"
 slog-term = "2.4.0"
 slog-scope = "4.0.1"
 
-[dev-dependencies]
-speculate = "0.0.26"
-
 [build-dependencies]
 commandspec = "0.10"
 
