@@ -15,3 +15,5 @@ playground
 data
 
 Cargo.lock
+
+.vscode

@@ -9,8 +9,7 @@ use std::env;
 #[cfg(target_os = "linux")]
 fn print_linker_arguments() {
     println!("Printing linker arguments for Linux");
-    println!("cargo:rustc-link-lib=static=stdc++");
-    println!("cargo:rustc-flags=-l tag_c -l tag -l z");
+    println!("cargo:rustc-flags=-l tag_c -l tag -l z -l stdc++");
 }
 
 #[cfg(target_os = "macos")]
