@@ -3,8 +3,7 @@
     "ShellProgram" infrastructure to call other programs to calculate BPM 
     information!
 */
-
-use library::track::Track;
+use std::path::PathBuf;
 use shelltools::pipe::PipeCommand;
 
 use super::generic::*;
@@ -44,10 +43,10 @@ impl ShellProgram for BpmCall {
 
 // #[flame]
 #[allow(dead_code)]
-pub fn bpm_track<T>(track: &Track) -> Result<f64, ParseFloatError> {
+pub fn bpm_track<T>(location: &PathBuf) -> Result<f64, ParseFloatError> {
     // pipe together a sox and a bpm call
     let overall_call = PipeCommand {
-        source: &SoxCommand::default(&track.location()),
+        source: &SoxCommand::default(location),
         sink: &BpmCall::default(),
     };
 

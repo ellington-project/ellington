@@ -49,12 +49,3 @@ subcommands:
                 help: The library file from which to process tracks
                 required: true
                 index: 1
-    
-# requires:
-#     - library
-#     - directory
-#     - stream
-# conflicts_with:
-#     - library
-#     - directory
-#     - stream

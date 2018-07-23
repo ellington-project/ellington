@@ -1,7 +1,9 @@
 use library::ellingtondata::EllingtonData;
-use library::track::Track;
 use std::fmt;
 use std::path::PathBuf;
+
+pub use self::track::Track;
+mod track;
 
 // re-export the Mp3 format
 pub use self::mp3::Mp3;
