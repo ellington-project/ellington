@@ -3,26 +3,6 @@ version: "0.1.0"
 author: Adam Harries <harries.adam@gmail.com>
 about: Automated BPM calculation for swing dance DJs
 args:
-    - library:
-        short: l
-        long: library
-        value_name: library
-        required: false
-        takes_value: true
-        help: The iTunes library file with track information.
-    - directory: 
-        short: d 
-        long: directory
-        value_name: directory
-        required: false
-        takes_value: true
-        help: A directory containing (recursively) audio files to process
-    - stream: 
-        short: s 
-        long: stream 
-        required: false
-        takes_value: false 
-        help: Enable filename streaming, rather than recursive folder reading or an explicit library.
     - library_metadata: 
         short: m 
         long: library_metadata
@@ -34,12 +14,47 @@ args:
         long: overwrite
         takes_value: false
         help: Prompts ellington to overwrite ellington data in comment fields of audio files located.
-
-requires:
-    - library
-    - directory
-    - stream
-conflicts_with:
-    - library
-    - directory
-    - stream
+subcommands:
+    - init: 
+        about: Initialises an ellington library
+        version: "0.1.0"
+        author: Adam Harries <harries.adam@gmail.com>
+        args: 
+            - LIBRARY:
+                help: The library file to initialise
+                required: true
+                index: 1
+            - itunes:
+                short: i
+                long: itunes
+                value_name: itunes
+                required: false
+                takes_value: true
+                help: The iTunes library file with track information.
+                conflicts_with: directory
+            - directory: 
+                short: d 
+                long: directory
+                value_name: directory
+                required: false
+                takes_value: true
+                help: A directory containing (recursively) audio files to process
+                conflicts_with: itunes
+    - bpm: 
+        about: Run a bpm algorithm across an ellington library
+        version: "0.1.0" 
+        author: Adam Harries <harries.adam@gmail.com> 
+        args: 
+             - LIBRARY:
+                help: The library file from which to process tracks
+                required: true
+                index: 1
+    
+# requires:
+#     - library
+#     - directory
+#     - stream
+# conflicts_with:
+#     - library
+#     - directory
+#     - stream

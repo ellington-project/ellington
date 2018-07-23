@@ -1,8 +1,12 @@
-extern crate byteorder;
+/*
+    libellington - the core library + functionality for the ellington tool.
+*/
 
 #[macro_use]
 extern crate log;
 extern crate env_logger;
+
+extern crate byteorder;
 
 extern crate id3;
 extern crate itertools;

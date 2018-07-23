@@ -1,3 +1,8 @@
+/*
+    ellington - the ellington tool for processing and bpming audio libraries
+*/
+
+
 use std::path::PathBuf;
 
 #[macro_use]
@@ -105,7 +110,7 @@ use le::actions::*;
 // }
 
 // #[flame]
-fn dispatch(matches: ArgMatches) -> () {
+fn initalise_library(matches: &ArgMatches) -> () {
 
     let library = match (matches.value_of("library"), matches.value_of("directory"), matches.is_present("stream")) { 
         (Some(library_file), _, _ ) => {
@@ -116,12 +121,8 @@ fn dispatch(matches: ArgMatches) -> () {
             info!("Reading from directory: {}", directory);
             Library::from_directory_rec(&PathBuf::from(directory))
         }
-        (_, _, true) => {
-            info!("Reading track file names from stdin.");
-            None
-        }
         _ => {
-            error!("Should not reach here!"); 
+            info!("Reading tracks from stdin"); 
             None
         }
     };
@@ -137,8 +138,16 @@ fn main() {
     let yaml = load_yaml!("cli.yml");
     let app = App::from_yaml(yaml);
     let matches = app.get_matches();
+    let subcommands = matches.subcommand();
 
     info!("Application started");
 
-    dispatch(matches);
+    match subcommands { 
+        ("init", Some(sub)) => initalise_library(sub), 
+        ("bpm", Some(sub)) => error!("BPM command not yet implemented!"), 
+        _ => error!("No subcommand given!")
+    }
+
+
+
 }
