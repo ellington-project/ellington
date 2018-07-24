@@ -32,10 +32,11 @@ impl Entry {
     pub fn from_file(path: PathBuf) -> Entry {
         // try to read some metadata from the track
         let filedata = FileMetadata::from_path(&path);
+        // TODO: Implement different readers here!
         let metadata = GenericAudioFile::from_file(&path);
         let eldata = match &metadata {
-            Some(m) => m.as_ellington_metadata(), 
-            None => EllingtonData::empty()
+            Some(m) => m.as_ellington_metadata(),
+            None => EllingtonData::empty(),
         };
         Entry {
             location: path,
@@ -238,13 +239,14 @@ impl Library {
         info!("Running pipeline over ellington library.");
         info!("Using pipeline: {:?}", P::NAME);
         // iterate over our tracks, and run the pipeline
-        let mut ix = 0; 
+        let mut ix = 0;
         let lx = self.tracks.len();
         for entry in &mut self.tracks {
             info!(
                 "Running pipeline {:?} on track {:?}/{:?}:\n\t {:?}",
                 P::NAME,
-                ix, lx,
+                ix,
+                lx,
                 entry.location
             );
             ix += 1;
@@ -260,14 +262,24 @@ impl Library {
                         },
                         _ => info!("Caculated bpm: {:?}", calculated_bpm),
                     }
-                    entry.eldata.algs.insert(P::NAME.to_string(),
-                        calculated_bpm
-                    );
+                    entry
+                        .eldata
+                        .algs
+                        .insert(P::NAME.to_string(), calculated_bpm);
                 }
                 None => {
                     error!("Failed to calculate bpm for entry: {:?}", entry);
                 }
             }
+        }
+    }
+
+    pub fn write_metadata_to_audio_files(self: &Self) -> () {
+        for entry in &self.tracks {
+            GenericAudioFile::write_ellington_data(
+                &PathBuf::from(entry.location.clone()),
+                &entry.eldata,
+            );
         }
     }
 }

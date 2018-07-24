@@ -1,6 +1,6 @@
 use regex::Regex;
 use serde_json;
-use std::collections::{BTreeMap};
+use std::collections::BTreeMap;
 
 // #[derive(Serialize, Deserialize, Debug, Clone)]
 // pub struct BpmInfo {
@@ -13,13 +13,14 @@ pub type Bpm = i64;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct EllingtonData {
-    pub algs: BTreeMap<Algorithm, Bpm>
-    // pub algs: Vec<BpmInfo>,
+    pub algs: BTreeMap<Algorithm, Bpm>, // pub algs: Vec<BpmInfo>
 }
 
 impl EllingtonData {
     pub fn empty() -> EllingtonData {
-        EllingtonData { algs: BTreeMap::new() }
+        EllingtonData {
+            algs: BTreeMap::new(),
+        }
     }
     // #[flame]
     pub fn parse_data(comment: &String) -> Option<EllingtonData> {

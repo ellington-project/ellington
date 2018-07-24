@@ -1,8 +1,8 @@
 use taglib::*;
 
-use std::path::Path;
 use library::ellingtondata::*;
-use std::collections::{BTreeMap};
+use std::collections::BTreeMap;
+use std::path::Path;
 
 // a structure storing metadata about some track, in a format agnostic manner
 #[derive(Serialize, Deserialize, Debug)]
@@ -15,7 +15,7 @@ pub struct TrackMetadata {
 impl TrackMetadata {
     pub fn as_ellington_metadata(self: &Self) -> EllingtonData {
         // initialise our array
-        let mut algs : BTreeMap<Algorithm, Bpm> = BTreeMap::new();
+        let mut algs: BTreeMap<Algorithm, Bpm> = BTreeMap::new();
         // match the comments, and iterate over them, appending them to "data"
         match &self.comments {
             Some(v) => {
@@ -25,14 +25,14 @@ impl TrackMetadata {
                         Some(mut ed) => {
                             info!("Found ellington metadata: {:?}", ed);
                             algs.append(&mut ed.algs);
-                        }, 
-                        None => info!("No ellington data found in comment.")
-                    };                    
+                        }
+                        None => info!("No ellington data found in comment."),
+                    };
                 }
-            }, 
-            None => info!("Got no comments from metadata, thus no ellington data.")
+            }
+            None => info!("Got no comments from metadata, thus no ellington data."),
         };
-        EllingtonData {algs: algs}
+        EllingtonData { algs: algs }
     }
 }
 
@@ -44,7 +44,7 @@ pub trait MetadataParser {
 // and written to a file using a metadata writer
 type WriteResult = Option<()>;
 pub trait MetadataWriter {
-    fn update_comments(location: &Path, f: &Fn(String) -> String) -> WriteResult;
+    fn write_ellington_data(location: &Path, ed: &EllingtonData) -> WriteResult;
 }
 
 pub struct GenericAudioFile;
@@ -84,7 +84,7 @@ impl MetadataParser for GenericAudioFile {
 }
 
 impl MetadataWriter for GenericAudioFile {
-    fn update_comments(location: &Path, f: &Fn(String) -> String) -> WriteResult {
+    fn write_ellington_data(location: &Path, ed: &EllingtonData) -> WriteResult {
         let location = location.canonicalize().ok()?;
         info!("Reading tag from location {:?}", location);
         let tagf = TagLibFile::new(&location);
@@ -100,10 +100,12 @@ impl MetadataWriter for GenericAudioFile {
                 return None;
             }
         };
-        let updated = f(comment);
-        match tagf.tag().set_comment(&updated) {
-            Ok(_) => Some(()),
-            Err(_) => None,
+        match ed.update_data(&comment) {
+            Some(updated_comment) => match tagf.tag().set_comment(&updated_comment) {
+                Ok(_) => Some(()),
+                Err(_) => None,
+            },
+            None => None,
         }
     }
 }
