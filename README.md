@@ -69,11 +69,12 @@ As the bpms calculated with *Ellington* are not yet high quality, *Ellington* av
 
 Comments with *Ellington* metadata contain a valid *Ellington* data string of the form: 
 
-[ed#<data>#de]
+    [ed#<data>#de]
 
 Where `<data>` is a JSON string, with `:` replaced with `#`, representing some *Ellington* data (see `src/library/ellingtondata.rs`).
 
 A good *default* *Ellington* data string is: 
+
     [ed#{"algs"#{}}#de]
 
 In order to persuade *Ellington* to write to an audio file, edit the 'comment' metadata tag of it to include the above data string, using your tag editor of choice. 
