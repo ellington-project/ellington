@@ -78,7 +78,7 @@ fn write_library(matches: &ArgMatches) -> () {
         }
     };
 
-    let mut library = Library::from_file(&PathBuf::from(library_file)).unwrap();
+    let library = Library::from_file(&PathBuf::from(library_file)).unwrap();
 
     library.write_metadata_to_audio_files();
 }
