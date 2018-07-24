@@ -234,12 +234,16 @@ impl Library {
         info!("Running pipeline over ellington library.");
         info!("Using pipeline: {:?}", P::NAME);
         // iterate over our tracks, and run the pipeline
+        let mut ix = 0; 
+        let lx = self.tracks.len();
         for entry in &mut self.tracks {
             info!(
-                "Running pipeline {:?} on:\n\t {:?}",
+                "Running pipeline {:?} on track {:?}/{:?}:\n\t {:?}",
                 P::NAME,
+                ix, lx,
                 entry.location
             );
+            ix += 1;
             // get the pipeline result.
             match P::run(&entry.location) {
                 Some(calculated_bpm) => {
