@@ -96,7 +96,7 @@ fn main() {
     match subcommands {
         ("init", Some(sub)) => initalise_library(sub),
         ("bpm", Some(sub)) => bpm_library(sub),
-        ("write", Some(sub)) => write_library(sub), 
+        ("write", Some(sub)) => write_library(sub),
         _ => error!("No subcommand given!"),
     }
 }

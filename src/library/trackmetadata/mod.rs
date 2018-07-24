@@ -100,28 +100,26 @@ impl MetadataWriter for GenericAudioFile {
                 return None;
             }
         };
-        let updated_comment = match ed.update_data(&comment) { 
-            Some(c) => c, 
-            None => { 
+        let updated_comment = match ed.update_data(&comment) {
+            Some(c) => c,
+            None => {
                 error!("Got error while updating the comment");
                 return None;
             }
         };
-        match tagf.tag().set_comment(&updated_comment) { 
+        match tagf.tag().set_comment(&updated_comment) {
             Ok(_) => info!("Successfully set comment"),
-            Err(e) => 
-            {
+            Err(e) => {
                 error!("Got error: {:?}, while setting the comment", e);
                 return None;
-            },
+            }
         };
         match tagf.save() {
             Ok(()) => {
                 info!("Successfully saved comment to file");
                 return Some(());
-            },
-            Err(e) => 
-            {
+            }
+            Err(e) => {
                 error!("Got error {:?}, while saving audio file", e);
                 return None;
             }

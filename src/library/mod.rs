@@ -279,9 +279,9 @@ impl Library {
             match GenericAudioFile::write_ellington_data(
                 &PathBuf::from(entry.location.clone()),
                 &entry.eldata,
-            ) { 
+            ) {
                 Some(()) => info!("Successfully wrote metadata to file {:?}", entry.location),
-                None => error!("Failed to write metadata to file {:?}", entry.location)
+                None => error!("Failed to write metadata to file {:?}", entry.location),
             };
         }
     }
