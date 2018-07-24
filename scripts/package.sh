@@ -26,7 +26,7 @@ elif [[ $OSTYPE == linux* ]]; then
 fi
 
 # Define the package name
-package="ellington-pre-alpha-$now-$osname"
+package="ellington-0.1.0-$now-$osname"
 echo "Defined package name: '$package'"
 
 # Make a directory for the combination
