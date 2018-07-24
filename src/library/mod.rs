@@ -2,7 +2,7 @@ pub mod ellingtondata;
 pub mod filemetadata;
 pub mod trackmetadata;
 
-use library::ellingtondata::{BpmInfo, EllingtonData};
+use library::ellingtondata::*;
 use library::filemetadata::FileMetadata;
 use library::trackmetadata::*;
 use pipelines::Pipeline;
@@ -33,11 +33,15 @@ impl Entry {
         // try to read some metadata from the track
         let filedata = FileMetadata::from_path(&path);
         let metadata = GenericAudioFile::from_file(&path);
+        let eldata = match &metadata {
+            Some(m) => m.as_ellington_metadata(), 
+            None => EllingtonData::empty()
+        };
         Entry {
             location: path,
             filedata: filedata,
             metadata: metadata,
-            eldata: EllingtonData::empty(),
+            eldata: eldata,
         }
     }
 }
@@ -256,10 +260,9 @@ impl Library {
                         },
                         _ => info!("Caculated bpm: {:?}", calculated_bpm),
                     }
-                    entry.eldata.algs.push(BpmInfo {
-                        bpm: calculated_bpm,
-                        alg: P::NAME.to_string(),
-                    });
+                    entry.eldata.algs.insert(P::NAME.to_string(),
+                        calculated_bpm
+                    );
                 }
                 None => {
                     error!("Failed to calculate bpm for entry: {:?}", entry);
