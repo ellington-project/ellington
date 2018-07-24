@@ -1,6 +1,7 @@
 use super::generic::*;
 use std::path::PathBuf;
 use std::process::Child;
+use std::io::Result;
 
 // use flame;
 
@@ -101,14 +102,15 @@ impl FfmpegCommand {
         }
     }
 
-    pub fn run<'a>(self: &Self) -> Child {
-        let child = self
+    pub fn run<'a>(self: &Self) -> Result<Child> {
+        // let child = 
+        self
             .call()
             .stdout(Stdio::piped())
             .spawn()
-            .expect("Failed to execute standalone ffmpeg call");
+            // .expect("Failed to execute standalone ffmpeg call");
 
-        child
+        // child
     }
 
     // pub fn run_with(self: &Self, )

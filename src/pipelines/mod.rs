@@ -18,7 +18,13 @@ impl Pipeline for FfmpegNaivePipeline {
     const NAME: &'static str = "ffmpeg-naive";
     fn run(audio_file: &PathBuf) -> Option<i64> {
         let call = FfmpegCommand::default(&audio_file);
-        let mut child = call.run();
+        let mut child = match call.run(){
+            Err(e) => {
+                error!("Failed to run ffmpeg for audio file {:?}, with io error {:?}", audio_file, e);
+                None
+            }
+            Ok(c) => Some(c)
+        }?;
 
         let result = {
             let ffmpeg_stream = match &mut child.stdout {
@@ -32,8 +38,14 @@ impl Pipeline for FfmpegNaivePipeline {
             Some(Naive::default().analyse(ffmpeg_stream) as i64)
         };
 
-        child.wait().expect("failed to wait on child");
-
-        result
+        match child.wait() {
+            Err(e) => {
+                error!("Failed to wait on ffmpeg child for audio file {:?}, with io error {:?}", audio_file, e);
+                None
+            }, 
+            Ok(_) => {
+                result
+            }
+        }
     }
 }
