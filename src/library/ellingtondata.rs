@@ -13,8 +13,8 @@ pub struct EllingtonData {
 }
 
 impl EllingtonData {
-    pub fn empty() -> EllingtonData { 
-        EllingtonData { algs: Vec::new() } 
+    pub fn empty() -> EllingtonData {
+        EllingtonData { algs: Vec::new() }
     }
     // #[flame]
     pub fn parse_data(comment: &String) -> Option<EllingtonData> {

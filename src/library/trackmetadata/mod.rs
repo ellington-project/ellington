@@ -77,7 +77,7 @@ impl MetadataWriter for GenericAudioFile {
         let updated = f(comment);
         match tagf.tag().set_comment(&updated) {
             Ok(_) => Some(()),
-            Err(_) => None
+            Err(_) => None,
         }
     }
 }

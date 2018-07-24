@@ -2,10 +2,10 @@ pub mod ellingtondata;
 pub mod filemetadata;
 pub mod trackmetadata;
 
-use pipelines::Pipeline;
-use library::ellingtondata::{EllingtonData, BpmInfo};
+use library::ellingtondata::{BpmInfo, EllingtonData};
 use library::filemetadata::FileMetadata;
 use library::trackmetadata::*;
+use pipelines::Pipeline;
 
 use percent_encoding;
 use plist::Plist;
@@ -71,8 +71,8 @@ impl Library {
         }
 
         // get the tracks from the PList:
-        let mut entries = 0; 
-        let tracks : Vec<Entry> = plist
+        let mut entries = 0;
+        let tracks: Vec<Entry> = plist
             .as_dictionary()?
             .get("Tracks")?
             .as_dictionary()?
@@ -186,21 +186,29 @@ impl Library {
     /* 
         Read a library from an ellington library file, with name 
         "<library>.el"
-    */ 
-    pub fn from_file(path: &PathBuf) -> Option<Library> { 
+    */
+
+    pub fn from_file(path: &PathBuf) -> Option<Library> {
+        info!("Reading library from {:?}", path);
         let json = match fs::read_to_string(path) {
-            Ok(j) => Some(j), 
+            Ok(j) => Some(j),
             Err(e) => {
-                error!("Error reading ellington library from file {:?}, got io error {:?}", path, e);
+                error!(
+                    "Error reading ellington library from file {:?}, got io error {:?}",
+                    path, e
+                );
                 None
             }
         }?;
 
         match serde_json::from_str::<Library>(&json) {
-            Ok(l) => Some(l), 
+            Ok(l) => Some(l),
             Err(e) => {
-                error!("Failed to parse library file {:?}! Serde error {:?}", path, e);
-                None 
+                error!(
+                    "Failed to parse library file {:?}! Serde error {:?}",
+                    path, e
+                );
+                None
             }
         }
     }
@@ -208,31 +216,51 @@ impl Library {
     /* 
         Write a library to a file
      */
-     pub fn write_to_file(self: &Self, path: &PathBuf) -> Option<()> { 
-        let json : String = serde_json::to_string_pretty(self).expect("Couldn't serialize config");
+    pub fn write_to_file(self: &Self, path: &PathBuf) -> Option<()> {
+        let json: String = serde_json::to_string_pretty(self).expect("Couldn't serialize config");
         match fs::write(path, json) {
-            Ok(()) => Some(()), 
+            Ok(()) => Some(()),
             Err(e) => {
-                error!("Error writing ellington library file to {:?}, got io error {:?}", path, e);
+                error!(
+                    "Error writing ellington library file to {:?}, got io error {:?}",
+                    path, e
+                );
                 None
             }
         }
-     }
+    }
 
-     pub fn run_pipeline<P: Pipeline>(self: &mut Self) -> () { 
+    pub fn run_pipeline<P: Pipeline>(self: &mut Self) -> () {
+        info!("Running pipeline over ellington library.");
+        info!("Using pipeline: {:?}", P::NAME);
         // iterate over our tracks, and run the pipeline
-        for entry in &mut self.tracks { 
-            // get the pipeline result. 
+        for entry in &mut self.tracks {
+            info!(
+                "Running pipeline {:?} on:\n\t {:?}",
+                P::NAME,
+                entry.location
+            );
+            // get the pipeline result.
             match P::run(&entry.location) {
-                Some(calculated_bpm) => { 
-                    entry.eldata.algs.push(BpmInfo{ bpm: calculated_bpm, alg: P::NAME.to_string()});
-                }, 
+                Some(calculated_bpm) => {
+                    match &entry.metadata {
+                        Some(m) => match m.bpm {
+                            Some(b) => {
+                                info!("Caculated bpm: {:?}, expected: {:?}", calculated_bpm, b)
+                            }
+                            _ => info!("Caculated bpm: {:?}", calculated_bpm),
+                        },
+                        _ => info!("Caculated bpm: {:?}", calculated_bpm),
+                    }
+                    entry.eldata.algs.push(BpmInfo {
+                        bpm: calculated_bpm,
+                        alg: P::NAME.to_string(),
+                    });
+                }
                 None => {
                     error!("Failed to calculate bpm for entry: {:?}", entry);
                 }
             }
         }
-     }
-
-
+    }
 }

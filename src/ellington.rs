@@ -17,21 +17,21 @@ extern crate libellington as le;
 
 use le::library::Library;
 use le::pipelines::FfmpegNaivePipeline;
-    
+
 // #[flame]
 fn initalise_library(matches: &ArgMatches) -> () {
     // get the path we wish to write the library file to
-    let library_file : &str = match matches.value_of("LIBRARY") {
+    let library_file: &str = match matches.value_of("LIBRARY") {
         Some(l) => {
             info!("Writing library to: {:?}", l);
             l
-        }, 
-        None => { 
+        }
+        None => {
             panic!("Got no library file, this should not happen!");
         }
     };
 
-    let library : Library = match (matches.value_of("itunes"), matches.value_of("directory")) {
+    let library: Library = match (matches.value_of("itunes"), matches.value_of("directory")) {
         (Some(library_file), _) => {
             info!("Processing from itunes library: {:?}", library_file);
             Library::from_itunes_xml(library_file)
@@ -49,13 +49,13 @@ fn initalise_library(matches: &ArgMatches) -> () {
     library.write_to_file(&PathBuf::from(library_file));
 }
 
-fn bpm_library(matches: &ArgMatches) -> () { 
-    let library_file : &str = match matches.value_of("LIBRARY") {
+fn bpm_library(matches: &ArgMatches) -> () {
+    let library_file: &str = match matches.value_of("LIBRARY") {
         Some(l) => {
             info!("Writing library to: {:?}", l);
             l
-        }, 
-        None => { 
+        }
+        None => {
             panic!("Got no library file, this should not happen!");
         }
     };

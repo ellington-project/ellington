@@ -3,8 +3,8 @@
     "ShellProgram" infrastructure to call other programs to calculate BPM 
     information!
 */
-use std::path::PathBuf;
 use shelltools::pipe::PipeCommand;
+use std::path::PathBuf;
 
 use super::generic::*;
 use super::sox::*;

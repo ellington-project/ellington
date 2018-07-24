@@ -29,8 +29,8 @@ extern crate lazy_static;
 extern crate taglib;
 
 // pub mod actions;
-pub mod pipelines;
 pub mod library;
+pub mod pipelines;
 pub mod shelltools;
 
 pub fn trueish() -> bool {

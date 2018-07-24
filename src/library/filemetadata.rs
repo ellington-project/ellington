@@ -1,6 +1,6 @@
 use std::path::Path;
 
-#[derive(Serialize, Deserialize,Debug)]
+#[derive(Serialize, Deserialize, Debug)]
 pub enum AudioFileType {
     Flac,
     M4a,
@@ -12,7 +12,7 @@ pub enum AudioFileType {
     NotAudio,
 }
 
-#[derive(Serialize, Deserialize,Debug)]
+#[derive(Serialize, Deserialize, Debug)]
 pub struct FileMetadata {
     pub ftype: AudioFileType,
 }
