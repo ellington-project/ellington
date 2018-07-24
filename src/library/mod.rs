@@ -276,10 +276,13 @@ impl Library {
 
     pub fn write_metadata_to_audio_files(self: &Self) -> () {
         for entry in &self.tracks {
-            GenericAudioFile::write_ellington_data(
+            match GenericAudioFile::write_ellington_data(
                 &PathBuf::from(entry.location.clone()),
                 &entry.eldata,
-            );
+            ) { 
+                Some(()) => info!("Successfully wrote metadata to file {:?}", entry.location),
+                None => error!("Failed to write metadata to file {:?}", entry.location)
+            };
         }
     }
 }

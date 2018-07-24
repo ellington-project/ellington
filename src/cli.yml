@@ -45,7 +45,16 @@ subcommands:
         version: "0.1.0" 
         author: Adam Harries <harries.adam@gmail.com> 
         args: 
-             - LIBRARY:
+            - LIBRARY:
                 help: The library file from which to process tracks
                 required: true
                 index: 1
+    - write: 
+        about: Write calculated BPM information from an ellington library
+        version: "0.1.0"
+        author: Adam Harries <harries.adam@gmail.com> 
+        args: 
+            - LIBRARY:
+                help: The library file from which to process tracks
+                required: true
+                index: 1 

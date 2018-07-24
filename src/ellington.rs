@@ -67,6 +67,22 @@ fn bpm_library(matches: &ArgMatches) -> () {
     library.write_to_file(&PathBuf::from(library_file));
 }
 
+fn write_library(matches: &ArgMatches) -> () {
+    let library_file: &str = match matches.value_of("LIBRARY") {
+        Some(l) => {
+            info!("Reading library from: {:?}", l);
+            l
+        }
+        None => {
+            panic!("Got no library file, this should not happen!");
+        }
+    };
+
+    let mut library = Library::from_file(&PathBuf::from(library_file)).unwrap();
+
+    library.write_metadata_to_audio_files();
+}
+
 fn main() {
     env_logger::init();
     // get the command line arguments to the program
@@ -80,6 +96,7 @@ fn main() {
     match subcommands {
         ("init", Some(sub)) => initalise_library(sub),
         ("bpm", Some(sub)) => bpm_library(sub),
+        ("write", Some(sub)) => write_library(sub), 
         _ => error!("No subcommand given!"),
     }
 }
