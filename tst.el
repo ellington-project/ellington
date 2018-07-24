@@ -13,7 +13,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 272,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29,7 +34,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45,7 +55,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -61,7 +76,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 231,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -77,7 +97,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -93,7 +118,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 223,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -109,7 +139,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -125,7 +160,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -141,7 +181,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -157,7 +202,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 97,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -173,7 +223,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 199,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -189,7 +244,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 253,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -205,7 +265,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -221,7 +286,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 338,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -237,7 +307,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 222,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -253,7 +328,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 170,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -269,7 +349,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 127,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -285,7 +370,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 217,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -301,7 +391,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -317,7 +412,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 237,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -333,7 +433,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 75,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -349,7 +454,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -365,7 +475,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -381,7 +496,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -397,7 +517,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 88,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -413,7 +538,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -429,7 +559,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 198,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -445,7 +580,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -461,7 +601,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -477,7 +622,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -493,7 +643,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -509,7 +664,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -525,7 +685,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -541,7 +706,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -557,7 +727,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -573,7 +748,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -589,7 +769,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 83,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -605,7 +790,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -621,7 +811,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 171,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -637,7 +832,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -653,7 +853,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -669,7 +874,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 89,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -685,7 +895,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -701,7 +916,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 135,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -717,7 +937,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 101,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -733,7 +958,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -749,7 +979,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -765,7 +1000,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -781,7 +1021,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -797,7 +1042,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -813,7 +1063,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -829,7 +1084,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -845,7 +1105,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 157,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -861,7 +1126,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 389,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -877,7 +1147,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 211,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -893,7 +1168,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -909,7 +1189,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 106,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -925,7 +1210,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 148,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -941,7 +1231,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -957,7 +1252,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 175,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -973,7 +1273,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 139,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -989,7 +1294,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 148,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1005,7 +1315,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 233,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1021,7 +1336,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 175,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1037,7 +1357,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 171,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1053,7 +1378,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1069,7 +1399,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1085,7 +1420,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 148,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1101,7 +1441,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 228,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1117,7 +1462,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1133,7 +1483,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 227,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1149,7 +1504,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1165,7 +1525,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1181,7 +1546,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 211,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1197,7 +1567,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 137,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1213,7 +1588,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 223,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1229,7 +1609,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 231,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1245,7 +1630,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1261,7 +1651,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1277,7 +1672,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 414,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1293,7 +1693,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 236,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1309,7 +1714,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1325,7 +1735,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1341,7 +1756,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1357,7 +1777,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1373,7 +1798,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 179,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1389,7 +1819,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 155,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1405,7 +1840,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1421,7 +1861,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 290,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1437,7 +1882,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 272,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1453,7 +1903,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 221,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1469,7 +1924,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 215,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1485,7 +1945,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 205,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1501,7 +1966,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1517,7 +1987,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1533,7 +2008,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1549,7 +2029,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 72,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1565,7 +2050,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1581,7 +2071,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 239,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1597,7 +2092,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 140,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1613,7 +2113,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 260,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1629,7 +2134,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 190,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1645,7 +2155,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1661,7 +2176,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1677,7 +2197,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 194,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1693,7 +2218,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 228,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1709,7 +2239,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 280,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1725,7 +2260,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1741,7 +2281,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 116,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1757,7 +2302,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 127,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1773,7 +2323,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1789,7 +2344,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1805,7 +2365,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 251,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1821,7 +2386,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 139,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1837,7 +2407,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 170,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1853,7 +2428,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1869,7 +2449,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1885,7 +2470,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 265,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1901,7 +2491,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1917,7 +2512,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 136,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1933,7 +2533,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1949,7 +2554,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1965,7 +2575,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1981,7 +2596,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 261,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -1997,7 +2617,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 228,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2013,7 +2638,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2029,7 +2659,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 152,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2045,7 +2680,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 213,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2061,7 +2701,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 148,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2077,7 +2722,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2093,7 +2743,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2109,7 +2764,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 228,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2125,7 +2785,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2141,7 +2806,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2157,7 +2827,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 249,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2173,7 +2848,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2189,7 +2869,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 151,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2205,7 +2890,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 252,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2221,7 +2911,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 267,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2237,7 +2932,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2253,7 +2953,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 136,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2269,7 +2974,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2285,7 +2995,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 219,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2301,7 +3016,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2317,7 +3037,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 151,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2333,7 +3058,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 100,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2349,7 +3079,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2365,7 +3100,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 154,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2381,7 +3121,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 235,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2397,7 +3142,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2413,7 +3163,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2429,7 +3184,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2445,7 +3205,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 175,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2461,7 +3226,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2477,7 +3247,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2493,7 +3268,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2509,7 +3289,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 197,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2525,7 +3310,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 163,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2541,7 +3331,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2557,7 +3352,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2573,7 +3373,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 222,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2589,7 +3394,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 227,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2605,7 +3415,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 163,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2621,7 +3436,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2637,7 +3457,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 148,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2653,7 +3478,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 161,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2669,7 +3499,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 98,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2685,7 +3520,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 169,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2701,7 +3541,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2717,7 +3562,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2733,7 +3583,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2749,7 +3604,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 136,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2765,7 +3625,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2781,7 +3646,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 263,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2797,7 +3667,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 227,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2813,7 +3688,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2829,7 +3709,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2845,7 +3730,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 197,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2861,7 +3751,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 171,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2877,7 +3772,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 199,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2893,7 +3793,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2909,7 +3814,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2925,7 +3835,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 239,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2941,7 +3856,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2957,7 +3877,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2973,7 +3898,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -2989,7 +3919,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 391,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3005,7 +3940,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3021,7 +3961,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3037,7 +3982,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 357,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3053,7 +4003,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3069,7 +4024,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 76,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3085,7 +4045,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3101,7 +4066,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 271,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3117,7 +4087,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3133,7 +4108,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3149,7 +4129,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 129,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3165,7 +4150,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 397,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3181,7 +4171,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 142,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3197,7 +4192,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 173,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3213,7 +4213,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 279,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3229,7 +4234,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3245,7 +4255,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3261,7 +4276,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3277,7 +4297,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 149,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3293,7 +4318,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3309,7 +4339,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 151,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3325,7 +4360,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3341,7 +4381,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3357,7 +4402,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 241,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3373,7 +4423,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3389,7 +4444,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3405,7 +4465,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 280,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3421,7 +4486,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 147,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3437,7 +4507,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 84,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3453,7 +4528,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 295,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3469,7 +4549,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 132,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3485,7 +4570,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3501,7 +4591,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3517,7 +4612,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3533,7 +4633,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3549,7 +4654,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3565,7 +4675,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 143,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3581,7 +4696,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3597,7 +4717,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3613,7 +4738,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3629,7 +4759,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 242,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3645,7 +4780,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3661,7 +4801,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 137,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3677,7 +4822,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 85,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3693,7 +4843,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 226,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3709,7 +4864,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3725,7 +4885,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 92,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3741,7 +4906,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 72,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3757,7 +4927,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3773,7 +4948,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 223,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3789,7 +4969,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 237,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3805,7 +4990,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 107,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3821,7 +5011,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 216,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3837,7 +5032,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3853,7 +5053,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 218,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3869,7 +5074,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 217,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3885,7 +5095,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 232,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3901,7 +5116,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3917,7 +5137,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3933,7 +5158,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3949,7 +5179,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 228,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3965,7 +5200,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3981,7 +5221,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 99,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -3997,7 +5242,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 87,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4013,7 +5263,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4029,7 +5284,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 254,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4045,7 +5305,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 67,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4061,7 +5326,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 83,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4077,7 +5347,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 106,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4093,7 +5368,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 169,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4109,7 +5389,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 170,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4125,7 +5410,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 142,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4141,7 +5431,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 248,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4157,7 +5452,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 64,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4173,7 +5473,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 101,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4189,7 +5494,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4205,7 +5515,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4221,7 +5536,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 96,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4237,7 +5557,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 154,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4253,7 +5578,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 226,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4269,7 +5599,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4285,7 +5620,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4301,7 +5641,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 153,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4317,7 +5662,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 143,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4333,7 +5683,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4349,7 +5704,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 75,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4365,7 +5725,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 240,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4381,7 +5746,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4397,7 +5767,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 89,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4413,7 +5788,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 104,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4429,7 +5809,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 161,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4445,7 +5830,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4461,7 +5851,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4477,7 +5872,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4493,7 +5893,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 99,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4509,7 +5914,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4525,7 +5935,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 208,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4541,7 +5956,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 426,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4557,7 +5977,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4573,7 +5998,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 238,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4589,7 +6019,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 230,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4605,7 +6040,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4621,7 +6061,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4637,7 +6082,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 106,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4653,7 +6103,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4669,7 +6124,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4685,7 +6145,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4701,7 +6166,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 193,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4717,7 +6187,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 155,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4733,7 +6208,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4749,7 +6229,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 219,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4765,7 +6250,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 132,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4781,7 +6271,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4797,7 +6292,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 219,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4813,7 +6313,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4829,7 +6334,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4845,7 +6355,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 87,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4861,7 +6376,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 93,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4877,7 +6397,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4893,7 +6418,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 53,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4909,7 +6439,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4925,7 +6460,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 86,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4941,7 +6481,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 357,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4957,7 +6502,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 209,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4973,7 +6523,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -4989,7 +6544,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 101,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5005,7 +6565,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5021,7 +6586,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 58,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5037,7 +6607,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 89,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5053,7 +6628,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 394,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5069,7 +6649,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5085,7 +6670,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5101,7 +6691,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5117,7 +6712,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 104,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5133,7 +6733,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5149,7 +6754,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 82,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5165,7 +6775,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5181,7 +6796,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 85,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5197,7 +6817,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5213,7 +6838,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5229,7 +6859,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 92,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5245,7 +6880,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5261,7 +6901,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 100,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5277,7 +6922,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 135,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5293,7 +6943,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 148,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5309,7 +6964,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 152,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5325,7 +6985,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 137,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5341,7 +7006,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 62,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5357,7 +7027,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 259,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5373,7 +7048,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 209,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5389,7 +7069,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 98,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5405,7 +7090,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 221,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5421,7 +7111,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5437,7 +7132,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5453,7 +7153,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 140,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5469,7 +7174,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 84,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5485,7 +7195,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5501,7 +7216,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 198,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5517,7 +7237,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5533,7 +7258,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 170,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5549,7 +7279,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5565,7 +7300,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5581,7 +7321,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 87,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5597,7 +7342,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 211,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5613,7 +7363,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5629,7 +7384,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 149,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5645,7 +7405,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 152,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5661,7 +7426,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 90,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5677,7 +7447,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5693,7 +7468,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5709,7 +7489,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 238,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5725,7 +7510,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5741,7 +7531,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 173,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5757,7 +7552,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 91,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5773,7 +7573,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5789,7 +7594,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5805,7 +7615,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5821,7 +7636,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5837,7 +7657,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5853,7 +7678,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 127,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5869,7 +7699,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5885,7 +7720,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5901,7 +7741,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 170,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5917,7 +7762,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 196,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5933,7 +7783,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 116,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5949,7 +7804,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 66,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5965,7 +7825,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 98,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5981,7 +7846,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 269,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -5997,7 +7867,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6013,7 +7888,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6029,7 +7909,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6045,7 +7930,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6061,7 +7951,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6077,7 +7972,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6093,7 +7993,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6109,7 +8014,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6125,7 +8035,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6141,7 +8056,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 223,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6157,7 +8077,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 259,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6173,7 +8098,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6189,7 +8119,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 127,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6205,7 +8140,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 132,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6221,7 +8161,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6237,7 +8182,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 256,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6253,7 +8203,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 136,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6269,7 +8224,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6285,7 +8245,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6301,7 +8266,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6317,7 +8287,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6333,7 +8308,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6349,7 +8329,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 121,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6365,7 +8350,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6381,7 +8371,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6397,7 +8392,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 237,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6413,7 +8413,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 194,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6429,7 +8434,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6445,7 +8455,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6461,7 +8476,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6477,7 +8497,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6493,7 +8518,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6509,7 +8539,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 244,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6525,7 +8560,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 143,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6541,7 +8581,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6557,7 +8602,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6573,7 +8623,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 94,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6589,7 +8644,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 189,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6605,7 +8665,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 135,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6621,7 +8686,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 233,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6637,7 +8707,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6653,7 +8728,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6669,7 +8749,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6685,7 +8770,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 247,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6701,7 +8791,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 125,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6717,7 +8812,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 231,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6733,7 +8833,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 220,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6749,7 +8854,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6765,7 +8875,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 241,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6781,7 +8896,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6797,7 +8917,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6807,7 +8932,12 @@
       },
       "metadata": null,
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 205,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6823,7 +8953,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 241,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6839,7 +8974,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 309,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6855,7 +8995,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 158,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6871,7 +9016,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6887,7 +9037,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 420,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6903,7 +9058,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 357,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6919,7 +9079,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 420,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6935,7 +9100,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 369,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6951,7 +9121,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6967,7 +9142,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6983,7 +9163,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 175,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -6999,7 +9184,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 134,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7015,7 +9205,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 129,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7031,7 +9226,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7047,7 +9247,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 211,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7063,7 +9268,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 121,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7079,7 +9289,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 179,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7095,7 +9310,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 153,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7111,7 +9331,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 203,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7127,7 +9352,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7143,7 +9373,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7159,7 +9394,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7175,7 +9415,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7191,7 +9436,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 158,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7207,7 +9457,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 198,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7223,7 +9478,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 384,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7239,7 +9499,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7255,7 +9520,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 190,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7271,7 +9541,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 96,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7287,7 +9562,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7303,7 +9583,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 132,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7319,7 +9604,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 147,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7335,7 +9625,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7351,7 +9646,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7367,7 +9667,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7383,7 +9688,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 235,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7399,7 +9709,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7415,7 +9730,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7431,7 +9751,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 234,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7447,7 +9772,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 138,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7463,7 +9793,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 241,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7479,7 +9814,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7495,7 +9835,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 208,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7511,7 +9856,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7527,7 +9877,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7543,7 +9898,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 132,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7559,7 +9919,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 135,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7575,7 +9940,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7591,7 +9961,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 231,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7607,7 +9982,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 217,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7623,7 +10003,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 142,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7639,7 +10024,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 139,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7655,7 +10045,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7671,7 +10066,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 134,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7687,7 +10087,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7703,7 +10108,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 169,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7719,7 +10129,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7735,7 +10150,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 241,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7751,7 +10171,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7767,7 +10192,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7783,7 +10213,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 134,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7799,7 +10234,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 236,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7815,7 +10255,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 134,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7831,7 +10276,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 219,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7847,7 +10297,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 426,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7863,7 +10318,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 73,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7879,7 +10339,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7895,7 +10360,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7911,7 +10381,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 230,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7927,7 +10402,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7943,7 +10423,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7959,7 +10444,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 107,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7975,7 +10465,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 127,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -7991,7 +10486,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8007,7 +10507,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 340,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8023,7 +10528,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 274,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8039,7 +10549,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8055,7 +10570,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8071,7 +10591,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 173,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8087,7 +10612,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 137,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8103,7 +10633,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8119,7 +10654,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8135,7 +10675,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 240,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8151,7 +10696,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8167,7 +10717,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8183,7 +10738,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 253,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8199,7 +10759,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8215,7 +10780,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 206,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8231,7 +10801,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 241,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8247,7 +10822,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8263,7 +10843,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 50,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8279,7 +10864,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8295,7 +10885,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 247,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8311,7 +10906,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 219,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8327,7 +10927,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8343,7 +10948,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 157,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8359,7 +10969,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8375,7 +10990,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8391,7 +11011,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 104,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8407,7 +11032,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 136,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8423,7 +11053,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 211,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8439,7 +11074,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8455,7 +11095,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 158,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8471,7 +11116,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8487,7 +11137,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 143,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8503,7 +11158,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8519,7 +11179,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8535,7 +11200,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 69,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8551,7 +11221,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 234,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8567,7 +11242,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 116,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8583,7 +11263,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 135,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8599,7 +11284,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8615,7 +11305,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8631,7 +11326,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 127,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8647,7 +11347,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 254,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8663,7 +11368,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8679,7 +11389,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 158,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8695,7 +11410,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8711,7 +11431,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 121,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8727,7 +11452,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8743,7 +11473,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 90,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8759,7 +11494,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 116,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8775,7 +11515,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 257,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8791,7 +11536,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 76,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8807,7 +11557,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 71,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8823,7 +11578,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 218,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8839,7 +11599,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 250,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8855,7 +11620,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8871,7 +11641,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 121,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8887,7 +11662,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 106,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8903,7 +11683,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 94,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8919,7 +11704,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 223,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8935,7 +11725,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 152,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8951,7 +11746,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8967,7 +11767,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 263,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8983,7 +11788,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 224,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -8999,7 +11809,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9015,7 +11830,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9031,7 +11851,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 140,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9047,7 +11872,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9063,7 +11893,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9079,7 +11914,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9095,7 +11935,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9111,7 +11956,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 196,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9127,7 +11977,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 233,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9143,7 +11998,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 257,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9159,7 +12019,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 171,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9175,7 +12040,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 355,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9191,7 +12061,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 236,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9207,7 +12082,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9223,7 +12103,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 170,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9239,7 +12124,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9255,7 +12145,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 369,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9271,7 +12166,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 400,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9287,7 +12187,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9303,7 +12208,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 411,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9319,7 +12229,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 313,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9335,7 +12250,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 231,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9351,7 +12271,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 169,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9367,7 +12292,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 254,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9383,7 +12313,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 366,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9399,7 +12334,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9415,7 +12355,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 267,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9431,7 +12376,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 362,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9447,7 +12397,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 233,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9463,7 +12418,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9479,7 +12439,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9495,7 +12460,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 280,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9511,7 +12481,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 161,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9527,7 +12502,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9543,7 +12523,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9559,7 +12544,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 245,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9575,7 +12565,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 211,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9591,7 +12586,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 226,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9607,7 +12607,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 263,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9623,7 +12628,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 205,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9639,7 +12649,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9655,7 +12670,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9671,7 +12691,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9687,7 +12712,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9703,7 +12733,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9719,7 +12754,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9735,7 +12775,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9751,7 +12796,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 251,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9767,7 +12817,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9783,7 +12838,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 191,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9799,7 +12859,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 240,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9815,7 +12880,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9831,7 +12901,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9847,7 +12922,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 222,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9863,7 +12943,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 134,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9879,7 +12964,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 183,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9895,7 +12985,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9911,7 +13006,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 279,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9927,7 +13027,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 234,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9943,7 +13048,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 240,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9959,7 +13069,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 261,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9975,7 +13090,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 104,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -9991,7 +13111,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 196,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10007,7 +13132,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 214,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10023,7 +13153,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10039,7 +13174,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10055,7 +13195,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 296,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10071,7 +13216,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 138,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10087,7 +13237,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 269,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10103,7 +13258,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 75,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10119,7 +13279,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10135,7 +13300,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 60,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10151,7 +13321,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10167,7 +13342,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10183,7 +13363,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10199,7 +13384,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10215,7 +13405,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10231,7 +13426,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 227,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10247,7 +13447,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10263,7 +13468,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10279,7 +13489,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 313,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10295,7 +13510,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 171,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10311,7 +13531,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10327,7 +13552,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10343,7 +13573,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 220,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10359,7 +13594,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 266,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10375,7 +13615,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10391,7 +13636,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10407,7 +13657,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 222,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10423,7 +13678,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 405,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10439,7 +13699,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10455,7 +13720,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 209,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10471,7 +13741,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 274,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10487,7 +13762,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 381,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10503,7 +13783,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10519,7 +13804,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 349,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10535,7 +13825,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 191,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10551,7 +13846,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 334,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10567,7 +13867,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 245,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10583,7 +13888,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 209,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10599,7 +13909,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10615,7 +13930,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10631,7 +13951,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10647,7 +13972,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10663,7 +13993,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10679,7 +14014,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 104,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10695,7 +14035,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 205,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10711,7 +14056,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10727,7 +14077,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10743,7 +14098,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10759,7 +14119,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10775,7 +14140,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10791,7 +14161,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 238,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10807,7 +14182,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 175,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10823,7 +14203,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10839,7 +14224,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 215,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10855,7 +14245,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 248,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10871,7 +14266,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 263,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10887,7 +14287,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10903,7 +14308,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10919,7 +14329,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 408,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10935,7 +14350,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 56,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10951,7 +14371,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10967,7 +14392,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 241,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10983,7 +14413,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 90,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -10999,7 +14434,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 278,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11015,7 +14455,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11031,7 +14476,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11047,7 +14497,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11063,7 +14518,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 143,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11079,7 +14539,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 286,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11095,7 +14560,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11111,7 +14581,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 97,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11127,7 +14602,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11143,7 +14623,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11159,7 +14644,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11175,7 +14665,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11191,7 +14686,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 209,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11207,7 +14707,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 208,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11223,7 +14728,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 100,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11239,7 +14749,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 171,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11255,7 +14770,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 260,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11271,7 +14791,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11287,7 +14812,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 96,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11303,7 +14833,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11319,7 +14854,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11335,7 +14875,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 275,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11351,7 +14896,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 101,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11367,7 +14917,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 214,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11383,7 +14938,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 280,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11399,7 +14959,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11415,7 +14980,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11431,7 +15001,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 308,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11447,7 +15022,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 203,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11463,7 +15043,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 275,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11479,7 +15064,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11495,7 +15085,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 261,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11511,7 +15106,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 171,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11527,7 +15127,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 116,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11543,7 +15148,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 269,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11559,7 +15169,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 104,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11575,7 +15190,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11591,7 +15211,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 237,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11607,7 +15232,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11623,7 +15253,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 280,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11639,7 +15274,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 121,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11655,7 +15295,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 260,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11671,7 +15316,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11687,7 +15337,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11703,7 +15358,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 213,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11719,7 +15379,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 194,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11735,7 +15400,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 269,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11751,7 +15421,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 226,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11767,7 +15442,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 169,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11783,7 +15463,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11799,7 +15484,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 254,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11815,7 +15505,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11831,7 +15526,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 183,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11847,7 +15547,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11863,7 +15568,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 226,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11879,7 +15589,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11895,7 +15610,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11911,7 +15631,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11927,7 +15652,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11943,7 +15673,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 101,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11959,7 +15694,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11975,7 +15715,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 95,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -11991,7 +15736,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 158,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12007,7 +15757,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12023,7 +15778,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 148,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12039,7 +15799,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12055,7 +15820,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 221,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12071,7 +15841,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12087,7 +15862,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 222,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12103,7 +15883,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 236,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12119,7 +15904,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 129,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12135,7 +15925,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12151,7 +15946,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 171,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12167,7 +15967,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 52,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12183,7 +15988,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 259,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12199,7 +16009,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 186,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12215,7 +16030,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 426,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12231,7 +16051,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 218,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12247,7 +16072,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 223,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12263,7 +16093,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 236,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12279,7 +16114,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 411,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12295,7 +16135,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 199,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12311,7 +16156,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 275,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12327,7 +16177,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12343,7 +16198,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 269,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12359,7 +16219,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 212,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12375,7 +16240,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 213,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12391,7 +16261,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12407,7 +16282,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 154,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12423,7 +16303,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12439,7 +16324,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12455,7 +16345,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 349,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12471,7 +16366,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 134,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12487,7 +16387,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12503,7 +16408,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12519,7 +16429,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12535,7 +16450,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 371,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12551,7 +16471,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 158,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12567,7 +16492,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12583,7 +16513,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12599,7 +16534,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 143,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12615,7 +16555,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 127,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12631,7 +16576,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 205,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12647,7 +16597,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 206,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12663,7 +16618,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12679,7 +16639,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 263,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12695,7 +16660,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 194,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12711,7 +16681,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 143,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12727,7 +16702,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 147,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12743,7 +16723,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 334,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12759,7 +16744,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 65,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12775,7 +16765,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12791,7 +16786,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12807,7 +16807,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 254,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12823,7 +16828,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12839,7 +16849,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12855,7 +16870,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12871,7 +16891,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 235,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12887,7 +16912,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12903,7 +16933,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12919,7 +16954,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12935,7 +16975,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12951,7 +16996,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12967,7 +17017,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 214,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12983,7 +17038,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 376,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -12999,7 +17059,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13015,7 +17080,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13031,7 +17101,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 135,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13047,7 +17122,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 426,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13063,7 +17143,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 134,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13079,7 +17164,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 139,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13095,7 +17185,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13111,7 +17206,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 79,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13127,7 +17227,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 157,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13143,7 +17248,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13159,7 +17269,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 127,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13175,7 +17290,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13191,7 +17311,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13207,7 +17332,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 397,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13223,7 +17353,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 405,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13239,7 +17374,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 220,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13255,7 +17395,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 83,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13271,7 +17416,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13287,7 +17437,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 59,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13303,7 +17458,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 125,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13319,7 +17479,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13335,7 +17500,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 193,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13351,7 +17521,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13367,7 +17542,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 116,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13383,7 +17563,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13399,7 +17584,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 228,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13415,7 +17605,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13431,7 +17626,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13447,7 +17647,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13463,7 +17668,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 142,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13479,7 +17689,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13495,7 +17710,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 104,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13511,7 +17731,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 107,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13527,7 +17752,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13543,7 +17773,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 211,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13559,7 +17794,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 260,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13575,7 +17815,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13591,7 +17836,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13607,7 +17857,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 411,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13623,7 +17878,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13639,7 +17899,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 98,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13655,7 +17920,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13671,7 +17941,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13687,7 +17962,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13703,7 +17983,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13719,7 +18004,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 152,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13735,7 +18025,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13751,7 +18046,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13767,7 +18067,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 154,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13783,7 +18088,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13799,7 +18109,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13815,7 +18130,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13831,7 +18151,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 260,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13847,7 +18172,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 420,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13863,7 +18193,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13879,7 +18214,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13895,7 +18235,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 99,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13911,7 +18256,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 402,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13927,7 +18277,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 211,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13943,7 +18298,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13959,7 +18319,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13975,7 +18340,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -13991,7 +18361,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14007,7 +18382,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14023,7 +18403,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14039,7 +18424,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14055,7 +18445,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 148,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14071,7 +18466,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 369,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14087,7 +18487,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14103,7 +18508,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 408,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14119,7 +18529,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14135,7 +18550,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 371,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14151,7 +18571,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14167,7 +18592,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14183,7 +18613,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 402,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14199,7 +18634,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14215,7 +18655,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14231,7 +18676,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14247,7 +18697,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14263,7 +18718,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14279,7 +18739,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14295,7 +18760,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14311,7 +18781,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 134,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14327,7 +18802,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 163,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14343,7 +18823,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 414,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14359,7 +18844,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14375,7 +18865,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14391,7 +18886,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14407,7 +18907,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14423,7 +18928,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 140,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14439,7 +18949,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 411,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14455,7 +18970,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14471,7 +18991,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 84,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14487,7 +19012,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14503,7 +19033,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14519,7 +19054,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 209,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14535,7 +19075,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 212,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14551,7 +19096,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 279,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14567,7 +19117,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 70,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14583,7 +19138,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14599,7 +19159,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 211,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14615,7 +19180,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 293,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14631,7 +19201,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14647,7 +19222,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 258,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14663,7 +19243,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 245,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14679,7 +19264,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 250,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14695,7 +19285,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 139,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14711,7 +19306,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 99,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14727,7 +19327,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14743,7 +19348,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 151,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14759,7 +19369,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 142,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14775,7 +19390,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14791,7 +19411,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 405,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14807,7 +19432,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14823,7 +19453,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 389,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14839,7 +19474,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14855,7 +19495,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 426,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14871,7 +19516,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14887,7 +19537,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14903,7 +19558,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14919,7 +19579,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 149,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14935,7 +19600,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14951,7 +19621,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14967,7 +19642,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14983,7 +19663,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -14999,7 +19684,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 135,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15015,7 +19705,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 381,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15031,7 +19726,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 408,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15047,7 +19747,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15063,7 +19768,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 186,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15079,7 +19789,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15095,7 +19810,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15111,7 +19831,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15127,7 +19852,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15143,7 +19873,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15159,7 +19894,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 420,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15175,7 +19915,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15191,7 +19936,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15207,7 +19957,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15223,7 +19978,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 414,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15239,7 +19999,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 155,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15255,7 +20020,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 147,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15271,7 +20041,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 247,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15287,7 +20062,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 137,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15303,7 +20083,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15319,7 +20104,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15335,7 +20125,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15351,7 +20146,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15367,7 +20167,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15383,7 +20188,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15399,7 +20209,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15415,7 +20230,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15431,7 +20251,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15447,7 +20272,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15463,7 +20293,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15479,7 +20314,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15495,7 +20335,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15511,7 +20356,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 420,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15527,7 +20377,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15543,7 +20398,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 208,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15559,7 +20419,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15575,7 +20440,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 221,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15591,7 +20461,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 397,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15607,7 +20482,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 228,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15623,7 +20503,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 227,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15639,7 +20524,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 199,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15655,7 +20545,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 151,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15671,7 +20566,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 235,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15687,7 +20587,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15703,7 +20608,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15719,7 +20629,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15735,7 +20650,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 269,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15751,7 +20671,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 220,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15767,7 +20692,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 414,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15783,7 +20713,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 157,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15799,7 +20734,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15815,7 +20755,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 242,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15831,7 +20776,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15847,7 +20797,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15863,7 +20818,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 420,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15879,7 +20839,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15895,7 +20860,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15911,7 +20881,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15927,7 +20902,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 417,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15943,7 +20923,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15959,7 +20944,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15975,7 +20965,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 194,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -15991,7 +20986,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16007,7 +21007,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16023,7 +21028,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16039,7 +21049,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 142,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16055,7 +21070,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16071,7 +21091,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 98,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16087,7 +21112,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 157,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16103,7 +21133,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 153,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16119,7 +21154,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16135,7 +21175,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16151,7 +21196,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 136,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16167,7 +21217,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16183,7 +21238,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16199,7 +21259,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16215,7 +21280,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 243,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16231,7 +21301,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 175,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16247,7 +21322,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 90,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16263,7 +21343,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 391,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16279,7 +21364,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16295,7 +21385,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 386,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16311,7 +21406,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 197,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16327,7 +21427,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 197,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16343,7 +21448,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 154,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16359,7 +21469,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 93,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16375,7 +21490,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16391,7 +21511,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16407,7 +21532,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16423,7 +21553,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 53,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16439,7 +21574,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 137,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16455,7 +21595,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 152,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16471,7 +21616,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 218,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16487,7 +21637,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16503,7 +21658,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 414,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16519,7 +21679,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 97,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16535,7 +21700,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 289,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16551,7 +21721,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 171,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16567,7 +21742,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16583,7 +21763,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 376,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16599,7 +21784,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16615,7 +21805,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 386,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16631,7 +21826,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 97,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16647,7 +21847,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16663,7 +21868,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16679,7 +21889,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 364,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16695,7 +21910,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 408,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16711,7 +21931,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16727,7 +21952,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16743,7 +21973,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 193,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16759,7 +21994,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16775,7 +22015,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16791,7 +22036,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 420,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16807,7 +22057,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 374,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16823,7 +22078,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16839,7 +22099,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16855,7 +22120,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16871,7 +22141,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16887,7 +22162,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16903,7 +22183,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 88,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16919,7 +22204,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 360,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16935,7 +22225,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16951,7 +22246,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 100,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16967,7 +22267,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16983,7 +22288,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 99,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -16999,7 +22309,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 402,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17015,7 +22330,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 420,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17031,7 +22351,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17047,7 +22372,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17063,7 +22393,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 74,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17079,7 +22414,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 161,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17095,7 +22435,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17111,7 +22456,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 271,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17127,7 +22477,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17143,7 +22498,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 222,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17159,7 +22519,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17175,7 +22540,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 215,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17191,7 +22561,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17207,7 +22582,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17223,7 +22603,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 170,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17239,7 +22624,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 135,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17255,7 +22645,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 198,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17271,7 +22666,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17287,7 +22687,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 426,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17303,7 +22708,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17319,7 +22729,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17335,7 +22750,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17351,7 +22771,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 213,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17367,7 +22792,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 266,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17383,7 +22813,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17399,7 +22834,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 186,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17415,7 +22855,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17431,7 +22876,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17447,7 +22897,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 360,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17463,7 +22918,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17479,7 +22939,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 420,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17495,7 +22960,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17511,7 +22981,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 215,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17527,7 +23002,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 271,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17543,7 +23023,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17559,7 +23044,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17575,7 +23065,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 275,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17591,7 +23086,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17607,7 +23107,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 286,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17623,7 +23128,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 303,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17639,7 +23149,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17655,7 +23170,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17671,7 +23191,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 391,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17687,7 +23212,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17703,7 +23233,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17719,7 +23254,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17735,7 +23275,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 194,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17751,7 +23296,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17767,7 +23317,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 336,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17783,7 +23338,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 411,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17799,7 +23359,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17815,7 +23380,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 426,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17831,7 +23401,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 137,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17847,7 +23422,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 360,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17863,7 +23443,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 394,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17879,7 +23464,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17895,7 +23485,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17911,7 +23506,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17927,7 +23527,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 300,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17943,7 +23548,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17959,7 +23569,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17975,7 +23590,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 175,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -17991,7 +23611,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18007,7 +23632,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18023,7 +23653,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 97,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18039,7 +23674,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18055,7 +23695,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18071,7 +23716,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18087,7 +23737,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 360,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18103,7 +23758,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 96,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18119,7 +23779,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18135,7 +23800,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18151,7 +23821,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18167,7 +23842,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 196,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18183,7 +23863,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18199,7 +23884,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18215,7 +23905,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 89,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18231,7 +23926,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18247,7 +23947,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 173,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18263,7 +23968,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18279,7 +23989,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18295,7 +24010,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18311,7 +24031,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 81,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18327,7 +24052,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18343,7 +24073,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 170,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18359,7 +24094,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 83,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18375,7 +24115,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18391,7 +24136,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18407,7 +24157,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 331,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18423,7 +24178,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 369,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18439,7 +24199,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 197,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18455,7 +24220,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 98,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18471,7 +24241,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 136,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18487,7 +24262,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 69,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18503,7 +24283,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 63,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18519,7 +24304,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 148,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18535,7 +24325,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18551,7 +24346,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18567,7 +24367,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 203,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18583,7 +24388,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 357,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18599,7 +24409,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 258,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18615,7 +24430,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18631,7 +24451,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 205,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18647,7 +24472,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18663,7 +24493,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 426,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18679,7 +24514,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 411,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18695,7 +24535,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 214,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18711,7 +24556,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 217,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18727,7 +24577,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 155,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18743,7 +24598,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 93,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18759,7 +24619,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18775,7 +24640,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18791,7 +24661,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 149,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18807,7 +24682,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18823,7 +24703,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 80,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18839,7 +24724,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 95,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18855,7 +24745,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 132,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18871,7 +24766,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18887,7 +24787,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 98,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18903,7 +24808,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18919,7 +24829,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 233,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18935,7 +24850,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18951,7 +24871,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18967,7 +24892,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 376,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18983,7 +24913,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 179,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -18999,7 +24934,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 157,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19015,7 +24955,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 426,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19031,7 +24976,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19047,7 +24997,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19063,7 +25018,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19079,7 +25039,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 163,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19095,7 +25060,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19111,7 +25081,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19127,7 +25102,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19143,7 +25123,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 136,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19159,7 +25144,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19175,7 +25165,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19191,7 +25186,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 55,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19207,7 +25207,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19223,7 +25228,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19239,7 +25249,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 107,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19255,7 +25270,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19271,7 +25291,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19287,7 +25312,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19303,7 +25333,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 100,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19319,7 +25354,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19335,7 +25375,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 169,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19351,7 +25396,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 95,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19367,7 +25417,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 196,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19383,7 +25438,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19399,7 +25459,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19415,7 +25480,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 251,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19431,7 +25501,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 198,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19447,7 +25522,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 155,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19463,7 +25543,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19479,7 +25564,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19495,7 +25585,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 106,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19511,7 +25606,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19527,7 +25627,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19543,7 +25648,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19559,7 +25669,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19575,7 +25690,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19591,7 +25711,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 214,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19607,7 +25732,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 161,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19623,7 +25753,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19639,7 +25774,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 226,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19655,7 +25795,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19671,7 +25816,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 426,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19687,7 +25837,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 256,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19703,7 +25858,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 256,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19719,7 +25879,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 384,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19735,7 +25900,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19751,7 +25921,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 221,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19767,7 +25942,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 183,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19783,7 +25963,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 276,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19799,7 +25984,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 230,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19815,7 +26005,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 170,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19831,7 +26026,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 230,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19847,7 +26047,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 213,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19863,7 +26068,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 148,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19879,7 +26089,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 135,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19895,7 +26110,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 158,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19911,7 +26131,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19927,7 +26152,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19943,7 +26173,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19959,7 +26194,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19975,7 +26215,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -19991,7 +26236,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 139,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20007,7 +26257,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20023,7 +26278,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 69,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20039,7 +26299,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20055,7 +26320,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 72,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20071,7 +26341,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20087,7 +26362,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20103,7 +26383,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 304,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20119,7 +26404,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20135,7 +26425,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 258,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20151,7 +26446,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 97,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20167,7 +26467,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 258,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20183,7 +26488,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 78,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20199,7 +26509,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 263,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20215,7 +26530,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20231,7 +26551,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 219,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20247,7 +26572,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 88,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20263,7 +26593,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 72,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20279,7 +26614,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20295,7 +26635,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 313,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20311,7 +26656,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 67,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20327,7 +26677,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 201,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20343,7 +26698,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 275,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20359,7 +26719,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20375,7 +26740,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20391,7 +26761,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20407,7 +26782,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 153,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20423,7 +26803,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 62,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20439,7 +26824,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20455,7 +26845,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20471,7 +26866,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 264,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20487,7 +26887,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 136,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20503,7 +26908,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20519,7 +26929,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 374,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20535,7 +26950,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20551,7 +26971,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20567,7 +26992,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20583,7 +27013,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20599,7 +27034,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20615,7 +27055,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 183,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20631,7 +27076,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 249,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20647,7 +27097,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20663,7 +27118,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20679,7 +27139,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 402,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20695,7 +27160,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 154,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20711,7 +27181,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20727,7 +27202,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20743,7 +27223,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20759,7 +27244,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20775,7 +27265,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 414,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20791,7 +27286,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 87,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20807,7 +27307,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20823,7 +27328,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 89,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20839,7 +27349,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 394,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20855,7 +27370,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 411,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20871,7 +27391,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 254,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20887,7 +27412,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20903,7 +27433,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20919,7 +27454,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20935,7 +27475,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 321,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20951,7 +27496,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 269,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20967,7 +27517,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20983,7 +27538,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -20999,7 +27559,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21015,7 +27580,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21031,7 +27601,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21047,7 +27622,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 143,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21063,7 +27643,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21079,7 +27664,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 249,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21095,7 +27685,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21111,7 +27706,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21127,7 +27727,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 197,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21143,7 +27748,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21159,7 +27769,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21175,7 +27790,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21191,7 +27811,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21207,7 +27832,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 245,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21223,7 +27853,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 265,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21239,7 +27874,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21255,7 +27895,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 170,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21271,7 +27916,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 293,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21287,7 +27937,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21303,7 +27958,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21319,7 +27979,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 249,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21335,7 +28000,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21351,7 +28021,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21367,7 +28042,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21383,7 +28063,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 190,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21399,7 +28084,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21415,7 +28105,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21431,7 +28126,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21447,7 +28147,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21463,7 +28168,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21479,7 +28189,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21495,7 +28210,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21511,7 +28231,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 426,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21527,7 +28252,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21543,7 +28273,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21559,7 +28294,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 171,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21575,7 +28315,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 67,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21591,7 +28336,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 62,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21607,7 +28357,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21623,7 +28378,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 76,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21639,7 +28399,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21655,7 +28420,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 106,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21671,7 +28441,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21687,7 +28462,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 64,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21703,7 +28483,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 426,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21719,7 +28504,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21735,7 +28525,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 221,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21751,7 +28546,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 249,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21767,7 +28567,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 381,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21783,7 +28588,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21799,7 +28609,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 121,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21815,7 +28630,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21831,7 +28651,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 414,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21847,7 +28672,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21863,7 +28693,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21879,7 +28714,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 116,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21895,7 +28735,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 77,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21911,7 +28756,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21927,7 +28777,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21943,7 +28798,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 198,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21959,7 +28819,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21975,7 +28840,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 194,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -21991,7 +28861,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22007,7 +28882,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 134,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22023,7 +28903,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 82,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22039,7 +28924,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22055,7 +28945,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22071,7 +28966,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22087,7 +28987,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22103,7 +29008,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22119,7 +29029,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 208,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22135,7 +29050,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 213,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22151,7 +29071,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22167,7 +29092,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 121,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22183,7 +29113,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 405,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22199,7 +29134,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 152,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22215,7 +29155,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22231,7 +29176,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 261,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22247,7 +29197,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 80,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22263,7 +29218,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22279,7 +29239,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 233,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22295,7 +29260,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 241,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22311,7 +29281,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22327,7 +29302,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 224,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22343,7 +29323,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22359,7 +29344,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22375,7 +29365,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22391,7 +29386,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22407,7 +29407,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 400,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22423,7 +29428,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22439,7 +29449,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22455,7 +29470,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 138,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22471,7 +29491,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22487,7 +29512,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22503,7 +29533,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 121,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22519,7 +29554,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22535,7 +29575,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 417,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22551,7 +29596,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22567,7 +29617,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 151,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22583,7 +29638,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22599,7 +29659,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 417,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22615,7 +29680,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 320,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22631,7 +29701,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 138,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22647,7 +29722,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 389,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22663,7 +29743,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 203,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22679,7 +29764,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 155,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22695,7 +29785,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22711,7 +29806,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22727,7 +29827,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22743,7 +29848,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 208,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22759,7 +29869,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22775,7 +29890,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22791,7 +29911,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22807,7 +29932,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22823,7 +29953,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 136,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22839,7 +29974,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 346,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22855,7 +29995,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22871,7 +30016,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22887,7 +30037,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 153,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22903,7 +30058,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22919,7 +30079,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22935,7 +30100,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 300,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22951,7 +30121,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22967,7 +30142,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22983,7 +30163,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 414,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -22999,7 +30184,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 364,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23015,7 +30205,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 351,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23031,7 +30226,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23047,7 +30247,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23063,7 +30268,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23079,7 +30289,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 426,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23095,7 +30310,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 381,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23111,7 +30331,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 400,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23127,7 +30352,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23143,7 +30373,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 90,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23159,7 +30394,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 171,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23175,7 +30415,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 402,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23191,7 +30436,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 75,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23207,7 +30457,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 336,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23223,7 +30478,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23239,7 +30499,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23255,7 +30520,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23271,7 +30541,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23287,7 +30562,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 153,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23303,7 +30583,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 142,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23319,7 +30604,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 127,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23335,7 +30625,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23351,7 +30646,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23367,7 +30667,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 381,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23383,7 +30688,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23399,7 +30709,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23415,7 +30730,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 100,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23431,7 +30751,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 394,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23447,7 +30772,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23463,7 +30793,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 101,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23479,7 +30814,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 414,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23495,7 +30835,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 400,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23511,7 +30856,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23527,7 +30877,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23543,7 +30898,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23559,7 +30919,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23575,7 +30940,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23591,7 +30961,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 89,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23607,7 +30982,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 384,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23623,7 +31003,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 74,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23639,7 +31024,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 77,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23655,7 +31045,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 342,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23671,7 +31066,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 157,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23687,7 +31087,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23703,7 +31108,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 88,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23719,7 +31129,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 88,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23735,7 +31150,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 86,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23751,7 +31171,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23767,7 +31192,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 96,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23783,7 +31213,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23799,7 +31234,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23815,7 +31255,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 127,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23831,7 +31276,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 295,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23847,7 +31297,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 74,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23863,7 +31318,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23879,7 +31339,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23895,7 +31360,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23911,7 +31381,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23927,7 +31402,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23943,7 +31423,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 129,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23959,7 +31444,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23975,7 +31465,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -23991,7 +31486,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24007,7 +31507,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24023,7 +31528,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24039,7 +31549,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 149,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24055,7 +31570,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24071,7 +31591,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24087,7 +31612,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 408,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24103,7 +31633,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24119,7 +31654,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 190,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24135,7 +31675,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24151,7 +31696,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 229,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24167,7 +31717,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 154,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24183,7 +31738,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 408,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24199,7 +31759,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 397,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24215,7 +31780,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24231,7 +31801,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24247,7 +31822,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24263,7 +31843,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 300,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24279,7 +31864,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24295,7 +31885,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24311,7 +31906,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24327,7 +31927,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 104,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24343,7 +31948,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 194,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24359,7 +31969,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24375,7 +31990,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 79,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24391,7 +32011,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 196,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24407,7 +32032,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 257,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24423,7 +32053,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 157,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24439,7 +32074,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24455,7 +32095,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 216,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24471,7 +32116,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 121,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24487,7 +32137,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24503,7 +32158,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24519,7 +32179,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24535,7 +32200,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24551,7 +32221,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 101,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24567,7 +32242,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24583,7 +32263,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24599,7 +32284,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 50,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24615,7 +32305,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 208,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24631,7 +32326,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 79,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24647,7 +32347,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 87,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24663,7 +32368,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 116,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24679,7 +32389,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 155,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24695,7 +32410,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 228,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24711,7 +32431,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 157,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24727,7 +32452,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24743,7 +32473,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24759,7 +32494,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 241,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24775,7 +32515,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24791,7 +32536,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 226,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24807,7 +32557,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24823,7 +32578,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 198,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24839,7 +32599,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24855,7 +32620,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 83,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24871,7 +32641,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 247,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24887,7 +32662,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24903,7 +32683,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 203,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24919,7 +32704,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 151,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24935,7 +32725,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24951,7 +32746,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24967,7 +32767,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24983,7 +32788,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 199,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -24999,7 +32809,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 189,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25015,7 +32830,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 306,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25031,7 +32851,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 142,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25047,7 +32872,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 163,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25063,7 +32893,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25079,7 +32914,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25095,7 +32935,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25111,7 +32956,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 224,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25127,7 +32977,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 142,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25143,7 +32998,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 149,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25159,7 +33019,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 285,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25175,7 +33040,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 285,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25191,7 +33061,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 270,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25207,7 +33082,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25223,7 +33103,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 148,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25239,7 +33124,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 138,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25255,7 +33145,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25271,7 +33166,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25287,7 +33187,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 149,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25303,7 +33208,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 250,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25319,7 +33229,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 251,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25335,7 +33250,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 420,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25351,7 +33271,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25367,7 +33292,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 58,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25383,7 +33313,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 91,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25399,7 +33334,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25415,7 +33355,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 134,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25431,7 +33376,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 346,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25447,7 +33397,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 224,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25463,7 +33418,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 265,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25479,7 +33439,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 260,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25495,7 +33460,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 213,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25511,7 +33481,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 95,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25527,7 +33502,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25543,7 +33523,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25559,7 +33544,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25575,7 +33565,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25591,7 +33586,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 50,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25607,7 +33607,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 94,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25623,7 +33628,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25639,7 +33649,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25655,7 +33670,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 241,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25671,7 +33691,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25687,7 +33712,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 288,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25703,7 +33733,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 203,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25719,7 +33754,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 71,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25735,7 +33775,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25751,7 +33796,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 99,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25767,7 +33817,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 282,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25783,7 +33838,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25799,7 +33859,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 203,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25815,7 +33880,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 198,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25831,7 +33901,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25847,7 +33922,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 152,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25863,7 +33943,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 270,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25879,7 +33964,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25895,7 +33985,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 104,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25911,7 +34006,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25927,7 +34027,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 198,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25943,7 +34048,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 236,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25959,7 +34069,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 169,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25975,7 +34090,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 142,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -25991,7 +34111,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 93,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26007,7 +34132,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 147,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26023,7 +34153,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 197,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26039,7 +34174,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 279,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26055,7 +34195,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 183,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26071,7 +34216,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 142,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26087,7 +34237,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26103,7 +34258,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 240,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26119,7 +34279,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26135,7 +34300,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26151,7 +34321,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26167,7 +34342,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26183,7 +34363,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 218,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26199,7 +34384,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26215,7 +34405,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26231,7 +34426,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26247,7 +34447,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26263,7 +34468,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26279,7 +34489,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 242,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26295,7 +34510,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26311,7 +34531,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 129,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26327,7 +34552,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26343,7 +34573,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 321,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26359,7 +34594,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 218,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26375,7 +34615,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 230,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26391,7 +34636,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26407,7 +34657,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 193,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26423,7 +34678,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26439,7 +34699,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26455,7 +34720,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26471,7 +34741,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 189,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26487,7 +34762,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26503,7 +34783,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26519,7 +34804,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 191,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26535,7 +34825,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26551,7 +34846,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26567,7 +34867,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26583,7 +34888,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26599,7 +34909,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 243,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26615,7 +34930,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26631,7 +34951,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 233,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26647,7 +34972,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26663,7 +34993,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 194,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26679,7 +35014,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26695,7 +35035,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 239,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26711,7 +35056,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26727,7 +35077,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26743,7 +35098,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26759,7 +35119,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 189,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26775,7 +35140,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26791,7 +35161,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 193,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26807,7 +35182,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26823,7 +35203,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26839,7 +35224,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 196,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26855,7 +35245,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26871,7 +35266,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 86,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26887,7 +35287,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26903,7 +35308,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26919,7 +35329,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 106,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26935,7 +35350,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26951,7 +35371,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 91,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26967,7 +35392,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 420,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26983,7 +35413,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -26999,7 +35434,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27015,7 +35455,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 170,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27031,7 +35476,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27047,7 +35497,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 199,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27063,7 +35518,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 408,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27079,7 +35539,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27095,7 +35560,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27111,7 +35581,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 243,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27127,7 +35602,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27143,7 +35623,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27159,7 +35644,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 106,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27175,7 +35665,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27191,7 +35686,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 214,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27207,7 +35707,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27223,7 +35728,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 138,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27239,7 +35749,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 143,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27255,7 +35770,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 198,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27271,7 +35791,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 261,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27287,7 +35812,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27303,7 +35833,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 230,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27319,7 +35854,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27335,7 +35875,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 135,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27351,7 +35896,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27367,7 +35917,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 258,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27383,7 +35938,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27399,7 +35959,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27415,7 +35980,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 98,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27431,7 +36001,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27447,7 +36022,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 243,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27463,7 +36043,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27479,7 +36064,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 107,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27495,7 +36085,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27511,7 +36106,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27527,7 +36127,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 283,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27543,7 +36148,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 214,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27559,7 +36169,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 222,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27575,7 +36190,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27591,7 +36211,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27607,7 +36232,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 95,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27623,7 +36253,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27639,7 +36274,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27655,7 +36295,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 223,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27671,7 +36316,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27687,7 +36337,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 154,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27703,7 +36358,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27719,7 +36379,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 222,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27735,7 +36400,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 169,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27751,7 +36421,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 353,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27767,7 +36442,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27783,7 +36463,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27799,7 +36484,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 104,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27815,7 +36505,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 101,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27831,7 +36526,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 121,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27847,7 +36547,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 235,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27863,7 +36568,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 389,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27879,7 +36589,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 100,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27895,7 +36610,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27911,7 +36631,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 355,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27927,7 +36652,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 219,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27943,7 +36673,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 215,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27959,7 +36694,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 55,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27975,7 +36715,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 179,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -27991,7 +36736,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 104,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28007,7 +36757,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 214,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28023,7 +36778,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28039,7 +36799,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28055,7 +36820,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 95,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28071,7 +36841,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 140,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28087,7 +36862,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28103,7 +36883,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28119,7 +36904,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 189,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28135,7 +36925,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 183,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28151,7 +36946,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 151,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28167,7 +36967,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 275,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28183,7 +36988,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 171,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28199,7 +37009,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 249,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28215,7 +37030,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 107,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28231,7 +37051,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28247,7 +37072,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28263,7 +37093,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 215,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28279,7 +37114,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 266,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28295,7 +37135,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 229,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28311,7 +37156,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 288,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28327,7 +37177,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28343,7 +37198,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 234,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28359,7 +37219,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 201,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28375,7 +37240,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 90,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28391,7 +37261,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28407,7 +37282,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 196,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28423,7 +37303,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 91,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28439,7 +37324,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 101,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28455,7 +37345,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 101,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28471,7 +37366,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 270,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28487,7 +37387,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 88,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28503,7 +37408,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 263,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28519,7 +37429,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 173,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28535,7 +37450,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28551,7 +37471,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28567,7 +37492,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 98,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28583,7 +37513,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 426,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28599,7 +37534,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28615,7 +37555,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28631,7 +37576,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28647,7 +37597,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 99,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28663,7 +37618,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 95,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28679,7 +37639,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28695,7 +37660,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 221,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28711,7 +37681,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28727,7 +37702,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 257,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28743,7 +37723,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28759,7 +37744,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28775,7 +37765,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 85,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28791,7 +37786,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 89,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28807,7 +37807,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28823,7 +37828,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 104,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28839,7 +37849,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 239,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28855,7 +37870,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28871,7 +37891,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 199,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28887,7 +37912,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28903,7 +37933,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28919,7 +37954,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 193,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28935,7 +37975,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 209,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28951,7 +37996,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 194,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28967,7 +38017,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28983,7 +38038,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 193,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -28999,7 +38059,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29015,7 +38080,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 190,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29031,7 +38101,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 193,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29047,7 +38122,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 270,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29063,7 +38143,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29079,7 +38164,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 276,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29095,7 +38185,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 186,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29111,7 +38206,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29127,7 +38227,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29143,7 +38248,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29159,7 +38269,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 189,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29175,7 +38290,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 231,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29191,7 +38311,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 136,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29207,7 +38332,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 97,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29223,7 +38353,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29239,7 +38374,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29255,7 +38395,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29271,7 +38416,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29287,7 +38437,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 252,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29303,7 +38458,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 245,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29319,7 +38479,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29335,7 +38500,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 140,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29351,7 +38521,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 303,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29367,7 +38542,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 140,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29383,7 +38563,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29399,7 +38584,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 135,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29415,7 +38605,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29431,7 +38626,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 206,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29447,7 +38647,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29463,7 +38668,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 194,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29479,7 +38689,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 107,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29495,7 +38710,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29511,7 +38731,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 257,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29527,7 +38752,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 251,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29543,7 +38773,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29559,7 +38794,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 242,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29575,7 +38815,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29591,7 +38836,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 190,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29607,7 +38857,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29623,7 +38878,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 161,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29639,7 +38899,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29655,7 +38920,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29671,7 +38941,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29687,7 +38962,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29703,7 +38983,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 226,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29719,7 +39004,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29735,7 +39025,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29751,7 +39046,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29767,7 +39067,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 191,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29783,7 +39088,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 214,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29799,7 +39109,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 94,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29815,7 +39130,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29831,7 +39151,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 171,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29847,7 +39172,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29863,7 +39193,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29879,7 +39214,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29895,7 +39235,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29911,7 +39256,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29927,7 +39277,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 194,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29943,7 +39298,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 269,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29959,7 +39319,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 151,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29975,7 +39340,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 216,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -29991,7 +39361,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 245,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30007,7 +39382,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30023,7 +39403,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 220,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30039,7 +39424,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 153,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30055,7 +39445,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 414,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30071,7 +39466,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30087,7 +39487,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30103,7 +39508,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30119,7 +39529,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 171,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30135,7 +39550,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30151,7 +39571,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30167,7 +39592,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30183,7 +39613,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 201,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30199,7 +39634,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 384,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30215,7 +39655,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 186,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30231,7 +39676,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 125,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30247,7 +39697,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30263,7 +39718,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30279,7 +39739,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 140,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30295,7 +39760,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 230,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30311,7 +39781,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 51,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30327,7 +39802,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30343,7 +39823,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 216,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30359,7 +39844,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 282,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30375,7 +39865,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 82,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30391,7 +39886,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30407,7 +39907,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 402,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30423,7 +39928,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 197,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30439,7 +39949,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30455,7 +39970,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 411,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30471,7 +39991,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30487,7 +40012,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 237,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30503,7 +40033,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 154,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30519,7 +40054,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 203,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30535,7 +40075,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 134,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30551,7 +40096,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30567,7 +40117,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30583,7 +40138,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 100,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30599,7 +40159,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30615,7 +40180,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 340,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30631,7 +40201,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 309,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30647,7 +40222,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30663,7 +40243,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 96,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30679,7 +40264,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 264,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30695,7 +40285,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 212,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30711,7 +40306,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 211,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30727,7 +40327,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 285,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30743,7 +40348,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 402,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30759,7 +40369,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 267,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30775,7 +40390,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 85,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30791,7 +40411,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30807,7 +40432,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 206,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30823,7 +40453,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 230,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30839,7 +40474,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 95,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30855,7 +40495,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 218,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30871,7 +40516,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30887,7 +40537,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30903,7 +40558,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 230,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30919,7 +40579,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 209,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30935,7 +40600,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 211,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30951,7 +40621,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30967,7 +40642,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 84,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30983,7 +40663,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 199,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -30999,7 +40684,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31015,7 +40705,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 100,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31031,7 +40726,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 235,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31047,7 +40747,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 206,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31063,7 +40768,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 170,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31079,7 +40789,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 91,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31095,7 +40810,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31111,7 +40831,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31127,7 +40852,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31143,7 +40873,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31159,7 +40894,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31175,7 +40915,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31191,7 +40936,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31207,7 +40957,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 57,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31223,7 +40978,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 57,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31239,7 +40999,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31255,7 +41020,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 125,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31271,7 +41041,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31287,7 +41062,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 346,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31303,7 +41083,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 275,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31319,7 +41104,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 242,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31335,7 +41125,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 121,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31351,7 +41146,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 135,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31367,7 +41167,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 211,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31383,7 +41188,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 98,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31399,7 +41209,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31415,7 +41230,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31431,7 +41251,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 301,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31447,7 +41272,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31463,7 +41293,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31479,7 +41314,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 179,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31495,7 +41335,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 173,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31511,7 +41356,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 193,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31527,7 +41377,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 153,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31543,7 +41398,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 151,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31559,7 +41419,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 154,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31575,7 +41440,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 308,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31591,7 +41461,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 408,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31607,7 +41482,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 189,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31623,7 +41503,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31639,7 +41524,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31655,7 +41545,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 244,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31671,7 +41566,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31687,7 +41587,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31703,7 +41608,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31719,7 +41629,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31735,7 +41650,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31751,7 +41671,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 397,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31767,7 +41692,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 173,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31783,7 +41713,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 142,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31799,7 +41734,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31815,7 +41755,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31831,7 +41776,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31847,7 +41797,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31863,7 +41818,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 252,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31879,7 +41839,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31895,7 +41860,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 420,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31911,7 +41881,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31927,7 +41902,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 239,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31943,7 +41923,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 260,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31959,7 +41944,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31975,7 +41965,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -31991,7 +41986,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32007,7 +42007,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 232,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32023,7 +42028,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32039,7 +42049,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32055,7 +42070,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32071,7 +42091,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32087,7 +42112,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 80,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32103,7 +42133,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32119,7 +42154,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 221,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32135,7 +42175,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32151,7 +42196,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 100,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32167,7 +42217,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 50,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32183,7 +42238,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 252,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32199,7 +42259,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 129,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32215,7 +42280,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32231,7 +42301,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32247,7 +42322,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32263,7 +42343,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32279,7 +42364,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 248,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32295,7 +42385,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 193,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32311,7 +42406,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32327,7 +42427,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 179,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32343,7 +42448,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32359,7 +42469,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32375,7 +42490,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 194,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32391,7 +42511,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 237,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32407,7 +42532,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 127,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32423,7 +42553,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 221,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32439,7 +42574,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32455,7 +42595,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 241,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32471,7 +42616,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32487,7 +42637,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 58,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32503,7 +42658,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32519,7 +42679,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 216,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32535,7 +42700,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32551,7 +42721,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32567,7 +42742,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32583,7 +42763,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32599,7 +42784,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 232,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32615,7 +42805,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 265,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32631,7 +42826,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32647,7 +42847,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32663,7 +42868,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 53,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32679,7 +42889,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 57,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32695,7 +42910,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32711,7 +42931,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 196,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32727,7 +42952,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 194,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32743,7 +42973,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32759,7 +42994,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32775,7 +43015,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 256,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32791,7 +43036,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 219,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32807,7 +43057,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 137,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32823,7 +43078,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 240,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32839,7 +43099,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32855,7 +43120,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 270,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32871,7 +43141,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 101,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32887,7 +43162,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32903,7 +43183,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 189,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32919,7 +43204,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 239,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32935,7 +43225,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32951,7 +43246,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32967,7 +43267,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 64,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32983,7 +43288,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 260,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -32999,7 +43309,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 83,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33015,7 +43330,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 362,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33031,7 +43351,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 132,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33047,7 +43372,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33063,7 +43393,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 73,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33079,7 +43414,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 186,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33095,7 +43435,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33111,7 +43456,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 197,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33127,7 +43477,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33143,7 +43498,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33159,7 +43519,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33175,7 +43540,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 79,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33191,7 +43561,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33207,7 +43582,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 256,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33223,7 +43603,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 261,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33239,7 +43624,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33255,7 +43645,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 244,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33271,7 +43666,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33287,7 +43687,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33303,7 +43708,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33319,7 +43729,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33335,7 +43750,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33351,7 +43771,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33367,7 +43792,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33383,7 +43813,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33399,7 +43834,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 233,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33415,7 +43855,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33431,7 +43876,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33447,7 +43897,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33463,7 +43918,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33479,7 +43939,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33495,7 +43960,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 264,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33511,7 +43981,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33527,7 +44002,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 227,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33543,7 +44023,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33559,7 +44044,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33575,7 +44065,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33591,7 +44086,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 237,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33607,7 +44107,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33623,7 +44128,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 170,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33639,7 +44149,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33655,7 +44170,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33671,7 +44191,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 298,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33687,7 +44212,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 289,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33703,7 +44233,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 170,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33719,7 +44254,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33735,7 +44275,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33751,7 +44296,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33767,7 +44317,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33783,7 +44338,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33799,7 +44359,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33815,7 +44380,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 179,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33831,7 +44401,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 175,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33847,7 +44422,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33863,7 +44443,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33879,7 +44464,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33895,7 +44485,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33911,7 +44506,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33927,7 +44527,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 186,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33943,7 +44548,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33959,7 +44569,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 148,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33975,7 +44590,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -33991,7 +44611,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34007,7 +44632,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34023,7 +44653,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 175,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34039,7 +44674,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34055,7 +44695,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34071,7 +44716,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34087,7 +44737,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34103,7 +44758,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34119,7 +44779,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 384,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34135,7 +44800,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 106,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34151,7 +44821,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 74,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34167,7 +44842,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34183,7 +44863,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34199,7 +44884,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 100,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34215,7 +44905,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34231,7 +44926,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34247,7 +44947,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 351,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34263,7 +44968,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34279,7 +44989,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34295,7 +45010,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34311,7 +45031,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34327,7 +45052,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34343,7 +45073,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 96,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34359,7 +45094,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34375,7 +45115,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34391,7 +45136,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34407,7 +45157,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34423,7 +45178,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34439,7 +45199,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34455,7 +45220,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 231,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34471,7 +45241,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34487,7 +45262,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34503,7 +45283,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 212,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34519,7 +45304,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34535,7 +45325,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 222,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34551,7 +45346,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 206,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34567,7 +45367,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 216,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34583,7 +45388,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 238,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34599,7 +45409,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34615,7 +45430,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 157,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34631,7 +45451,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 71,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34647,7 +45472,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34663,7 +45493,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 189,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34679,7 +45514,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34695,7 +45535,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 224,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34711,7 +45556,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 201,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34727,7 +45577,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 240,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34743,7 +45598,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 219,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34759,7 +45619,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34775,7 +45640,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34791,7 +45661,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 389,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34807,7 +45682,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 235,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34823,7 +45703,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34839,7 +45724,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34855,7 +45745,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34871,7 +45766,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 93,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34887,7 +45787,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34903,7 +45808,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 214,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34919,7 +45829,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34935,7 +45850,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 224,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34951,7 +45871,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34967,7 +45892,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 89,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34983,7 +45913,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -34999,7 +45934,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 263,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35015,7 +45955,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35031,7 +45976,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 95,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35047,7 +45997,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35063,7 +46018,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35079,7 +46039,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35095,7 +46060,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 252,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35111,7 +46081,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35127,7 +46102,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 201,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35143,7 +46123,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 211,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35159,7 +46144,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 231,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35175,7 +46165,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35191,7 +46186,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35207,7 +46207,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 238,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35223,7 +46228,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35239,7 +46249,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 215,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35255,7 +46270,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 240,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35271,7 +46291,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35287,7 +46312,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 101,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35303,7 +46333,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35319,7 +46354,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35335,7 +46375,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 179,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35351,7 +46396,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35367,7 +46417,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 189,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35383,7 +46438,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 223,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35399,7 +46459,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 364,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35415,7 +46480,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 206,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35431,7 +46501,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 252,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35447,7 +46522,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35463,7 +46543,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35479,7 +46564,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 197,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35495,7 +46585,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 420,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35511,7 +46606,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 203,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35527,7 +46627,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35543,7 +46648,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 386,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35559,7 +46669,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 91,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35575,7 +46690,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 309,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35591,7 +46711,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 362,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35607,7 +46732,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 70,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35623,7 +46753,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 75,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35639,7 +46774,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35655,7 +46795,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 70,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35671,7 +46816,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35687,7 +46837,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35703,7 +46858,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35719,7 +46879,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35735,7 +46900,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35751,7 +46921,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 139,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35767,7 +46942,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 87,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35783,7 +46963,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35799,7 +46984,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35815,7 +47005,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 241,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35831,7 +47026,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35847,7 +47047,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 137,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35863,7 +47068,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 153,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35879,7 +47089,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 106,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35895,7 +47110,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 214,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35911,7 +47131,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35927,7 +47152,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 239,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35943,7 +47173,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35959,7 +47194,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 267,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35975,7 +47215,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -35991,7 +47236,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36007,7 +47257,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 190,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36023,7 +47278,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36039,7 +47299,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 101,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36055,7 +47320,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 243,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36071,7 +47341,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 149,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36087,7 +47362,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36103,7 +47383,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 303,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36119,7 +47404,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 158,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36135,7 +47425,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 318,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36151,7 +47446,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 242,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36167,7 +47467,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 408,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36183,7 +47488,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 161,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36199,7 +47509,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 149,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36215,7 +47530,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36231,7 +47551,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36247,7 +47572,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36263,7 +47593,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36279,7 +47614,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36295,7 +47635,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 400,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36311,7 +47656,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 138,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36327,7 +47677,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 197,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36343,7 +47698,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36359,7 +47719,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 179,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36375,7 +47740,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36391,7 +47761,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36407,7 +47782,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36423,7 +47803,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 158,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36439,7 +47824,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 127,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36455,7 +47845,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 138,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36471,7 +47866,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36487,7 +47887,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 275,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36503,7 +47908,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 89,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36519,7 +47929,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 134,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36535,7 +47950,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 154,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36551,7 +47971,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36567,7 +47992,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36583,7 +48013,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36599,7 +48034,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 314,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36615,7 +48055,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36631,7 +48076,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 65,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36647,7 +48097,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36663,7 +48118,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 106,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36679,7 +48139,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 134,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36695,7 +48160,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 53,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36711,7 +48181,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 67,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36727,7 +48202,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 283,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36743,7 +48223,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 221,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36759,7 +48244,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 253,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36775,7 +48265,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 64,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36791,7 +48286,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36807,7 +48307,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36823,7 +48328,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 132,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36839,7 +48349,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36855,7 +48370,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 152,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36871,7 +48391,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 161,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36887,7 +48412,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 139,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36903,7 +48433,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 278,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36919,7 +48454,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36935,7 +48475,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36951,7 +48496,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 161,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36967,7 +48517,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 191,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36983,7 +48538,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -36999,7 +48559,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 397,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37015,7 +48580,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 116,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37031,7 +48601,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37047,7 +48622,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 148,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37063,7 +48643,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37079,7 +48664,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 155,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37095,7 +48685,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37111,7 +48706,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37127,7 +48727,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37143,7 +48748,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 169,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37159,7 +48769,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37175,7 +48790,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 84,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37191,7 +48811,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 84,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37207,7 +48832,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 147,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37223,7 +48853,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 261,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37239,7 +48874,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 80,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37255,7 +48895,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 271,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37271,7 +48916,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 91,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37287,7 +48937,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37303,7 +48958,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37319,7 +48979,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37335,7 +49000,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 258,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37351,7 +49021,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 93,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37367,7 +49042,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37383,7 +49063,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 246,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37399,7 +49084,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 79,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37415,7 +49105,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37431,7 +49126,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 242,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37447,7 +49147,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 92,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37463,7 +49168,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 219,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37479,7 +49189,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 197,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37495,7 +49210,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37511,7 +49231,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 138,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37527,7 +49252,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37543,7 +49273,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37559,7 +49294,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 197,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37575,7 +49315,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37591,7 +49336,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 151,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37607,7 +49357,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 129,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37623,7 +49378,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37639,7 +49399,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37655,7 +49420,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37671,7 +49441,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37687,7 +49462,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37703,7 +49483,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37719,7 +49504,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37735,7 +49525,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 77,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37751,7 +49546,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37767,7 +49567,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37783,7 +49588,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37799,7 +49609,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37815,7 +49630,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37831,7 +49651,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37847,7 +49672,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37863,7 +49693,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37879,7 +49714,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37895,7 +49735,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 140,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37911,7 +49756,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 163,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37927,7 +49777,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 98,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37943,7 +49798,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 411,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37959,7 +49819,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37975,7 +49840,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -37991,7 +49861,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38007,7 +49882,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 161,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38023,7 +49903,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 97,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38039,7 +49924,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 173,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38055,7 +49945,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 411,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38071,7 +49966,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38087,7 +49987,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 209,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38103,7 +50008,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38119,7 +50029,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 93,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38135,7 +50050,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38151,7 +50071,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 97,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38167,7 +50092,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 116,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38183,7 +50113,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 92,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38199,7 +50134,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 92,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38215,7 +50155,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38231,7 +50176,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 414,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38247,7 +50197,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38263,7 +50218,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38279,7 +50239,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38295,7 +50260,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38311,7 +50281,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38327,7 +50302,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38343,7 +50323,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38359,7 +50344,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 135,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38375,7 +50365,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 161,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38391,7 +50386,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 64,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38407,7 +50407,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 140,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38423,7 +50428,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38439,7 +50449,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38455,7 +50470,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 402,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38471,7 +50491,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38487,7 +50512,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 134,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38503,7 +50533,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 129,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38519,7 +50554,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38535,7 +50575,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38551,7 +50596,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38567,7 +50617,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 121,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38583,7 +50638,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38599,7 +50659,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38615,7 +50680,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38631,7 +50701,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38647,7 +50722,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38663,7 +50743,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 397,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38679,7 +50764,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 135,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38695,7 +50785,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38711,7 +50806,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 414,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38727,7 +50827,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 408,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38743,7 +50848,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38759,7 +50869,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38775,7 +50890,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38791,7 +50911,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 296,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38807,7 +50932,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38823,7 +50953,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38839,7 +50974,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 139,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38855,7 +50995,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 147,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38871,7 +51016,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 426,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38887,7 +51037,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38903,7 +51058,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 276,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38919,7 +51079,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38935,7 +51100,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38951,7 +51121,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38967,7 +51142,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 75,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38983,7 +51163,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -38999,7 +51184,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39015,7 +51205,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 394,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39031,7 +51226,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 142,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39047,7 +51247,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39063,7 +51268,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39079,7 +51289,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39095,7 +51310,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 256,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39111,7 +51331,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 175,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39127,7 +51352,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 226,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39143,7 +51373,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 194,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39159,7 +51394,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 295,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39175,7 +51415,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39191,7 +51436,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 190,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39207,7 +51457,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39223,7 +51478,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 246,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39239,7 +51499,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 211,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39255,7 +51520,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 258,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39271,7 +51541,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 116,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39287,7 +51562,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39303,7 +51583,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 169,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39319,7 +51604,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 198,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39335,7 +51625,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 198,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39351,7 +51646,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39367,7 +51667,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39383,7 +51688,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 221,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39399,7 +51709,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 242,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39415,7 +51730,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 229,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39431,7 +51751,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39447,7 +51772,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 237,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39463,7 +51793,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39479,7 +51814,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 153,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39495,7 +51835,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39511,7 +51856,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 147,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39527,7 +51877,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 161,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39543,7 +51898,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 170,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39559,7 +51919,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 223,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39575,7 +51940,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 420,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39591,7 +51961,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 357,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39607,7 +51982,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39623,7 +52003,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 420,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39639,7 +52024,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39655,7 +52045,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 153,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39671,7 +52066,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39687,7 +52087,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39703,7 +52108,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 245,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39719,7 +52129,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 243,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39735,7 +52150,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 250,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39751,7 +52171,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 272,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39767,7 +52192,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 271,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39783,7 +52213,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39799,7 +52234,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39815,7 +52255,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 100,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39831,7 +52276,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39847,7 +52297,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 257,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39863,7 +52318,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39879,7 +52339,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 63,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39895,7 +52360,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 201,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39911,7 +52381,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 65,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39927,7 +52402,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39943,7 +52423,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 243,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39959,7 +52444,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 96,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39975,7 +52465,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 325,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -39991,7 +52486,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 241,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40007,7 +52507,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 261,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40023,7 +52528,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 199,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40039,7 +52549,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 197,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40055,7 +52570,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40071,7 +52591,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40087,7 +52612,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 272,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40103,7 +52633,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 218,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40119,7 +52654,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 265,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40135,7 +52675,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40151,7 +52696,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40167,7 +52717,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40183,7 +52738,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40199,7 +52759,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40215,7 +52780,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 163,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40231,7 +52801,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 232,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40247,7 +52822,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40263,7 +52843,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 169,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40279,7 +52864,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 231,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40295,7 +52885,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 155,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40311,7 +52906,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 212,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40327,7 +52927,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40343,7 +52948,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 157,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40359,7 +52969,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40375,7 +52990,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 304,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40391,7 +53011,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 86,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40407,7 +53032,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 98,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40423,7 +53053,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 87,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40439,7 +53074,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 77,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40455,7 +53095,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 77,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40471,7 +53116,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 203,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40487,7 +53137,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40503,7 +53158,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 78,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40519,7 +53179,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 93,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40535,7 +53200,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40551,7 +53221,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 171,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40567,7 +53242,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 74,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40583,7 +53263,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 94,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40599,7 +53284,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40615,7 +53305,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40631,7 +53326,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 57,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40647,7 +53347,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 374,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40663,7 +53368,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 212,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40679,7 +53389,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 87,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40695,7 +53410,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 68,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40711,7 +53431,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 155,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40727,7 +53452,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40743,7 +53473,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40759,7 +53494,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 92,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40775,7 +53515,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40791,7 +53536,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 93,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40807,7 +53557,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 137,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40823,7 +53578,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 203,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40839,7 +53599,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 211,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40855,7 +53620,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 140,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40871,7 +53641,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40887,7 +53662,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40903,7 +53683,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 75,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40919,7 +53704,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 132,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40935,7 +53725,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 193,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40951,7 +53746,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 59,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40967,7 +53767,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40983,7 +53788,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 206,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -40999,7 +53809,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 249,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41015,7 +53830,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41031,7 +53851,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41047,7 +53872,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41063,7 +53893,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 240,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41079,7 +53914,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 214,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41095,7 +53935,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 214,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41111,7 +53956,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41127,7 +53977,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41143,7 +53998,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 251,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41159,7 +54019,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 221,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41175,7 +54040,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41191,7 +54061,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 233,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41207,7 +54082,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 248,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41223,7 +54103,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 194,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41239,7 +54124,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41255,7 +54145,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41271,7 +54166,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 223,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41287,7 +54187,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 243,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41303,7 +54208,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 222,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41319,7 +54229,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 137,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41335,7 +54250,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 127,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41351,7 +54271,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 125,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41367,7 +54292,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 59,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41383,7 +54313,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41399,7 +54334,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 149,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41415,7 +54355,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41431,7 +54376,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 140,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41447,7 +54397,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41463,7 +54418,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 61,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41479,7 +54439,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41495,7 +54460,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41511,7 +54481,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41527,7 +54502,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 59,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41543,7 +54523,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41559,7 +54544,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 106,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41575,7 +54565,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 54,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41591,7 +54586,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41607,7 +54607,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 125,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41623,7 +54628,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41639,7 +54649,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 50,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41655,7 +54670,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41671,7 +54691,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41687,7 +54712,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 197,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41703,7 +54733,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41719,7 +54754,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 121,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41735,7 +54775,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 100,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41751,7 +54796,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41767,7 +54817,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 101,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41783,7 +54838,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41799,7 +54859,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41815,7 +54880,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 93,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41831,7 +54901,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 152,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41847,7 +54922,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41863,7 +54943,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 81,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41879,7 +54964,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41895,7 +54985,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 147,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41911,7 +55006,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 100,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41927,7 +55027,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 91,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41943,7 +55048,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 136,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41959,7 +55069,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41975,7 +55090,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -41991,7 +55111,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42007,7 +55132,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42023,7 +55153,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42039,7 +55174,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 411,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42055,7 +55195,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42071,7 +55216,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42087,7 +55237,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 95,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42103,7 +55258,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 83,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42119,7 +55279,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42135,7 +55300,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42151,7 +55321,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 72,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42167,7 +55342,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42183,7 +55363,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 116,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42199,7 +55384,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42215,7 +55405,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 153,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42231,7 +55426,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42247,7 +55447,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 249,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42263,7 +55468,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 96,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42279,7 +55489,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42295,7 +55510,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 72,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42311,7 +55531,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 218,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42327,7 +55552,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 193,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42343,7 +55573,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 389,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42359,7 +55594,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 353,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42375,7 +55615,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 87,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42391,7 +55636,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 58,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42407,7 +55657,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42423,7 +55678,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 140,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42439,7 +55699,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 408,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42455,7 +55720,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 332,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42471,7 +55741,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 59,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42487,7 +55762,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42503,7 +55783,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42519,7 +55804,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42535,7 +55825,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 205,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42551,7 +55846,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42567,7 +55867,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42583,7 +55888,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 203,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42599,7 +55909,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 125,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42615,7 +55930,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 152,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42631,7 +55951,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42647,7 +55972,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42663,7 +55993,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42679,7 +56014,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 77,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42695,7 +56035,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 177,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42711,7 +56056,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42727,7 +56077,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42743,7 +56098,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42759,7 +56119,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42775,7 +56140,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 228,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42791,7 +56161,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 429,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42807,7 +56182,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 241,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42823,7 +56203,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42839,7 +56224,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42855,7 +56245,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42871,7 +56266,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42887,7 +56287,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42903,7 +56308,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42919,7 +56329,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42935,7 +56350,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42951,7 +56371,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42967,7 +56392,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42983,7 +56413,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -42999,7 +56434,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 60,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43015,7 +56455,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 289,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43031,7 +56476,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 52,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43047,7 +56497,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 417,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43063,7 +56518,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43079,7 +56539,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 72,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43095,7 +56560,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43111,7 +56581,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 58,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43127,7 +56602,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43143,7 +56623,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43159,7 +56644,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 59,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43175,7 +56665,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43191,7 +56686,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 63,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43207,7 +56707,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43223,7 +56728,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 116,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43239,7 +56749,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43255,7 +56770,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 96,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43271,7 +56791,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 65,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43287,7 +56812,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 62,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43303,7 +56833,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43319,7 +56854,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 63,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43335,7 +56875,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43351,7 +56896,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43367,7 +56917,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 71,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43383,7 +56938,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43399,7 +56959,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 89,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43415,7 +56980,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 173,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43431,7 +57001,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 140,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43447,7 +57022,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43463,7 +57043,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43479,7 +57064,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 190,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43495,7 +57085,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 95,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43511,7 +57106,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 63,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43527,7 +57127,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 147,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43543,7 +57148,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 72,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43559,7 +57169,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 190,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43575,7 +57190,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 175,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43591,7 +57211,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43607,7 +57232,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43623,7 +57253,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 139,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43639,7 +57274,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43655,7 +57295,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 66,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43671,7 +57316,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 169,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43687,7 +57337,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43703,7 +57358,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 88,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43719,7 +57379,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43735,7 +57400,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 166,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43751,7 +57421,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 71,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43767,7 +57442,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 101,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43783,7 +57463,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43799,7 +57484,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 58,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43815,7 +57505,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 139,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43831,7 +57526,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 88,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43847,7 +57547,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 201,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43863,7 +57568,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 69,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43879,7 +57589,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43895,7 +57610,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 66,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43911,7 +57631,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43927,7 +57652,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 73,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43943,7 +57673,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 80,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43959,7 +57694,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43975,7 +57715,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 106,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -43991,7 +57736,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 191,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44007,7 +57757,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 59,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44023,7 +57778,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 230,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44039,7 +57799,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44055,7 +57820,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 228,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44071,7 +57841,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 208,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44087,7 +57862,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 55,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44103,7 +57883,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 212,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44119,7 +57904,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 155,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44135,7 +57925,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44151,7 +57946,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 201,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44167,7 +57967,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44183,7 +57988,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 261,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44199,7 +58009,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 66,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44215,7 +58030,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44231,7 +58051,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 54,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44247,7 +58072,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44263,7 +58093,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 57,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44279,7 +58114,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 55,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44295,7 +58135,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 157,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44311,7 +58156,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 104,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44327,7 +58177,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44343,7 +58198,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44359,7 +58219,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44375,7 +58240,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44391,7 +58261,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44407,7 +58282,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 154,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44423,7 +58303,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44439,7 +58324,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 349,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44455,7 +58345,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44471,7 +58366,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 186,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44487,7 +58387,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44503,7 +58408,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 213,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44519,7 +58429,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44535,7 +58450,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 169,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44551,7 +58471,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 214,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44567,7 +58492,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 199,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44583,7 +58513,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44599,7 +58534,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44615,7 +58555,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 414,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44631,7 +58576,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44647,7 +58597,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44663,7 +58618,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44679,7 +58639,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44695,7 +58660,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44711,7 +58681,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44727,7 +58702,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44743,7 +58723,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 215,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44759,7 +58744,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44775,7 +58765,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 147,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44791,7 +58786,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44807,7 +58807,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 151,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44823,7 +58828,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44839,7 +58849,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44855,7 +58870,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 100,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44871,7 +58891,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44887,7 +58912,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 228,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44903,7 +58933,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44919,7 +58954,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 229,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44935,7 +58975,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44951,7 +58996,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 241,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44967,7 +59017,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 217,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44983,7 +59038,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -44999,7 +59059,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 208,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45015,7 +59080,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45031,7 +59101,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 141,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45047,7 +59122,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 243,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45063,7 +59143,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45079,7 +59164,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45095,7 +59185,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 245,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45111,7 +59206,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45127,7 +59227,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 98,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45143,7 +59248,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45159,7 +59269,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 193,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45175,7 +59290,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45191,7 +59311,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45207,7 +59332,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 99,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45223,7 +59353,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 77,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45239,7 +59374,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45255,7 +59395,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45271,7 +59416,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45287,7 +59437,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45303,7 +59458,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 151,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45319,7 +59479,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 79,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45335,7 +59500,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 127,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45351,7 +59521,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45367,7 +59542,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 93,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45383,7 +59563,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 67,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45399,7 +59584,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 74,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45415,7 +59605,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45431,7 +59626,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 74,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45447,7 +59647,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45463,7 +59668,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 211,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45479,7 +59689,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 201,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45495,7 +59710,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45511,7 +59731,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 66,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45527,7 +59752,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45543,7 +59773,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45559,7 +59794,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45575,7 +59815,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 161,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45591,7 +59836,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45607,7 +59857,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45623,7 +59878,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 214,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45639,7 +59899,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 257,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45655,7 +59920,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 118,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45671,7 +59941,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 163,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45687,7 +59962,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45703,7 +59983,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45719,7 +60004,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45735,7 +60025,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45751,7 +60046,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 139,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45767,7 +60067,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45783,7 +60088,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 125,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45799,7 +60109,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45815,7 +60130,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 149,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45831,7 +60151,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45847,7 +60172,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45863,7 +60193,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45879,7 +60214,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 235,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45895,7 +60235,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45911,7 +60256,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45927,7 +60277,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 229,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45943,7 +60298,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 82,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45959,7 +60319,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45975,7 +60340,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 59,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -45991,7 +60361,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 250,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46007,7 +60382,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 84,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46023,7 +60403,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46039,7 +60424,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 106,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46055,7 +60445,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46071,7 +60466,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46087,7 +60487,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 203,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46103,7 +60508,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46119,7 +60529,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46135,7 +60550,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 176,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46151,7 +60571,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46167,7 +60592,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46183,7 +60613,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46199,7 +60634,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46215,7 +60655,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 98,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46231,7 +60676,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46247,7 +60697,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 106,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46263,7 +60718,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46279,7 +60739,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 217,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46295,7 +60760,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 78,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46311,7 +60781,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46327,7 +60802,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46343,7 +60823,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 79,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46359,7 +60844,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46375,7 +60865,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46391,7 +60886,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 104,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46407,7 +60907,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46417,7 +60922,12 @@
       },
       "metadata": null,
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 183,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46433,7 +60943,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46449,7 +60964,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46465,7 +60985,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 152,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46481,7 +61006,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 196,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46497,7 +61027,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 129,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46513,7 +61048,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 179,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46529,7 +61069,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 224,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46545,7 +61090,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46561,7 +61111,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46577,7 +61132,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46593,7 +61153,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 190,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46609,7 +61174,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 143,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46625,7 +61195,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 196,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46641,7 +61216,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 209,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46657,7 +61237,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 196,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46673,7 +61258,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46689,7 +61279,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46705,7 +61300,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46721,7 +61321,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 73,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46737,7 +61342,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 71,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46753,7 +61363,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46769,7 +61384,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46785,7 +61405,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46801,7 +61426,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46817,7 +61447,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46833,7 +61468,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 174,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46849,7 +61489,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 238,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46865,7 +61510,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 158,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46881,7 +61531,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 104,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46897,7 +61552,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 190,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46913,7 +61573,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46929,7 +61594,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 223,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46945,7 +61615,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 219,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46961,7 +61636,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 243,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46977,7 +61657,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 101,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -46993,7 +61678,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 265,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47009,7 +61699,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 116,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47025,7 +61720,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 251,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47041,7 +61741,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 237,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47057,7 +61762,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 391,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47073,7 +61783,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 248,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47089,7 +61804,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 116,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47105,7 +61825,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 264,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47121,7 +61846,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 414,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47137,7 +61867,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 420,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47153,7 +61888,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 90,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47169,7 +61909,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 411,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47185,7 +61930,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47201,7 +61951,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47217,7 +61972,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47233,7 +61993,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 253,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47249,7 +62014,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 165,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47265,7 +62035,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 132,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47281,7 +62056,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47297,7 +62077,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 103,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47313,7 +62098,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 132,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47329,7 +62119,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 107,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47345,7 +62140,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47361,7 +62161,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47377,7 +62182,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 426,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47393,7 +62203,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 249,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47409,7 +62224,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 271,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47425,7 +62245,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47441,7 +62266,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47457,7 +62287,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47473,7 +62308,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 369,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47489,7 +62329,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47505,7 +62350,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 186,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47521,7 +62371,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 351,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47537,7 +62392,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47553,7 +62413,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47569,7 +62434,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 186,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47585,7 +62455,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47601,7 +62476,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47617,7 +62497,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47633,7 +62518,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 394,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47649,7 +62539,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47665,7 +62560,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 132,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47681,7 +62581,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47697,7 +62602,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 357,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47713,7 +62623,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 414,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47729,7 +62644,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47745,7 +62665,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47761,7 +62686,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47777,7 +62707,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47793,7 +62728,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47809,7 +62749,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47825,7 +62770,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 259,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47841,7 +62791,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47857,7 +62812,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47873,7 +62833,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 237,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47889,7 +62854,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47905,7 +62875,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47921,7 +62896,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47937,7 +62917,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 301,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47953,7 +62938,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47969,7 +62959,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -47985,7 +62980,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 213,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48001,7 +63001,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 145,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48017,7 +63022,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 148,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48033,7 +63043,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48049,7 +63064,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 147,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48065,7 +63085,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 203,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48081,7 +63106,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48097,7 +63127,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 56,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48113,7 +63148,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 402,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48129,7 +63169,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 109,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48145,7 +63190,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48161,7 +63211,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 170,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48177,7 +63232,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 56,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48193,7 +63253,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 63,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48209,7 +63274,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 311,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48225,7 +63295,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 149,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48241,7 +63316,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 280,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48257,7 +63337,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 68,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48273,7 +63358,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48289,7 +63379,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 74,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48305,7 +63400,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48321,7 +63421,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 78,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48337,7 +63442,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 279,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48353,7 +63463,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 74,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48369,7 +63484,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 417,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48385,7 +63505,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48401,7 +63526,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 327,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48417,7 +63547,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 149,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48433,7 +63568,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 139,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48449,7 +63589,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 443,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48465,7 +63610,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 243,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48481,7 +63631,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 96,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48497,7 +63652,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48513,7 +63673,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 151,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48529,7 +63694,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 296,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48545,7 +63715,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 70,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48561,7 +63736,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 309,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48577,7 +63757,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 360,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48593,7 +63778,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48609,7 +63799,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 357,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48625,7 +63820,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 308,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48641,7 +63841,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 266,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48657,7 +63862,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 90,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48673,7 +63883,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 254,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48689,7 +63904,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 276,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48705,7 +63925,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48721,7 +63946,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 159,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48737,7 +63967,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 96,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48753,7 +63988,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 280,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48769,7 +64009,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 301,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48785,7 +64030,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 201,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48801,7 +64051,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 134,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48817,7 +64072,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48833,7 +64093,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 288,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48849,7 +64114,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48865,7 +64135,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48881,7 +64156,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 232,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48897,7 +64177,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48913,7 +64198,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 106,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48929,7 +64219,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 137,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48945,7 +64240,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48961,7 +64261,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48977,7 +64282,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -48993,7 +64303,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 219,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49009,7 +64324,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49025,7 +64345,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49041,7 +64366,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49057,7 +64387,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 132,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49073,7 +64408,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49089,7 +64429,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 219,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49105,7 +64450,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 181,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49121,7 +64471,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49137,7 +64492,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 214,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49153,7 +64513,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49169,7 +64534,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 157,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49185,7 +64555,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49201,7 +64576,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49217,7 +64597,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 137,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49233,7 +64618,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 185,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49249,7 +64639,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 178,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49265,7 +64660,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 139,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49281,7 +64681,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49297,7 +64702,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 169,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49313,7 +64723,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49329,7 +64744,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 175,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49345,7 +64765,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 102,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49361,7 +64786,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49377,7 +64807,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 161,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49393,7 +64828,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 74,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49409,7 +64849,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49425,7 +64870,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49441,7 +64891,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 274,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49457,7 +64912,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49473,7 +64933,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49489,7 +64954,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 113,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49505,7 +64975,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 240,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49521,7 +64996,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 146,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49537,7 +65017,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 110,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49553,7 +65038,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 151,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49569,7 +65059,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49585,7 +65080,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49601,7 +65101,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49617,7 +65122,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 122,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49633,7 +65143,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 121,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49649,7 +65164,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 114,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49665,7 +65185,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49681,7 +65206,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49697,7 +65227,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49713,7 +65248,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49729,7 +65269,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49745,7 +65290,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49761,7 +65311,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49777,7 +65332,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 250,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49793,7 +65353,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 137,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49809,7 +65374,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49825,7 +65395,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 175,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49841,7 +65416,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 83,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49857,7 +65437,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49873,7 +65458,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 183,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49889,7 +65479,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49905,7 +65500,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49921,7 +65521,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49937,7 +65542,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 229,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49953,7 +65563,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49969,7 +65584,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 93,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -49985,7 +65605,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50001,7 +65626,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50017,7 +65647,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 85,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50033,7 +65668,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50049,7 +65689,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 83,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50065,7 +65710,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50081,7 +65731,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50097,7 +65752,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50113,7 +65773,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 209,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50129,7 +65794,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 105,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50145,7 +65815,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50161,7 +65836,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 127,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50177,7 +65857,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 153,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50193,7 +65878,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 89,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50209,7 +65899,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 62,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50225,7 +65920,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 142,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50241,7 +65941,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 197,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50257,7 +65962,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 116,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50273,7 +65983,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 128,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50289,7 +66004,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 221,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50305,7 +66025,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 92,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50321,7 +66046,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 139,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50337,7 +66067,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50353,7 +66088,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 230,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50369,7 +66109,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 93,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50385,7 +66130,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50401,7 +66151,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 96,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50417,7 +66172,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50433,7 +66193,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 140,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50449,7 +66214,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50465,7 +66235,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 136,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50481,7 +66256,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 79,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50497,7 +66277,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 125,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50513,7 +66298,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 167,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50529,7 +66319,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 256,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50545,7 +66340,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 193,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50561,7 +66361,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50577,7 +66382,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 450,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50593,7 +66403,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 278,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50609,7 +66424,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 417,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50625,7 +66445,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 408,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50641,7 +66466,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 187,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50657,7 +66487,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 168,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50673,7 +66508,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 170,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50689,7 +66529,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50705,7 +66550,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 436,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50721,7 +66571,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50737,7 +66592,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 241,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50753,7 +66613,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 169,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50769,7 +66634,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 190,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50785,7 +66655,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 132,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50801,7 +66676,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50817,7 +66697,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50833,7 +66718,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 250,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50849,7 +66739,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 179,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50865,7 +66760,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 160,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50881,7 +66781,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 80,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50897,7 +66802,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 163,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50913,7 +66823,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 283,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50929,7 +66844,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 152,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50945,7 +66865,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 184,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50961,7 +66886,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50977,7 +66907,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 121,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -50993,7 +66928,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 132,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51009,7 +66949,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 50,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51025,7 +66970,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 226,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51041,7 +66991,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51057,7 +67012,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 192,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51073,7 +67033,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 331,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51089,7 +67054,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 108,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51105,7 +67075,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 124,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51121,7 +67096,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 139,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51137,7 +67117,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51153,7 +67138,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51169,7 +67159,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 183,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51185,7 +67180,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 137,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51201,7 +67201,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 143,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51217,7 +67222,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 206,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51233,7 +67243,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 201,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51249,7 +67264,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 135,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51265,7 +67285,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51281,7 +67306,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 153,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51297,7 +67327,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 198,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51313,7 +67348,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 236,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51329,7 +67369,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51345,7 +67390,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51361,7 +67411,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 169,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51377,7 +67432,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51393,7 +67453,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 134,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51409,7 +67474,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 164,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51425,7 +67495,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 130,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51441,7 +67516,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 162,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51457,7 +67537,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 200,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51473,7 +67558,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51489,7 +67579,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 116,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51505,7 +67600,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 215,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51521,7 +67621,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51537,7 +67642,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 446,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51553,7 +67663,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 256,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51569,7 +67684,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51585,7 +67705,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 123,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51601,7 +67726,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 216,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51617,7 +67747,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 70,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51633,7 +67768,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 405,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51649,7 +67789,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 132,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51665,7 +67810,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51681,7 +67831,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 280,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51697,7 +67852,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 121,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51713,7 +67873,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 119,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51729,7 +67894,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 203,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51745,7 +67915,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 135,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51761,7 +67936,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 423,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51777,7 +67957,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51793,7 +67978,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 117,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51809,7 +67999,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 433,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51825,7 +68020,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 126,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51841,7 +68041,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 439,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51857,7 +68062,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 219,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51873,7 +68083,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51889,7 +68104,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 195,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51905,7 +68125,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 205,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51921,7 +68146,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51937,7 +68167,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51953,7 +68188,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 210,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51969,7 +68209,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 230,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -51985,7 +68230,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52001,7 +68251,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 69,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52017,7 +68272,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 231,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52033,7 +68293,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 172,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52049,7 +68314,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 193,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52065,7 +68335,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 98,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52081,7 +68356,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 223,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52097,7 +68377,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 219,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52113,7 +68398,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 156,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52129,7 +68419,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 139,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52145,7 +68440,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 79,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52161,7 +68461,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 143,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52177,7 +68482,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 138,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52193,7 +68503,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 120,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52209,7 +68524,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 198,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52225,7 +68545,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52241,7 +68566,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52257,7 +68587,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 202,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52273,7 +68608,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 180,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52289,7 +68629,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 87,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52305,7 +68650,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 111,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52321,7 +68671,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 188,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52337,7 +68692,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 218,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52353,7 +68713,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 138,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52369,7 +68734,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 213,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52385,7 +68755,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 97,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52401,7 +68776,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 203,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52417,7 +68797,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 157,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52433,7 +68818,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 193,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52449,7 +68839,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 198,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52465,7 +68860,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 205,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52481,7 +68881,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 183,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52497,7 +68902,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 115,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52513,7 +68923,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 112,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52529,7 +68944,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52545,7 +68965,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 87,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52561,7 +68986,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 125,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52577,7 +69007,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 140,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52593,7 +69028,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 242,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52609,7 +69049,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 134,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52625,7 +69070,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 107,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52641,7 +69091,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 207,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52657,7 +69112,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 220,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52673,7 +69133,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 131,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52689,7 +69154,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 133,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52705,7 +69175,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 132,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52721,7 +69196,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 182,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52737,7 +69217,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 219,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52753,7 +69238,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 150,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52769,7 +69259,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 144,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52785,7 +69280,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 247,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52801,7 +69301,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 254,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52817,7 +69322,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 204,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52833,7 +69343,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 230,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52849,7 +69364,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 239,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52865,7 +69385,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 272,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52881,7 +69406,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 57,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52897,7 +69427,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 274,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52913,7 +69448,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 225,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52929,7 +69469,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 237,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52945,7 +69490,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 239,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52961,7 +69511,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 253,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     },
     {
@@ -52977,7 +69532,12 @@
         ]
       },
       "eldata": {
-        "algs": []
+        "algs": [
+          {
+            "bpm": 100,
+            "alg": "ffmpeg-naive"
+          }
+        ]
       }
     }
   ]
