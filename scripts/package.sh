@@ -6,6 +6,7 @@ crate=$1
 echo "Running 'cargo build --release' to generate release binaries"
 pushd $crate
 cargo build --release --verbose
+ghash=$(git rev-parse --short HEAD)
 popd
 
 # Make a releases directory, if one doesn't exist
@@ -26,7 +27,7 @@ elif [[ $OSTYPE == linux* ]]; then
 fi
 
 # Define the package name
-package="ellington-0.1.0-$now-$osname"
+package="ellington-0-1-0-$ghash-$now-$osname"
 echo "Defined package name: '$package'"
 
 # Make a directory for the combination

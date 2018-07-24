@@ -80,6 +80,12 @@ In order to persuade *Ellington* to write to an audio file, edit the 'comment' m
 
 *Note: id3v2 supports multiple comments for each mp3 file. Ellington, unfortunately, can only see/write one comment per file. If you find that ellington does not write metadata for a particular mp3 file, try deleting all the comments and, using your tag editor of choice, add a single comment containing an Ellington default data string*
 
+## Debugging
+
+By default, *Ellington* is quite conservative in what it prints. In order to get it to log more, export the following environment variable as follows: 
+
+    RUST_LOG=info
+
 ## Feature Targets
 
 **0.1.0**: (current master) 
@@ -92,9 +98,19 @@ In order to persuade *Ellington* to write to an audio file, edit the 'comment' m
   - Audio file discovery through `stdin`
   
 **0.2.0**: 
+  - Stream output/input for libraries (i.e. writing a library to stdout, reading one from stdin - this should allow us to pipe libraries between ellington commands)
+  - Comment appending (i.e. programmatically marking tracks as wanting to have bpm information written to them)
+
+**0.2.1**: 
+  - Comment "cleaning" for mp3 files (finding mp3 files with multiple comments, and merging/cleaning them.)
+
+**0.3.0**: 
   - Integration of static `ffmpeg` libraries instead of system calls
   - Integration of all dependencies in `cargo.toml`
   - Standalone binary, without dynamic dependencies (including external programs)
+
+**0.4.0**
+ - Parallel bpm analysis
 
 **1.0.0**:
   - Stable release of *Ellington*. 
