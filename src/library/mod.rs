@@ -4,7 +4,6 @@ pub mod trackmetadata;
 
 use library::ellingtondata::*;
 use library::filemetadata::FileMetadata;
-use library::trackmetadata::taglib::*;
 use library::trackmetadata::*;
 use pipelines::Pipeline;
 

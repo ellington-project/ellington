@@ -8,6 +8,13 @@ use shelltools::generic::*;
 use shelltools::metadata::id3v2::*;
 use std::path::Path;
 
+// An id3v2 comment is of the form (from id3v2 --list) when setting
+// -c,  --comment      "DESCRIPTION":"COMMENT":"LANGUAGE"
+//                      Set the comment information (both
+//                      description and language optional)
+// And when reading, it is of the form:
+// COMM (Comments): (<desc>)[<lang>]: <comment>
+
 #[derive(Debug)]
 struct Id3v2Comment {
     description: String,
@@ -44,77 +51,43 @@ impl Id3v2Comment {
 }
 
 impl MetadataParser for Id3v2Call {
-    // parse a generic file using libtag
-    fn from_file(location: &Path) -> Option<TrackMetadata> {
+    fn parse_title(line: &String) -> Option<String> {
         lazy_static! {
-            static ref BPM_REGEX: Regex = Regex::new(r"TBPM.*: (\d+)").unwrap();
             static ref TITLE_REGEX: Regex = Regex::new(r"TIT2.*: (.*)").unwrap();
-            // static ref ALBUM_REGEX: Regex = Regex::new(r"TALB.*\: (.*)").unwrap();
         }
 
+        TITLE_REGEX
+            .captures(&line)
+            .and_then(|captures| captures.get(1))
+            .and_then(|rmatch| {
+                let title = rmatch.as_str().to_string();
+                info!("Successfully parsed track title: {:?}", title);
+                Some(title)
+            })
+    }
+    fn parse_bpm(line: &String) -> Option<i64> {
+        lazy_static! {
+            static ref BPM_REGEX: Regex = Regex::new(r"TBPM.*: (\d+)").unwrap();
+        }
+
+        BPM_REGEX
+            .captures(&line)
+            .and_then(|captures| captures.get(1))
+            .and_then(|rmatch| {
+                let bpm_str = rmatch.as_str().to_string();
+                info!("Found bpm string: {:?}", bpm_str);
+                bpm_str.parse::<i64>().ok()
+            })
+    }
+    fn parse_comment(line: &String) -> Option<String> {
+        Id3v2Comment::parse(line).and_then(|c| Some(c.comment))
+    }
+    // parse a generic file using libtag
+    fn from_file(location: &Path) -> Option<TrackMetadata> {
         let (stdout, _stderr) = Id3v2ReadMetadata::new(&location.to_path_buf()).run()?;
 
         let lines: Vec<String> = stdout.lines().map(|s| s.to_string()).collect();
-
-        let mut name: Option<String> = None;
-        let mut bpm: Option<i64> = None;
-        let mut comments: Option<Vec<String>> = None;
-
-        for line in lines {
-            // try and parse a title
-            match TITLE_REGEX
-                .captures(&line)
-                .and_then(|captures| captures.get(1))
-                .and_then(|rmatch| {
-                    name = Some(rmatch.as_str().to_string());
-                    info!("Successfully parsed track title: {:?}", name);
-                    Some(())
-                }) {
-                Some(_) => continue,
-                _ => {}
-            };
-
-            // try and parse a bpm
-            match BPM_REGEX
-                .captures(&line)
-                .and_then(|captures| captures.get(1))
-                .and_then(|rmatch| {
-                    let bpm_str = rmatch.as_str().to_string();
-                    info!("Found bpm string: {:?}", bpm_str);
-                    bpm_str.parse::<i64>().ok()
-                })
-                .and_then(|bpm_i| {
-                    bpm = Some(bpm_i);
-                    Some(())
-                }) {
-                Some(_) => continue,
-                _ => {}
-            };
-
-            // try and parse a comment
-            match Id3v2Comment::parse(&line).and_then(|id3v2c| {
-                if !comments.is_some() {
-                    comments = Some(Vec::new());
-                }
-                match comments.as_mut() {
-                    Some(arr) => arr.push(id3v2c.comment),
-                    None => {}
-                }
-                Some(())
-            }) {
-                Some(_) => continue,
-                None => {}
-            }
-        }
-
-        match name {
-            Some(name) => Some(TrackMetadata {
-                name: name,
-                bpm: bpm,
-                comments: comments,
-            }),
-            None => None,
-        }
+        Self::parse_lines(lines)
     }
 }
 
@@ -151,6 +124,7 @@ impl MetadataWriter for Id3v2Call {
                         new,
                     );
                     info!("Running command: {:?}", command.as_args());
+                    info!("Running command: {:?}", command.as_shell_args());
                     // write the new comment
                     match command.run() {
                         Some(_) => info!("Ran call successfully"),

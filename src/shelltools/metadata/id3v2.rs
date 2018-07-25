@@ -45,7 +45,7 @@ impl Id3v2WriteComment {
     }
 
     fn comment_arg(self: &Self) -> String {
-        format!("{}:{}:{}", self.description, self.lang, self.comment)
+        format!("{}:{}:{}", self.description, self.comment, self.lang)
     }
 }
 
@@ -54,6 +54,7 @@ impl ShellProgram for Id3v2WriteComment {
 
     fn as_args(self: &Id3v2WriteComment) -> Vec<String> {
         vec![
+            "-2".to_string(),
             "--COMM".to_string(),
             self.comment_arg(),
             self.filename.filename.clone(),

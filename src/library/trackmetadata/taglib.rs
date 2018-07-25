@@ -7,6 +7,15 @@ use std::path::Path;
 pub struct GenericTaglibAudioFile;
 
 impl MetadataParser for GenericTaglibAudioFile {
+    fn parse_title(_line: &String) -> Option<String> {
+        unimplemented!()
+    }
+    fn parse_bpm(_line: &String) -> Option<i64> {
+        unimplemented!()
+    }
+    fn parse_comment(_line: &String) -> Option<String> {
+        unimplemented!()
+    }
     // parse a generic file using libtag
     fn from_file(location: &Path) -> Option<TrackMetadata> {
         let location = location.canonicalize().ok()?;

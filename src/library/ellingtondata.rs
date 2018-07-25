@@ -38,13 +38,21 @@ impl EllingtonData {
     // #[flame]
     pub fn update_data(self: &Self, comment: &String) -> Option<String> {
         lazy_static! {
-            static ref RE: Regex = Regex::new(r"\[ed#.*#de\]").unwrap();
+            static ref RE: Regex = Regex::new(r"\[ed#(.*)#de\]").unwrap();
         }
 
         // replace all the ":" characters in the JSON string with "#", as id3tags do not support colons in comment data.
         let serialised = serde_json::to_string(self).unwrap().replace(":", "#");
 
-        // let captures = RE.captures(comment.as_str())?;
+        let captures = RE.captures(comment.as_str())?;
+
+        match captures.get(1) {
+            Some(_) => info!("Comment contains ellington data, continuing"),
+            None => {
+                info!("Comment contains no ellington data");
+                return None;
+            }
+        }
 
         // let ellington_data = captures.get(0)?.as_str();
 
