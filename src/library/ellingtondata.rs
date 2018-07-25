@@ -62,4 +62,28 @@ impl EllingtonData {
 
         Some(result.to_string())
     }
+
+    // clear ellington data from a string, returning the new string
+    pub fn clear_data(comment: &String) -> Option<String> {
+        lazy_static! {
+            static ref RE: Regex = Regex::new(r"\[ed#(.*)#de\]").unwrap();
+        }
+
+        let captures = RE.captures(comment.as_str())?;
+
+
+
+        match captures.get(1) {
+            Some(_) => info!("Comment contains ellington data, continuing"),
+            None => {
+                info!("Comment contains no ellington data");
+                return None;
+            }
+        }
+
+        let result = RE.replace(comment.as_str(), "");
+
+        Some(result.to_string())
+
+    }
 }

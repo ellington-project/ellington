@@ -139,4 +139,52 @@ impl MetadataWriter for Id3v2Call {
 
         Some(())
     }
+
+    fn clear_ellington_data(location: &Path) -> WriteResult { 
+        // Parse the file to get a list of comments, as id3v2 comments
+
+        let (stdout, _stderr) = Id3v2ReadMetadata::new(&location.to_path_buf()).run()?;
+
+        // map across the lines, and try to turn them each into a comment...
+        let comments: Vec<Id3v2Comment> = stdout
+            .lines()
+            .map(|s| s.to_string())
+            .filter_map(|line| Id3v2Comment::parse(&line))
+            .collect();
+
+        // for each of the comments, try to write an updated form of that comment to the file
+        for original in comments {
+            // try to update the comment
+            info!(
+                "Writing comment:\nDesc: {:?}\nLang: {:?}\nComm: {:?}",
+                original.description, original.language, original.comment
+            );
+            match EllingtonData::clear_data(&original.comment) {
+                Some(new) => {
+                    info!(
+                        "Updated comment from/to:\n\t{:?}\n\t{:?}",
+                        original.comment, new
+                    );
+                    let command = Id3v2WriteComment::new(
+                        &location.to_path_buf(),
+                        original.description,
+                        original.language,
+                        new,
+                    );
+                    info!("Running command: {:?}", command.as_args());
+                    info!("Running command: {:?}", command.as_shell_args());
+                    // write the new comment
+                    match command.run() {
+                        Some(_) => info!("Ran call successfully"),
+                        None => error!("Failed to run, somehow"),
+                    }
+                }
+                None => {
+                    error!("No ellington data in comment, or some other error.");
+                }
+            }
+        }
+
+        Some(())
+    }
 }

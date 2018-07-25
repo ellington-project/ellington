@@ -104,4 +104,28 @@ impl MetadataWriter for Mp4ToolsCall {
 
         Some(())
     }
+
+    fn clear_ellington_data(location: &Path) -> WriteResult { 
+        // Reparse the file to get the comment data
+        let original = &Self::from_file(location)?.comments?[0];
+
+        // try to write an updated form of that comment to the file
+        match EllingtonData::clear_data(&original) {
+            Some(new) => {
+                info!("Updated comment from/to:\n\t{:?}\n\t{:?}", original, new);
+                let command = Mp4TagsWriteComment::new(&location.to_path_buf(), new);
+                info!("Running command: {:?}", command.as_args());
+                info!("Running command: {:?}", command.as_shell_args());
+                match command.run() {
+                    Some(_) => info!("Ran call successfully"),
+                    None => error!("Failed to run, somehow"),
+                }
+            }
+            None => {
+                error!("No ellington data in comment, or some other error.");
+            }
+        }
+
+        Some(())
+    }
 }

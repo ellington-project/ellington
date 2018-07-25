@@ -91,4 +91,8 @@ impl MetadataWriter for GenericTaglibAudioFile {
             }
         }
     }
+
+    fn clear_ellington_data(_location: &Path) -> WriteResult { 
+        unimplemented!()
+    }
 }

@@ -70,6 +70,19 @@ impl TrackMetadata {
             AudioFileType::NotAudio => None,
         }
     }
+
+    pub fn clear_ellington_data(location: &Path, fmd: &FileMetadata) -> WriteResult { 
+        match fmd.ftype {
+            AudioFileType::Flac => None,
+            AudioFileType::M4a => Mp4ToolsCall::clear_ellington_data(location),
+            AudioFileType::M4p => Mp4ToolsCall::clear_ellington_data(location),
+            AudioFileType::Mp3 => Id3v2Call::clear_ellington_data(location),
+            AudioFileType::Mp4 => Mp4ToolsCall::clear_ellington_data(location),
+            AudioFileType::Wav => None,
+            AudioFileType::Alac => Mp4ToolsCall::clear_ellington_data(location),
+            AudioFileType::NotAudio => None,
+        }
+    }
 }
 
 // metadata is parsed out of a format using a MetadataParser
@@ -134,4 +147,5 @@ pub trait MetadataParser {
 pub type WriteResult = Option<()>;
 pub trait MetadataWriter {
     fn write_ellington_data(location: &Path, ed: &EllingtonData) -> WriteResult;
+    fn clear_ellington_data(location: &Path) -> WriteResult;
 }

@@ -60,7 +60,7 @@ fn bpm_library(matches: &ArgMatches) -> () {
         }
     };
 
-    let mut library = Library::from_file(&PathBuf::from(library_file)).unwrap();
+    let mut library = Library::read_from_file(&PathBuf::from(library_file)).unwrap();
 
     library.run_pipeline::<FfmpegNaivePipeline>();
 
@@ -78,9 +78,27 @@ fn write_library(matches: &ArgMatches) -> () {
         }
     };
 
-    let library = Library::from_file(&PathBuf::from(library_file)).unwrap();
+    let append = matches.is_present("append");
 
-    library.write_metadata_to_audio_files();
+    let library = Library::read_from_file(&PathBuf::from(library_file)).unwrap();
+
+    library.write_metadata_to_audio_files(append);
+}
+
+fn clear_audio_files(matches: &ArgMatches) -> () {
+    let library_file: &str = match matches.value_of("LIBRARY") {
+        Some(l) => {
+            info!("Reading library from: {:?}", l);
+            l
+        }
+        None => {
+            panic!("Got no library file, this should not happen!");
+        }
+    };
+
+    let library = Library::read_from_file(&PathBuf::from(library_file)).unwrap();
+
+    library.clear_data_from_audio_files();
 }
 
 fn main() {
@@ -97,6 +115,7 @@ fn main() {
         ("init", Some(sub)) => initalise_library(sub),
         ("bpm", Some(sub)) => bpm_library(sub),
         ("write", Some(sub)) => write_library(sub),
+        ("clear", Some(sub)) => clear_audio_files(sub), 
         _ => error!("No subcommand given!"),
     }
 }

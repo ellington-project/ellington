@@ -2,18 +2,6 @@ name: ellington
 version: "0.1.0"
 author: Adam Harries <harries.adam@gmail.com>
 about: Automated BPM calculation for swing dance DJs
-args:
-    - library_metadata: 
-        short: m 
-        long: library_metadata
-        requires: library
-        takes_value: false
-        help: Prompts ellington to read metadata information (i.e. not just file location information) from the iTunes library provided.
-    - overwrite: 
-        short: o 
-        long: overwrite
-        takes_value: false
-        help: Prompts ellington to overwrite ellington data in comment fields of audio files located.
 subcommands:
     - init: 
         about: Initialises an ellington library
@@ -50,11 +38,28 @@ subcommands:
                 required: true
                 index: 1
     - write: 
-        about: Write calculated BPM information from an ellington library
+        about: Write calculated BPM information from an ellington library to the audio files in the library
         version: "0.1.0"
         author: Adam Harries <harries.adam@gmail.com> 
         args: 
             - LIBRARY:
                 help: The library file from which to process tracks
                 required: true
+            - append: 
+                help: Whether to append data if not requested
+                short: i
+                long: append 
+                required: false 
+                takes_value: false
+
+
+    - clear: 
+        about: Clear ellington metadata from audio files in a library
+        version: "0.1.0"
+        author: Adam Harries <harries.adam@gmail.com> 
+        args: 
+            - LIBRARY:
+                help: The library file from which to discover tracks
+                required: true
+                index: 1 
                 index: 1 

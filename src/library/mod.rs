@@ -189,11 +189,9 @@ impl Library {
     }
 
     /* 
-        Read a library from an ellington library file, with name 
-        "<library>.el"
+        Read a library from an ellington library file
     */
-
-    pub fn from_file(path: &PathBuf) -> Option<Library> {
+    pub fn read_from_file(path: &PathBuf) -> Option<Library> {
         info!("Reading library from {:?}", path);
         let json = match fs::read_to_string(path) {
             Ok(j) => Some(j),
@@ -235,6 +233,9 @@ impl Library {
         }
     }
 
+    /*
+        Run an analysis pipeline over each audio track in the library
+     */
     pub fn run_pipeline<P: Pipeline>(self: &mut Self) -> () {
         info!("Running pipeline over ellington library.");
         info!("Using pipeline: {:?}", P::NAME);
@@ -274,7 +275,10 @@ impl Library {
         }
     }
 
-    pub fn write_metadata_to_audio_files(self: &Self) -> () {
+    /*
+        Write ellington metadata to the audio file comment fields
+     */
+    pub fn write_metadata_to_audio_files(self: &Self, _append: bool) -> () {
         for entry in &self.tracks {
             match TrackMetadata::write_ellington_data(
                 &PathBuf::from(entry.location.clone()),
@@ -283,6 +287,21 @@ impl Library {
             ) {
                 Some(()) => info!("Successfully wrote metadata to file {:?}", entry.location),
                 None => error!("Failed to write metadata to file {:?}", entry.location),
+            };
+        }
+    }
+
+    /*
+        Clear the ellington metadata from the audio file comment fields
+     */
+    pub fn clear_data_from_audio_files(self: &Self) -> () { 
+        for entry in &self.tracks {
+            match TrackMetadata::clear_ellington_data(
+                &PathBuf::from(entry.location.clone()),
+                &entry.filedata,
+            ) {
+                Some(()) => info!("Successfully cleared ellington metadata from file {:?}", entry.location),
+                None => error!("Failed to clear metadata from file {:?}", entry.location),
             };
         }
     }
