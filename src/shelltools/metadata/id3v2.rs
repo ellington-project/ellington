@@ -54,7 +54,7 @@ impl ShellProgram for Id3v2WriteComment {
 
     fn as_args(self: &Id3v2WriteComment) -> Vec<String> {
         vec![
-            "--comment".to_string(),
+            "--COMM".to_string(),
             self.comment_arg(),
             self.filename.filename.clone(),
         ]

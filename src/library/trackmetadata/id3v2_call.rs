@@ -134,26 +134,31 @@ impl MetadataWriter for Id3v2Call {
         // for each of the comments, try to write an updated form of that comment to the file
         for original in comments {
             // try to update the comment
+            info!(
+                "Writing comment:\nDesc: {:?}\nLang: {:?}\nComm: {:?}",
+                original.description, original.language, original.comment
+            );
             match ed.update_data(&original.comment) {
                 Some(new) => {
                     info!(
                         "Updated comment from/to:\n\t{:?}\n\t{:?}",
                         original.comment, new
                     );
-                    // write the new comment
-                    match Id3v2WriteComment::new(
+                    let command = Id3v2WriteComment::new(
                         &location.to_path_buf(),
                         original.description,
                         original.language,
-                        original.comment,
-                    ).run()
-                    {
+                        new,
+                    );
+                    info!("Running command: {:?}", command.as_args());
+                    // write the new comment
+                    match command.run() {
                         Some(_) => info!("Ran call successfully"),
-                        None => info!("Failed to run, somehow"),
+                        None => error!("Failed to run, somehow"),
                     }
                 }
                 None => {
-                    info!("No ellington data in comment, or some other error.");
+                    error!("No ellington data in comment, or some other error.");
                 }
             }
         }
