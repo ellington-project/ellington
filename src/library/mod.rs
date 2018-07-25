@@ -4,6 +4,7 @@ pub mod trackmetadata;
 
 use library::ellingtondata::*;
 use library::filemetadata::FileMetadata;
+use library::trackmetadata::taglib::*;
 use library::trackmetadata::*;
 use pipelines::Pipeline;
 
@@ -33,7 +34,7 @@ impl Entry {
         // try to read some metadata from the track
         let filedata = FileMetadata::from_path(&path);
         // TODO: Implement different readers here!
-        let metadata = GenericAudioFile::from_file(&path);
+        let metadata = TrackMetadata::from_file(&path, &filedata);
         let eldata = match &metadata {
             Some(m) => m.as_ellington_metadata(),
             None => EllingtonData::empty(),
@@ -276,7 +277,7 @@ impl Library {
 
     pub fn write_metadata_to_audio_files(self: &Self) -> () {
         for entry in &self.tracks {
-            match GenericAudioFile::write_ellington_data(
+            match GenericTaglibAudioFile::write_ellington_data(
                 &PathBuf::from(entry.location.clone()),
                 &entry.eldata,
             ) {
