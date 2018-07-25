@@ -39,12 +39,29 @@ impl TrackMetadata {
         EllingtonData { algs: algs }
     }
 
-    pub fn from_file(location: &Path, fmd: &FileMetadata) -> Option<TrackMetadata> { 
-        match fmd.ftype { 
+    pub fn from_file(location: &Path, fmd: &FileMetadata) -> Option<TrackMetadata> {
+        match fmd.ftype {
             AudioFileType::Flac => None,
             AudioFileType::M4a => None,
             AudioFileType::M4p => None,
             AudioFileType::Mp3 => Id3v2Call::from_file(location),
+            AudioFileType::Mp4 => None,
+            AudioFileType::Wav => None,
+            AudioFileType::Alac => None,
+            AudioFileType::NotAudio => None,
+        }
+    }
+
+    pub fn write_ellington_data(
+        location: &Path,
+        fmd: &FileMetadata,
+        ed: &EllingtonData,
+    ) -> WriteResult {
+        match fmd.ftype {
+            AudioFileType::Flac => None,
+            AudioFileType::M4a => None,
+            AudioFileType::M4p => None,
+            AudioFileType::Mp3 => Id3v2Call::write_ellington_data(location, ed),
             AudioFileType::Mp4 => None,
             AudioFileType::Wav => None,
             AudioFileType::Alac => None,

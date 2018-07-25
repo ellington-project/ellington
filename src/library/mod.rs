@@ -277,8 +277,9 @@ impl Library {
 
     pub fn write_metadata_to_audio_files(self: &Self) -> () {
         for entry in &self.tracks {
-            match GenericTaglibAudioFile::write_ellington_data(
+            match TrackMetadata::write_ellington_data(
                 &PathBuf::from(entry.location.clone()),
+                &entry.filedata,
                 &entry.eldata,
             ) {
                 Some(()) => info!("Successfully wrote metadata to file {:?}", entry.location),

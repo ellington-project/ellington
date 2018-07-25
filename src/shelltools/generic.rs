@@ -50,17 +50,25 @@ pub trait ShellProgram {
 
     fn run(&self) -> Option<(String, String)> {
         match self.call().output() {
-            Ok(output) => { 
-                info!("Exit status of {:?} = {:?}", self.as_shell_args(), output.status);
+            Ok(output) => {
+                info!(
+                    "Exit status of {:?} = {:?}",
+                    self.as_shell_args(),
+                    output.status
+                );
                 Some((
                     String::from_utf8_lossy(&output.stdout).to_string(),
-                    String::from_utf8_lossy(&output.stderr).to_string()
-                    ))
-            }, 
-            Err(e) => { 
-                error!("Got error {:?} while running command {:?}", e, self.as_shell_args());
+                    String::from_utf8_lossy(&output.stderr).to_string(),
+                ))
+            }
+            Err(e) => {
+                error!(
+                    "Got error {:?} while running command {:?}",
+                    e,
+                    self.as_shell_args()
+                );
                 None
             }
         }
-    }  
+    }
 }
