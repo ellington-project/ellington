@@ -1,5 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 # Package up the project into a zip
+# Useless to go on when an error occurs
+set -o errexit
 # Get the crate root. 
 crate=$1
 # Make sure that it's been built. 
