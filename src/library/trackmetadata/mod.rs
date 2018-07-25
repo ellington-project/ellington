@@ -5,7 +5,7 @@ use std::path::Path;
 
 pub mod id3v2_call;
 pub mod mp4tools_call;
-pub mod taglib;
+// pub mod taglib;
 
 use self::id3v2_call::*;
 use self::mp4tools_call::*;
@@ -36,7 +36,7 @@ impl TrackMetadata {
                     };
                 }
             }
-            None => info!("Got no comments from metadata, thus no ellington data."),
+            None => info!("Got no comments from metadata."),
         };
         EllingtonData { algs: algs }
     }
@@ -58,20 +58,21 @@ impl TrackMetadata {
         location: &Path,
         fmd: &FileMetadata,
         ed: &EllingtonData,
+        append: bool,
     ) -> WriteResult {
         match fmd.ftype {
             AudioFileType::Flac => None,
-            AudioFileType::M4a => Mp4ToolsCall::write_ellington_data(location, ed),
-            AudioFileType::M4p => Mp4ToolsCall::write_ellington_data(location, ed),
-            AudioFileType::Mp3 => Id3v2Call::write_ellington_data(location, ed),
-            AudioFileType::Mp4 => Mp4ToolsCall::write_ellington_data(location, ed),
+            AudioFileType::M4a => Mp4ToolsCall::write_ellington_data(location, ed, append),
+            AudioFileType::M4p => Mp4ToolsCall::write_ellington_data(location, ed, append),
+            AudioFileType::Mp3 => Id3v2Call::write_ellington_data(location, ed, append),
+            AudioFileType::Mp4 => Mp4ToolsCall::write_ellington_data(location, ed, append),
             AudioFileType::Wav => None,
-            AudioFileType::Alac => Mp4ToolsCall::write_ellington_data(location, ed),
+            AudioFileType::Alac => Mp4ToolsCall::write_ellington_data(location, ed, append),
             AudioFileType::NotAudio => None,
         }
     }
 
-    pub fn clear_ellington_data(location: &Path, fmd: &FileMetadata) -> WriteResult { 
+    pub fn clear_ellington_data(location: &Path, fmd: &FileMetadata) -> WriteResult {
         match fmd.ftype {
             AudioFileType::Flac => None,
             AudioFileType::M4a => Mp4ToolsCall::clear_ellington_data(location),
@@ -93,6 +94,7 @@ pub trait MetadataParser {
     fn parse_title(line: &String) -> Option<String>;
     fn parse_bpm(line: &String) -> Option<i64>;
     fn parse_comment(line: &String) -> Option<String>;
+    // a good default implementation for command line tool based parsers
     fn parse_lines(lines: Vec<String>) -> Option<TrackMetadata> {
         let mut name: Option<String> = None;
         let mut bpm: Option<i64> = None;
@@ -146,6 +148,6 @@ pub trait MetadataParser {
 // and written to a file using a metadata writer
 pub type WriteResult = Option<()>;
 pub trait MetadataWriter {
-    fn write_ellington_data(location: &Path, ed: &EllingtonData) -> WriteResult;
+    fn write_ellington_data(location: &Path, ed: &EllingtonData, append: bool) -> WriteResult;
     fn clear_ellington_data(location: &Path) -> WriteResult;
 }

@@ -1,5 +1,3 @@
-pub struct Id3v2Call;
-
 // use library::ellingtondata::*;
 use library::trackmetadata::*;
 use regex::Regex;
@@ -48,6 +46,44 @@ impl Id3v2Comment {
 
         Some(c)
     }
+
+    pub fn update(self: &Self, ed: &EllingtonData, append: bool) -> UpdateResult<Id3v2Comment> {
+        ed.update_data(&self.comment, append)
+            .and_then(|new_comment| {
+                Ok(Id3v2Comment {
+                    description: self.description.clone(),
+                    language: self.language.clone(),
+                    comment: new_comment,
+                })
+            })
+    }
+
+    pub fn clear(self: &Self) -> UpdateResult<Id3v2Comment> {
+        EllingtonData::clear_data(&self.comment).and_then(|new_comment| {
+            Ok(Id3v2Comment {
+                description: self.description.clone(),
+                language: self.language.clone(),
+                comment: new_comment,
+            })
+        })
+    }
+}
+
+pub struct Id3v2Call;
+
+impl Id3v2Call {
+    fn write_comment(location: &Path, comment: Id3v2Comment) -> Option<(String, String)> {
+        let command = Id3v2WriteComment::new(
+            &location.to_path_buf(),
+            comment.description,
+            comment.language,
+            comment.comment,
+        );
+        debug!("Running command: {:?}", command.as_args());
+        debug!("Running command: {:?}", command.as_shell_args());
+        // write the new comment
+        command.run()
+    }
 }
 
 impl MetadataParser for Id3v2Call {
@@ -92,7 +128,7 @@ impl MetadataParser for Id3v2Call {
 }
 
 impl MetadataWriter for Id3v2Call {
-    fn write_ellington_data(location: &Path, ed: &EllingtonData) -> WriteResult {
+    fn write_ellington_data(location: &Path, ed: &EllingtonData, append: bool) -> WriteResult {
         // Parse the file to get a list of comments, as id3v2 comments
 
         let (stdout, _stderr) = Id3v2ReadMetadata::new(&location.to_path_buf()).run()?;
@@ -111,28 +147,20 @@ impl MetadataWriter for Id3v2Call {
                 "Writing comment:\nDesc: {:?}\nLang: {:?}\nComm: {:?}",
                 original.description, original.language, original.comment
             );
-            match ed.update_data(&original.comment) {
-                Some(new) => {
+
+            match original.update(ed, append) {
+                Ok(new) => {
                     info!(
                         "Updated comment from/to:\n\t{:?}\n\t{:?}",
-                        original.comment, new
+                        original.comment, new.comment
                     );
-                    let command = Id3v2WriteComment::new(
-                        &location.to_path_buf(),
-                        original.description,
-                        original.language,
-                        new,
-                    );
-                    info!("Running command: {:?}", command.as_args());
-                    info!("Running command: {:?}", command.as_shell_args());
-                    // write the new comment
-                    match command.run() {
-                        Some(_) => info!("Ran call successfully"),
-                        None => error!("Failed to run, somehow"),
-                    }
+                    Self::write_comment(location, new);
                 }
-                None => {
-                    error!("No ellington data in comment, or some other error.");
+                Err(UpdateError::NoDataInComment) => {
+                    warn!("No existing ellington data in comment");
+                }
+                Err(UpdateError::FailedToSerialise) => {
+                    error!("The ellington data failed to serialise! This is a serious error!");
                 }
             }
         }
@@ -140,9 +168,8 @@ impl MetadataWriter for Id3v2Call {
         Some(())
     }
 
-    fn clear_ellington_data(location: &Path) -> WriteResult { 
+    fn clear_ellington_data(location: &Path) -> WriteResult {
         // Parse the file to get a list of comments, as id3v2 comments
-
         let (stdout, _stderr) = Id3v2ReadMetadata::new(&location.to_path_buf()).run()?;
 
         // map across the lines, and try to turn them each into a comment...
@@ -159,28 +186,19 @@ impl MetadataWriter for Id3v2Call {
                 "Writing comment:\nDesc: {:?}\nLang: {:?}\nComm: {:?}",
                 original.description, original.language, original.comment
             );
-            match EllingtonData::clear_data(&original.comment) {
-                Some(new) => {
+            match original.clear() {
+                Ok(new) => {
                     info!(
                         "Updated comment from/to:\n\t{:?}\n\t{:?}",
-                        original.comment, new
+                        original.comment, new.comment
                     );
-                    let command = Id3v2WriteComment::new(
-                        &location.to_path_buf(),
-                        original.description,
-                        original.language,
-                        new,
-                    );
-                    info!("Running command: {:?}", command.as_args());
-                    info!("Running command: {:?}", command.as_shell_args());
-                    // write the new comment
-                    match command.run() {
-                        Some(_) => info!("Ran call successfully"),
-                        None => error!("Failed to run, somehow"),
-                    }
+                    Self::write_comment(location, new);
                 }
-                None => {
-                    error!("No ellington data in comment, or some other error.");
+                Err(UpdateError::NoDataInComment) => {
+                    warn!("No ellington data in comment");
+                }
+                Err(UpdateError::FailedToSerialise) => {
+                    error!("The ellington data failed to serialise! This is a serious error!");
                 }
             }
         }

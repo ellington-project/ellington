@@ -115,7 +115,7 @@ fn main() {
         ("init", Some(sub)) => initalise_library(sub),
         ("bpm", Some(sub)) => bpm_library(sub),
         ("write", Some(sub)) => write_library(sub),
-        ("clear", Some(sub)) => clear_audio_files(sub), 
+        ("clear", Some(sub)) => clear_audio_files(sub),
         _ => error!("No subcommand given!"),
     }
 }
