@@ -21,7 +21,8 @@ fn print_linker_arguments() {
 }
 
 fn main() {
-    print_linker_arguments();
+    // We don't need to do this if we're not using TagLib
+    // print_linker_arguments();
 
     let flac_urls = vec![
         "https://archive.org/download/78_countless-blues_the-kansas-city-six-eddie-druham-freddie-green-walter-paige-joe-jon_gbia0004728a/Countless%20Blues%20-%20The%20Kansas%20City%20Six%20-%20Eddie%20Druham.flac",

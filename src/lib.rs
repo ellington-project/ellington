@@ -26,7 +26,7 @@ extern crate regex;
 #[macro_use]
 extern crate lazy_static;
 
-extern crate taglib;
+// extern crate taglib;
 
 // pub mod actions;
 pub mod library;
