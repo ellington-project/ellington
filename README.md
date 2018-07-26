@@ -103,15 +103,19 @@ By default, *Ellington* is quite conservative in what it prints. In order to get
   - Draft json-based ellington-data format for ephemeral bpm information
   - Comment appending (i.e. programmatically marking tracks as wanting to have bpm information written to them)
 
-**0.2.0**: 
-  - Stream output/input for libraries (i.e. writing a library to stdout, reading one from stdin - this should allow us to pipe libraries between ellington commands)  
+**0.2.0**:
+  - Replace `id3v2` program invocation with library calls.
+  - Replace `mp4tags` and `mp4info` program invocations with library calls.
 
 **0.3.0**: 
+  - Stream output/input for libraries (i.e. writing a library to stdout, reading one from stdin - this should allow us to pipe libraries between ellington commands)
+
+**0.4.0**: 
   - Integration of static `ffmpeg` libraries instead of system calls
   - Integration of all dependencies in `cargo.toml`
   - Standalone binary, without dynamic dependencies (including external programs)
 
-**0.4.0**
+**0.5.0**
  - Parallel bpm analysis
 
 **1.0.0**:
