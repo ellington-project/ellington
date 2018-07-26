@@ -26,17 +26,21 @@ The above commands, in order:
 ## Dependencies
 
 Most *Ellington* dependencies are expressed using the rust package manager, cargo, and so will be automatically installed when *Ellington* is built. However, *Ellington* makes use of a number of external programs for tasks such as parsing mp3 audio data, or writing id3v2 tags. These are: 
-  - sox
   - ffmpeg
   - id3v2
-
-With the default build, *Ellington* currently requires *only* ffmpeg. 
+  - mp4info
+  - mp4tags
   
 External programs are listed in `src/shelltools`, in case any are missing here. 
 
 ## Detailed Usage 
 
-*Ellington* currently supports three different modes of operations (see `ellington --help` for more information): 
+*Ellington* currently supports four different operations (see `ellington --help` for more information): 
+
+  - Library initialisation: `ellington init`
+  - BPM calculation: `ellington bpm`
+  - Writing ellington metadata to audio files: `ellington write`
+  - Clearing ellington metadata from audio files: `ellington clear`
 
 ### Library initialisation
 
@@ -65,7 +69,7 @@ This will write a json-based library to the file given in `<library_file`. Audio
 
 **NOTE: This will modify metadata of the audio files listed in `library_file`. Run this command at your own risk - it may damage your audio library!**
 
-As the bpms calculated with *Ellington* are not yet high quality, *Ellington* avoids writing to an audio file's `bpm` tag, but instead writes a specially formed piece of text to the comment field of the audio data. *Ellington* is very polite - it only writes to the comment when requested. In fact, all it does is update existing (empty) ellington data. 
+As the bpms calculated with *Ellington* are not yet high quality, *Ellington* avoids writing to an audio file's `bpm` tag, but instead writes a specially formed piece of text to the comment field of the audio data. *Ellington* is (by default) very polite - it only writes to the comment when requested. 
 
 Comments with *Ellington* metadata contain a valid *Ellington* data string of the form: 
 
@@ -77,33 +81,30 @@ A good *default* *Ellington* data string is:
 
     [ed#{"algs"#{}}#de]
 
-In order to persuade *Ellington* to write to an audio file, edit the 'comment' metadata tag of it to include the above data string, using your tag editor of choice. 
-
-*Note: id3v2 supports multiple comments for each mp3 file. Ellington, unfortunately, can only see/write one comment per file. If you find that ellington does not write metadata for a particular mp3 file, try deleting all the comments and, using your tag editor of choice, add a single comment containing an Ellington default data string*
+In order to persuade *Ellington* to write to an audio file, edit the 'comment' metadata tag of it to include the above data string, using your tag editor of choice. Alternatively, *Ellington* can be made more aggressive, by passing the `--append` flag to the `write` command. This will append the ellington data to an existing comment even if it does not yet contain comment data. 
 
 ## Debugging
 
 By default, *Ellington* is quite conservative in what it prints. In order to get it to log more, export the following environment variable as follows: 
 
-    RUST_LOG=info
+    RUST_LOG=ellington,libellington
 
 ## Feature Targets
 
 **0.1.0**: (current master) 
   - Audio file discovery through iTunes based libraries
-  - Support for generic audio decoding using `ffmpeg`
-  - Support for generic tagging using `taglib`
-  - Naive BPM calculation algorithm acting on raw audio data
-  - Draft json-based ellington-data format for ephemeral bpm information
   - Audio file discovery through recursive directory enumeration
   - Audio file discovery through `stdin`
-  
-**0.2.0**: 
-  - Stream output/input for libraries (i.e. writing a library to stdout, reading one from stdin - this should allow us to pipe libraries between ellington commands)
+  - Support for generic audio decoding using `ffmpeg`
+  - Support for mp3 tagging using `id3v2`
+  - Support for mp4 metadata parsing using `mp4info`
+  - Support for mp4 metadata writing using `mp4tags`
+  - Naive BPM calculation algorithm acting on raw audio data
+  - Draft json-based ellington-data format for ephemeral bpm information
   - Comment appending (i.e. programmatically marking tracks as wanting to have bpm information written to them)
 
-**0.2.1**: 
-  - Comment "cleaning" for mp3 files (finding mp3 files with multiple comments, and merging/cleaning them.)
+**0.2.0**: 
+  - Stream output/input for libraries (i.e. writing a library to stdout, reading one from stdin - this should allow us to pipe libraries between ellington commands)  
 
 **0.3.0**: 
   - Integration of static `ffmpeg` libraries instead of system calls
