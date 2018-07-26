@@ -56,7 +56,6 @@ impl Library {
     /*
         Read a library from an itunes xml/plist file
      */
-    // #[flame]
     pub fn from_itunes_xml(filename: &str) -> Option<Library> {
         let file = File::open(filename).ok()?;
 
@@ -108,7 +107,6 @@ impl Library {
         Read a library as a list of audio files, with one
         audio file path per line
      */
-    // #[flame]
     pub fn from_stdin() -> Option<Library> {
         // each line in stdin is assumed to be a path to a track name
         let stdin = io::stdin();
@@ -136,7 +134,6 @@ impl Library {
         Read a library from a directory, recursively exploring the 
         file hierarchy, and finding audio files.
      */
-    // #[flame]
     pub fn from_directory_rec(path: &PathBuf) -> Option<Library> {
         let mut entries = 0;
         let mut io_errors = 0;
