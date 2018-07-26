@@ -134,11 +134,20 @@ impl MetadataWriter for Id3v2Call {
         let (stdout, _stderr) = Id3v2ReadMetadata::new(&location.to_path_buf()).run()?;
 
         // map across the lines, and try to turn them each into a comment...
-        let comments: Vec<Id3v2Comment> = stdout
+        let mut comments: Vec<Id3v2Comment> = stdout
             .lines()
             .map(|s| s.to_string())
             .filter_map(|line| Id3v2Comment::parse(&line))
             .collect();
+
+        if comments.len() == 0 && append { 
+            let empty = Id3v2Comment {
+                description: "".to_string(),
+                language: "".to_string(),
+                comment: "".to_string()
+            };
+            comments.push(empty);
+        }
 
         // for each of the comments, try to write an updated form of that comment to the file
         for original in comments {

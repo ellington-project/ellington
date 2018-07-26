@@ -83,7 +83,10 @@ impl MetadataParser for Mp4ToolsCall {
 impl MetadataWriter for Mp4ToolsCall {
     fn write_ellington_data(location: &Path, ed: &EllingtonData, append: bool) -> WriteResult {
         // Reparse the file to get the comment data
-        let original = &Self::from_file(location)?.comments?[0];
+        let original = match &Self::from_file(location)?.comments {
+            Some(comms) => comms[0].clone(), 
+            None => "".to_string(),
+        };
 
         // try to write an updated form of that comment to the file
         match ed.update_data(&original, append) {
