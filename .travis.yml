@@ -6,7 +6,7 @@ os:
 rust: 
   - stable
   - beta
-- nightly 
+  - nightly 
 script:
 - cargo install cargo-deb
 - cargo test --all -vv --features data_driven_tests
