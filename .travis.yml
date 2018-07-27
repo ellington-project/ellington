@@ -8,10 +8,7 @@ rust:
   - beta
   - nightly 
 
-matrix:
-  allow_failures:
-  - rust: nightly
-  fast_finish: true
+
 
 jobs: 
   include: 
@@ -38,3 +35,7 @@ jobs:
         on:
           tags: true
           repo: AdamHarries/ellington
+  matrix:
+    allow_failures:
+      - rust: nightly
+    fast_finish: true
