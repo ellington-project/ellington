@@ -27,4 +27,4 @@ deploy:
   file: target/debian/ellington_0.1.0_amd64.deb
   on:
     repo: AdamHarries/ellington
-    branch: 0.1.0-debian-pkg
+    branch: master
