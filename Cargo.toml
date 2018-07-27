@@ -47,7 +47,7 @@ extended_tests = []
 
 [package.metadata.deb]
 section = "sound"
-depends = "$auto, ffmpeg, id3v2, mp4v2-utils"
+depends = "libgcc1 (>= 1:4), libc6 (>= 2.19), id3v2, mp4v2-utils, ffmpeg"
 extended-description = """\
 An experimental tool for automatically calculating the BPM of audio files \
 in a library of (mostly) swing music, as well as a testbed for trying out new
