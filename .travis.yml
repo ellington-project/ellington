@@ -11,6 +11,7 @@ script:
 - cargo install cargo-deb
 - cargo test --all -vv --features data_driven_tests
 - cargo deb
+
 matrix:
   allow_failures:
   - rust: nightly
@@ -18,6 +19,7 @@ matrix:
 cache:
   directories:
   - data
+
 deploy:
   provider: releases
   api_key:
