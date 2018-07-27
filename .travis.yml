@@ -8,8 +8,9 @@ rust:
   - beta
   - nightly 
 
-script: cargo build --release -vv
-script: cargo test --all -vv
+script: 
+  - cargo build --release -vv
+  - cargo test --all -vv
 
 matrix:
   allow_failures:
