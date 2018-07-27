@@ -1,7 +1,6 @@
 pub mod ellingtondata;
 pub mod filemetadata;
 pub mod trackmetadata;
-pub mod statistics; 
 
 use library::ellingtondata::*;
 use library::filemetadata::FileMetadata;
@@ -57,6 +56,7 @@ impl Library {
     /*
         Read a library from an itunes xml/plist file
      */
+    // #[flame]
     pub fn from_itunes_xml(filename: &str) -> Option<Library> {
         let file = File::open(filename).ok()?;
 
@@ -108,6 +108,7 @@ impl Library {
         Read a library as a list of audio files, with one
         audio file path per line
      */
+    // #[flame]
     pub fn from_stdin() -> Option<Library> {
         // each line in stdin is assumed to be a path to a track name
         let stdin = io::stdin();
@@ -135,6 +136,7 @@ impl Library {
         Read a library from a directory, recursively exploring the 
         file hierarchy, and finding audio files.
      */
+    // #[flame]
     pub fn from_directory_rec(path: &PathBuf) -> Option<Library> {
         let mut entries = 0;
         let mut io_errors = 0;
@@ -232,41 +234,6 @@ impl Library {
     }
 
     /*
-        Write ellington metadata to the audio file comment fields
-     */
-    pub fn write_metadata_to_audio_files(self: &Self, append: bool) -> () {
-        for entry in &self.tracks {
-            match TrackMetadata::write_ellington_data(
-                &PathBuf::from(entry.location.clone()),
-                &entry.filedata,
-                &entry.eldata,
-                append,
-            ) {
-                Some(()) => info!("Successfully wrote metadata to file {:?}", entry.location),
-                None => error!("Failed to write metadata to file {:?}", entry.location),
-            };
-        }
-    }
-
-    /*
-        Clear the ellington metadata from the audio file comment fields
-     */
-    pub fn clear_data_from_audio_files(self: &Self) -> () {
-        for entry in &self.tracks {
-            match TrackMetadata::clear_ellington_data(
-                &PathBuf::from(entry.location.clone()),
-                &entry.filedata,
-            ) {
-                Some(()) => info!(
-                    "Successfully cleared ellington metadata from file {:?}",
-                    entry.location
-                ),
-                None => error!("Failed to clear metadata from file {:?}", entry.location),
-            };
-        }
-    }
-
-    /*
         Run an analysis pipeline over each audio track in the library
      */
     pub fn run_pipeline<P: Pipeline>(self: &mut Self) -> () {
@@ -305,6 +272,41 @@ impl Library {
                     error!("Failed to calculate bpm for entry: {:?}", entry);
                 }
             }
+        }
+    }
+
+    /*
+        Write ellington metadata to the audio file comment fields
+     */
+    pub fn write_metadata_to_audio_files(self: &Self, append: bool) -> () {
+        for entry in &self.tracks {
+            match TrackMetadata::write_ellington_data(
+                &PathBuf::from(entry.location.clone()),
+                &entry.filedata,
+                &entry.eldata,
+                append,
+            ) {
+                Some(()) => info!("Successfully wrote metadata to file {:?}", entry.location),
+                None => error!("Failed to write metadata to file {:?}", entry.location),
+            };
+        }
+    }
+
+    /*
+        Clear the ellington metadata from the audio file comment fields
+     */
+    pub fn clear_data_from_audio_files(self: &Self) -> () {
+        for entry in &self.tracks {
+            match TrackMetadata::clear_ellington_data(
+                &PathBuf::from(entry.location.clone()),
+                &entry.filedata,
+            ) {
+                Some(()) => info!(
+                    "Successfully cleared ellington metadata from file {:?}",
+                    entry.location
+                ),
+                None => error!("Failed to clear metadata from file {:?}", entry.location),
+            };
         }
     }
 }

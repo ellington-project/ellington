@@ -3,7 +3,6 @@ name = "ellington"
 version = "0.1.0"
 authors = ["Adam Harries <harries.adam@gmail.com>"]
 build = "build.rs"
-readme = "README.md"
 
 [lib]
 name = "libellington"
@@ -44,11 +43,3 @@ commandspec = "0.10"
 # This will download lots of data! 
 data_driven_tests = []
 extended_tests = []
-
-[package.metadata.deb]
-section = "sound"
-depends = "$auto, ffmpeg, id3v2, mp4v2-utils"
-extended-description = """\
-An experimental tool for automatically calculating the BPM of audio files \
-in a library of (mostly) swing music, as well as a testbed for trying out new
-BPM algorithms and techniques for the above."""
