@@ -8,12 +8,16 @@ rust:
   - beta
   - nightly 
 
+script: cargo build --release -vv
+script: cargo test --all -vv
+
+matrix:
+  allow_failures:
+    - rust: nightly
+  fast_finish: true
+
 jobs: 
   include: 
-    - stage: build
-      script: cargo build --release -vv
-    - stage: test 
-      script: cargo test --all -vv
     - stage: GitHub Release
       script: echo "Deploying to Github releases..."
       os: linux
@@ -33,7 +37,4 @@ jobs:
         on:
           tags: true
           repo: AdamHarries/ellington
-  # matrix:
-  #   allow_failures:
-  #     - rust: nightly
-  #   fast_finish: true
+
