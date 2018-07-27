@@ -4,8 +4,9 @@ rust:
 - beta
 - nightly
 script:
+- cargo install cargo-deb
 - cargo test --all -vv --features data_driven_tests
-- RUST_LOG=ellington,libellington=info cargo run -- init test.ellington -d data/
+- cargo deb
 matrix:
   allow_failures:
   - rust: nightly
