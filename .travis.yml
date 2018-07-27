@@ -13,8 +13,8 @@ rust:
 
 install:
   - if [ $TRAVIS_OS_NAME = linux ]; then cargo install cargo-deb; fi
-  - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install ffmpeg; else brew install ffmpeg; fi
-  - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install id3v2; else brew install id3v2; fi
+  - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install libav; else brew install ffmpeg; fi
+  - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install libav; else brew install id3v2; fi
   - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install mp4v2-utils; else brew install mp4v2; fi
 
 script: 
