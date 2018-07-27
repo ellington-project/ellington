@@ -10,8 +10,6 @@ rust:
 script:
 - cargo install cargo-deb
 - cargo test --all -vv --features data_driven_tests
-- cargo deb
-- ./scripts/package.sh .
 
 matrix:
   allow_failures:
@@ -25,8 +23,13 @@ deploy:
   provider: releases
   api_key:
     secure: y6y3uPQUai5Ko89sJmwWH2dRMhNgMtvvqGfxAwNyHX46b9YKgL49+DEU2IlGcXYR2YaMcR/Za+OuJ6UDs3zGS5w8PEQfrfUEBdfBTvnHRvKbmBnkfn6AQgk7v8lU/BiYNyKdTY678l0Gjk1hmdb8q1Ve2w95VBVR+zHZjftEUu1iRyOl0FITHqDtgm3rCD18E6Py7tnCiJAc7zJ0/Fvi9aufrJLnEq8lmoPDPB1WsxjC962kwD5+n7GXH3gj9uPV9aLrWw2Qsvya672a6rDMOz37BfTRzHsbXs1lecAQ54SkMy2+vXNzl366lLWlS7Mrf2ZjH7BWt7MOcK4Wj8YiNQ7zXvXLo9hDxV19CfrrWoQz56NevRPOhQ2C1e/AXo+Oim7GysRJnK0Pj2pET6MtCnISU3UyklpJ+CjVE4sbyq5gNsbBt23KOb6da17aaXzH9ydPURaWKtML5Y9aSQAkj2gbkssAPFfXIhbAoPW12R4fjDq8AtZ2ek+ulfxpNxH87nK4hSY1vknrY8lkyjDe18D8yAXg6XEqDoOmpHPPJ7/s2djJSEVg/LWHvXOXgnJovBTtllxvaAh40CMXh6jvpKrSWj/9DvvNJ90cKtoBgPuNvycH/XK3PKwpTcWrIMcMtGmrJNjXaXd/ufKK3vh66AHKsk8vSNfZBLsPjyMVit4=
-  file: target/debian/ellington_0.1.0_amd64.deb
-  file: releases/*.zip
+  before_deploy: 
+    - cargo deb
+    - ./scripts/package.sh .
+  file_glob: true
+  file: 
+    - "target/debian/ellington_0.1.0_amd64.deb"
+    - "releases/*.zip"
   on:
     tags: true
     repo: AdamHarries/ellington
