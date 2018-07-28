@@ -44,5 +44,6 @@ deploy:
     - "releases/*.deb"
   skip_cleanup: true
   on:
+    tags: true
     rust: stable
 
