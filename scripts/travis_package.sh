@@ -35,7 +35,7 @@ cp $buildroot/README.md $pdir
 
 # Zip it up! 
 pushd $releases
-zip -r $package $package
+zip -r $package.zip $package
 rm -rf $package
 popd
 
