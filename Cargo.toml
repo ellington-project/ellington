@@ -1,6 +1,6 @@
 [package]
 name = "ellington"
-version = "0.1.5"
+version = "0.1.6"
 authors = ["Adam Harries <harries.adam@gmail.com>"]
 build = "build.rs"
 readme = "README.md"

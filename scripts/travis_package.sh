@@ -45,5 +45,5 @@ if [[ $osname == linux ]]; then
     pushd $buildroot
         cargo deb --no-build --no-strip
     popd 
-    cp $buildroot/target/debian/*.deb $pdir
+    cp $buildroot/target/debian/*.deb $releases
 fi
