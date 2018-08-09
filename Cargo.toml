@@ -4,6 +4,7 @@ version = "0.1.6"
 authors = ["Adam Harries <harries.adam@gmail.com>"]
 build = "build.rs"
 readme = "README.md"
+license = "GPL-3.0-or-later"
 
 [lib]
 name = "libellington"
