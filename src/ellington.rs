@@ -13,10 +13,23 @@ extern crate clap;
 use clap::App;
 use clap::ArgMatches;
 
+extern crate commandspec;
+use commandspec::*;
+
 extern crate libellington as le;
 
 use le::library::Library;
 use le::pipelines::FfmpegNaivePipeline;
+
+fn check_callable(program: &'static str) -> Option<()> {
+    match execute!(r"which {program}", program=program)  { 
+        Err(_) => {
+            println!("Cannot find program '{}' - please make sure it's installed before running this command", program);
+            None
+        },
+        _ => Some(())
+    }
+}
 
 // #[flame]
 fn initalise_library(matches: &ArgMatches) -> () {
@@ -60,6 +73,8 @@ fn bpm_library(matches: &ArgMatches) -> () {
         }
     };
 
+    check_callable("ffmpeg").unwrap();
+
     let mut library = Library::read_from_file(&PathBuf::from(library_file)).unwrap();
 
     library.run_pipeline::<FfmpegNaivePipeline>();
@@ -96,6 +111,10 @@ fn clear_audio_files(matches: &ArgMatches) -> () {
         }
     };
 
+    check_callable("id3v2").unwrap();
+    check_callable("mp4info").unwrap();
+    check_callable("mp4tags").unwrap();
+
     let library = Library::read_from_file(&PathBuf::from(library_file)).unwrap();
 
     library.clear_data_from_audio_files();
@@ -116,6 +135,6 @@ fn main() {
         ("bpm", Some(sub)) => bpm_library(sub),
         ("write", Some(sub)) => write_library(sub),
         ("clear", Some(sub)) => clear_audio_files(sub),
-        _ => error!("No subcommand given!"),
+        _ => println!("No command given to ellington - please specify one of init/bpm/write/clear"),
     }
 }

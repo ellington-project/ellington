@@ -1,20 +1,48 @@
 language: rust
 
+cache: cargo
+
 os:
   - linux
   - osx
 
 rust: 
   - stable
-  - beta
-  - nightly 
-script:
-  - RUST_LOG=ellington,libellington cargo test --all -vv --features data_driven_tests
-  # - RUST_LOG=ellington,libellington=info cargo run -- init test.ellington -d data/
-matrix: 
+  # - beta
+  # - nightly 
+
+# before_install: 
+#   - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get update -qq; fi
+#   - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install ffmpeg; else brew install ffmpeg; fi
+#   - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install id3v2; else brew install id3v2; fi
+#   - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install mp4v2-utils; else brew install mp4v2; fi
+
+install:
+  - if [ $TRAVIS_OS_NAME = linux ]; then cargo install --force cargo-deb; fi
+
+script: 
+  - cargo build --release -vv
+  - cargo test --release --all -vv
+
+matrix:
   allow_failures:
     - rust: nightly
   fast_finish: true
-cache: 
-  directories: 
-    - data
+
+before_deploy: 
+  - "echo 'Running deploy'"
+  - "./scripts/travis_package.sh"
+
+deploy:
+  provider: releases
+  api_key:
+    secure: y6y3uPQUai5Ko89sJmwWH2dRMhNgMtvvqGfxAwNyHX46b9YKgL49+DEU2IlGcXYR2YaMcR/Za+OuJ6UDs3zGS5w8PEQfrfUEBdfBTvnHRvKbmBnkfn6AQgk7v8lU/BiYNyKdTY678l0Gjk1hmdb8q1Ve2w95VBVR+zHZjftEUu1iRyOl0FITHqDtgm3rCD18E6Py7tnCiJAc7zJ0/Fvi9aufrJLnEq8lmoPDPB1WsxjC962kwD5+n7GXH3gj9uPV9aLrWw2Qsvya672a6rDMOz37BfTRzHsbXs1lecAQ54SkMy2+vXNzl366lLWlS7Mrf2ZjH7BWt7MOcK4Wj8YiNQ7zXvXLo9hDxV19CfrrWoQz56NevRPOhQ2C1e/AXo+Oim7GysRJnK0Pj2pET6MtCnISU3UyklpJ+CjVE4sbyq5gNsbBt23KOb6da17aaXzH9ydPURaWKtML5Y9aSQAkj2gbkssAPFfXIhbAoPW12R4fjDq8AtZ2ek+ulfxpNxH87nK4hSY1vknrY8lkyjDe18D8yAXg6XEqDoOmpHPPJ7/s2djJSEVg/LWHvXOXgnJovBTtllxvaAh40CMXh6jvpKrSWj/9DvvNJ90cKtoBgPuNvycH/XK3PKwpTcWrIMcMtGmrJNjXaXd/ufKK3vh66AHKsk8vSNfZBLsPjyMVit4=
+  file_glob: true
+  file: 
+    - "releases/*.zip"
+    - "releases/*.deb"
+  skip_cleanup: true
+  on:
+    tags: true
+    rust: stable
+

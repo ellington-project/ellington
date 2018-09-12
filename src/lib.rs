@@ -8,17 +8,18 @@ extern crate env_logger;
 
 extern crate byteorder;
 
-extern crate id3;
-extern crate itertools;
-extern crate memmap;
+// extern crate id3;
+// extern crate itertools;
+// extern crate memmap;
 extern crate percent_encoding;
 extern crate plist;
 extern crate rand;
-extern crate serde;
-extern crate serde_json;
+
 extern crate url;
 extern crate walkdir;
 
+extern crate serde;
+extern crate serde_json;
 #[macro_use]
 extern crate serde_derive;
 

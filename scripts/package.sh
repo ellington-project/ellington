@@ -29,7 +29,7 @@ elif [[ $OSTYPE == linux* ]]; then
 fi
 
 # Define the package name
-package="ellington-0-1-0-$ghash-$now-$osname"
+package="ellington-$ghash-$now-$osname"
 echo "Defined package name: '$package'"
 
 # Make a directory for the combination
