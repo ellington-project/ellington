@@ -85,47 +85,15 @@ impl TempoEstimator for BellsonTempoEstimator {
                 let captures = RE.captures(stdout.as_str())?;
 
                 let bpm = captures.get(1)?.as_str();
-                println!("Got bpm from bellson: {:?}", bpm);
 
-                Some(10)
+                let bpm = bpm.parse::<i64>().ok()?;
+
+                Some(bpm)
             }, 
             _ => { 
                 error!("Got error while running bellson!");
                 None
             }
         }
-        // let mut child = match call.run() {
-        //     Err(e) => {
-        //         error!(
-        //             "Failed to run bellson for audio file {:?}, with io error {:?}",
-        //             audio_file, e
-        //         );
-        //         None
-        //     }
-        //     Ok(c) => Some(c),
-        // }?;
-
-        // let result = {
-        //     let bellson_stream = match &mut child.stdout {
-        //         Some(s) => Some(AudioStream::from_stream(s)),
-        //         None => {
-        //             error!("Ffmpeg stream did not run properly!");
-        //             None
-        //         }
-        //     }?;
-
-        //     Some(Naive::default().analyse(ffmpeg_stream) as i64)
-        // };
-
-        // match child.wait() {
-        //     Err(e) => {
-        //         error!(
-        //             "Failed to wait on ffmpeg child for audio file {:?}, with io error {:?}",
-        //             audio_file, e
-        //         );
-        //         None
-        //     }
-        //     Ok(_) => result,
-        // }
     }
 }
