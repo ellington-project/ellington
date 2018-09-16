@@ -6,7 +6,7 @@ pub mod statistics;
 use library::ellingtondata::*;
 use library::filemetadata::FileMetadata;
 use library::trackmetadata::*;
-use pipelines::Pipeline;
+use estimators::TempoEstimator;
 
 use percent_encoding;
 use plist::Plist;
@@ -269,9 +269,9 @@ impl Library {
     /*
         Run an analysis pipeline over each audio track in the library
      */
-    pub fn run_pipeline<P: Pipeline>(self: &mut Self) -> () {
-        info!("Running pipeline over ellington library.");
-        info!("Using pipeline: {:?}", P::NAME);
+    pub fn run_pipeline<P: TempoEstimator>(self: &mut Self) -> () {
+        info!("Running tempo estimator over ellington library.");
+        info!("Using estimator: {:?}", P::NAME);
         // iterate over our tracks, and run the pipeline
         let mut ix = 0;
         let lx = self.tracks.len();

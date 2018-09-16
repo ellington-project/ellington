@@ -19,7 +19,7 @@ use commandspec::*;
 extern crate libellington as le;
 
 use le::library::Library;
-use le::pipelines::FfmpegNaivePipeline;
+use le::estimators::FfmpegNaiveTempoEstimator;
 
 fn check_callable(program: &'static str) -> Option<()> {
     match execute!(r"which {program}", program=program)  { 
@@ -77,7 +77,7 @@ fn bpm_library(matches: &ArgMatches) -> () {
 
     let mut library = Library::read_from_file(&PathBuf::from(library_file)).unwrap();
 
-    library.run_pipeline::<FfmpegNaivePipeline>();
+    library.run_pipeline::<FfmpegNaiveTempoEstimator>();
 
     library.write_to_file(&PathBuf::from(library_file));
 }

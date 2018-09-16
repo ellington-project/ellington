@@ -91,29 +91,22 @@ pub struct FfmpegCommand {
     pub codec: Codec,
 }
 
-impl FfmpegCommand {
-    pub fn default(filename: &PathBuf) -> FfmpegCommand {
-        FfmpegCommand {
-            filename: EscapedFilename::new(filename),
-            samplerate: SampleRate::Ffo,
-            channels: Channels::Mono,
-            codec: Codec::PcmF32le,
-            format: Format::F32le,
-        }
-    }
-
-    pub fn spawn<'a>(self: &Self) -> Result<Child> {
-        // let child =
-        self.call().stdout(Stdio::piped()).spawn()
-        // .expect("Failed to execute standalone ffmpeg call");
-
-        // child
-    }
-
-    // pub fn run_with(self: &Self, )
+#[derive(Debug)]
+pub struct BellsonCommand {
+    pub path: &PathBuf,
+    pub model: &PathBuf
 }
 
-impl ShellProgram for FfmpegCommand {
+impl BellsonCommand {
+    pub fn default(path: &PathBuf, model: &PathBuf) -> BellsonCommand {
+        BellsonCommand {
+            path: path, 
+            model: model
+        }
+    }
+}
+
+impl ShellProgram for BellsonCommand {
     const COMMAND_NAME: &'static str = "ffmpeg";
 
     fn as_args(self: &Self) -> Vec<String> {

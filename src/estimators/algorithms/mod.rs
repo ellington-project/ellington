@@ -1,5 +1,6 @@
 // pub mod analyser;
 pub mod naive;
+pub mod bellson;
 
 // use std::path::Path;
 // use library::ellingtondata::BpmInfo;
