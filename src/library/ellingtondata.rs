@@ -11,6 +11,7 @@ use std::collections::BTreeMap;
 pub type Algorithm = String;
 pub type Bpm = i64;
 
+#[derive(Debug)]
 pub enum UpdateError {
     NoDataInComment,
     FailedToSerialise,
@@ -29,7 +30,13 @@ impl EllingtonData {
         }
     }
 
-    fn serialise(self: &Self) -> UpdateResult<String> {
+    pub fn with_algorithm(a: Algorithm, b: Bpm) -> EllingtonData {
+        let mut map = BTreeMap::new();
+        map.insert(a, b);
+        EllingtonData { algs: map }
+    }
+
+    pub fn serialise(self: &Self) -> UpdateResult<String> {
         serde_json::to_string(self)
             .ok()
             .and_then(|s| Some(s.replace(":", "#")))

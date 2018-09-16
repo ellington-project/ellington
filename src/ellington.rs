@@ -19,8 +19,8 @@ use commandspec::*;
 
 extern crate libellington as le;
 
-use le::library::Library;
 use le::library::ellingtondata::EllingtonData;
+use le::library::Library;
 use le::pipelines::FfmpegNaivePipeline;
 use le::pipelines::Pipeline;
 
@@ -134,40 +134,51 @@ fn oneshot_audio_file(matches: &ArgMatches) -> () {
         }
     };
 
-    let comment: &str = match matches.value_of("comment") {
-        Some(comm) => {
-            info!("Got comment: {:?}", comm);
-            comm
-        }
-        _ => {
-            info!("No comment given, returning fresh library.");
-            ""
-        }
-    };
-
     // select a pipeline
     let estimation = FfmpegNaivePipeline::run(&PathBuf::from(audiofile));
-    match estimation {
-        Some(e) => {
-            let mut map = BTreeMap::new();
-            map.insert(String::from("naive"), e);
 
-            // Construct some ellington data:
-            let ed = EllingtonData { algs: map };
+    // Try and estimate the result, and turn it into a result
+    match (estimation, matches.value_of("comment")) {
+        // Comment and bpm.
+        (Some(e), Some(c)) => {
+            // get our new ellington data: 
+            let ed = EllingtonData::with_algorithm(String::from("naive"), e);
 
-            match ed.update_data(&String::from(comment), true) {
+            match ed.update_data(&String::from(c), true) {
                 Ok(new_comment) => {
                     info!("Got new comment: {:?}", new_comment);
                     println!("{:?}", new_comment);
                 }
-                _ => {
-                    info!("Updating procedure failed for some reason!");
+                f => {
+                    info!("Updating procedure failed for reason: {:?}", f);
                 }
             };
         }
+        // Bpm, no comment
+        (Some(e), None) => {
+            // get our new ellington data: 
+            let ed = EllingtonData::with_algorithm(String::from("naive"), e);
+
+            match ed.serialise() {
+                Ok(new_comment) => {
+                    info!("Got new comment: {:?}", new_comment);
+                    println!("{:?}", new_comment);
+                }
+                f => {
+                    info!("Updating procedure failed for reason: {:?}", f);
+                }
+            }
+
+        }
+        // No bpm, but a comment
+        (None, Some(c)) => {
+            info!("Bpm estimation failed, returning old comment");
+            println!("{:?}", c);
+        }
+        // Neither
         _ => {
-            info!("Failed to bpm!, returning comment!");
-            println!("{:?}", comment);
+            info!("Bpm estimation failed, returning old comment");
+            println!("");
         }
     };
 }
