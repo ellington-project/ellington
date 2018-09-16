@@ -1,7 +1,7 @@
+use nom;
 use regex::Regex;
 use serde_json;
 use std::collections::BTreeMap;
-use nom;
 // #[derive(Serialize, Deserialize, Debug, Clone)]
 // pub struct BpmInfo {
 //     pub bpm: i64,
@@ -36,19 +36,19 @@ impl EllingtonData {
         EllingtonData { algs: map }
     }
 
-    pub fn format(self: &Self) -> UpdateResult<String> { 
+    pub fn format(self: &Self) -> UpdateResult<String> {
         let mut s = String::new();
-        s.push_str("[ed|");
+        s.push_str(" [ed| ");
         let mut first = true;
-        for (algorithm, bpm) in self.algs.iter() { 
+        for (algorithm, bpm) in self.algs.iter() {
             if first {
                 first = false;
-            }else{
+            } else {
                 s.push_str(", ");
             }
             s.push_str(&format!("{}~{}", algorithm, bpm));
         }
-        s.push_str("|]");
+        s.push_str(" |]");
         Ok(s)
     }
 
@@ -73,16 +73,22 @@ impl EllingtonData {
 
     // #[flame]
     pub fn parse(comment: &String) -> Option<EllingtonData> {
-        
         let captures = Self::regex().captures(comment.as_str())?;
 
         // get the first capture, and try to parse it
-        match Self::parse_content(captures.get(1)?.as_str()) { 
-            Ok((rem, pairs)) => { 
-                Some(EllingtonData::empty())
+        match Self::parse_content(captures.get(1)?.as_str()) {
+            Ok((_, pairs)) => {
+                let mut map = BTreeMap::new();
+                for (algorithm, bpm) in pairs {
+                    // unwrapping should be safe here, as we've already parsed
+                    // digits, which we know should form an int!
+                    map.insert(String::from(algorithm), bpm.parse::<i64>().unwrap());
+                }
+
+                Some(EllingtonData { algs: map })
             }
-            _ => { 
-                println!("Failed to parse ellingotn data from comment!");
+            _ => {
+                println!("Failed to parse ellington data from comment!");
                 None
             }
         }
@@ -90,7 +96,6 @@ impl EllingtonData {
 
     // #[flame]
     pub fn update_data(self: &Self, comment: &String, append: bool) -> UpdateResult<String> {
-
         let serialised = self.format()?;
 
         // test to see if there is any ellington data in the first place...

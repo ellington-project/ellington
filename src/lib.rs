@@ -1,5 +1,3 @@
-
-
 /*
     libellington - the core library + functionality for the ellington tool.
 */
@@ -42,7 +40,6 @@ pub mod shelltools;
 pub fn trueish() -> bool {
     true
 }
-
 
 #[cfg(test)]
 mod tests {
