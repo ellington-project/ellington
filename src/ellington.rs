@@ -2,6 +2,7 @@
     ellington - the ellington tool for processing and bpming audio libraries
 */
 
+use std::collections::BTreeMap;
 use std::path::PathBuf;
 
 #[macro_use]
@@ -19,15 +20,17 @@ use commandspec::*;
 extern crate libellington as le;
 
 use le::library::Library;
+use le::library::ellingtondata::EllingtonData;
 use le::pipelines::FfmpegNaivePipeline;
+use le::pipelines::Pipeline;
 
 fn check_callable(program: &'static str) -> Option<()> {
-    match execute!(r"which {program}", program=program)  { 
+    match execute!(r"which {program}", program = program) {
         Err(_) => {
             println!("Cannot find program '{}' - please make sure it's installed before running this command", program);
             None
-        },
-        _ => Some(())
+        }
+        _ => Some(()),
     }
 }
 
@@ -120,6 +123,55 @@ fn clear_audio_files(matches: &ArgMatches) -> () {
     library.clear_data_from_audio_files();
 }
 
+fn oneshot_audio_file(matches: &ArgMatches) -> () {
+    let audiofile: &str = match matches.value_of("audiofile") {
+        Some(ap) => {
+            info!("Processing audio file at {:?}", ap);
+            ap
+        }
+        None => {
+            panic!("Got no audio file, this should not happen!");
+        }
+    };
+
+    let comment: &str = match matches.value_of("comment") {
+        Some(comm) => {
+            info!("Got comment: {:?}", comm);
+            comm
+        }
+        _ => {
+            info!("No comment given, returning fresh library.");
+            ""
+        }
+    };
+
+    // select a pipeline
+    let estimation = FfmpegNaivePipeline::run(&PathBuf::from(audiofile));
+    match estimation {
+        Some(e) => {
+            let mut map = BTreeMap::new();
+            map.insert(String::from("naive"), e);
+
+            // Construct some ellington data:
+            let ed = EllingtonData { algs: map };
+
+            match ed.update_data(&String::from(comment), true) {
+                Ok(new_comment) => {
+                    info!("Got new comment: {:?}", new_comment);
+                    println!("{:?}", new_comment);
+                }
+                _ => {
+                    info!("Updating procedure failed for some reason!");
+                }
+            };
+        }
+        _ => {
+            info!("Failed to bpm!, returning comment!");
+            println!("{:?}", comment);
+        }
+    };
+}
+
 fn main() {
     env_logger::init();
     // get the command line arguments to the program
@@ -135,6 +187,9 @@ fn main() {
         ("bpm", Some(sub)) => bpm_library(sub),
         ("write", Some(sub)) => write_library(sub),
         ("clear", Some(sub)) => clear_audio_files(sub),
-        _ => println!("No command given to ellington - please specify one of init/bpm/write/clear"),
+        ("oneshot", Some(sub)) => oneshot_audio_file(sub),
+        _ => println!(
+            "No command given to ellington - please specify one of init/bpm/write/clear/oneshot"
+        ),
     }
 }

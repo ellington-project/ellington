@@ -1,7 +1,7 @@
 pub mod ellingtondata;
 pub mod filemetadata;
+pub mod statistics;
 pub mod trackmetadata;
-pub mod statistics; 
 
 use library::ellingtondata::*;
 use library::filemetadata::FileMetadata;
