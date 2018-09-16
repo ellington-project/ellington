@@ -1,12 +1,12 @@
 pub mod ellingtondata;
 pub mod filemetadata;
+pub mod statistics;
 pub mod trackmetadata;
-pub mod statistics; 
 
+use estimators::TempoEstimator;
 use library::ellingtondata::*;
 use library::filemetadata::FileMetadata;
 use library::trackmetadata::*;
-use estimators::TempoEstimator;
 
 use percent_encoding;
 use plist::Plist;

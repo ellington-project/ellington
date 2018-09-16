@@ -140,11 +140,11 @@ impl MetadataWriter for Id3v2Call {
             .filter_map(|line| Id3v2Comment::parse(&line))
             .collect();
 
-        if comments.len() == 0 && append { 
+        if comments.len() == 0 && append {
             let empty = Id3v2Comment {
                 description: "".to_string(),
                 language: "".to_string(),
-                comment: "".to_string()
+                comment: "".to_string(),
             };
             comments.push(empty);
         }

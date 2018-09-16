@@ -6,6 +6,9 @@
 extern crate log;
 extern crate env_logger;
 
+#[macro_use]
+extern crate nom;
+
 extern crate byteorder;
 
 // extern crate id3;
@@ -30,8 +33,8 @@ extern crate lazy_static;
 // extern crate taglib;
 
 // pub mod actions;
-pub mod library;
 pub mod estimators;
+pub mod library;
 pub mod shelltools;
 
 pub fn trueish() -> bool {
