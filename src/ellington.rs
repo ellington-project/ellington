@@ -9,6 +9,9 @@ extern crate log;
 extern crate env_logger;
 
 #[macro_use]
+extern crate nom;
+
+#[macro_use]
 extern crate clap;
 use clap::App;
 use clap::ArgMatches;
@@ -18,16 +21,19 @@ use commandspec::*;
 
 extern crate libellington as le;
 
+use le::library::ellingtondata::EllingtonData;
 use le::library::Library;
 use le::pipelines::FfmpegNaivePipeline;
+use le::pipelines::Pipeline;
 
 fn check_callable(program: &'static str) -> Option<()> {
-    match execute!(r"which {program}", program=program)  { 
+    //TODO: this needs to be written to capture the various output streams, as it pollutes ellington's output otherwise
+    match execute!(r"which {program}", program = program) {
         Err(_) => {
             println!("Cannot find program '{}' - please make sure it's installed before running this command", program);
             None
-        },
-        _ => Some(())
+        }
+        _ => Some(()),
     }
 }
 
@@ -120,6 +126,68 @@ fn clear_audio_files(matches: &ArgMatches) -> () {
     library.clear_data_from_audio_files();
 }
 
+fn oneshot_audio_file(matches: &ArgMatches) -> () {
+    // TODO: Reinstate this - see the comment above
+    // check_callable("ffmpeg").unwrap();
+
+    let audiofile: &str = match matches.value_of("audiofile") {
+        Some(ap) => {
+            info!("Processing audio file at {:?}", ap);
+            ap
+        }
+        None => {
+            panic!("Got no audio file, this should not happen!");
+        }
+    };
+
+    // select a pipeline
+    let estimation = FfmpegNaivePipeline::run(&PathBuf::from(audiofile));
+
+    // Try and estimate the result, and turn it into a result
+    match (estimation, matches.value_of("comment")) {
+        // Comment and bpm.
+        (Some(e), Some(c)) => {
+            // get our new ellington data:
+            let ed = EllingtonData::with_algorithm(String::from("naive"), e);
+
+            match ed.update_data(&String::from(c), true) {
+                Ok(new_comment) => {
+                    info!("Got new comment: {:?}", new_comment);
+                    println!("{}", new_comment);
+                }
+                f => {
+                    info!("Updating procedure failed for reason: {:?}", f);
+                }
+            };
+        }
+        // Bpm, no comment
+        (Some(e), None) => {
+            // get our new ellington data:
+            let ed = EllingtonData::with_algorithm(String::from("naive"), e);
+
+            match ed.format() {
+                Ok(new_comment) => {
+                    info!("Got new comment: {:?}", new_comment);
+                    println!("{}", new_comment);
+                }
+                f => {
+                    info!("Updating procedure failed for reason: {:?}", f);
+                }
+            }
+        }
+        // No bpm, but a comment
+        (None, Some(c)) => {
+            info!("Bpm estimation failed, returning old comment");
+            println!("{}", c);
+        }
+        // Neither
+        _ => {
+            info!("Bpm estimation failed, returning old comment");
+            println!("");
+        }
+    };
+}
+
 fn main() {
     env_logger::init();
     // get the command line arguments to the program
@@ -135,6 +203,9 @@ fn main() {
         ("bpm", Some(sub)) => bpm_library(sub),
         ("write", Some(sub)) => write_library(sub),
         ("clear", Some(sub)) => clear_audio_files(sub),
-        _ => println!("No command given to ellington - please specify one of init/bpm/write/clear"),
+        ("oneshot", Some(sub)) => oneshot_audio_file(sub),
+        _ => println!(
+            "No command given to ellington - please specify one of init/bpm/write/clear/oneshot"
+        ),
     }
 }

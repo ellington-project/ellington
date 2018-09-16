@@ -27,7 +27,7 @@ impl TrackMetadata {
             Some(v) => {
                 for c in v {
                     // parse the comment into some ellington data
-                    match EllingtonData::parse_data(&c) {
+                    match EllingtonData::parse(&c) {
                         Some(mut ed) => {
                             info!("Found ellington metadata: {:?}", ed);
                             algs.append(&mut ed.algs);

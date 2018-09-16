@@ -6,6 +6,9 @@
 extern crate log;
 extern crate env_logger;
 
+#[macro_use]
+extern crate nom;
+
 extern crate byteorder;
 
 // extern crate id3;
