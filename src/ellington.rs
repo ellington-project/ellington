@@ -2,7 +2,6 @@
     ellington - the ellington tool for processing and bpming audio libraries
 */
 
-use std::collections::BTreeMap;
 use std::path::PathBuf;
 
 #[macro_use]
@@ -124,6 +123,8 @@ fn clear_audio_files(matches: &ArgMatches) -> () {
 }
 
 fn oneshot_audio_file(matches: &ArgMatches) -> () {
+    check_callable("ffmpeg").unwrap();
+
     let audiofile: &str = match matches.value_of("audiofile") {
         Some(ap) => {
             info!("Processing audio file at {:?}", ap);
@@ -147,7 +148,7 @@ fn oneshot_audio_file(matches: &ArgMatches) -> () {
             match ed.update_data(&String::from(c), true) {
                 Ok(new_comment) => {
                     info!("Got new comment: {:?}", new_comment);
-                    println!("{:?}", new_comment);
+                    println!("{}", new_comment);
                 }
                 f => {
                     info!("Updating procedure failed for reason: {:?}", f);
@@ -162,7 +163,7 @@ fn oneshot_audio_file(matches: &ArgMatches) -> () {
             match ed.serialise() {
                 Ok(new_comment) => {
                     info!("Got new comment: {:?}", new_comment);
-                    println!("{:?}", new_comment);
+                    println!("{}", new_comment);
                 }
                 f => {
                     info!("Updating procedure failed for reason: {:?}", f);
@@ -173,7 +174,7 @@ fn oneshot_audio_file(matches: &ArgMatches) -> () {
         // No bpm, but a comment
         (None, Some(c)) => {
             info!("Bpm estimation failed, returning old comment");
-            println!("{:?}", c);
+            println!("{}", c);
         }
         // Neither
         _ => {
