@@ -9,13 +9,13 @@ use std::process::Stdio;
 
 #[derive(Debug)]
 pub struct BellsonCommand {
-    pub path: &PathBuf
-    }
+    pub path: EscapedFilename
+}
 
 impl BellsonCommand {
     pub fn default(path: &PathBuf) -> BellsonCommand {
         BellsonCommand {
-            path: path, 
+            path: EscapedFilename::new(path), 
         }
     }
 }
@@ -25,7 +25,7 @@ impl ShellProgram for BellsonCommand {
 
     fn as_args(self: &Self) -> Vec<String> {
         vec![
-            self.path.as_str()
+            self.path.filename.as_str()
         ].iter()
             .map(|s| s.to_string())
             .collect()

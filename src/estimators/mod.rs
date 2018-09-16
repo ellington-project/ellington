@@ -1,4 +1,7 @@
+use regex::Regex;
+use shelltools::generic::ShellProgram;
 use shelltools::ffmpeg::FfmpegCommand;
+use shelltools::bellson::BellsonCommand;
 use std::path::PathBuf;
 
 pub mod algorithms;
@@ -72,9 +75,25 @@ pub struct BellsonTempoEstimator {}
 
 impl TempoEstimator for BellsonTempoEstimator {
     const NAME: &'static str = "bellson";
-    fn run(_audio_file: &PathBuf) -> Option<i64> {
-        None
-        // let call = BellsonCommand::default(&audio_file);
+    fn run(audio_file: &PathBuf) -> Option<i64> {
+            lazy_static! {
+                static ref RE: Regex = Regex::new(r"Mean: (\d+)").unwrap();
+            }
+        let call = BellsonCommand::default(audio_file);
+        match call.run() { 
+            Some((stdout, _stderr)) => {
+                let captures = RE.captures(stdout.as_str())?;
+
+                let bpm = captures.get(1)?.as_str();
+                println!("Got bpm from bellson: {:?}", bpm);
+
+                Some(10)
+            }, 
+            _ => { 
+                error!("Got error while running bellson!");
+                None
+            }
+        }
         // let mut child = match call.run() {
         //     Err(e) => {
         //         error!(
