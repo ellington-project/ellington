@@ -1,7 +1,7 @@
 use regex::Regex;
 use serde_json;
 use std::collections::BTreeMap;
-
+use nom;
 // #[derive(Serialize, Deserialize, Debug, Clone)]
 // pub struct BpmInfo {
 //     pub bpm: i64,
@@ -36,36 +36,64 @@ impl EllingtonData {
         EllingtonData { algs: map }
     }
 
-    pub fn serialise(self: &Self) -> UpdateResult<String> {
-        serde_json::to_string(self)
-            .ok()
-            .and_then(|s| Some(s.replace(":", "#")))
-            .ok_or(UpdateError::FailedToSerialise)
-            .and_then(|s| Ok(format!("[ed#{}#de]", s)))
+    pub fn format(self: &Self) -> UpdateResult<String> { 
+        let mut s = String::new();
+        s.push_str("[ed|");
+        let mut first = true;
+        for (algorithm, bpm) in self.algs.iter() { 
+            if first {
+                first = false;
+            }else{
+                s.push_str(", ");
+            }
+            s.push_str(&format!("{}~{}", algorithm, bpm));
+        }
+        s.push_str("|]");
+        Ok(s)
     }
 
     fn regex() -> &'static Regex {
         lazy_static! {
-            static ref RE: Regex = Regex::new(r"\s*\[ed#(.*)#de\]").unwrap();
+            static ref RE: Regex = Regex::new(r"\s*\[ed\|(.*)\|\]").unwrap();
         }
         &RE
     }
 
+    named!(parse_content<&str, Vec<(&str, &str)>>,
+        terminated!(preceded!(tag_s!("[ed|"),
+        separated_list!(
+            tag_s!(","),
+            separated_pair!(
+            ws!(nom::alpha),
+            tag_s!("~"), 
+            ws!(nom::digit)
+            )
+        )), tag_s!("|]"))
+    );
+
     // #[flame]
-    pub fn parse_data(comment: &String) -> Option<EllingtonData> {
+    pub fn parse(comment: &String) -> Option<EllingtonData> {
+        
         let captures = Self::regex().captures(comment.as_str())?;
 
-        let json_string = captures.get(1)?.as_str().replace("#", ":");
-
-        serde_json::from_str(&json_string).ok()
+        // get the first capture, and try to parse it
+        match Self::parse_content(captures.get(1)?.as_str()) { 
+            Ok((rem, pairs)) => { 
+                Some(EllingtonData::empty())
+            }
+            _ => { 
+                println!("Failed to parse ellingotn data from comment!");
+                None
+            }
+        }
     }
 
     // #[flame]
     pub fn update_data(self: &Self, comment: &String, append: bool) -> UpdateResult<String> {
-        // replace all the ":" characters in the JSON string with "#", as id3tags do not support colons in comment data.
-        let serialised = self.serialise()?;
 
-        // test to see if there is any json data in the first place...
+        let serialised = self.format()?;
+
+        // test to see if there is any ellington data in the first place...
         let new_comment = match Self::regex()
             .captures(comment.as_str())
             .and_then(|captures| captures.get(1))

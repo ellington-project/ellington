@@ -9,6 +9,9 @@ extern crate log;
 extern crate env_logger;
 
 #[macro_use]
+extern crate nom;
+
+#[macro_use]
 extern crate clap;
 use clap::App;
 use clap::ArgMatches;
@@ -24,6 +27,7 @@ use le::pipelines::FfmpegNaivePipeline;
 use le::pipelines::Pipeline;
 
 fn check_callable(program: &'static str) -> Option<()> {
+    //TODO: this needs to be written to capture the various output streams, as it pollutes ellington's output otherwise
     match execute!(r"which {program}", program = program) {
         Err(_) => {
             println!("Cannot find program '{}' - please make sure it's installed before running this command", program);
@@ -123,7 +127,8 @@ fn clear_audio_files(matches: &ArgMatches) -> () {
 }
 
 fn oneshot_audio_file(matches: &ArgMatches) -> () {
-    check_callable("ffmpeg").unwrap();
+    // TODO: Reinstate this - see the comment above
+    // check_callable("ffmpeg").unwrap();
 
     let audiofile: &str = match matches.value_of("audiofile") {
         Some(ap) => {
@@ -142,7 +147,7 @@ fn oneshot_audio_file(matches: &ArgMatches) -> () {
     match (estimation, matches.value_of("comment")) {
         // Comment and bpm.
         (Some(e), Some(c)) => {
-            // get our new ellington data: 
+            // get our new ellington data:
             let ed = EllingtonData::with_algorithm(String::from("naive"), e);
 
             match ed.update_data(&String::from(c), true) {
@@ -157,10 +162,10 @@ fn oneshot_audio_file(matches: &ArgMatches) -> () {
         }
         // Bpm, no comment
         (Some(e), None) => {
-            // get our new ellington data: 
+            // get our new ellington data:
             let ed = EllingtonData::with_algorithm(String::from("naive"), e);
 
-            match ed.serialise() {
+            match ed.format() {
                 Ok(new_comment) => {
                     info!("Got new comment: {:?}", new_comment);
                     println!("{}", new_comment);
@@ -169,7 +174,6 @@ fn oneshot_audio_file(matches: &ArgMatches) -> () {
                     info!("Updating procedure failed for reason: {:?}", f);
                 }
             }
-
         }
         // No bpm, but a comment
         (None, Some(c)) => {

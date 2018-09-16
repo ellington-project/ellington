@@ -6,7 +6,7 @@ pub struct Statistics {
 }
 
 impl From<Library> for Statistics {
-    fn from(library: Library) -> Self {
+    fn from(_library: Library) -> Self {
         // // begin by iterating across the library to capture the data we care about
         // let stats = library.entries.into_iter().filter_map(|entry|{
         //     // compare entry.metadata with entry.eldata

@@ -1,3 +1,5 @@
+
+
 /*
     libellington - the core library + functionality for the ellington tool.
 */
@@ -5,6 +7,9 @@
 #[macro_use]
 extern crate log;
 extern crate env_logger;
+
+#[macro_use]
+extern crate nom;
 
 extern crate byteorder;
 
@@ -37,6 +42,7 @@ pub mod shelltools;
 pub fn trueish() -> bool {
     true
 }
+
 
 #[cfg(test)]
 mod tests {
