@@ -2,6 +2,10 @@
 
 Various links, notes, etc for topics related to Ellington development. 
 
+## Tagging and integration with other tools
+
+Picard might be a good tool to add Ellington integration to - it appears to be cross platform, and is scriptable using python: https://picard.musicbrainz.org/
+
 ## Machine Learning based tempo detection
 
 **Accurate Tempo Estimation based on Recurrent Neural Networks and Resonating Comb Filters**
