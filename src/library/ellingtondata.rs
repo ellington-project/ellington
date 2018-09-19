@@ -2,11 +2,6 @@ use nom;
 use regex::Regex;
 use serde_json;
 use std::collections::BTreeMap;
-// #[derive(Serialize, Deserialize, Debug, Clone)]
-// pub struct BpmInfo {
-//     pub bpm: i64,
-//     pub alg: String,
-// }
 
 pub type Algorithm = String;
 pub type Bpm = i64;
@@ -50,6 +45,14 @@ impl EllingtonData {
         }
         s.push_str(" |]");
         Ok(s)
+    }
+
+    pub fn as_json(self: &Self) -> Option<String> { 
+        serde_json::to_string(self).ok()
+    }
+
+    pub fn from_json<S: Into<String>>(json: S) -> Option<EllingtonData> { 
+        serde_json::from_str(json.into().as_str()).ok()
     }
 
     fn regex() -> &'static Regex {

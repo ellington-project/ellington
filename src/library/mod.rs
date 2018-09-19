@@ -34,7 +34,7 @@ impl Entry {
         // try to read some metadata from the track
         let filedata = FileMetadata::from_path(&path);
         // TODO: Implement different readers here!
-        let metadata = TrackMetadata::from_file(&path, &filedata);
+        let metadata = TrackMetadata::from_file(&path);
         let eldata = match &metadata {
             Some(m) => m.as_ellington_metadata(),
             None => EllingtonData::empty(),
@@ -228,41 +228,6 @@ impl Library {
                 );
                 None
             }
-        }
-    }
-
-    /*
-        Write ellington metadata to the audio file comment fields
-     */
-    pub fn write_metadata_to_audio_files(self: &Self, append: bool) -> () {
-        for entry in &self.tracks {
-            match TrackMetadata::write_ellington_data(
-                &PathBuf::from(entry.location.clone()),
-                &entry.filedata,
-                &entry.eldata,
-                append,
-            ) {
-                Some(()) => info!("Successfully wrote metadata to file {:?}", entry.location),
-                None => error!("Failed to write metadata to file {:?}", entry.location),
-            };
-        }
-    }
-
-    /*
-        Clear the ellington metadata from the audio file comment fields
-     */
-    pub fn clear_data_from_audio_files(self: &Self) -> () {
-        for entry in &self.tracks {
-            match TrackMetadata::clear_ellington_data(
-                &PathBuf::from(entry.location.clone()),
-                &entry.filedata,
-            ) {
-                Some(()) => info!(
-                    "Successfully cleared ellington metadata from file {:?}",
-                    entry.location
-                ),
-                None => error!("Failed to clear metadata from file {:?}", entry.location),
-            };
         }
     }
 
