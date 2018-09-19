@@ -2,6 +2,10 @@
 
 Various links, notes, etc for topics related to Ellington development. 
 
+## Tagging and integration with other tools
+
+Picard might be a good tool to add Ellington integration to - it appears to be cross platform, and is scriptable using python: https://picard.musicbrainz.org/
+
 ## Machine Learning based tempo detection
 
 **Accurate Tempo Estimation based on Recurrent Neural Networks and Resonating Comb Filters**
@@ -25,3 +29,15 @@ Thesis: http://mir.minimoog.org/sb-diploma-thesis
 **Audio signal processing by neural networks**
 
 https://www.sciencedirect.com/science/article/pii/S0925231203003953
+
+**New metadata format?**
+
+We currently use:
+
+    [ed#{"algs":{"ffmpeg-naive":123}}#de]
+
+What about something like:
+
+    [ed|fn = 123]
+
+where "fn" is the short form of "ffmpeg-naive"
