@@ -33,8 +33,8 @@ extern crate lazy_static;
 // extern crate taglib;
 
 // pub mod actions;
+pub mod estimators;
 pub mod library;
-pub mod pipelines;
 pub mod shelltools;
 
 pub fn trueish() -> bool {
