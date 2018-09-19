@@ -36,7 +36,7 @@ impl Naive {
     /*
      * main analysis function
      * We currently have the fairly major (imho) limitation that the entire
-     * vector of amples must be read into memory before we can process it.
+     * vector of samples must be read into memory before we can process it.
      */
     // #[flame]
     pub fn analyse<T>(self: &mut Naive, samples: T) -> f32

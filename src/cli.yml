@@ -33,25 +33,20 @@ subcommands:
                 help: The library file from which to process tracks
                 required: true
                 index: 1
-    - write: 
-        about: Write calculated BPM information from an ellington library to the audio files in the library
+    - oneshot: 
+        about: Run a tempo estimation algorithm on a single audio track with a comment, and add data to the comment
+        version: "0.1.0"
+        author: Adam Harries <harries.adam@gmail.com> 
         args: 
-            - LIBRARY:
-                help: The library file from which to process tracks
-                required: true
-            - append: 
-                help: Whether to append data if not requested
-                short: i
-                long: append 
-                required: false 
-                takes_value: false
-
-
-    - clear: 
-        about: Clear ellington metadata from audio files in a library
-        args: 
-            - LIBRARY:
-                help: The library file from which to discover tracks
-                required: true
-                index: 1 
-                index: 1 
+            - audiofile: 
+                help: The audio file to process
+                short: a
+                long: audiofile
+                required: true 
+                takes_value: true
+            - comment: 
+                help: The existing comment in the audio file. This command will append calculated data to this comment. If no comment is specified, ellington will return a fresh metadata block.
+                short: c 
+                long: comment
+                required: false
+                takes_value: true 

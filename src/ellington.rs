@@ -8,26 +8,34 @@ use std::path::PathBuf;
 extern crate log;
 extern crate env_logger;
 
+extern crate nom;
+
 #[macro_use]
 extern crate clap;
 use clap::App;
 use clap::ArgMatches;
+use std::collections::BTreeMap;
 
 extern crate commandspec;
 use commandspec::*;
 
 extern crate libellington as le;
 
+use le::library::ellingtondata::EllingtonData;
 use le::library::Library;
-use le::pipelines::FfmpegNaivePipeline;
+
+use le::estimators::FfmpegNaiveTempoEstimator;
+use le::estimators::BellsonTempoEstimator;
+use le::estimators::TempoEstimator;
 
 fn check_callable(program: &'static str) -> Option<()> {
-    match execute!(r"which {program}", program=program)  { 
+    //TODO: this needs to be written to capture the various output streams, as it pollutes ellington's output otherwise
+    match execute!(r"which {program}", program = program) {
         Err(_) => {
             println!("Cannot find program '{}' - please make sure it's installed before running this command", program);
             None
-        },
-        _ => Some(())
+        }
+        _ => Some(()),
     }
 }
 
@@ -77,47 +85,71 @@ fn bpm_library(matches: &ArgMatches) -> () {
 
     let mut library = Library::read_from_file(&PathBuf::from(library_file)).unwrap();
 
-    library.run_pipeline::<FfmpegNaivePipeline>();
+    library.run_pipeline::<FfmpegNaiveTempoEstimator>();
 
     library.write_to_file(&PathBuf::from(library_file));
 }
 
-fn write_library(matches: &ArgMatches) -> () {
-    let library_file: &str = match matches.value_of("LIBRARY") {
-        Some(l) => {
-            info!("Reading library from: {:?}", l);
-            l
+fn oneshot_audio_file(matches: &ArgMatches) -> () {
+    // TODO: Reinstate this - see the comment above
+    // check_callable("ffmpeg").unwrap();
+
+    let audiofile: &str = match matches.value_of("audiofile") {
+        Some(ap) => {
+            info!("Processing audio file at {:?}", ap);
+            ap
         }
         None => {
-            panic!("Got no library file, this should not happen!");
+            panic!("Got no audio file, this should not happen!");
         }
     };
 
-    let append = matches.is_present("append");
+    let bellson_estimation = BellsonTempoEstimator::run(&PathBuf::from(audiofile));
+    let naive_estimation = FfmpegNaiveTempoEstimator::run(&PathBuf::from(audiofile));
 
-    let library = Library::read_from_file(&PathBuf::from(library_file)).unwrap();
-
-    library.write_metadata_to_audio_files(append);
-}
-
-fn clear_audio_files(matches: &ArgMatches) -> () {
-    let library_file: &str = match matches.value_of("LIBRARY") {
-        Some(l) => {
-            info!("Reading library from: {:?}", l);
-            l
-        }
-        None => {
-            panic!("Got no library file, this should not happen!");
-        }
+    let mut map = BTreeMap::new();
+    
+    // add the bellson estimation
+    match bellson_estimation {
+        Some(e) => {
+            map.insert(String::from(BellsonTempoEstimator::NAME), e);
+        }, 
+        None => error!("Failed to run bellson estimator!")
     };
 
-    check_callable("id3v2").unwrap();
-    check_callable("mp4info").unwrap();
-    check_callable("mp4tags").unwrap();
+    // add the naive estimation
+    match naive_estimation { 
+        Some(e) => {
+            map.insert(String::from(FfmpegNaiveTempoEstimator::NAME), e);
+        },
+        None => error!("Failed to run naive estimator!")
+    };
+    let ed = EllingtonData { algs: map };
 
-    let library = Library::read_from_file(&PathBuf::from(library_file)).unwrap();
-
-    library.clear_data_from_audio_files();
+    match matches.value_of("comment") {
+        Some(c) => {
+            match ed.update_data(&String::from(c), true) {
+                Ok(new_comment) => {
+                    info!("Got new comment: {:?}", new_comment);
+                    println!("{}", new_comment);
+                }
+                f => {
+                    info!("Updating procedure failed for reason: {:?}", f);
+                }
+            };
+        }
+        None => { 
+            match ed.format() {
+                Ok(new_comment) => {
+                    info!("Got new comment: {:?}", new_comment);
+                    println!("{}", new_comment);
+                }
+                f => {
+                    info!("Updating procedure failed for reason: {:?}", f);
+                }
+            }
+        }
+    };
 }
 
 fn main() {
@@ -133,8 +165,9 @@ fn main() {
     match subcommands {
         ("init", Some(sub)) => initalise_library(sub),
         ("bpm", Some(sub)) => bpm_library(sub),
-        ("write", Some(sub)) => write_library(sub),
-        ("clear", Some(sub)) => clear_audio_files(sub),
-        _ => println!("No command given to ellington - please specify one of init/bpm/write/clear"),
+        ("oneshot", Some(sub)) => oneshot_audio_file(sub),
+        _ => println!(
+            "No command given to ellington - please specify one of init/bpm/write/clear/oneshot"
+        ),
     }
 }
