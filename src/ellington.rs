@@ -8,7 +8,6 @@ use std::path::PathBuf;
 extern crate log;
 extern crate env_logger;
 
-#[macro_use]
 extern crate nom;
 
 #[macro_use]
@@ -91,44 +90,6 @@ fn bpm_library(matches: &ArgMatches) -> () {
     library.write_to_file(&PathBuf::from(library_file));
 }
 
-fn write_library(matches: &ArgMatches) -> () {
-    let library_file: &str = match matches.value_of("LIBRARY") {
-        Some(l) => {
-            info!("Reading library from: {:?}", l);
-            l
-        }
-        None => {
-            panic!("Got no library file, this should not happen!");
-        }
-    };
-
-    let append = matches.is_present("append");
-
-    let library = Library::read_from_file(&PathBuf::from(library_file)).unwrap();
-
-    library.write_metadata_to_audio_files(append);
-}
-
-fn clear_audio_files(matches: &ArgMatches) -> () {
-    let library_file: &str = match matches.value_of("LIBRARY") {
-        Some(l) => {
-            info!("Reading library from: {:?}", l);
-            l
-        }
-        None => {
-            panic!("Got no library file, this should not happen!");
-        }
-    };
-
-    check_callable("id3v2").unwrap();
-    check_callable("mp4info").unwrap();
-    check_callable("mp4tags").unwrap();
-
-    let library = Library::read_from_file(&PathBuf::from(library_file)).unwrap();
-
-    library.clear_data_from_audio_files();
-}
-
 fn oneshot_audio_file(matches: &ArgMatches) -> () {
     // TODO: Reinstate this - see the comment above
     // check_callable("ffmpeg").unwrap();
@@ -204,8 +165,6 @@ fn main() {
     match subcommands {
         ("init", Some(sub)) => initalise_library(sub),
         ("bpm", Some(sub)) => bpm_library(sub),
-        ("write", Some(sub)) => write_library(sub),
-        ("clear", Some(sub)) => clear_audio_files(sub),
         ("oneshot", Some(sub)) => oneshot_audio_file(sub),
         _ => println!(
             "No command given to ellington - please specify one of init/bpm/write/clear/oneshot"
