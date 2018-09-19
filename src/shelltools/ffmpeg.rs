@@ -102,7 +102,7 @@ impl FfmpegCommand {
         }
     }
 
-    pub fn run<'a>(self: &Self) -> Result<Child> {
+    pub fn spawn<'a>(self: &Self) -> Result<Child> {
         // let child =
         self.call().stdout(Stdio::piped()).spawn()
         // .expect("Failed to execute standalone ffmpeg call");
