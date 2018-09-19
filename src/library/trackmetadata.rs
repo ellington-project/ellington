@@ -35,10 +35,11 @@ impl TrackMetadata {
     }
 
     pub fn from_file(location: &Path) -> Option<TrackMetadata> {
-        let tf = TalamelFile::new(location).ok()?; 
+        info!("Reading track metadata from: {:?}", location);
+        let tf = TalamelFile::new(location).ok()?;
 
         let name = tf.title().ok()?;
-        let bpm = Some(tf.bpm()? as i64);
+        let bpm = tf.bpm().map(|b| {b as i64});
         let comments = tf.comments().ok();
 
         Some(TrackMetadata { name: name, bpm: bpm, comments: comments})        
