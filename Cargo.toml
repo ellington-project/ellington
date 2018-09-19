@@ -10,10 +10,6 @@ license = "GPL-3.0-or-later"
 name = "libellington"
 path = "src/lib.rs"
 
-[[bin]]
-name = "ellington"
-path = "src/ellington.rs"
-
 [dependencies]
 plist = "0.2"
 histogram = "0.6.9"

@@ -7,6 +7,15 @@ use std::path::PathBuf;
 use std::process::Command;
 
 fn main() {
+    println!("cargo:rustc-link-lib=static=talamel");
+    if cfg!(target_os = "macos") {
+        println!("cargo:rustc-link-lib=dylib=c++");
+    // } else if cfg!(target_os = "windows") {
+        // println!("cargo:rustc-link-lib=dylib=stdc++");
+    } else if cfg!(target_os = "linux") {
+        println!("cargo:rustc-link-lib=dylib=stdc++");
+    }
+
     let flac_urls = vec![
         "https://archive.org/download/78_countless-blues_the-kansas-city-six-eddie-druham-freddie-green-walter-paige-joe-jon_gbia0004728a/Countless%20Blues%20-%20The%20Kansas%20City%20Six%20-%20Eddie%20Druham.flac",
         // "https://archive.org/download/78_crazy-rhythm_coleman-hawkins-and-his-all-star-jam-band-coleman-hawkins-alix-combe_gbia0004564b/Crazy%20Rhythm%20-%20Coleman%20Hawkins%20and%20his%20All-Star%20%22Jam%22%20Band.flac",

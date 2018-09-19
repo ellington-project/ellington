@@ -11,9 +11,6 @@ extern crate nom;
 
 extern crate byteorder;
 
-// extern crate id3;
-// extern crate itertools;
-// extern crate memmap;
 extern crate percent_encoding;
 extern crate plist;
 extern crate rand;
