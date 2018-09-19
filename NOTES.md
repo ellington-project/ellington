@@ -29,3 +29,15 @@ Thesis: http://mir.minimoog.org/sb-diploma-thesis
 **Audio signal processing by neural networks**
 
 https://www.sciencedirect.com/science/article/pii/S0925231203003953
+
+**New metadata format?**
+
+We currently use:
+
+    [ed#{"algs":{"ffmpeg-naive":123}}#de]
+
+What about something like:
+
+    [ed|fn = 123]
+
+where "fn" is the short form of "ffmpeg-naive"

@@ -21,6 +21,7 @@ fn print_linker_arguments() {
 }
 
 fn main() {
+    // We don't need to do this if we're not using TagLib
     // print_linker_arguments();
 
     let flac_urls = vec![

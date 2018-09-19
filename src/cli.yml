@@ -1,12 +1,10 @@
 name: ellington
-version: "0.1.0"
+version: "0.2.0"
 author: Adam Harries <harries.adam@gmail.com>
 about: Automated BPM calculation for swing dance DJs
 subcommands:
     - init: 
         about: Initialises an ellington library
-        version: "0.1.0"
-        author: Adam Harries <harries.adam@gmail.com>
         args: 
             - LIBRARY:
                 help: The library file to initialise
@@ -30,8 +28,6 @@ subcommands:
                 conflicts_with: itunes
     - bpm: 
         about: Run a bpm algorithm across an ellington library
-        version: "0.1.0" 
-        author: Adam Harries <harries.adam@gmail.com> 
         args: 
             - LIBRARY:
                 help: The library file from which to process tracks

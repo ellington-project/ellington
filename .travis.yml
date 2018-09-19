@@ -19,7 +19,6 @@ rust:
 
 install:
   - if [ $TRAVIS_OS_NAME = linux ]; then cargo install --force cargo-deb; fi
-  
 
 script: 
   - cargo build --release -vv
