@@ -11,9 +11,6 @@ extern crate nom;
 
 extern crate byteorder;
 
-// extern crate id3;
-// extern crate itertools;
-// extern crate memmap;
 extern crate percent_encoding;
 extern crate plist;
 extern crate rand;
@@ -30,11 +27,13 @@ extern crate regex;
 #[macro_use]
 extern crate lazy_static;
 
+extern crate talamel;
+
 // extern crate taglib;
 
 // pub mod actions;
+pub mod estimators;
 pub mod library;
-pub mod pipelines;
 pub mod shelltools;
 
 pub fn trueish() -> bool {

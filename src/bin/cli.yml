@@ -1,12 +1,10 @@
 name: ellington
-version: "0.1.0"
+version: "0.2.0"
 author: Adam Harries <harries.adam@gmail.com>
 about: Automated BPM calculation for swing dance DJs
 subcommands:
     - init: 
         about: Initialises an ellington library
-        version: "0.1.0"
-        author: Adam Harries <harries.adam@gmail.com>
         args: 
             - LIBRARY:
                 help: The library file to initialise
@@ -30,37 +28,11 @@ subcommands:
                 conflicts_with: itunes
     - bpm: 
         about: Run a bpm algorithm across an ellington library
-        version: "0.1.0" 
-        author: Adam Harries <harries.adam@gmail.com> 
         args: 
             - LIBRARY:
                 help: The library file from which to process tracks
                 required: true
                 index: 1
-    - write: 
-        about: Write calculated BPM information from an ellington library to the audio files in the library
-        version: "0.1.0"
-        author: Adam Harries <harries.adam@gmail.com> 
-        args: 
-            - LIBRARY:
-                help: The library file from which to process tracks
-                required: true
-            - append: 
-                help: Whether to append data if not requested
-                short: i
-                long: append 
-                required: false 
-                takes_value: false
-    - clear: 
-        about: Clear ellington metadata from audio files in a library
-        version: "0.1.0"
-        author: Adam Harries <harries.adam@gmail.com> 
-        args: 
-            - LIBRARY:
-                help: The library file from which to discover tracks
-                required: true
-                index: 1 
-                index: 1 
     - oneshot: 
         about: Run a tempo estimation algorithm on a single audio track with a comment, and add data to the comment
         version: "0.1.0"

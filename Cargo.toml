@@ -1,6 +1,6 @@
 [package]
 name = "ellington"
-version = "0.1.6"
+version = "0.2.0"
 authors = ["Adam Harries <harries.adam@gmail.com>"]
 build = "build.rs"
 readme = "README.md"
@@ -9,10 +9,6 @@ license = "GPL-3.0-or-later"
 [lib]
 name = "libellington"
 path = "src/lib.rs"
-
-[[bin]]
-name = "ellington"
-path = "src/ellington.rs"
 
 [dependencies]
 plist = "0.2"
@@ -32,6 +28,7 @@ log = "0.4"
 env_logger  = "0.5.1"
 commandspec = "0.10"
 nom = "4.0.0"
+talamel = { git = "https://github.com/AdamHarries/talamel.git" }
 
 [build-dependencies]
 commandspec = "0.10"
