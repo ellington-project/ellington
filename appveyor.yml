@@ -127,9 +127,11 @@ test_script:
   - cargo test --release --verbose %cargoflags%
 
 artifacts:
-  - path: target/release/
-    name: ellington
-    type: zip
+  - path: ellington_windows.zip
+    name: Ellington
+
+before_deploy:
+  - 7z a ellington_windows.zip -r %APPVEYOR_BUILD_FOLDER%\*.dll %APPVEYOR_BUILD_FOLDER%\target\release\ellington.exe
 
 deploy:
   description: ''
