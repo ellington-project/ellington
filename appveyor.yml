@@ -126,18 +126,18 @@ test_script:
   - cargo build --release %cargoflags%
   - cargo test --release --verbose %cargoflags%
 
+artifacts:
+  - path: target/release/
+    name: ellingtonn
+    type: zip
+
 deploy:
   description: ''
   provider: GitHub
   auth_token:
-    secure: +Us1Lbak/1NgGrhWlzKJpXwUEncgUQ6gqN3T/kCl7C5N5FZMsHYyHmT+3BZNyyql # your encrypted token from GitHub
-  artifacts:
-    - path: target/release/
-      name: ellingtonn
-      type: zip
+    secure: +Us1Lbak/1NgGrhWlzKJpXwUEncgUQ6gqN3T/kCl7C5N5FZMsHYyHmT+3BZNyyql
   draft: false
   prerelease: false
   on:
     branch: master                 # release from master branch only
     appveyor_repo_tag: true        # deploy on tag push only
-
