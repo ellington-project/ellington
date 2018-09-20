@@ -129,7 +129,8 @@ test_script:
 
 
 before_deploy:
-  - 7z a ellington_windows.zip -r %APPVEYOR_BUILD_FOLDER%\*.dll %APPVEYOR_BUILD_FOLDER%\target\release\ellington.exe
+  - copy %APPVEYOR_BUILD_FOLDER%\target\release\**\install\bin\tag.dll %APPVEYOR_BUILD_FOLDER%\tag.dll
+  - 7z a ellington_windows.zip -r %APPVEYOR_BUILD_FOLDER%\tag.dll %APPVEYOR_BUILD_FOLDER%\target\release\ellington.exe
   - appveyor PushArtifact ellington_windows.zip
 
 artifacts:
