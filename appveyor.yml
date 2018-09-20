@@ -126,12 +126,15 @@ test_script:
   - cargo build --release %cargoflags%
   - cargo test --release --verbose %cargoflags%
 
-artifacts:
-  - path: ellington_windows.zip
-    name: Ellington
+
 
 before_deploy:
   - 7z a ellington_windows.zip -r %APPVEYOR_BUILD_FOLDER%\*.dll %APPVEYOR_BUILD_FOLDER%\target\release\ellington.exe
+  - appveyor PushArtifact ellington_windows.zip
+
+artifacts:
+  - path: ellington_windows.zip
+    name: ellington
 
 deploy:
   description: ''
