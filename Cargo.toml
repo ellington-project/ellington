@@ -2,7 +2,6 @@
 name = "ellington"
 version = "0.2.0"
 authors = ["Adam Harries <harries.adam@gmail.com>"]
-build = "build.rs"
 readme = "README.md"
 license = "GPL-3.0-or-later"
 

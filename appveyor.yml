@@ -110,6 +110,7 @@ install:
   - set PATH=%PATH%;%USERPROFILE%\.cargo\bin
   - rustc -vV
   - cargo -vV
+  - cargo install cargo-script
   # - cinst ffmpeg
 
 
@@ -129,7 +130,7 @@ test_script:
 
 
 before_deploy:
-  - copy %APPVEYOR_BUILD_FOLDER%\target\release\build\talamel-*\out\build\taglib\install\bin\libtag.dll %APPVEYOR_BUILD_FOLDER%\tag.dll
+  - cargo script scripts/find_dlls.rs -- %APPVEYOR_BUILD_FOLDER%
   - 7z a ellington_windows.zip -r %APPVEYOR_BUILD_FOLDER%\tag.dll %APPVEYOR_BUILD_FOLDER%\target\release\ellington.exe
   - appveyor PushArtifact ellington_windows.zip
 
