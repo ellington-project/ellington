@@ -129,7 +129,7 @@ test_script:
 
 
 before_deploy:
-  - copy %APPVEYOR_BUILD_FOLDER%\target\release\build\talamel-*\out\build\taglib\install\bin\tag.dll %APPVEYOR_BUILD_FOLDER%\tag.dll
+  - copy %APPVEYOR_BUILD_FOLDER%\target\release\build\talamel-*\out\build\taglib\install\bin\libtag.dll %APPVEYOR_BUILD_FOLDER%\tag.dll
   - 7z a ellington_windows.zip -r %APPVEYOR_BUILD_FOLDER%\tag.dll %APPVEYOR_BUILD_FOLDER%\target\release\ellington.exe
   - appveyor PushArtifact ellington_windows.zip
 
