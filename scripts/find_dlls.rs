@@ -1,20 +1,9 @@
-
 use std::env;
 use std::path::Path;
 use std::path::PathBuf;
-use std::process::Command;
-use std::fs::*;
-use std::fmt::Debug;
 
 fn main() {
-
-    if cfg!(target_os = "windows") { 
-        
-        // "cargo:rustc-link-search={}/build/taglib/install/lib",
-    }
-
     let ellington_dir = env::args().nth(1).unwrap_or("./".to_string());
-
 
     let build_dir = Path::new(&ellington_dir)   
     .join("target")
@@ -37,9 +26,17 @@ fn main() {
             Some(name) => {
                 let name = name.to_str().unwrap();
                 if name.contains("tag.dll") {
-                    println!("Copying shared library: {:?}", name);
+                    println!("Found shared library: {:?}", name);
                     let dest = Path::new(&ellington_dir).join(name);
-                    std::fs::copy(&path, dest);
+                    println!("Copying from\n\t{:?}\nto\n\t{:?}", path, dest);
+                    match std::fs::copy(&path, dest) {
+                        Ok(b) => {
+                            println!("Successfully copied {:?} bytes.", b);
+                        },
+                        Err(e) => {
+                            println!("Encountered error: {:?} while copying.", e);
+                        }
+                    };
                 }
             }, 
             _ => {}
@@ -54,11 +51,8 @@ fn find_directory_containing(parent: &Path, s: &str, subdir: &str) -> Option<Pat
         match path.file_name() { 
             Some(name) => {
                 let name = name.to_str().unwrap();
-                if name.contains(s) { 
-                    
-                            
+                if name.contains(s) {         
                             if path.join(subdir).exists(){ 
-                                
                                 return Some(path.to_path_buf());
                             }
                 }else {

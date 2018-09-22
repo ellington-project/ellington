@@ -1,6 +1,6 @@
 [package]
 name = "ellington"
-version = "0.2.0"
+version = "0.2.12"
 authors = ["Adam Harries <harries.adam@gmail.com>"]
 readme = "README.md"
 license = "GPL-3.0-or-later"

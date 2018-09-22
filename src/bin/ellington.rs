@@ -24,8 +24,8 @@ extern crate libellington as le;
 use le::library::ellingtondata::EllingtonData;
 use le::library::Library;
 
-use le::estimators::FfmpegNaiveTempoEstimator;
 use le::estimators::BellsonTempoEstimator;
+use le::estimators::FfmpegNaiveTempoEstimator;
 use le::estimators::TempoEstimator;
 
 fn check_callable(program: &'static str) -> Option<()> {
@@ -108,21 +108,21 @@ fn oneshot_audio_file(matches: &ArgMatches) -> () {
     let naive_estimation = FfmpegNaiveTempoEstimator::run(&PathBuf::from(audiofile));
 
     let mut map = BTreeMap::new();
-    
+
     // add the bellson estimation
     match bellson_estimation {
         Some(e) => {
             map.insert(String::from(BellsonTempoEstimator::NAME), e);
-        }, 
-        None => error!("Failed to run bellson estimator!")
+        }
+        None => error!("Failed to run bellson estimator!"),
     };
 
     // add the naive estimation
-    match naive_estimation { 
+    match naive_estimation {
         Some(e) => {
             map.insert(String::from(FfmpegNaiveTempoEstimator::NAME), e);
-        },
-        None => error!("Failed to run naive estimator!")
+        }
+        None => error!("Failed to run naive estimator!"),
     };
     let ed = EllingtonData { algs: map };
 
@@ -138,17 +138,15 @@ fn oneshot_audio_file(matches: &ArgMatches) -> () {
                 }
             };
         }
-        None => { 
-            match ed.format() {
-                Ok(new_comment) => {
-                    info!("Got new comment: {:?}", new_comment);
-                    println!("{}", new_comment);
-                }
-                f => {
-                    info!("Updating procedure failed for reason: {:?}", f);
-                }
+        None => match ed.format() {
+            Ok(new_comment) => {
+                info!("Got new comment: {:?}", new_comment);
+                println!("{}", new_comment);
             }
-        }
+            f => {
+                info!("Updating procedure failed for reason: {:?}", f);
+            }
+        },
     };
 }
 

@@ -47,11 +47,11 @@ impl EllingtonData {
         Ok(s)
     }
 
-    pub fn as_json(self: &Self) -> Option<String> { 
+    pub fn as_json(self: &Self) -> Option<String> {
         serde_json::to_string(self).ok()
     }
 
-    pub fn from_json<S: Into<String>>(json: S) -> Option<EllingtonData> { 
+    pub fn from_json<S: Into<String>>(json: S) -> Option<EllingtonData> {
         serde_json::from_str(json.into().as_str()).ok()
     }
 

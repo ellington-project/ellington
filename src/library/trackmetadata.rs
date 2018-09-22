@@ -39,9 +39,13 @@ impl TrackMetadata {
         let tf = TalamelFile::new(location).ok()?;
 
         let name = tf.title().ok()?;
-        let bpm = tf.bpm().map(|b| {b as i64});
+        let bpm = tf.bpm().map(|b| b as i64);
         let comments = tf.comments().ok();
 
-        Some(TrackMetadata { name: name, bpm: bpm, comments: comments})        
+        Some(TrackMetadata {
+            name: name,
+            bpm: bpm,
+            comments: comments,
+        })
     }
 }
