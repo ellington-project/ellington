@@ -15,7 +15,7 @@ fn main() {
         .join("build")
         .join("taglib")
         .join("install")
-        .join("lib");
+        .join("bin");
 
     println!("Found taglib directory {:?}", taglibdir);
 
