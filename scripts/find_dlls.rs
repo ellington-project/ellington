@@ -10,7 +10,7 @@ fn main() {
     .join("release")
     .join("build");
     
-    let taglibdir = find_directory_containing(&build_dir, "talamel", "out").unwrap()
+    let taglibdir = find_named_dir_containing(&build_dir, "talamel", "out").unwrap()
         .join("out")
         .join("build")
         .join("taglib")
@@ -45,7 +45,7 @@ fn main() {
 
 }
 
-fn find_directory_containing(parent: &Path, s: &str, subdir: &str) -> Option<PathBuf> { 
+fn find_named_dir_containing(parent: &Path, s: &str, subdir: &str) -> Option<PathBuf> { 
     for entry in std::fs::read_dir(parent.clone()).expect("Can't read parent directory") { 
         let path = entry.expect("Invalid fs path.").path(); 
         match path.file_name() { 
