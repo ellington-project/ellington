@@ -24,20 +24,11 @@ mkdir -p $releases
 package="ellington-$osname-$tag"
 echo "Defined package name: '$package'"
 
-# Make a directory for the combination
-pdir="$releases/$package"
-echo "Writing package to $pdir"
-mkdir -p "$releases/$package"
-
-# Copy the relevant stuff into the package. 
-cp $buildroot/target/release/ellington $pdir
-cp $buildroot/README.md $pdir
-
-# Zip it up! 
-pushd $releases
-zip -r $package.zip $package
+# Generate a generic package
+cargo script scripts/package.rs -- ${TRAVIS_BUILD_DIR} ${TRAVIS_TAG:-untagged}
+zip -r $releases/$package.zip $package
 rm -rf $package
-popd
+
 
 # If we're on linux, build a debian package as well
 if [[ $osname == linux ]]; then

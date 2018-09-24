@@ -1,9 +1,11 @@
 [package]
 name = "ellington"
-version = "0.2.12"
+version = "0.2.14"
 authors = ["Adam Harries <harries.adam@gmail.com>"]
 readme = "README.md"
 license = "GPL-3.0-or-later"
+description = "An experimental testbed and set of tools for the automatic tempo estimation of swing music"
+
 
 [lib]
 name = "libellington"
