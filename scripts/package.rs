@@ -6,14 +6,10 @@
 //!
 //! ```cargo
 //! [dependencies]
-//! time = "0.1.25"
 //! clap = "2.32.0"
-//! toml = "0.4"
 //! walkdir = "2"
 //! ```
 extern crate clap;
-extern crate time;
-extern crate toml;
 extern crate walkdir;
 
 use clap::{App, Arg};
@@ -144,7 +140,7 @@ fn release_name(tag: &str) -> String {
 
 fn libs() -> Vec<&'static str> {
     if cfg!(target_os = "windows") {
-        return vec!["libtag.dll"];
+        return vec!["tag.dll"];
     }
     if cfg!(target_os = "macos") {
         return vec!["libtag.dylib"];
