@@ -7,7 +7,7 @@ buildroot="${TRAVIS_BUILD_DIR}"
 # Get the OS from TRAVIS
 osname="${TRAVIS_OS_NAME}"
 # Get the Git tag from TRAVIS
-tag="${TRAVIS_TAG:-untagged}"
+tag="${TRAVIS_TAG:-master_prerelease}"
 
 # Make sure that it's been built. 
 echo "Running 'cargo build --release' to generate release binaries"
@@ -25,7 +25,7 @@ package="ellington-$osname-$tag"
 echo "Defined package name: '$package'"
 
 # Generate a generic package
-cargo script scripts/package.rs -- ${TRAVIS_BUILD_DIR} ${TRAVIS_TAG:-master_prerelease}
+cargo script scripts/package.rs -- $buildroot $tag
 zip -r $releases/$package.zip $package
 rm -rf $package
 
