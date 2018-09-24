@@ -19,6 +19,7 @@ extern crate walkdir;
 use clap::{App, Arg};
 use std::collections::HashMap;
 use std::env;
+use std::fs;
 use std::path::Path;
 use std::path::PathBuf;
 use walkdir::WalkDir;
@@ -45,33 +46,57 @@ fn main() {
     let tag = matches.value_of("tag").unwrap_or("untagged");
     println!("Labelling build/package with tag: {}", tag);
 
+    let package_name = release_name(tag);
+    let package_directory = Path::new(&elrt).join(&package_name);
+    println!("Package name: {:?}", package_name);
+
+    // create the package directory
+    match fs::create_dir(&package_directory) {
+        Ok(_) => {}
+        Err(_) => {
+            // try again - it's probably just there already!
+            // at this point we'd rather just panic if it goes wrong
+            // as we can't really continue from there!
+            fs::remove_dir_all(&package_directory).unwrap();
+            fs::create_dir(&package_directory).unwrap();
+        }
+    };
+
     // We're assuming we're building in release mode
-    let build_dir = Path::new(&elrt)
-        .join("target")
-        .join("release")
-        .join("build");
+    let build_dir = Path::new(&elrt).join("target").join("release");
+
+    // create a map between files that we need, and their location on the disk.
+    let mut filemap: HashMap<String, PathBuf> = HashMap::new();
+
+    // The main ellington executable
+    if cfg!(target_os = "windows") {
+        filemap.insert(
+            "ellington.exe".into(),
+            build_dir.clone().join("ellington.exe"),
+        );
+    } else {
+        filemap.insert("ellington".into(), build_dir.clone().join("ellington"));
+    }
+
+    // Documentation
+    filemap.insert("README.md".into(), Path::new(&elrt).join("README.md"));
+    // License
+    filemap.insert("LICENSE.md".into(), Path::new(&elrt).join("LICENSE.txt"));
 
     // Build up a list of libraries that we need to package with the main executable
     // Use Rust's cfg! macros to pick which libraries we want to package based on the
     // operating system for which we're packaging
     let libs: Vec<&'static str> = libs();
-    let mut libmap: HashMap<String, PathBuf> = HashMap::new();
-
-    
-
-    // create the package directory
-    // fs::create_dir("release-");
 
     // Walk the build directory to search for the libraries that we need.
-    for entry in WalkDir::new(build_dir).contents_first(true) {
+    for entry in WalkDir::new(build_dir.join("build")).contents_first(true) {
         match entry {
             Ok(path) => {
                 let name = path.file_name().to_str().unwrap();
-
                 for libname in &libs {
                     if *libname == name {
                         println!("Found shared library: {:?}", name);
-                        match libmap.insert(name.into(), path.path().into()) {
+                        match filemap.insert(name.into(), path.path().into()) {
                             None => println!("Found duplicate of library {:?}", name),
                             _ => {}
                         };
@@ -85,21 +110,48 @@ fn main() {
     }
 
     // iterate over the located libraries, and copy them to a package directory
-    for (key, va) in libmap.iter() { 
-        println!("Lib: {:?}, \n\tpath: {:?}", key, va);
-    }    
+    for (filename, path) in filemap.iter() {
+        let source_path = path;
+        let dest_path = package_directory.join(filename);
+        println!(
+            "Copying file \n\t{:?}\nto package file \n\t{:?}",
+            source_path, dest_path
+        );
+        match std::fs::copy(&source_path, dest_path) {
+            Ok(b) => {
+                println!("Successfully copied {:?} bytes.", b);
+            }
+            Err(e) => {
+                println!("Encountered error: {:?} while copying.", e);
+            }
+        };
+    }
 }
 
-fn libs() -> Vec<&'static str> { 
+fn release_name(tag: &str) -> String {
     if cfg!(target_os = "windows") {
-        return vec!("libtag.dll");
+        return format!("ellington-windows-{}", tag);
     }
     if cfg!(target_os = "macos") {
-        return vec!("libtag.dylib");
+        return format!("ellington-osx-{}", tag);
     }
     if cfg!(target_os = "linux") {
-        return vec!("libtag.so", "libtag.so.1", "libtag.so.1.17.0");
+        return format!("ellington-linux-{}", tag);
+    }
+    // panic!("No list of libraries given for this platform!");
+    return format!("unknown-untagged");
+}
+
+fn libs() -> Vec<&'static str> {
+    if cfg!(target_os = "windows") {
+        return vec!["libtag.dll"];
+    }
+    if cfg!(target_os = "macos") {
+        return vec!["libtag.dylib"];
+    }
+    if cfg!(target_os = "linux") {
+        return vec!["libtag.so", "libtag.so.1", "libtag.so.1.17.0"];
     }
     panic!("No list of libraries given for this platform!");
-    return vec!();
+    return vec![];
 }
