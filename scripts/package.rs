@@ -96,6 +96,8 @@ fn main() {
                             None => println!("Found duplicate of library {:?}", name),
                             _ => {}
                         };
+                    }else {
+                        println!("File {:?} does not match name {:?}", name, libname);
                     }
                 }
             }
