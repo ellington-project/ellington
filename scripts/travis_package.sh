@@ -25,7 +25,7 @@ package="ellington-$osname-$tag"
 echo "Defined package name: '$package'"
 
 # Generate a generic package
-cargo script scripts/package.rs -- ${TRAVIS_BUILD_DIR} ${TRAVIS_TAG:-untagged}
+cargo script scripts/package.rs -- ${TRAVIS_BUILD_DIR} ${TRAVIS_TAG:-master_prerelease}
 zip -r $releases/$package.zip $package
 rm -rf $package
 

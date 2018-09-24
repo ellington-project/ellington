@@ -43,7 +43,7 @@ fn main() {
     let elrt = matches.value_of("ellington_root").unwrap_or("./");
     println!("Packaging ellington based on root: {}", elrt);
 
-    let tag = matches.value_of("tag").unwrap_or("untagged");
+    let tag = matches.value_of("tag").unwrap_or("master_prerelease");
     println!("Labelling build/package with tag: {}", tag);
 
     let package_name = release_name(tag);
