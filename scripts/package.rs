@@ -79,35 +79,7 @@ fn main() {
     // License
     filemap.insert("LICENSE.md".into(), Path::new(&elrt).join("LICENSE.txt"));
 
-    // Build up a list of libraries that we need to package with the main executable
-    // Use Rust's cfg! macros to pick which libraries we want to package based on the
-    // operating system for which we're packaging
-    let libs: Vec<&'static str> = libs();
-
-    // Walk the build directory to search for the libraries that we need.
-    for entry in WalkDir::new(build_dir.join("build")).contents_first(true) {
-        match entry {
-            Ok(path) => {
-                let name = path.file_name().to_str().unwrap();
-                for libname in &libs {
-                    if *libname == name {
-                        println!("Found shared library: {:?}", name);
-                        match filemap.insert(name.into(), path.path().into()) {
-                            None => println!("Found duplicate of library {:?}", name),
-                            _ => {}
-                        };
-                    }else {
-                        println!("File {:?} does not match name {:?}", name, libname);
-                    }
-                }
-            }
-            Err(e) => {
-                println!("While walking build dir, got error: {:?}", e);
-            }
-        };
-    }
-
-    // iterate over the located libraries, and copy them to a package directory
+    // iterate over the located files, and copy them to a package directory
     for (filename, path) in filemap.iter() {
         let source_path = path;
         let dest_path = package_directory.join(filename);
@@ -138,18 +110,4 @@ fn release_name(tag: &str) -> String {
     }
     // panic!("No list of libraries given for this platform!");
     return format!("unknown-untagged");
-}
-
-fn libs() -> Vec<&'static str> {
-    if cfg!(target_os = "windows") {
-        return vec!["tag.dll"];
-    }
-    if cfg!(target_os = "macos") {
-        return vec!["libtag.dylib"];
-    }
-    if cfg!(target_os = "linux") {
-        return vec!["libtag.so", "libtag.so.1", "libtag.so.1.17.0"];
-    }
-    panic!("No list of libraries given for this platform!");
-    return vec![];
 }
