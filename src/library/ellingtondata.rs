@@ -140,3 +140,69 @@ impl EllingtonData {
         Ok(result.to_string())
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn clear_empty_comment() {
+        let comment: String = "chuggy, swinging, [ed, more data".to_string();
+        match EllingtonData::clear_data(&comment) {
+            Ok(new_comment) => assert_eq!(comment, new_comment),
+            Err(NoDataInComment) => println!("Correct result - no data found!"),
+            Err(FailedToSerialise) => panic!("Failed to serialise ellington data from comment."),
+        }
+    }
+
+    #[test]
+    fn clear_comment_data_end() {
+        let comment: String = "chugging, swinging, [ed, [ed| naive~1842 ]".to_string();
+        let expected: String = "chugging, swinging, [ed,".to_string();
+
+        match EllingtonData::clear_data(&comment) {
+            Ok(new_comment) => {
+                // initially check that the data isn't the same.
+                assert_ne!(comment, new_comment);
+                // now, check that it's what we expect.
+                assert_eq!(comment, expected);
+            }
+            Err(NoDataInComment) => panic!("Failed to parse ellington data from comment."),
+            Err(FailedToSerialise) => panic!("Failed to serialise ellington data from comment."),
+        }
+    }
+
+    #[test]
+    fn clear_comment_data_start() {
+        let comment: String = "[ed| naive~1842 ] chugging, swinging, [ed,".to_string();
+        let expected: String = "chugging, swinging, [ed,".to_string();
+
+        match EllingtonData::clear_data(&comment) {
+            Ok(new_comment) => {
+                // initially check that the data isn't the same.
+                assert_ne!(comment, new_comment);
+                // now, check that it's what we expect.
+                assert_eq!(comment, expected);
+            }
+            Err(NoDataInComment) => panic!("Failed to parse ellington data from comment."),
+            Err(FailedToSerialise) => panic!("Failed to serialise ellington data from comment."),
+        }
+    }
+
+    #[test]
+    fn clear_comment_data_middle() {
+        let comment: String = "chugging, [ed| naive~1842 ] swinging, [ed,".to_string();
+        let expected: String = "chugging, swinging, [ed,".to_string();
+
+        match EllingtonData::clear_data(&comment) {
+            Ok(new_comment) => {
+                // initially check that the data isn't the same.
+                assert_ne!(comment, new_comment);
+                // now, check that it's what we expect.
+                assert_eq!(comment, expected);
+            }
+            Err(NoDataInComment) => panic!("Failed to parse ellington data from comment."),
+            Err(FailedToSerialise) => panic!("Failed to serialise ellington data from comment."),
+        }
+    }
+}
