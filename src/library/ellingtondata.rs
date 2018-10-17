@@ -197,7 +197,7 @@ mod tests {
                 // initially check that the data isn't the same.
                 assert_ne!(comment, new_comment);
                 // now, check that it's what we expect.
-                assert_eq!(comment, expected);
+                assert_eq!(new_comment, expected);
             }
             Err(NoDataInComment) => panic!("Failed to parse ellington data from comment."),
             Err(FailedToSerialise) => panic!("Failed to serialise ellington data from comment."),
@@ -216,7 +216,7 @@ mod tests {
                 // initially check that the data isn't the same.
                 assert_ne!(comment, new_comment);
                 // now, check that it's what we expect.
-                assert_eq!(comment, expected);
+                assert_eq!(new_comment, expected);
             }
             Err(NoDataInComment) => panic!("Failed to parse ellington data from comment."),
             Err(FailedToSerialise) => panic!("Failed to serialise ellington data from comment."),
@@ -235,7 +235,7 @@ mod tests {
                 // initially check that the data isn't the same.
                 assert_ne!(comment, new_comment);
                 // now, check that it's what we expect.
-                assert_eq!(comment, expected);
+                assert_eq!(new_comment, expected);
             }
             Err(NoDataInComment) => panic!("Failed to parse ellington data from comment."),
             Err(FailedToSerialise) => panic!("Failed to serialise ellington data from comment."),
