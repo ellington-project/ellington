@@ -46,4 +46,20 @@ mod tests {
     fn tautology_internal() {
         assert!(super::trueish());
     }
+
+    #[test]
+    fn serialise_simple() {
+        use library::ellingtondata::*;
+        let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
+        let fm = ed.format();
+        match fm {
+            Ok(s) => assert_eq!(s, " [ed| TestAlg~842 |]"),
+            Err(_) => assert!(false),
+        }
+    }
+
+    #[test]
+    fn deserialise_simple() {
+        use library::ellingtondata::*;
+    }
 }

@@ -148,8 +148,8 @@ impl ShellProgram for SoxCommand {
             // and finally, specify that we want the command to write to stdout
             "-",
         ].iter()
-        .map(|s| s.to_string())
-        .collect()
+            .map(|s| s.to_string())
+            .collect()
     }
 }
 
