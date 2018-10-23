@@ -33,7 +33,7 @@ impl EllingtonData {
 
     pub fn format(self: &Self) -> UpdateResult<String> {
         let mut s = String::new();
-        s.push_str(" [ed| ");
+        s.push_str("[ed| ");
         let mut first = true;
         for (algorithm, bpm) in self.algs.iter() {
             if first {
@@ -57,12 +57,12 @@ impl EllingtonData {
 
     fn regex() -> &'static Regex {
         lazy_static! {
-            static ref RE: Regex = Regex::new(r".*\[ed\|(.*)\|\]").unwrap();
+            static ref RE: Regex = Regex::new(r"\[ed\|(.*)\|\]").unwrap();
         }
         &RE
     }
 
-    named!(parse_content<&str, Vec<(&str, &str)>>,
+    named!(parse_ed_fragment<&str, Vec<(&str, &str)>>,
         terminated!(preceded!(tag_s!("[ed|"),
         separated_list!(
             tag_s!(","),
@@ -79,7 +79,7 @@ impl EllingtonData {
         let captures = Self::regex().captures(comment.as_str())?;
 
         // get the first capture, and try to parse it
-        match Self::parse_content(captures.get(0)?.as_str()) {
+        match Self::parse_ed_fragment(captures.get(0)?.as_str()) {
             Ok((_, pairs)) => {
                 let mut map = BTreeMap::new();
                 for (algorithm, bpm) in pairs {
@@ -146,97 +146,138 @@ mod tests {
     use super::UpdateError::*;
     use super::*;
 
-
     #[test]
-    fn serialise_simple() {
-        let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
+    fn serialise() {
+        let ed = EllingtonData::with_algorithm(String::from("TestAlg"), 842);
         let fm = ed.format();
         match fm {
-            Ok(s) => assert_eq!(s, " [ed| TestAlg~842 |]"),
+            Ok(s) => assert_eq!(s, "[ed| TestAlg~842 |]"),
             Err(_) => assert!(false),
         }
     }
 
-    #[test]
-    fn deserialise_simple() {
-        let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
-        let deser = EllingtonData::parse(&"[ed| TestAlg~842 |]".to_string());
-        match deser {
-            Some(e) => assert_eq!(ed, e),
-            None => assert!(false),
-        }
-    }
+    mod deserialise {
+        use super::*;
 
-    #[test]
-    fn deserialise_post() {
-        let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
-        let deser = EllingtonData::parse(&"[ed| TestAlg~842 |]".to_string());
-        match deser {
-            Some(e) => assert_eq!(ed, e),
-            None => assert!(false),
-        }
-    }
-
-    #[test]
-    fn clear_empty_comment() {
-        let comment: String = "chuggy, swinging, [ed, more data".to_string();
-        match EllingtonData::clear_data(&comment) {
-            Ok(new_comment) => assert_eq!(comment, new_comment),
-            Err(NoDataInComment) => println!("Correct result - no data found!"),
-            Err(FailedToSerialise) => panic!("Failed to serialise ellington data from comment."),
-        }
-    }
-
-    #[test]
-    fn clear_comment_data_end() {
-        let comment: String = "chugging, swinging, [ed, [ed| naive~1842 |]".to_string();
-        let expected: String = "chugging, swinging, [ed, ".to_string();
-
-        match EllingtonData::clear_data(&comment) {
-            Ok(new_comment) => {
-                // initially check that the data isn't the same.
-                assert_ne!(comment, new_comment);
-                // now, check that it's what we expect.
-                assert_eq!(new_comment, expected);
+        #[test]
+        fn simple() {
+            let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
+            let deser = EllingtonData::parse(&"[ed| TestAlg~842 |]".to_string());
+            match deser {
+                Some(e) => assert_eq!(ed, e),
+                None => assert!(false),
             }
-            Err(NoDataInComment) => panic!("Failed to parse ellington data from comment."),
-            Err(FailedToSerialise) => panic!("Failed to serialise ellington data from comment."),
         }
-    }    
 
-    #[test]
-    fn clear_comment_data_start() {
-        let comment: String = "[ed| naive~1842 |] chugging, swinging, [ed,".to_string();
-        let expected: String = " chugging, swinging, [ed,".to_string();
-
-        match EllingtonData::clear_data(&comment) {
-            Ok(new_comment) => {
-                // initially check that the data isn't the same.
-                assert_ne!(comment, new_comment);
-                // now, check that it's what we expect.
-                assert_eq!(new_comment, expected);
+        #[test]
+        fn post() {
+            let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
+            let deser = EllingtonData::parse(
+                &"Some, tags, [ed. or other, data [ed| TestAlg~842 |]".to_string(),
+            );
+            match deser {
+                Some(e) => assert_eq!(ed, e),
+                None => assert!(false),
             }
-            Err(NoDataInComment) => panic!("Failed to parse ellington data from comment."),
-            Err(FailedToSerialise) => panic!("Failed to serialise ellington data from comment."),
         }
-    }    
 
-    #[test]
-    fn clear_comment_data_middle() {
-        let comment: String = "chugging, [ed| naive~1842 |] swinging, [ed,".to_string();
-        let expected: String = "chugging,  swinging, [ed,".to_string();
-
-        match EllingtonData::clear_data(&comment) {
-            Ok(new_comment) => {
-                // initially check that the data isn't the same.
-                assert_ne!(comment, new_comment);
-                // now, check that it's what we expect.
-                assert_eq!(new_comment, expected);
+        #[test]
+        fn pre() {
+            let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
+            let deser = EllingtonData::parse(
+                &"[ed| TestAlg~842 |] Some, tags, [ed. or other, data".to_string(),
+            );
+            match deser {
+                Some(e) => assert_eq!(ed, e),
+                None => assert!(false),
             }
-            Err(NoDataInComment) => panic!("Failed to parse ellington data from comment."),
-            Err(FailedToSerialise) => panic!("Failed to serialise ellington data from comment."),
+        }
+
+        #[test]
+        fn mid() {
+            let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
+            let deser = EllingtonData::parse(
+                &"Some, tags, [ed. [ed| TestAlg~842 |] or other, data".to_string(),
+            );
+            match deser {
+                Some(e) => assert_eq!(ed, e),
+                None => assert!(false),
+            }
         }
     }
 
-    
+    mod clear {
+        use super::*;
+        #[test]
+        fn empty() {
+            let comment: String = "chuggy, swinging, [ed, more data".to_string();
+            match EllingtonData::clear_data(&comment) {
+                Ok(updated) => assert_eq!(comment, updated),
+                Err(NoDataInComment) => println!("Correct result - no data found!"),
+                Err(FailedToSerialise) => {
+                    panic!("Failed to serialise ellington data from comment.")
+                }
+            }
+        }
+
+        #[test]
+        fn post() {
+            let comment: String = "chugging, swinging, [ed, [ed| naive~1842 |]".to_string();
+            let expected: String = "chugging, swinging, [ed, ".to_string();
+
+            match EllingtonData::clear_data(&comment) {
+                Ok(updated) => {
+                    // initially check that the data isn't the same.
+                    assert_ne!(comment, updated);
+                    // now, check that it's what we expect.
+                    assert_eq!(updated, expected);
+                }
+                Err(NoDataInComment) => panic!("Failed to parse ellington data from comment."),
+                Err(FailedToSerialise) => {
+                    panic!("Failed to serialise ellington data from comment.")
+                }
+            }
+        }
+
+        #[test]
+        fn pre() {
+            let comment: String = "[ed| naive~1842 |] chugging, swinging, [ed,".to_string();
+            let expected: String = " chugging, swinging, [ed,".to_string();
+
+            match EllingtonData::clear_data(&comment) {
+                Ok(updated) => {
+                    // initially check that the data isn't the same.
+                    assert_ne!(comment, updated);
+                    // now, check that it's what we expect.
+                    assert_eq!(updated, expected);
+                }
+                Err(NoDataInComment) => panic!("Failed to parse ellington data from comment."),
+                Err(FailedToSerialise) => {
+                    panic!("Failed to serialise ellington data from comment.")
+                }
+            }
+        }
+
+        #[test]
+        fn mid() {
+            let comment: String = "chugging, [ed| naive~1842 |] swinging, [ed,".to_string();
+            let expected: String = "chugging,  swinging, [ed,".to_string();
+
+            match EllingtonData::clear_data(&comment) {
+                Ok(updated) => {
+                    // initially check that the data isn't the same.
+                    assert_ne!(comment, updated);
+                    // now, check that it's what we expect.
+                    assert_eq!(updated, expected);
+                }
+                Err(NoDataInComment) => panic!("Failed to parse ellington data from comment."),
+                Err(FailedToSerialise) => {
+                    panic!("Failed to serialise ellington data from comment.")
+                }
+            }
+        }
+    }
+
+    mod update {}
+
 }

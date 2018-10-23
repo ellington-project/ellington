@@ -138,7 +138,7 @@ impl ShellProgram for FfmpegCommand {
             // finally, tell ffmpeg to write to stdout
             "pipe:1",
         ].iter()
-            .map(|s| s.to_string())
-            .collect()
+        .map(|s| s.to_string())
+        .collect()
     }
 }
