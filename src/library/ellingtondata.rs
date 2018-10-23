@@ -190,7 +190,7 @@ mod tests {
     #[test]
     fn clear_comment_data_end() {
         let comment: String = "chugging, swinging, [ed, [ed| naive~1842 |]".to_string();
-        let expected: String = "chugging, swinging, [ed,".to_string();
+        let expected: String = "chugging, swinging, [ed, ".to_string();
 
         match EllingtonData::clear_data(&comment) {
             Ok(new_comment) => {
@@ -202,14 +202,12 @@ mod tests {
             Err(NoDataInComment) => panic!("Failed to parse ellington data from comment."),
             Err(FailedToSerialise) => panic!("Failed to serialise ellington data from comment."),
         }
-    }
-
-    
+    }    
 
     #[test]
     fn clear_comment_data_start() {
         let comment: String = "[ed| naive~1842 |] chugging, swinging, [ed,".to_string();
-        let expected: String = "chugging, swinging, [ed,".to_string();
+        let expected: String = " chugging, swinging, [ed,".to_string();
 
         match EllingtonData::clear_data(&comment) {
             Ok(new_comment) => {
@@ -221,14 +219,12 @@ mod tests {
             Err(NoDataInComment) => panic!("Failed to parse ellington data from comment."),
             Err(FailedToSerialise) => panic!("Failed to serialise ellington data from comment."),
         }
-    }
-
-    
+    }    
 
     #[test]
     fn clear_comment_data_middle() {
         let comment: String = "chugging, [ed| naive~1842 |] swinging, [ed,".to_string();
-        let expected: String = "chugging, swinging, [ed,".to_string();
+        let expected: String = "chugging,  swinging, [ed,".to_string();
 
         match EllingtonData::clear_data(&comment) {
             Ok(new_comment) => {
