@@ -128,7 +128,7 @@ fn oneshot_audio_file(matches: &ArgMatches) -> () {
 
     match matches.value_of("comment") {
         Some(c) => {
-            match ed.update_data(&String::from(c), true) {
+            match ed.update_data(&String::from(c), true, false) {
                 Ok(new_comment) => {
                     info!("Got new comment: {:?}", new_comment);
                     println!("{}", new_comment);
@@ -138,7 +138,7 @@ fn oneshot_audio_file(matches: &ArgMatches) -> () {
                 }
             };
         }
-        None => match ed.format() {
+        None => match ed.format(false) {
             Ok(new_comment) => {
                 info!("Got new comment: {:?}", new_comment);
                 println!("{}", new_comment);

@@ -49,7 +49,7 @@ on write_to_file(this_data, target_file, append_data) -- (string, file path as s
 			set eof of the open_target_file to 0
 		write this_data to the open_target_file starting at eof
 		close access the open_target_file
-        log this_data
+		log this_data
 		return true
 	on error
 		try

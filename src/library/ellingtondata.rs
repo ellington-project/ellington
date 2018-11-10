@@ -31,34 +31,31 @@ impl EllingtonData {
         EllingtonData { algs: map }
     }
 
-    pub fn format(self: &Self) -> UpdateResult<String> {
-        let mut s = String::from("[ed| ");
-        let mut first = true;
-        for (algorithm, bpm) in self.algs.iter() {
-            if first {
-                first = false;
-            } else {
-                s.push_str(", ");
-            }
-            s.push_str(&format!("{}~{}", algorithm, bpm));
-        }
-        s.push_str(" |]");
-        Ok(s)
-    }
-
-    pub fn format_minimal(self: &Self) -> UpdateResult<String> { 
+    pub fn format(self: &Self, minimal: bool) -> UpdateResult<String> {
         let mut s = String::new();
         s.push_str("[ed|");
+
         let mut first = true;
+
         for (algorithm, bpm) in self.algs.iter() {
             if first {
                 first = false;
             } else {
                 s.push_str(",");
             }
-            s.push_str(&format!("{}~{}", algorithm.chars().next().unwrap(), bpm));
+            if minimal {
+                s.push_str(&format!("{}~{}", algorithm.chars().next().unwrap(), bpm));
+            } else {
+                s.push_str(&format!(" {}~{}", algorithm, bpm));
+            }
         }
-        s.push_str("|]");
+
+        if minimal {
+            s.push_str("|]");
+        } else {
+            s.push_str(" |]");
+        }
+
         Ok(s)
     }
 
@@ -113,8 +110,13 @@ impl EllingtonData {
     }
 
     // #[flame]
-    pub fn update_data(self: &Self, comment: &String, append: bool) -> UpdateResult<String> {
-        let serialised = self.format()?;
+    pub fn update_data(
+        self: &Self,
+        comment: &String,
+        append: bool,
+        minimal: bool,
+    ) -> UpdateResult<String> {
+        let serialised = self.format(minimal)?;
 
         // test to see if there is any ellington data in the first place...
         let new_comment = match Self::regex()
@@ -164,7 +166,7 @@ mod tests {
     #[test]
     fn serialise() {
         let ed = EllingtonData::with_algorithm(String::from("TestAlg"), 842);
-        let fm = ed.format();
+        let fm = ed.format(false);
         match fm {
             Ok(s) => assert_eq!(s, "[ed| TestAlg~842 |]"),
             Err(_) => assert!(false),
@@ -293,25 +295,24 @@ mod tests {
         }
     }
 
-// <<<<<<< HEAD
-//     #[test]
-//     fn append_empty_comment() {
-//         let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
-//         let comment: String = "".to_string();
-//         let expected: String = "[ed| TestAlg~842 |]".to_string();
+    // <<<<<<< HEAD
+    //     #[test]
+    //     fn append_empty_comment() {
+    //         let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
+    //         let comment: String = "".to_string();
+    //         let expected: String = "[ed| TestAlg~842 |]".to_string();
 
-//         match ed.update_data(&comment, true) {
-//             Ok(new_comment) => {
-//                 assert_eq!(new_comment, expected);
-//             }
-//             Err(UpdateError::NoDataInComment) => panic!(
-//                 "No data in comment path should not occur! We requested appending behaviour!"
-//             ),
-//             Err(_) => panic!("Some other error occurred!"),
-//         }
-//     }
-// =======
+    //         match ed.update_data(&comment, true) {
+    //             Ok(new_comment) => {
+    //                 assert_eq!(new_comment, expected);
+    //             }
+    //             Err(UpdateError::NoDataInComment) => panic!(
+    //                 "No data in comment path should not occur! We requested appending behaviour!"
+    //             ),
+    //             Err(_) => panic!("Some other error occurred!"),
+    //         }
+    //     }
+    // =======
     mod update {}
-
 
 }
