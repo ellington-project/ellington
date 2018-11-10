@@ -206,19 +206,6 @@ mod tests {
         }
     }
 
-<<<<<<< HEAD
-    #[test]
-    fn clear_comment_data_start() {
-        let comment: String = "[ed| naive~1842 |] chugging, swinging, [ed,".to_string();
-        let expected: String = "chugging, swinging, [ed,".to_string();
-
-        match EllingtonData::clear_data(&comment) {
-            Ok(new_comment) => {
-                // initially check that the data isn't the same.
-                assert_ne!(comment, new_comment);
-                // now, check that it's what we expect.
-                assert_eq!(new_comment, expected);
-=======
     mod clear {
         use super::*;
         #[test]
@@ -249,23 +236,9 @@ mod tests {
                 Err(FailedToSerialise) => {
                     panic!("Failed to serialise ellington data from comment.")
                 }
->>>>>>> 152757b9152445b7b9d41c20127976ebd25cacf6
             }
         }
 
-<<<<<<< HEAD
-    #[test]
-    fn clear_comment_data_middle() {
-        let comment: String = "chugging, [ed| naive~1842 |] swinging, [ed,".to_string();
-        let expected: String = "chugging, swinging, [ed,".to_string();
-
-        match EllingtonData::clear_data(&comment) {
-            Ok(new_comment) => {
-                // initially check that the data isn't the same.
-                assert_ne!(comment, new_comment);
-                // now, check that it's what we expect.
-                assert_eq!(new_comment, expected);
-=======
         #[test]
         fn pre() {
             let comment: String = "[ed| naive~1842 |] chugging, swinging, [ed,".to_string();
@@ -301,30 +274,29 @@ mod tests {
                 Err(FailedToSerialise) => {
                     panic!("Failed to serialise ellington data from comment.")
                 }
->>>>>>> 152757b9152445b7b9d41c20127976ebd25cacf6
             }
         }
     }
 
-<<<<<<< HEAD
-    #[test]
-    fn append_empty_comment() {
-        let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
-        let comment: String = "".to_string();
-        let expected: String = "[ed| TestAlg~842 |]".to_string();
+// <<<<<<< HEAD
+//     #[test]
+//     fn append_empty_comment() {
+//         let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
+//         let comment: String = "".to_string();
+//         let expected: String = "[ed| TestAlg~842 |]".to_string();
 
-        match ed.update_data(&comment, true) {
-            Ok(new_comment) => {
-                assert_eq!(new_comment, expected);
-            }
-            Err(UpdateError::NoDataInComment) => panic!(
-                "No data in comment path should not occur! We requested appending behaviour!"
-            ),
-            Err(_) => panic!("Some other error occurred!"),
-        }
-    }
-=======
+//         match ed.update_data(&comment, true) {
+//             Ok(new_comment) => {
+//                 assert_eq!(new_comment, expected);
+//             }
+//             Err(UpdateError::NoDataInComment) => panic!(
+//                 "No data in comment path should not occur! We requested appending behaviour!"
+//             ),
+//             Err(_) => panic!("Some other error occurred!"),
+//         }
+//     }
+// =======
     mod update {}
->>>>>>> 152757b9152445b7b9d41c20127976ebd25cacf6
+
 
 }
