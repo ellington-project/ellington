@@ -32,8 +32,7 @@ impl EllingtonData {
     }
 
     pub fn format(self: &Self) -> UpdateResult<String> {
-        let mut s = String::new();
-        s.push_str("[ed| ");
+        let mut s = String::from("[ed| ");
         let mut first = true;
         for (algorithm, bpm) in self.algs.iter() {
             if first {
@@ -44,6 +43,22 @@ impl EllingtonData {
             s.push_str(&format!("{}~{}", algorithm, bpm));
         }
         s.push_str(" |]");
+        Ok(s)
+    }
+
+    pub fn format_minimal(self: &Self) -> UpdateResult<String> { 
+        let mut s = String::new();
+        s.push_str("[ed|");
+        let mut first = true;
+        for (algorithm, bpm) in self.algs.iter() {
+            if first {
+                first = false;
+            } else {
+                s.push_str(",");
+            }
+            s.push_str(&format!("{}~{}", algorithm.chars().next().unwrap(), bpm));
+        }
+        s.push_str("|]");
         Ok(s)
     }
 
