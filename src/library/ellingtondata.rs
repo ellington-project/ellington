@@ -146,7 +146,6 @@ mod tests {
     use super::UpdateError::*;
     use super::*;
 
-
     #[test]
     fn serialise_simple() {
         let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
@@ -204,8 +203,6 @@ mod tests {
         }
     }
 
-    
-
     #[test]
     fn clear_comment_data_start() {
         let comment: String = "[ed| naive~1842 |] chugging, swinging, [ed,".to_string();
@@ -222,8 +219,6 @@ mod tests {
             Err(FailedToSerialise) => panic!("Failed to serialise ellington data from comment."),
         }
     }
-
-    
 
     #[test]
     fn clear_comment_data_middle() {
@@ -242,5 +237,21 @@ mod tests {
         }
     }
 
-    
+    #[test]
+    fn append_empty_comment() {
+        let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
+        let comment: String = "".to_string();
+        let expected: String = "[ed| TestAlg~842 |]".to_string();
+
+        match ed.update_data(&comment, true) {
+            Ok(new_comment) => {
+                assert_eq!(new_comment, expected);
+            }
+            Err(UpdateError::NoDataInComment) => panic!(
+                "No data in comment path should not occur! We requested appending behaviour!"
+            ),
+            Err(_) => panic!("Some other error occurred!"),
+        }
+    }
+
 }
