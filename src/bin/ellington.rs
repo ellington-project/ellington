@@ -15,6 +15,7 @@ extern crate clap;
 use clap::App;
 use clap::ArgMatches;
 use std::collections::BTreeMap;
+use std::path::Path;
 
 extern crate commandspec;
 use commandspec::*;
@@ -22,8 +23,8 @@ use commandspec::*;
 extern crate libellington as le;
 
 use le::library::ellingtondata::EllingtonData;
-use le::library::Library;
 use le::library::trackmetadata::*;
+use le::library::Library;
 
 use le::estimators::BellsonTempoEstimator;
 use le::estimators::FfmpegNaiveTempoEstimator;
@@ -112,27 +113,17 @@ fn oneshot_audio_file(matches: &ArgMatches) -> () {
     // Create the map for the estimators
     let mut map = BTreeMap::new();
 
-
-    // See if the track as some existing bpm metadata:
-    let (mname, mtempo) = match TrackMetadata::from_file(Path::from(audiofile)) {
-        Some(tmd) => { ("adams", 0)
+    // See if the track as some existing bpm metadata, if not, give it a 0
+    let (mname, mtempo) = match TrackMetadata::from_file(Path::new(audiofile)) {
+        Some(tmd) => match tmd.bpm {
+            Some(bpm) => ("adams", bpm),
+            None => ("adams", 0)
         },
         None => ("adams", 0),
-
-
     };
-    // See if we've been passed a "real" bpm (i.e. manually calculted), and add it to the map of estimators.
-    // let (mname, mtempo) = match matches.value_of("bpm") {
-    //     Some(bpmstring) => match bpmstring.parse::<i64>() {
-    //         Ok(t) => ("adams", t),
-    //         _ => ("adams", 0),
-    //     },
-    //     None => 
-    // };
-    // map.insert(String::from(mname), mtempo);
+    map.insert(String::from(mname), mtempo);
 
-
-    // Run bellson, and try to add the result. 
+    // Run bellson, and try to add the result.
     match BellsonTempoEstimator::run(&PathBuf::from(audiofile)) {
         Some(e) => {
             map.insert(String::from(BellsonTempoEstimator::NAME), e);
@@ -151,8 +142,8 @@ fn oneshot_audio_file(matches: &ArgMatches) -> () {
     // Construct some ellington data
     let ed = EllingtonData { algs: map };
 
-    // Check the comment that we've got, and try to either 
-    //  a) update it, or 
+    // Check the comment that we've got, and try to either
+    //  a) update it, or
     //  b) create a new one.
     match matches.value_of("comment") {
         Some(c) => {
