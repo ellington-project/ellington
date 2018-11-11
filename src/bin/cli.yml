@@ -50,3 +50,7 @@ subcommands:
                 long: comment
                 required: false
                 takes_value: true 
+            - minimal: 
+                help: Print the output using the minimal formatter. 
+                short: m 
+                long: minimal

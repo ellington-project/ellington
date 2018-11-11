@@ -15,6 +15,7 @@ extern crate clap;
 use clap::App;
 use clap::ArgMatches;
 use std::collections::BTreeMap;
+use std::path::Path;
 
 extern crate commandspec;
 use commandspec::*;
@@ -22,6 +23,7 @@ use commandspec::*;
 extern crate libellington as le;
 
 use le::library::ellingtondata::EllingtonData;
+use le::library::trackmetadata::*;
 use le::library::Library;
 
 use le::estimators::BellsonTempoEstimator;
@@ -94,6 +96,10 @@ fn oneshot_audio_file(matches: &ArgMatches) -> () {
     // TODO: Reinstate this - see the comment above
     // check_callable("ffmpeg").unwrap();
 
+    // begin by checking to see what kind of output the user has requested.
+    let minimal = matches.occurrences_of("minimal") > 0;
+
+    // Get the name of the audio file, and log it.
     let audiofile: &str = match matches.value_of("audiofile") {
         Some(ap) => {
             info!("Processing audio file at {:?}", ap);
@@ -104,13 +110,21 @@ fn oneshot_audio_file(matches: &ArgMatches) -> () {
         }
     };
 
-    let bellson_estimation = BellsonTempoEstimator::run(&PathBuf::from(audiofile));
-    let naive_estimation = FfmpegNaiveTempoEstimator::run(&PathBuf::from(audiofile));
-
+    // Create the map for the estimators
     let mut map = BTreeMap::new();
 
-    // add the bellson estimation
-    match bellson_estimation {
+    // See if the track as some existing bpm metadata, if not, give it a 0
+    let (mname, mtempo) = match TrackMetadata::from_file(Path::new(audiofile)) {
+        Some(tmd) => match tmd.bpm {
+            Some(bpm) => ("adams", bpm),
+            None => ("adams", 0)
+        },
+        None => ("adams", 0),
+    };
+    map.insert(String::from(mname), mtempo);
+
+    // Run bellson, and try to add the result.
+    match BellsonTempoEstimator::run(&PathBuf::from(audiofile)) {
         Some(e) => {
             map.insert(String::from(BellsonTempoEstimator::NAME), e);
         }
@@ -118,17 +132,22 @@ fn oneshot_audio_file(matches: &ArgMatches) -> () {
     };
 
     // add the naive estimation
-    match naive_estimation {
+    match FfmpegNaiveTempoEstimator::run(&PathBuf::from(audiofile)) {
         Some(e) => {
             map.insert(String::from(FfmpegNaiveTempoEstimator::NAME), e);
         }
         None => error!("Failed to run naive estimator!"),
     };
+
+    // Construct some ellington data
     let ed = EllingtonData { algs: map };
 
+    // Check the comment that we've got, and try to either
+    //  a) update it, or
+    //  b) create a new one.
     match matches.value_of("comment") {
         Some(c) => {
-            match ed.update_data(&String::from(c), true) {
+            match ed.update_data(&String::from(c), true, minimal) {
                 Ok(new_comment) => {
                     info!("Got new comment: {:?}", new_comment);
                     println!("{}", new_comment);
@@ -138,7 +157,7 @@ fn oneshot_audio_file(matches: &ArgMatches) -> () {
                 }
             };
         }
-        None => match ed.format() {
+        None => match ed.format(minimal) {
             Ok(new_comment) => {
                 info!("Got new comment: {:?}", new_comment);
                 println!("{}", new_comment);
