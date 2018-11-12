@@ -1,5 +1,5 @@
 name: ellington
-version: "0.2.0"
+version: "0.3.0"
 author: Adam Harries <harries.adam@gmail.com>
 about: Automated BPM calculation for swing dance DJs
 subcommands:
@@ -10,6 +10,7 @@ subcommands:
                 help: The library file to initialise
                 required: true
                 index: 1
+
             - itunes:
                 short: i
                 long: itunes
@@ -18,6 +19,7 @@ subcommands:
                 takes_value: true
                 help: The iTunes library file with track information.
                 conflicts_with: directory
+
             - directory: 
                 short: d 
                 long: directory
@@ -29,13 +31,15 @@ subcommands:
     - query:
         about: Query a file for tempo information, stored either in the file, in cache, or obtained from estimators. 
         args: 
+
             - AUDIOFILE: 
                 help: The audio file about which to query information. 
                 required: true 
                 index: 1
 
+            # Metadata configuration options
             - metadata: 
-                help: The metadata of the file (if any!) to modify with ellington data. 
+                help: The source of the metadata string to update with ellington data. 
                 required: false 
                 short: m
                 long: metadata 
@@ -70,10 +74,13 @@ subcommands:
                 possible_values: ['actual', 'naive', 'bellson', 'all']
                 default_value: all
 
+            # Reporting options. 
             - minimal: 
                 help: Print the output using the minimal formatter. 
                 short: m 
                 long: minimal
+                conflicts_with: readable
+                conflicts_with: json
 
             - readable:
                 help: Print the output in a nice human readable format. 
@@ -81,14 +88,15 @@ subcommands:
                 long: readable 
                 conflicts_with: minimal
                 conflicts_with: metadata
+                conflicts_with: json
 
             - json: 
                 help: Print the output in json, rather than the custom ellington format. 
                 short: j 
                 long: json 
-                conflicts_with: readable
                 conflicts_with: minimal 
                 conflicts_with: metadata 
+                conflicts_with: readable
 
 
 
