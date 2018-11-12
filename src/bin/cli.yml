@@ -70,6 +70,28 @@ subcommands:
                 possible_values: ['actual', 'naive', 'bellson', 'all']
                 default_value: all
 
+            - minimal: 
+                help: Print the output using the minimal formatter. 
+                short: m 
+                long: minimal
+
+            - readable:
+                help: Print the output in a nice human readable format. 
+                short: r
+                long: readable 
+                conflicts_with: minimal
+                conflicts_with: metadata
+
+            - json: 
+                help: Print the output in json, rather than the custom ellington format. 
+                short: j 
+                long: json 
+                conflicts_with: readable
+                conflicts_with: minimal 
+                conflicts_with: metadata 
+
+
+
     - bpm: 
         about: Run a bpm algorithm across an ellington library
         args: 
@@ -94,7 +116,4 @@ subcommands:
                 long: comment
                 required: false
                 takes_value: true 
-            - minimal: 
-                help: Print the output using the minimal formatter. 
-                short: m 
-                long: minimal
+            
