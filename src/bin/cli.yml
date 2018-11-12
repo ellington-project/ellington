@@ -4,7 +4,7 @@ author: Adam Harries <harries.adam@gmail.com>
 about: Automated BPM calculation for swing dance DJs
 subcommands:
     - init: 
-        about: Initialises an ellington library
+        about: Initalise an ellingotn "library" - essentially a cache for computed estimator values
         args: 
             - LIBRARY:
                 help: The library file to initialise
@@ -26,6 +26,50 @@ subcommands:
                 takes_value: true
                 help: A directory containing (recursively) audio files to process
                 conflicts_with: itunes
+    - query:
+        about: Query a file for tempo information, stored either in the file, in cache, or obtained from estimators. 
+        args: 
+            - AUDIOFILE: 
+                help: The audio file about which to query information. 
+                required: true 
+                index: 1
+
+            - metadata: 
+                help: The metadata of the file (if any!) to modify with ellington data. 
+                required: false 
+                short: m
+                long: metadata 
+                takes_value: true 
+                possible_values: ['title', 'comments', 'userdata']
+
+            - modification: 
+                help: The kind of modification behaviour to perform on "raw" metadata (i.e. metadata without any existing ellington data). If the metadata already contains ellington data, it will be updated.
+                required: false 
+                requires: metadata 
+                short: b
+                long: modification 
+                takes_value: true 
+                possible_values: ['prepend', 'append']
+
+            - userdata: 
+                help: User supplied metadata to update with ellington data. 
+                required: false 
+                requires: metadata 
+                required_if: 
+                    - [metadata, userdata]
+                short: u 
+                long: userdata
+                takes_value: true
+
+            - estimators: 
+                help: Run the following estimators, or query their results from the cache, and report the results. If not specified, "all" is assumed. 
+                required: false 
+                short: e 
+                long: estimators
+                takes_value: true 
+                possible_values: ['actual', 'naive', 'bellson', 'all']
+                default_value: all
+
     - bpm: 
         about: Run a bpm algorithm across an ellington library
         args: 
