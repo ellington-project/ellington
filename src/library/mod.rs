@@ -92,8 +92,7 @@ impl Library {
                 entries += 1;
 
                 Some(Entry::from_file(location))
-            })
-            .collect();
+            }).collect();
 
         info!(
             "Successfully read {} tracks from the itunes library, out of {} itunes entries",
@@ -119,8 +118,7 @@ impl Library {
                 info!("Got line: {:?}", l);
                 lines += 1;
                 l
-            })
-            .filter_map(|l| l.ok())
+            }).filter_map(|l| l.ok())
             .map(|line| Entry::from_file(PathBuf::from(line)))
             .collect();
         info!(
@@ -128,6 +126,14 @@ impl Library {
             tracks.len(),
             lines
         );
+        Some(Library { tracks: tracks })
+    }
+
+    /*
+        Initialise an empty library 
+    */
+    pub fn from_empty() -> Option<Library> {
+        let tracks: Vec<Entry> = vec![];
         Some(Library { tracks: tracks })
     }
 
@@ -159,15 +165,13 @@ impl Library {
                 }
                 entries += 1;
                 e
-            })
-            .filter_map(|e| e.ok())
+            }).filter_map(|e| e.ok())
             .filter_map(|e| FileMetadata::seq_audio_file(e.clone(), &e.path()))
             .map(|f| {
                 info!("Got audio file: {:?}", f);
                 audio_files += 1;
                 f
-            })
-            .map(|f| Entry::from_file(f.path().to_path_buf()))
+            }).map(|f| Entry::from_file(f.path().to_path_buf()))
             .collect();
 
         info!(

@@ -4,30 +4,64 @@ author: Adam Harries <harries.adam@gmail.com>
 about: Automated BPM calculation for swing dance DJs
 subcommands:
     - init: 
-        about: Initalise an ellingotn "library" - essentially a cache for computed estimator values
+        about: Initalise an ellington "library" - essentially a cache for computed estimator values
         args: 
+            - SOURCE: 
+                help: The source of the tracks with which to init the library. 
+                required: false 
+                index: 1 
+                default_value: empty 
+                possible_values: ['empty', 'stdin', 'directory', 'itunes']
+
+
             - LIBRARY:
                 help: The library file to initialise
-                required: true
-                index: 1
+                required: false
+                index: 2
+                default_value: ".config/ellington/library.json"
+
+
+            # - empty: 
+            #     short: e
+            #     long: empty 
+            #     required: false
+            #     takes_value: false 
+            #     help: Initialise an empty library, that will later be filled with query information. 
+            #     conflicts_with: itunes
+            #     conflicts_with: directory
+            #     conflicts_with: stdin
 
             - itunes:
                 short: i
                 long: itunes
                 value_name: itunes
-                required: false
+                required_if: 
+                    - [SOURCE, itunes]
                 takes_value: true
                 help: The iTunes library file with track information.
-                conflicts_with: directory
 
             - directory: 
+                help: A directory containing (recursively) audio files to process
                 short: d 
                 long: directory
                 value_name: directory
-                required: false
+                required_if: 
+                    - [SOURCE, directory]
                 takes_value: true
-                help: A directory containing (recursively) audio files to process
-                conflicts_with: itunes
+                default_value: "~/Music/"
+
+            # - stdin: 
+            #     short: s 
+            #     long: stdin 
+            #     required: false 
+            #     takes_value: false 
+            #     help: Read audio track file paths from stdin
+            #     conflicts_with: empty
+            #     conflicts_with: itunes
+            #     conflicts_with: directory
+
+           
+    
     - query:
         about: Query a file for tempo information, stored either in the file, in cache, or obtained from estimators. 
         args: 
@@ -36,6 +70,12 @@ subcommands:
                 help: The audio file about which to query information. 
                 required: true 
                 index: 1
+
+            - LIBRARY: 
+                help: The ellington library to read cached results from. 
+                required: false 
+                index: 2 
+                default_value: "~/.config/ellington/library.json"
 
             # Metadata configuration options
             - metadata: 
@@ -74,10 +114,30 @@ subcommands:
                 possible_values: ['actual', 'naive', 'bellson', 'all']
                 default_value: all
 
+            - lazy: 
+                help: Run the query lazily - i.e. only run it if values cannot be found in the cache or the track metadata.
+                required: false 
+                short: l 
+                long: lazy 
+                takes_value: false
+                conflicts_with: eager
+
+            - eager: 
+                help: Eagerly run the estimators - i.e. run all the estimators even if there are already values in the cache or track metadata. 
+                required: false 
+                short: f
+                long: eager
+                takes_value: false 
+                conflicts_with: lazy
+
+            - prefer_source: 
+                help: If ellington data can be found in multiple sources (e.g. in the library, in the track comment, and the title, etc), which source should be considered "canonical". 
+                
+
             # Reporting options. 
             - minimal: 
                 help: Print the output using the minimal formatter. 
-                short: m 
+                short: s 
                 long: minimal
                 conflicts_with: readable
                 conflicts_with: json
@@ -98,30 +158,8 @@ subcommands:
                 conflicts_with: metadata 
                 conflicts_with: readable
 
-
-
-    - bpm: 
-        about: Run a bpm algorithm across an ellington library
-        args: 
-            - LIBRARY:
-                help: The library file from which to process tracks
-                required: true
-                index: 1
-    - oneshot: 
-        about: Run a tempo estimation algorithm on a single audio track with a comment, and add data to the comment
-        version: "0.1.0"
-        author: Adam Harries <harries.adam@gmail.com> 
-        args: 
-            - audiofile: 
-                help: The audio file to process
-                short: a
-                long: audiofile
-                required: true 
-                takes_value: true
-            - comment: 
-                help: The existing comment in the audio file. This command will append calculated data to this comment. If no comment is specified, ellington will return a fresh metadata block.
-                short: c 
-                long: comment
-                required: false
-                takes_value: true 
-            
+            # Caching/writing options. 
+            - pure: 
+                help: Run the query command in a "pure" manner - i.e. without side effects, and without updating the library. 
+                short: p 
+                long: pure 
