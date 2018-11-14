@@ -1,3 +1,3 @@
-extern crate libellington;
+extern crate ellington;
 
 // TODO: Write some external tests here!

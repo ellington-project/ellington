@@ -31,3 +31,4 @@ extern crate talamel;
 pub mod estimators;
 pub mod library;
 pub mod shelltools;
+pub mod types;

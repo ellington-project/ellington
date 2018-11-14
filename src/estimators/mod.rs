@@ -3,6 +3,7 @@ use shelltools::bellson::BellsonCommand;
 use shelltools::ffmpeg::FfmpegCommand;
 use shelltools::generic::ShellProgram;
 use std::path::PathBuf;
+use types::AlgorithmE;
 
 pub mod algorithms;
 pub mod sources;
@@ -11,7 +12,7 @@ use self::algorithms::naive::Naive;
 use self::sources::audiostream::AudioStream;
 
 pub trait TempoEstimator {
-    const NAME: &'static str;
+    const ALGORITHM: AlgorithmE;
     fn run(audio_file: &PathBuf) -> Option<i64>;
 }
 
@@ -19,9 +20,9 @@ pub trait TempoEstimator {
 pub fn run_estimator(name: &str, audio_file: &PathBuf) -> Option<(i64, &'static str)> {
     match name {
         "naive" => FfmpegNaiveTempoEstimator::run(audio_file)
-            .and_then(|bpm| Some((bpm, FfmpegNaiveTempoEstimator::NAME))),
+            .and_then(|bpm| Some((bpm, FfmpegNaiveTempoEstimator::ALGORITHM.print()))),
         "bellson" => BellsonTempoEstimator::run(audio_file)
-            .and_then(|bpm| Some((bpm, BellsonTempoEstimator::NAME))),
+            .and_then(|bpm| Some((bpm, BellsonTempoEstimator::ALGORITHM.print()))),
         _ => {
             error!("Could not find a tempo estimator of that name!");
             None
@@ -32,7 +33,7 @@ pub fn run_estimator(name: &str, audio_file: &PathBuf) -> Option<(i64, &'static 
 pub struct FfmpegNaiveTempoEstimator {}
 
 impl TempoEstimator for FfmpegNaiveTempoEstimator {
-    const NAME: &'static str = "naive";
+    const ALGORITHM: AlgorithmE = AlgorithmE::Naive;
     fn run(audio_file: &PathBuf) -> Option<i64> {
         let call = FfmpegCommand::default(&audio_file);
         let mut child = match call.spawn() {
@@ -74,7 +75,7 @@ impl TempoEstimator for FfmpegNaiveTempoEstimator {
 pub struct BellsonTempoEstimator {}
 
 impl TempoEstimator for BellsonTempoEstimator {
-    const NAME: &'static str = "bellson";
+    const ALGORITHM: AlgorithmE = AlgorithmE::Bellson;
     fn run(audio_file: &PathBuf) -> Option<i64> {
         lazy_static! {
             static ref RE: Regex = Regex::new(r"Mean: (\d+)").unwrap();

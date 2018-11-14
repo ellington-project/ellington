@@ -8,6 +8,8 @@ use library::ellingtondata::*;
 use library::filemetadata::FileMetadata;
 use library::trackmetadata::*;
 
+use types::*;
+
 use percent_encoding;
 use plist::Plist;
 use std::collections::BTreeSet;
@@ -240,14 +242,14 @@ impl Library {
      */
     pub fn run_pipeline<P: TempoEstimator>(self: &mut Self) -> () {
         info!("Running tempo estimator over ellington library.");
-        info!("Using estimator: {:?}", P::NAME);
+        info!("Using estimator: {:?}", P::ALGORITHM);
         // iterate over our tracks, and run the pipeline
         let mut ix = 0;
         let lx = self.tracks.len();
         for entry in &mut self.tracks {
             info!(
                 "Running pipeline {:?} on track {:?}/{:?}:\n\t {:?}",
-                P::NAME,
+                P::ALGORITHM,
                 ix,
                 lx,
                 entry.location
@@ -268,7 +270,7 @@ impl Library {
                     entry
                         .eldata
                         .algs
-                        .insert(P::NAME.to_string(), calculated_bpm);
+                        .insert(P::ALGORITHM, BpmE::Bpm(calculated_bpm));
                 }
                 None => {
                     error!("Failed to calculate bpm for entry: {:?}", entry);

@@ -30,6 +30,8 @@ use ellington::estimators::BellsonTempoEstimator;
 use ellington::estimators::FfmpegNaiveTempoEstimator;
 use ellington::estimators::TempoEstimator;
 
+use ellington::types::*;
+
 // fn check_callable(program: &'static str) -> Option<()> {
 //     //TODO: this needs to be written to capture the various output streams, as it pollutes ellington's output otherwise
 //     match execute!(r"which {program}", program = program) {
@@ -201,24 +203,18 @@ fn query(matches: &ArgMatches) -> () {
     let mut map = BTreeMap::new();
 
     // Start with the "actual" value
-    // if estimator == "actual" || estimator == "all" {
+    // if estimator == AlgorithmE::Actual.print() || estimator == "all" {
 
     // }
 
-    // See if the track as some existing bpm metadata, if not, give it a 0
-    let (mname, mtempo) = match TrackMetadata::from_file(Path::new(audio_file)) {
-        Some(tmd) => match tmd.bpm {
-            Some(bpm) => ("adams", bpm),
-            None => ("adams", 0),
-        },
-        None => ("adams", 0),
-    };
-    map.insert(String::from(mname), mtempo);
+    let mtempo =
+        BpmE::from_option(TrackMetadata::from_file(Path::new(audio_file)).and_then(|tmd| tmd.bpm));
+    map.insert(AlgorithmE::parse("actual"), mtempo);
 
     // Run bellson, and try to add the result.
     match BellsonTempoEstimator::run(&PathBuf::from(audio_file)) {
         Some(e) => {
-            map.insert(String::from(BellsonTempoEstimator::NAME), e);
+            map.insert(BellsonTempoEstimator::ALGORITHM, BpmE::Bpm(e));
         }
         None => error!("Failed to run bellson estimator!"),
     };
@@ -226,7 +222,7 @@ fn query(matches: &ArgMatches) -> () {
     // add the naive estimation
     match FfmpegNaiveTempoEstimator::run(&PathBuf::from(audio_file)) {
         Some(e) => {
-            map.insert(String::from(FfmpegNaiveTempoEstimator::NAME), e);
+            map.insert(FfmpegNaiveTempoEstimator::ALGORITHM, BpmE::Bpm(e));
         }
         None => error!("Failed to run naive estimator!"),
     };
