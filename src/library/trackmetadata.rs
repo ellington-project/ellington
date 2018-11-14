@@ -5,7 +5,7 @@ use std::path::Path;
 use talamel::*;
 
 // a structure storing metadata about some track, in a format agnostic manner
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct TrackMetadata {
     pub name: String,                  // we must always have a track name
     pub bpm: Option<i64>,              // we might not have a bpm value

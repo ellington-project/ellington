@@ -13,7 +13,6 @@ extern crate nom;
 extern crate clap;
 use clap::App;
 use clap::ArgMatches;
-use std::collections::BTreeMap;
 use std::path::Path;
 
 // extern crate commandspec;
@@ -105,6 +104,24 @@ fn init(matches: &ArgMatches) -> () {
     library.write_to_file(&PathBuf::from(library_file));
 }
 
+fn query_estimator(
+    algorithm: AlgorithmE,
+    caches: &Vec<EllingtonData>,
+    force: bool,
+    f: impl Fn() -> Option<i64>,
+) -> BpmE {
+    if force {
+        return BpmE::from_option(f());
+    }
+    for cache in caches {
+        match cache.algs.get(&algorithm) {
+            Some(tmpo) => return tmpo.clone(),
+            _ => {}
+        }
+    }
+    BpmE::from_option(f())
+}
+
 fn query(matches: &ArgMatches) -> () {
     /*  A query runs in the following fashion: 
         1 - Get the name of the file that we want to query information on. 
@@ -153,11 +170,11 @@ fn query(matches: &ArgMatches) -> () {
         });
 
     // Get the entry of the audio file
-    let library_entry: Option<&Entry> = library.as_ref().and_then(|l| {
+    let library_entry: Option<Entry> = library.clone().and_then(|l| {
         l.lookup(&PathBuf::from(audio_file))
             .and_then(|e| {
                 info!("Found entry in library!");
-                Some(e)
+                Some(e.clone())
             }).or_else(|| {
                 error!("Could not find track in library!");
                 None
@@ -165,28 +182,28 @@ fn query(matches: &ArgMatches) -> () {
     });
 
     // Get the ellington data from that entry
-    let library_eldata: Option<&EllingtonData> = library_entry.and_then(|e| Some(&e.eldata));
+    let library_eldata: EllingtonData = library_entry
+        .and_then(|e| Some(e.eldata.clone()))
+        .unwrap_or(EllingtonData::empty());
 
     // Load the track data from the audio file
     let track_metadata: Option<TrackMetadata> = TrackMetadata::from_file(Path::new(audio_file));
 
     // get data from the comments
-    let comment_eldata = track_metadata
+    let comment_eldata: EllingtonData = track_metadata
         .as_ref()
-        .and_then(|tm| Some(tm.comment_metadata()));
+        .and_then(|tm| Some(tm.comment_metadata()))
+        .unwrap_or(EllingtonData::empty());
 
     // get data from the title
-    let title_eldata = track_metadata
+    let title_eldata: EllingtonData = track_metadata
         .as_ref()
-        .and_then(|tm| Some(tm.title_metadata()));
+        .and_then(|tm| Some(tm.title_metadata()))
+        .unwrap_or(EllingtonData::empty());
 
     info!("Library metadata: {:?}", library_eldata);
     info!("Title metadata: {:?}", title_eldata);
     info!("Comment metadata: {:?}", comment_eldata);
-
-    /*
-        2.5. Look through the track metadata to see if there is any ellington data. 
-    */
 
     /*
         3. Select the list of estimators that we want to query. 
@@ -205,37 +222,63 @@ fn query(matches: &ArgMatches) -> () {
         4. Start iterating over estimators. 
     */
 
-    // Create the map for the estimators
-    let mut map = BTreeMap::new();
+    // Create the ellington data for the estimators. This is where we will store the results of running our estimators.
+    // Initialise it based on the "prefer" argument on the command line.
+    let caches = match matches.value_of("prefer_source").unwrap() {
+        "library" => vec![library_eldata, title_eldata, comment_eldata],
+        "title" => vec![title_eldata, library_eldata, comment_eldata],
+        "comments" => vec![comment_eldata, library_eldata, title_eldata],
+        "userdata" => vec![library_eldata],
+        _ => panic!("We should always get a priority, this should not happen!"),
+    };
+
+    let mut ed = EllingtonData::empty();
 
     // Start with the "actual" value
-    // if estimator == AlgorithmE::Actual.print() || estimator == "all" {
-
-    // }
-
-    let mtempo =
-        BpmE::from_option(TrackMetadata::from_file(Path::new(audio_file)).and_then(|tmd| tmd.bpm));
-    map.insert(AlgorithmE::parse("actual"), mtempo);
+    if estimator == AlgorithmE::Actual.print() || estimator == "all" {
+        let tempo = query_estimator(AlgorithmE::Actual, &caches, force, || {
+            TrackMetadata::from_file(Path::new(audio_file)).and_then(|tmd| tmd.bpm)
+        });
+        ed.algs.insert(AlgorithmE::Actual, tempo);
+    }
 
     // Run bellson, and try to add the result.
-    match BellsonTempoEstimator::run(&PathBuf::from(audio_file)) {
-        Some(e) => {
-            map.insert(BellsonTempoEstimator::ALGORITHM, BpmE::Bpm(e));
-        }
-        None => error!("Failed to run bellson estimator!"),
-    };
+    if estimator == AlgorithmE::Bellson.print() || estimator == "all" {
+        let tempo = query_estimator(AlgorithmE::Actual, &caches, force, || {
+            BellsonTempoEstimator::run(&PathBuf::from(audio_file))
+        });
+        ed.algs.insert(BellsonTempoEstimator::ALGORITHM, tempo);
+    }
 
-    // add the naive estimation
-    match FfmpegNaiveTempoEstimator::run(&PathBuf::from(audio_file)) {
-        Some(e) => {
-            map.insert(FfmpegNaiveTempoEstimator::ALGORITHM, BpmE::Bpm(e));
-        }
-        None => error!("Failed to run naive estimator!"),
-    };
+    // Run the naive estimator
+    if estimator == AlgorithmE::Naive.print() || estimator == "all" {
+        let tempo = query_estimator(AlgorithmE::Naive, &caches, force, || {
+            FfmpegNaiveTempoEstimator::run(&PathBuf::from(audio_file))
+        });
+        ed.algs.insert(FfmpegNaiveTempoEstimator::ALGORITHM, tempo);
+    }
 
-    // Construct some ellington data
-    let ed = EllingtonData { algs: map };
+    /*
+        5 - Write to the library if --pure is not specified
+    */
+    // Check that we have a library in the first place!
+    // This unwrap should be guaranteed to be safe!
+    let mut new_library = library
+        .and_then(|lib| Some(lib.clone()))
+        .or_else(|| Library::from_empty())
+        .unwrap();
 
+    new_library.update(&PathBuf::from(audio_file), ed.clone());
+
+    // Write the computed library to the file
+    new_library.write_to_file(&PathBuf::from(library_file));
+
+    /*
+        6 - Print the output: 
+            > If json, print the output in json
+            > If readable, print the output human readably
+            > else, serialise (checking for --minimal), and print the result.
+    */
     // check to see what kind of output the user has requested.
     let minimal = matches.occurrences_of("minimal") > 0;
 

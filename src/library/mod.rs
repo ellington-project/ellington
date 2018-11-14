@@ -23,7 +23,7 @@ use walkdir::WalkDir;
 
 use serde_json;
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Entry {
     pub location: PathBuf,
     pub filedata: FileMetadata,
@@ -50,7 +50,7 @@ impl Entry {
     }
 }
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Library {
     pub tracks: Vec<Entry>,
 }
@@ -289,5 +289,24 @@ impl Library {
             }
         }
         None
+    }
+
+    /*
+        Set an entry to a new one. 
+    */
+    pub fn update(self: &mut Self, path: &PathBuf, eldata: EllingtonData) -> () {
+        let mut updated = false;
+        for entry in &mut self.tracks {
+            if entry.location == *path {
+                entry.eldata = eldata.clone();
+                updated = true;
+                break;
+            }
+        }
+        if !updated {
+            let mut et = Entry::from_file(PathBuf::from(path));
+            et.eldata = eldata;
+            self.tracks.push(et);
+        }
     }
 }
