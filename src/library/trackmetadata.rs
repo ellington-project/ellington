@@ -3,6 +3,7 @@ use std::collections::BTreeMap;
 use std::path::Path;
 
 use talamel::*;
+
 // a structure storing metadata about some track, in a format agnostic manner
 #[derive(Serialize, Deserialize, Debug)]
 pub struct TrackMetadata {
@@ -12,7 +13,7 @@ pub struct TrackMetadata {
 }
 
 impl TrackMetadata {
-    pub fn as_ellington_metadata(self: &Self) -> EllingtonData {
+    pub fn comment_metadata(self: &Self) -> EllingtonData {
         // initialise our array
         let mut algs: BTreeMap<Algorithm, Bpm> = BTreeMap::new();
         // match the comments, and iterate over them, appending them to "data"
@@ -23,6 +24,8 @@ impl TrackMetadata {
                     match EllingtonData::parse(&c) {
                         Some(mut ed) => {
                             info!("Found ellington metadata: {:?}", ed);
+                            // There _will_ be a bug here if we accidentally insert "na" after a good value.
+                            // Move this into the ellington data + method?
                             algs.append(&mut ed.algs);
                         }
                         None => info!("No ellington data found in comment: {:?}", c),
@@ -31,6 +34,12 @@ impl TrackMetadata {
             }
             None => info!("Got no comments from metadata."),
         };
+        EllingtonData { algs: algs }
+    }
+
+    pub fn title_metadata(self: &Self) -> EllingtonData {
+        // initialise our array
+        let mut algs: BTreeMap<Algorithm, Bpm> = BTreeMap::new();
         // check the track name (title) to see if it has metadata
         match EllingtonData::parse(&self.name) {
             Some(mut ed) => {

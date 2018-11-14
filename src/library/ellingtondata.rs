@@ -2,6 +2,7 @@ use nom;
 use regex::Regex;
 use serde_json;
 use std::collections::BTreeMap;
+use std::ops;
 use types::*;
 
 pub type Algorithm = AlgorithmE;
@@ -161,6 +162,15 @@ impl EllingtonData {
         let result = Self::regex().replace(comment.as_str(), "");
 
         Ok(result.to_string())
+    }
+}
+
+impl ops::Add<EllingtonData> for EllingtonData {
+    type Output = EllingtonData;
+    fn add(self, rhs: EllingtonData) -> EllingtonData {
+        let mut algs: BTreeMap<Algorithm, Bpm> = self.algs.clone();
+        algs.append(&mut rhs.algs.clone());
+        EllingtonData { algs: algs }
     }
 }
 

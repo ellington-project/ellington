@@ -38,7 +38,7 @@ impl Entry {
         // TODO: Implement different readers here!
         let metadata = TrackMetadata::from_file(&path);
         let eldata = match &metadata {
-            Some(m) => m.as_ellington_metadata(),
+            Some(m) => m.comment_metadata() + m.title_metadata(),
             None => EllingtonData::empty(),
         };
         Entry {

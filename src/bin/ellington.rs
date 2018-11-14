@@ -170,13 +170,19 @@ fn query(matches: &ArgMatches) -> () {
     // Load the track data from the audio file
     let track_metadata: Option<TrackMetadata> = TrackMetadata::from_file(Path::new(audio_file));
 
-    // Get ellington data from the track metadata.
-    let track_eldata: Option<EllingtonData> = track_metadata
+    // get data from the comments
+    let comment_eldata = track_metadata
         .as_ref()
-        .and_then(|tm| Some(tm.as_ellington_metadata()));
+        .and_then(|tm| Some(tm.comment_metadata()));
+
+    // get data from the title
+    let title_eldata = track_metadata
+        .as_ref()
+        .and_then(|tm| Some(tm.title_metadata()));
 
     info!("Library metadata: {:?}", library_eldata);
-    info!("Track metadata: {:?}", track_eldata);
+    info!("Title metadata: {:?}", title_eldata);
+    info!("Comment metadata: {:?}", comment_eldata);
 
     /*
         2.5. Look through the track metadata to see if there is any ellington data. 
