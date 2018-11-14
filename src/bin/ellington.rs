@@ -261,17 +261,19 @@ fn query(matches: &ArgMatches) -> () {
     /*
         5 - Write to the library if --pure is not specified
     */
-    // Check that we have a library in the first place!
-    // This unwrap should be guaranteed to be safe!
-    let mut new_library = library
-        .and_then(|lib| Some(lib.clone()))
-        .or_else(|| Library::from_empty())
-        .unwrap();
+    if !matches.occurrences_of("force") > 0 {
+        // Check that we have a library in the first place!
+        // This unwrap should be guaranteed to be safe!
+        let mut new_library = library
+            .and_then(|lib| Some(lib.clone()))
+            .or_else(|| Library::from_empty())
+            .unwrap();
 
-    new_library.update(&PathBuf::from(audio_file), ed.clone());
+        new_library.update(&PathBuf::from(audio_file), ed.clone());
 
-    // Write the computed library to the file
-    new_library.write_to_file(&PathBuf::from(library_file));
+        // Write the computed library to the file
+        new_library.write_to_file(&PathBuf::from(library_file));
+    }
 
     /*
         6 - Print the output: 
