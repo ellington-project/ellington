@@ -8,7 +8,7 @@ description = "An experimental testbed and set of tools for the automatic tempo 
 
 
 [lib]
-name = "libellington"
+name = "ellington"
 path = "src/lib.rs"
 
 [dependencies]

@@ -1,8 +1,6 @@
 /*
     ellington - the ellington tool for processing and bpming audio libraries
 */
-
-use std::fs;
 use std::path::PathBuf;
 
 #[macro_use]
@@ -18,29 +16,29 @@ use clap::ArgMatches;
 use std::collections::BTreeMap;
 use std::path::Path;
 
-extern crate commandspec;
-use commandspec::*;
+// extern crate commandspec;
+// use commandspec::*;
 
-extern crate libellington as le;
+extern crate ellington;
 
-use le::library::ellingtondata::EllingtonData;
-use le::library::trackmetadata::*;
-use le::library::Library;
+use ellington::library::ellingtondata::EllingtonData;
+use ellington::library::trackmetadata::*;
+use ellington::library::Library;
 
-use le::estimators::BellsonTempoEstimator;
-use le::estimators::FfmpegNaiveTempoEstimator;
-use le::estimators::TempoEstimator;
+use ellington::estimators::BellsonTempoEstimator;
+use ellington::estimators::FfmpegNaiveTempoEstimator;
+use ellington::estimators::TempoEstimator;
 
-fn check_callable(program: &'static str) -> Option<()> {
-    //TODO: this needs to be written to capture the various output streams, as it pollutes ellington's output otherwise
-    match execute!(r"which {program}", program = program) {
-        Err(_) => {
-            println!("Cannot find program '{}' - please make sure it's installed before running this command", program);
-            None
-        }
-        _ => Some(()),
-    }
-}
+// fn check_callable(program: &'static str) -> Option<()> {
+//     //TODO: this needs to be written to capture the various output streams, as it pollutes ellington's output otherwise
+//     match execute!(r"which {program}", program = program) {
+//         Err(_) => {
+//             println!("Cannot find program '{}' - please make sure it's installed before running this command", program);
+//             None
+//         }
+//         _ => Some(()),
+//     }
+// }
 
 // #[flame]
 fn init(matches: &ArgMatches) -> () {
@@ -70,16 +68,12 @@ fn init(matches: &ArgMatches) -> () {
     /*
         Step two, work out where to write the cache:
     */
-    // get the path we wish to write the library file to
-    let library_file: &str = match matches.value_of("LIBRARY") {
-        Some(l) => {
+    let library_file: &str = matches
+        .value_of("LIBRARY")
+        .and_then(|l| {
             info!("Writing library to: {:?}", l);
-            l
-        }
-        None => {
-            panic!("Got no library file, this should not happen!");
-        }
-    };
+            Some(l)
+        }).unwrap();
 
     // Create directories for the library file
     match Path::new(library_file)
@@ -104,6 +98,7 @@ fn init(matches: &ArgMatches) -> () {
         }
     };
 
+    // Write the computed library to the file
     library.write_to_file(&PathBuf::from(library_file));
 }
 
@@ -126,25 +121,35 @@ fn query(matches: &ArgMatches) -> () {
     /*
         1. Get the name of the audio file, and look up the ellington library that we've been passed. 
     */
-    // begin by checking to see what kind of output the user has requested.
-    let minimal = matches.occurrences_of("minimal") > 0;
-
-    // Get the name of the audio file, and log it.
-    let audiofile: &str = match matches.value_of("audiofile") {
-        Some(ap) => {
+    let audio_file: &str = matches
+        .value_of("audiofile")
+        .and_then(|ap| {
             info!("Processing audio file at {:?}", ap);
-            ap
-        }
-        None => {
-            panic!("Got no audio file, this should not happen!");
-        }
-    };
+            Some(ap)
+        }).unwrap();
+
+    let library_file: &str = matches
+        .value_of("LIBRARY")
+        .and_then(|l| {
+            info!("Writing library to: {:?}", l);
+            Some(l)
+        }).unwrap();
+
+    /*
+        2. Select the list of estimators that we want to query. 
+    */
+    let estimator: &str = matches
+        .value_of("estimators")
+        .and_then(|e| {
+            info!("Running estimator: {:?}", e);
+            Some(e)
+        }).unwrap();
 
     // Create the map for the estimators
     let mut map = BTreeMap::new();
 
     // See if the track as some existing bpm metadata, if not, give it a 0
-    let (mname, mtempo) = match TrackMetadata::from_file(Path::new(audiofile)) {
+    let (mname, mtempo) = match TrackMetadata::from_file(Path::new(audio_file)) {
         Some(tmd) => match tmd.bpm {
             Some(bpm) => ("adams", bpm),
             None => ("adams", 0),
@@ -154,7 +159,7 @@ fn query(matches: &ArgMatches) -> () {
     map.insert(String::from(mname), mtempo);
 
     // Run bellson, and try to add the result.
-    match BellsonTempoEstimator::run(&PathBuf::from(audiofile)) {
+    match BellsonTempoEstimator::run(&PathBuf::from(audio_file)) {
         Some(e) => {
             map.insert(String::from(BellsonTempoEstimator::NAME), e);
         }
@@ -162,7 +167,7 @@ fn query(matches: &ArgMatches) -> () {
     };
 
     // add the naive estimation
-    match FfmpegNaiveTempoEstimator::run(&PathBuf::from(audiofile)) {
+    match FfmpegNaiveTempoEstimator::run(&PathBuf::from(audio_file)) {
         Some(e) => {
             map.insert(String::from(FfmpegNaiveTempoEstimator::NAME), e);
         }
@@ -171,6 +176,9 @@ fn query(matches: &ArgMatches) -> () {
 
     // Construct some ellington data
     let ed = EllingtonData { algs: map };
+
+    // check to see what kind of output the user has requested.
+    let minimal = matches.occurrences_of("minimal") > 0;
 
     // Check the comment that we've got, and try to either
     //  a) update it, or
