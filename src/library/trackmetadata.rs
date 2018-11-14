@@ -25,12 +25,20 @@ impl TrackMetadata {
                             info!("Found ellington metadata: {:?}", ed);
                             algs.append(&mut ed.algs);
                         }
-                        None => info!("No ellington data found in comment."),
+                        None => info!("No ellington data found in comment: {:?}", c),
                     };
                 }
             }
             None => info!("Got no comments from metadata."),
         };
+        // check the track name (title) to see if it has metadata
+        match EllingtonData::parse(&self.name) {
+            Some(mut ed) => {
+                info!("Found ellington metadata: {:?}", ed);
+                algs.append(&mut ed.algs);
+            }
+            None => info!("No ellington data found in title: {:?}", self.name),
+        }
         EllingtonData { algs: algs }
     }
 

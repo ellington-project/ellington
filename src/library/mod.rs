@@ -276,4 +276,16 @@ impl Library {
             }
         }
     }
+
+    /* 
+        Look up a track from a path
+    */
+    pub fn lookup(self: &Self, path: &PathBuf) -> Option<&Entry> {
+        for entry in &self.tracks {
+            if entry.location == *path {
+                return Some(entry);
+            }
+        }
+        None
+    }
 }

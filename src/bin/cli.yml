@@ -50,15 +50,15 @@ subcommands:
                 takes_value: true
                 default_value: "~/Music/"
 
-            # - stdin: 
-            #     short: s 
-            #     long: stdin 
-            #     required: false 
-            #     takes_value: false 
-            #     help: Read audio track file paths from stdin
-            #     conflicts_with: empty
-            #     conflicts_with: itunes
-            #     conflicts_with: directory
+            - stdin: 
+                short: s 
+                long: stdin 
+                required: false 
+                takes_value: false 
+                help: Read audio track file paths from stdin
+                conflicts_with: empty
+                conflicts_with: itunes
+                conflicts_with: directory
 
            
     
@@ -75,25 +75,43 @@ subcommands:
                 help: The ellington library to read cached results from. 
                 required: false 
                 index: 2 
-                default_value: "~/.config/ellington/library.json"
+                default_value: ".config/ellington/library.json"
 
             # Metadata configuration options
+            - estimators: 
+                help: Run the following estimators, or query their results from the cache, and report the results. If not specified, "all" is assumed. 
+                required: false 
+                short: e 
+                long: estimators
+                takes_value: true 
+                possible_values: ['actual', 'naive', 'bellson', 'all']
+                default_value: all
+
+            - force: 
+                help: Force ellington to run the estimators - i.e. run the estimators specified even if there are already values in the cache or track metadata. 
+                required: false 
+                short: f
+                long: force
+                takes_value: false 
+
+            - prefer_source: 
+                help: If ellington data can be found in multiple sources (e.g. in the library, in the track comment, and the title, etc), which source should be considered "canonical". 
+                required: false 
+                short: o 
+                long: prefer
+                takes_value: true 
+                possible_values: ['library', 'title', 'comments', 'userdata']
+                default_value: library
+
+            # Metadata updating options
             - metadata: 
                 help: The source of the metadata string to update with ellington data. 
                 required: false 
                 short: m
                 long: metadata 
                 takes_value: true 
-                possible_values: ['title', 'comments', 'userdata']
-
-            - modification: 
-                help: The kind of modification behaviour to perform on "raw" metadata (i.e. metadata without any existing ellington data). If the metadata already contains ellington data, it will be updated.
-                required: false 
-                requires: metadata 
-                short: b
-                long: modification 
-                takes_value: true 
-                possible_values: ['prepend', 'append']
+                possible_values: ['none', 'title', 'comments', 'userdata']
+                default_value: none
 
             - userdata: 
                 help: User supplied metadata to update with ellington data. 
@@ -105,34 +123,14 @@ subcommands:
                 long: userdata
                 takes_value: true
 
-            - estimators: 
-                help: Run the following estimators, or query their results from the cache, and report the results. If not specified, "all" is assumed. 
+            - modification: 
+                help: The kind of modification behaviour to perform on "raw" metadata (i.e. metadata without any existing ellington data). If the metadata already contains ellington data, it will be updated.
                 required: false 
-                short: e 
-                long: estimators
+                requires: metadata 
+                short: b
+                long: modification 
                 takes_value: true 
-                possible_values: ['actual', 'naive', 'bellson', 'all']
-                default_value: all
-
-            - lazy: 
-                help: Run the query lazily - i.e. only run it if values cannot be found in the cache or the track metadata.
-                required: false 
-                short: l 
-                long: lazy 
-                takes_value: false
-                conflicts_with: eager
-
-            - eager: 
-                help: Eagerly run the estimators - i.e. run all the estimators even if there are already values in the cache or track metadata. 
-                required: false 
-                short: f
-                long: eager
-                takes_value: false 
-                conflicts_with: lazy
-
-            - prefer_source: 
-                help: If ellington data can be found in multiple sources (e.g. in the library, in the track comment, and the title, etc), which source should be considered "canonical". 
-                
+                possible_values: ['prepend', 'append']                
 
             # Reporting options. 
             - minimal: 
