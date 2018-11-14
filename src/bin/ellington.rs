@@ -159,12 +159,10 @@ fn query(matches: &ArgMatches) -> () {
     map.insert(String::from(mname), mtempo);
 
     // Run bellson, and try to add the result.
-    match BellsonTempoEstimator::run(&PathBuf::from(audio_file)) {
-        Some(e) => {
+    BellsonTempoEstimator::run(&PathBuf::from(audio_file))
+        .and_then(|e| {
             map.insert(String::from(BellsonTempoEstimator::NAME), e);
-        }
-        None => error!("Failed to run bellson estimator!"),
-    };
+        }).or_else(|| error!("Failed to run bellson estimator!"));
 
     // add the naive estimation
     match FfmpegNaiveTempoEstimator::run(&PathBuf::from(audio_file)) {
