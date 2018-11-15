@@ -1,6 +1,6 @@
 [package]
 name = "ellington"
-version = "0.2.17"
+version = "0.3.0"
 authors = ["Adam Harries <harries.adam@gmail.com>"]
 readme = "README.md"
 license = "GPL-3.0-or-later"
@@ -8,7 +8,7 @@ description = "An experimental testbed and set of tools for the automatic tempo 
 
 
 [lib]
-name = "libellington"
+name = "ellington"
 path = "src/lib.rs"
 
 [dependencies]

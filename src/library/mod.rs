@@ -8,6 +8,8 @@ use library::ellingtondata::*;
 use library::filemetadata::FileMetadata;
 use library::trackmetadata::*;
 
+use types::*;
+
 use percent_encoding;
 use plist::Plist;
 use std::collections::BTreeSet;
@@ -21,7 +23,7 @@ use walkdir::WalkDir;
 
 use serde_json;
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Entry {
     pub location: PathBuf,
     pub filedata: FileMetadata,
@@ -36,7 +38,7 @@ impl Entry {
         // TODO: Implement different readers here!
         let metadata = TrackMetadata::from_file(&path);
         let eldata = match &metadata {
-            Some(m) => m.as_ellington_metadata(),
+            Some(m) => m.comment_metadata() + m.title_metadata(),
             None => EllingtonData::empty(),
         };
         Entry {
@@ -48,7 +50,7 @@ impl Entry {
     }
 }
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Library {
     pub tracks: Vec<Entry>,
 }
@@ -92,8 +94,7 @@ impl Library {
                 entries += 1;
 
                 Some(Entry::from_file(location))
-            })
-            .collect();
+            }).collect();
 
         info!(
             "Successfully read {} tracks from the itunes library, out of {} itunes entries",
@@ -119,8 +120,7 @@ impl Library {
                 info!("Got line: {:?}", l);
                 lines += 1;
                 l
-            })
-            .filter_map(|l| l.ok())
+            }).filter_map(|l| l.ok())
             .map(|line| Entry::from_file(PathBuf::from(line)))
             .collect();
         info!(
@@ -128,6 +128,14 @@ impl Library {
             tracks.len(),
             lines
         );
+        Some(Library { tracks: tracks })
+    }
+
+    /*
+        Initialise an empty library 
+    */
+    pub fn from_empty() -> Option<Library> {
+        let tracks: Vec<Entry> = vec![];
         Some(Library { tracks: tracks })
     }
 
@@ -159,15 +167,13 @@ impl Library {
                 }
                 entries += 1;
                 e
-            })
-            .filter_map(|e| e.ok())
+            }).filter_map(|e| e.ok())
             .filter_map(|e| FileMetadata::seq_audio_file(e.clone(), &e.path()))
             .map(|f| {
                 info!("Got audio file: {:?}", f);
                 audio_files += 1;
                 f
-            })
-            .map(|f| Entry::from_file(f.path().to_path_buf()))
+            }).map(|f| Entry::from_file(f.path().to_path_buf()))
             .collect();
 
         info!(
@@ -236,14 +242,14 @@ impl Library {
      */
     pub fn run_pipeline<P: TempoEstimator>(self: &mut Self) -> () {
         info!("Running tempo estimator over ellington library.");
-        info!("Using estimator: {:?}", P::NAME);
+        info!("Using estimator: {:?}", P::ALGORITHM);
         // iterate over our tracks, and run the pipeline
         let mut ix = 0;
         let lx = self.tracks.len();
         for entry in &mut self.tracks {
             info!(
                 "Running pipeline {:?} on track {:?}/{:?}:\n\t {:?}",
-                P::NAME,
+                P::ALGORITHM,
                 ix,
                 lx,
                 entry.location
@@ -264,12 +270,43 @@ impl Library {
                     entry
                         .eldata
                         .algs
-                        .insert(P::NAME.to_string(), calculated_bpm);
+                        .insert(P::ALGORITHM, BpmE::Bpm(calculated_bpm));
                 }
                 None => {
                     error!("Failed to calculate bpm for entry: {:?}", entry);
                 }
             }
+        }
+    }
+
+    /* 
+        Look up a track from a path
+    */
+    pub fn lookup(self: &Self, path: &PathBuf) -> Option<&Entry> {
+        for entry in &self.tracks {
+            if entry.location == *path {
+                return Some(entry);
+            }
+        }
+        None
+    }
+
+    /*
+        Set an entry to a new one. 
+    */
+    pub fn update(self: &mut Self, path: &PathBuf, eldata: EllingtonData) -> () {
+        let mut updated = false;
+        for entry in &mut self.tracks {
+            if entry.location == *path {
+                entry.eldata = eldata.clone();
+                updated = true;
+                break;
+            }
+        }
+        if !updated {
+            let mut et = Entry::from_file(PathBuf::from(path));
+            et.eldata = eldata;
+            self.tracks.push(et);
         }
     }
 }

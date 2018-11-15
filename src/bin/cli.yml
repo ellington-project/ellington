@@ -1,56 +1,188 @@
 name: ellington
-version: "0.2.0"
+version: "0.3.0"
 author: Adam Harries <harries.adam@gmail.com>
 about: Automated BPM calculation for swing dance DJs
 subcommands:
-    - init: 
-        about: Initialises an ellington library
-        args: 
+    - init:
+        about: Initalise an ellington "library" - essentially a cache for computed estimator values
+        args:
+            - SOURCE:
+                help: The source of the tracks with which to init the library.
+                required: false
+                index: 1
+                default_value: empty
+                possible_values: ['empty', 'stdin', 'directory', 'itunes']
+
+
             - LIBRARY:
                 help: The library file to initialise
-                required: true
-                index: 1
+                required: false
+                index: 2
+                default_value: ".config/ellington/library.json"
+
+
+            # - empty:
+            #     short: e
+            #     long: empty
+            #     required: false
+            #     takes_value: false
+            #     help: Initialise an empty library, that will later be filled with query information.
+            #     conflicts_with: itunes
+            #     conflicts_with: directory
+            #     conflicts_with: stdin
+
             - itunes:
                 short: i
                 long: itunes
                 value_name: itunes
-                required: false
+                required_if:
+                    - [SOURCE, itunes]
                 takes_value: true
                 help: The iTunes library file with track information.
-                conflicts_with: directory
-            - directory: 
-                short: d 
+
+            - directory:
+                help: A directory containing (recursively) audio files to process
+                short: d
                 long: directory
                 value_name: directory
-                required: false
+                required_if:
+                    - [SOURCE, directory]
                 takes_value: true
-                help: A directory containing (recursively) audio files to process
+                default_value: "~/Music/"
+
+            - stdin:
+                short: s
+                long: stdin
+                required: false
+                takes_value: false
+                help: Read audio track file paths from stdin
+                conflicts_with: empty
                 conflicts_with: itunes
-    - bpm: 
-        about: Run a bpm algorithm across an ellington library
-        args: 
-            - LIBRARY:
-                help: The library file from which to process tracks
+                conflicts_with: directory
+
+    - query:
+        about: Query a file for tempo information, stored either in the file, in cache, or obtained from estimators.
+        args:
+
+            - AUDIOFILE:
+                help: The audio file about which to query information.
                 required: true
                 index: 1
-    - oneshot: 
-        about: Run a tempo estimation algorithm on a single audio track with a comment, and add data to the comment
-        version: "0.1.0"
-        author: Adam Harries <harries.adam@gmail.com> 
-        args: 
-            - audiofile: 
-                help: The audio file to process
-                short: a
-                long: audiofile
-                required: true 
-                takes_value: true
-            - comment: 
-                help: The existing comment in the audio file. This command will append calculated data to this comment. If no comment is specified, ellington will return a fresh metadata block.
-                short: c 
-                long: comment
+
+            - LIBRARY:
+                help: The ellington library to read cached results from.
                 required: false
-                takes_value: true 
-            - minimal: 
-                help: Print the output using the minimal formatter. 
-                short: m 
+                index: 2
+                default_value: ".config/ellington/library.json"
+
+            # Estimator configuration options
+            - estimators:
+                help: Run the following estimators, or query their results from the cache, and report the results. If not specified, "all" is assumed.
+                required: false
+                display_order: 3
+                short: e
+                long: estimators
+                takes_value: true
+                possible_values: ['actual', 'naive', 'bellson', 'all']
+                default_value: all
+
+            - force:
+                help: Force ellington to run the estimators - i.e. run the estimators specified even if there are already values in the cache or track metadata.
+                required: false
+                display_order: 4
+                short: f
+                long: force
+                takes_value: false
+                conflicts_with: never
+
+            - never:
+                help: Instruct ellington to *never* run the estimators - i.e. only attempt to read values from the cache, and return 'na' if they do not exist.
+                required: false
+                display_order: 5
+                short: n
+                long: never
+                takes_value: false
+                conflicts_with: force
+
+            - prefer_source:
+                help: If ellington data can be found in multiple sources (e.g. in the library, in the track comment, and the title, etc), which source should be considered "canonical".
+                required: false
+                display_order: 6
+                short: r
+                long: prefer
+                takes_value: true
+                possible_values: ['library', 'title', 'comments', 'userdata']
+                default_value: library
+
+            # Reporting options
+            - output:
+                help: Whether to output the results using a substitution (updating), or by reporting/dumping the results (report)
+                required: false
+                display_order: 7
+                short: o
+                long: output
+                takes_value: true
+                possible_values: ['report', 'update']
+                default_value: report
+
+            # Dumping styling options
+            - format:
+                help: The format to output ellington data when it is reported/dumped.
+                required: false
+                display_order: 8
+                short: s
+                long: format
+                takes_value: true
+                possible_values: ['json', 'human']
+                default_value: json
+
+            # Metadata updating options, including the userdata.
+            - metadata:
+                help: The source of the metadata string to update with ellington data. By default, it will simply print the data.
+                required: false
+                display_order: 9
+                short: m
+                long: metadata
+                takes_value: true
+                possible_values: ['none', 'title', 'comments', 'userdata']
+                default_value: none
+
+            - userdata:
+                help: User supplied metadata to update with ellington data.
+                required: false
+                display_order: 10
+                requires: metadata
+                required_if:
+                    - [metadata, userdata]
+                short: u
+                long: userdata
+                takes_value: true
+                required_if:
+                    - ['metadata', 'userdata']
+
+            - modification:
+                help: The kind of modification behaviour to perform on "raw" metadata (i.e. metadata without any existing ellington data). If the metadata already contains ellington data, it will be updated.
+                required: false
+                display_order: 11
+                requires: metadata
+                short: b
+                long: modification
+                takes_value: true
+                possible_values: ['prepend', 'append']
+                default_value: prepend
+
+            - minimal:
+                help: If updating metadata, or writing metadata to a comment/title, use the minimal printed form to save text space.
+                required: false
+                display_order: 12
+                short: a
                 long: minimal
+                takes_value: false
+
+            # Caching/writing options.
+            - pure:
+                help: Run the query command in a "pure" manner - i.e. without side effects, and without updating the library.
+                required: false
+                display_order: 12
+                short: p
+                long: pure

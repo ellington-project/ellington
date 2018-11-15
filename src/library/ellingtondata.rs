@@ -2,9 +2,11 @@ use nom;
 use regex::Regex;
 use serde_json;
 use std::collections::BTreeMap;
+use std::ops;
+use types::*;
 
-pub type Algorithm = String;
-pub type Bpm = i64;
+pub type Algorithm = AlgorithmE;
+pub type Bpm = BpmE;
 
 #[derive(Debug)]
 pub enum UpdateError {
@@ -15,7 +17,7 @@ pub type UpdateResult<T> = Result<T, UpdateError>;
 
 #[derive(Serialize, Deserialize, Debug, Clone, PartialEq, Eq)]
 pub struct EllingtonData {
-    pub algs: BTreeMap<Algorithm, Bpm>, // pub algs: Vec<BpmInfo>
+    pub algs: BTreeMap<Algorithm, Bpm>,
 }
 
 impl EllingtonData {
@@ -44,9 +46,13 @@ impl EllingtonData {
                 s.push_str(",");
             }
             if minimal {
-                s.push_str(&format!("{}~{}", algorithm.chars().next().unwrap(), bpm));
+                s.push_str(&format!(
+                    "{}~{}",
+                    algorithm.print().chars().next().unwrap(),
+                    bpm
+                ));
             } else {
-                s.push_str(&format!(" {}~{}", algorithm, bpm));
+                s.push_str(&format!(" {}~{}", algorithm.print(), bpm));
             }
         }
 
@@ -59,8 +65,16 @@ impl EllingtonData {
         Ok(s)
     }
 
-    pub fn as_json(self: &Self) -> Option<String> {
+    pub fn format_json(self: &Self) -> Option<String> {
         serde_json::to_string(self).ok()
+    }
+
+    pub fn format_readable(self: &Self) -> Option<String> {
+        let mut output = String::new();
+        for (alg, tmpo) in &self.algs {
+            output += &format!("Algorithm: {}, Tempo: {}\n", alg, tmpo);
+        }
+        Some(output)
     }
 
     pub fn from_json<S: Into<String>>(json: S) -> Option<EllingtonData> {
@@ -75,15 +89,17 @@ impl EllingtonData {
     }
 
     named!(parse_ed_fragment<&str, Vec<(&str, &str)>>,
-        terminated!(preceded!(tag_s!("[ed|"),
+        terminated!(preceded!(tag!("[ed|"),
         separated_list!(
-            tag_s!(","),
+            tag!(","),
             separated_pair!(
-            ws!(nom::alpha),
-            tag_s!("~"), 
-            ws!(nom::digit)
+                ws!(nom::alpha),
+                tag!("~"), 
+                ws!(
+                    alt!(nom::digit| tag!("na"))
+                )
             )
-        )), tag_s!("|]"))
+        )), tag!("|]"))
     );
 
     // #[flame]
@@ -95,9 +111,8 @@ impl EllingtonData {
             Ok((_, pairs)) => {
                 let mut map = BTreeMap::new();
                 for (algorithm, bpm) in pairs {
-                    // unwrapping should be safe here, as we've already parsed
-                    // digits, which we know should form an int!
-                    map.insert(String::from(algorithm), bpm.parse::<i64>().unwrap());
+                    // It would be good to think more deeply about what BpmE should do when it fails, as at the moment it always returns "NA", which might not be the best solution...
+                    map.insert(AlgorithmE::parse(algorithm), BpmE::parse(bpm));
                 }
 
                 Some(EllingtonData { algs: map })
@@ -113,7 +128,7 @@ impl EllingtonData {
     pub fn update_data(
         self: &Self,
         comment: &String,
-        append: bool,
+        append: UpdateBehaviour,
         minimal: bool,
     ) -> UpdateResult<String> {
         let serialised = self.format(minimal)?;
@@ -129,14 +144,19 @@ impl EllingtonData {
                     .replace(comment.as_str(), serialised.as_str())
                     .to_string()
             }
-            None => {
-                if append {
+            None => match append {
+                UpdateBehaviour::Append => {
                     info!("Appending data, none found in comment");
                     format!("{} {}", comment, serialised)
-                } else {
+                }
+                UpdateBehaviour::Prepend => {
+                    info!("Prepending data, none found in comment");
+                    format!("{} {}", serialised, comment)
+                }
+                _ => {
                     return Err(UpdateError::NoDataInComment);
                 }
-            }
+            },
         };
         Ok(new_comment)
     }
@@ -158,6 +178,15 @@ impl EllingtonData {
     }
 }
 
+impl ops::Add<EllingtonData> for EllingtonData {
+    type Output = EllingtonData;
+    fn add(self, rhs: EllingtonData) -> EllingtonData {
+        let mut algs: BTreeMap<Algorithm, Bpm> = self.algs.clone();
+        algs.append(&mut rhs.algs.clone());
+        EllingtonData { algs: algs }
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::UpdateError::*;
@@ -165,62 +194,118 @@ mod tests {
 
     #[test]
     fn serialise() {
-        let ed = EllingtonData::with_algorithm(String::from("TestAlg"), 842);
+        let ed = EllingtonData::with_algorithm(AlgorithmE::parse("unknown"), BpmE::Bpm(842));
         let fm = ed.format(false);
         match fm {
-            Ok(s) => assert_eq!(s, "[ed| TestAlg~842 |]"),
+            Ok(s) => assert_eq!(s, "[ed| unknown~842 |]"),
             Err(_) => assert!(false),
         }
     }
 
     mod deserialise {
         use super::*;
+        mod good {
+            use super::*;
+            #[test]
+            fn simple() {
+                let ed =
+                    EllingtonData::with_algorithm(AlgorithmE::parse("unknown"), BpmE::Bpm(842));
+                let deser = EllingtonData::parse(&"[ed| unknown~842 |]".to_string());
+                match deser {
+                    Some(e) => assert_eq!(ed, e),
+                    None => assert!(false),
+                }
+            }
 
-        #[test]
-        fn simple() {
-            let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
-            let deser = EllingtonData::parse(&"[ed| TestAlg~842 |]".to_string());
-            match deser {
-                Some(e) => assert_eq!(ed, e),
-                None => assert!(false),
+            #[test]
+            fn post() {
+                let ed =
+                    EllingtonData::with_algorithm(AlgorithmE::parse("unknown"), BpmE::Bpm(842));
+                let deser = EllingtonData::parse(
+                    &"Some, tags, [ed. or other, data [ed| unknown~842 |]".to_string(),
+                );
+                match deser {
+                    Some(e) => assert_eq!(ed, e),
+                    None => assert!(false),
+                }
+            }
+
+            #[test]
+            fn pre() {
+                let ed =
+                    EllingtonData::with_algorithm(AlgorithmE::parse("unknown"), BpmE::Bpm(842));
+                let deser = EllingtonData::parse(
+                    &"[ed| unknown~842 |] Some, tags, [ed. or other, data".to_string(),
+                );
+                match deser {
+                    Some(e) => assert_eq!(ed, e),
+                    None => assert!(false),
+                }
+            }
+
+            #[test]
+            fn mid() {
+                let ed =
+                    EllingtonData::with_algorithm(AlgorithmE::parse("unknown"), BpmE::Bpm(842));
+                let deser = EllingtonData::parse(
+                    &"Some, tags, [ed. [ed| unknown~842 |] or other, data".to_string(),
+                );
+                match deser {
+                    Some(e) => assert_eq!(ed, e),
+                    None => assert!(false),
+                }
             }
         }
 
-        #[test]
-        fn post() {
-            let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
-            let deser = EllingtonData::parse(
-                &"Some, tags, [ed. or other, data [ed| TestAlg~842 |]".to_string(),
-            );
-            match deser {
-                Some(e) => assert_eq!(ed, e),
-                None => assert!(false),
+        mod bad {
+            use super::*;
+            #[test]
+            fn simple() {
+                let ed = EllingtonData::with_algorithm(AlgorithmE::parse("unknown"), BpmE::NA);
+                let deser = EllingtonData::parse(&"[ed| unknown~na |]".to_string());
+                match deser {
+                    Some(e) => assert_eq!(ed, e),
+                    None => assert!(false),
+                }
+            }
+
+            #[test]
+            fn post() {
+                let ed = EllingtonData::with_algorithm(AlgorithmE::parse("unknown"), BpmE::NA);
+                let deser = EllingtonData::parse(
+                    &"Some, tags, [ed. or other, data [ed| unknown~na |]".to_string(),
+                );
+                match deser {
+                    Some(e) => assert_eq!(ed, e),
+                    None => assert!(false),
+                }
+            }
+
+            #[test]
+            fn pre() {
+                let ed = EllingtonData::with_algorithm(AlgorithmE::parse("unknown"), BpmE::NA);
+                let deser = EllingtonData::parse(
+                    &"[ed| unknown~na |] Some, tags, [ed. or other, data".to_string(),
+                );
+                match deser {
+                    Some(e) => assert_eq!(ed, e),
+                    None => assert!(false),
+                }
+            }
+
+            #[test]
+            fn mid() {
+                let ed = EllingtonData::with_algorithm(AlgorithmE::parse("unknown"), BpmE::NA);
+                let deser = EllingtonData::parse(
+                    &"Some, tags, [ed. [ed| unknown~na |] or other, data".to_string(),
+                );
+                match deser {
+                    Some(e) => assert_eq!(ed, e),
+                    None => assert!(false),
+                }
             }
         }
 
-        #[test]
-        fn pre() {
-            let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
-            let deser = EllingtonData::parse(
-                &"[ed| TestAlg~842 |] Some, tags, [ed. or other, data".to_string(),
-            );
-            match deser {
-                Some(e) => assert_eq!(ed, e),
-                None => assert!(false),
-            }
-        }
-
-        #[test]
-        fn mid() {
-            let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
-            let deser = EllingtonData::parse(
-                &"Some, tags, [ed. [ed| TestAlg~842 |] or other, data".to_string(),
-            );
-            match deser {
-                Some(e) => assert_eq!(ed, e),
-                None => assert!(false),
-            }
-        }
     }
 
     mod clear {
@@ -298,9 +383,9 @@ mod tests {
     // <<<<<<< HEAD
     //     #[test]
     //     fn append_empty_comment() {
-    //         let ed = EllingtonData::with_algorithm("TestAlg".to_string(), 842);
+    //         let ed = EllingtonData::with_algorithm(AlgorithmE::parse("unknown"), BpmE::Bpm(842));
     //         let comment: String = "".to_string();
-    //         let expected: String = "[ed| TestAlg~842 |]".to_string();
+    //         let expected: String = "[ed| unknown~842 |]".to_string();
 
     //         match ed.update_data(&comment, true) {
     //             Ok(new_comment) => {
