@@ -76,3 +76,19 @@ impl fmt::Display for BpmE {
         }
     }
 }
+
+pub enum UpdateBehaviour {
+    FailIfNone,
+    Append,
+    Prepend,
+}
+
+impl UpdateBehaviour {
+    pub fn parse(st: &str) -> UpdateBehaviour {
+        match st {
+            "append" => UpdateBehaviour::Append,
+            "prepend" => UpdateBehaviour::Prepend,
+            _ => UpdateBehaviour::FailIfNone,
+        }
+    }
+}

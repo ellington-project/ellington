@@ -108,18 +108,27 @@ fn query_estimator(
     algorithm: AlgorithmE,
     caches: &Vec<EllingtonData>,
     force: bool,
+    never: bool,
     f: impl Fn() -> Option<i64>,
 ) -> BpmE {
+    // Force will never conflict with never, so we don't need to check it as well
     if force {
         return BpmE::from_option(f());
     }
+    // Run through the caches to search for the algorithm
     for cache in caches {
         match cache.algs.get(&algorithm) {
             Some(tmpo) => return tmpo.clone(),
             _ => {}
         }
     }
-    BpmE::from_option(f())
+
+    // If it's not found, run the estimator, so long as 'never' has not been specified.
+    if never {
+        BpmE::NA
+    } else {
+        BpmE::from_option(f())
+    }
 }
 
 fn query(matches: &ArgMatches) -> () {
@@ -134,9 +143,9 @@ fn query(matches: &ArgMatches) -> () {
             > Append the result to the list of estimators 
         5 - Write to the library if --pure is not specified
         6 - Print the output: 
-            > If json, print the output in json
-            > If readable, print the output human readably
-            > else, serialise (checking for --minimal), and print the result.
+            > Check to see what kind of output the user wants: 
+                . If substitution, substitute the ellingtondata with new data, in the format requested
+                . If report, check what format, and print it.
     */
 
     /*
@@ -218,6 +227,9 @@ fn query(matches: &ArgMatches) -> () {
     // Check to see if we need to forcibly run them.
     let force = matches.occurrences_of("force") > 0;
 
+    // Or if we're not allowed to run them!
+    let never = matches.occurrences_of("never") > 0;
+
     /*
         4. Start iterating over estimators. 
     */
@@ -236,7 +248,7 @@ fn query(matches: &ArgMatches) -> () {
 
     // Start with the "actual" value
     if estimator == AlgorithmE::Actual.print() || estimator == "all" {
-        let tempo = query_estimator(AlgorithmE::Actual, &caches, force, || {
+        let tempo = query_estimator(AlgorithmE::Actual, &caches, force, never, || {
             TrackMetadata::from_file(Path::new(audio_file)).and_then(|tmd| tmd.bpm)
         });
         ed.algs.insert(AlgorithmE::Actual, tempo);
@@ -244,7 +256,7 @@ fn query(matches: &ArgMatches) -> () {
 
     // Run bellson, and try to add the result.
     if estimator == AlgorithmE::Bellson.print() || estimator == "all" {
-        let tempo = query_estimator(AlgorithmE::Actual, &caches, force, || {
+        let tempo = query_estimator(AlgorithmE::Actual, &caches, force, never, || {
             BellsonTempoEstimator::run(&PathBuf::from(audio_file))
         });
         ed.algs.insert(BellsonTempoEstimator::ALGORITHM, tempo);
@@ -252,7 +264,7 @@ fn query(matches: &ArgMatches) -> () {
 
     // Run the naive estimator
     if estimator == AlgorithmE::Naive.print() || estimator == "all" {
-        let tempo = query_estimator(AlgorithmE::Naive, &caches, force, || {
+        let tempo = query_estimator(AlgorithmE::Naive, &caches, force, never, || {
             FfmpegNaiveTempoEstimator::run(&PathBuf::from(audio_file))
         });
         ed.algs.insert(FfmpegNaiveTempoEstimator::ALGORITHM, tempo);
@@ -277,37 +289,67 @@ fn query(matches: &ArgMatches) -> () {
 
     /*
         6 - Print the output: 
-            > If json, print the output in json
-            > If readable, print the output human readably
-            > else, serialise (checking for --minimal), and print the result.
+            > Check to see what kind of output the user wants: 
+                . If substitution, substitute the ellingtondata with new data, in the format requested
+                . If report, check what format, and print it.
     */
-    // check to see what kind of output the user has requested.
-    let minimal = matches.occurrences_of("minimal") > 0;
+    // check to see what output behaviour the user has requested.
 
-    // Check the comment that we've got, and try to either
-    //  a) update it, or
-    //  b) create a new one.
-    match matches.value_of("comment") {
-        Some(c) => {
-            match ed.update_data(&String::from(c), true, minimal) {
-                Ok(new_comment) => {
-                    info!("Got new comment: {:?}", new_comment);
-                    println!("{}", new_comment);
+    match matches.value_of("output") {
+        Some("update") => {
+            info!("Updating metadata passed in.");
+            let minimal = matches.occurrences_of("minimal") > 0;
+            let modification = UpdateBehaviour::parse(matches.value_of("modification").unwrap());
+
+            let trmeta =
+                track_metadata.unwrap_or_else(|| panic!("No metadata found for track, failing!"));
+            match matches.value_of("metadata") {
+                Some("none") => {
+                    // If none - just print the formatted output
+                    println!("{}", ed.format(minimal).unwrap())
                 }
-                f => {
-                    info!("Updating procedure failed for reason: {:?}", f);
+                Some("title") => {
+                    // If title, update the title
+                    info!("Updating title data.");
+                    match ed.update_data(&trmeta.name, modification, minimal) {
+                        Ok(s) => println!("{}", s),
+                        Err(e) => panic!("Could not update metadata in string! Error: {:?}", e),
+                    }
                 }
-            };
+                Some("comments") => {
+                    info!("Updating data from comment 0!");
+                    match trmeta.comments {
+                        Some(v) => match ed.update_data(&v[0], modification, minimal) {
+                            Ok(s) => println!("{}", s),
+                            Err(e) => panic!("Could not update metadata in string! Error: {:?}", e),
+                        },
+                        _ => println!("{}", ed.format(minimal).unwrap()),
+                    }
+                }
+                Some("userdata") => {
+                    // Read the userdata that we have been passed.
+                    match matches.value_of("userdata") {
+                        Some(u) => match ed.update_data(&String::from(u), modification, minimal) {
+                            Ok(s) => println!("{}", s),
+                            Err(e) => panic!("Could not update metadata in string! Error: {:?}", e),
+                        },
+                        _ => println!("{}", ed.format(minimal).unwrap()),
+                    }
+                }
+                _ => panic!("Metadata not recognised or given!"),
+            }
         }
-        None => match ed.format(minimal) {
-            Ok(new_comment) => {
-                info!("Got new comment: {:?}", new_comment);
-                println!("{}", new_comment);
+        Some("report") => {
+            info!("Printing data for parsing/reading.");
+            match matches.value_of("format") {
+                Some("json") => println!("{}", ed.format_json().unwrap()),
+                Some("human") => print!("{}", ed.format_readable().unwrap()),
+                _ => panic!("Format data not recognised or given!"),
             }
-            f => {
-                info!("Updating procedure failed for reason: {:?}", f);
-            }
-        },
+        }
+        _ => {
+            panic!("Output behaviour not recognised or given!");
+        }
     };
 }
 

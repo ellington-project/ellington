@@ -17,7 +17,7 @@ pub type UpdateResult<T> = Result<T, UpdateError>;
 
 #[derive(Serialize, Deserialize, Debug, Clone, PartialEq, Eq)]
 pub struct EllingtonData {
-    pub algs: BTreeMap<Algorithm, Bpm>, // pub algs: Vec<BpmInfo>
+    pub algs: BTreeMap<Algorithm, Bpm>,
 }
 
 impl EllingtonData {
@@ -65,8 +65,16 @@ impl EllingtonData {
         Ok(s)
     }
 
-    pub fn as_json(self: &Self) -> Option<String> {
+    pub fn format_json(self: &Self) -> Option<String> {
         serde_json::to_string(self).ok()
+    }
+
+    pub fn format_readable(self: &Self) -> Option<String> {
+        let mut output = String::new();
+        for (alg, tmpo) in &self.algs {
+            output += &format!("Algorithm: {}, Tempo: {}\n", alg, tmpo);
+        }
+        Some(output)
     }
 
     pub fn from_json<S: Into<String>>(json: S) -> Option<EllingtonData> {
@@ -120,7 +128,7 @@ impl EllingtonData {
     pub fn update_data(
         self: &Self,
         comment: &String,
-        append: bool,
+        append: UpdateBehaviour,
         minimal: bool,
     ) -> UpdateResult<String> {
         let serialised = self.format(minimal)?;
@@ -136,14 +144,19 @@ impl EllingtonData {
                     .replace(comment.as_str(), serialised.as_str())
                     .to_string()
             }
-            None => {
-                if append {
+            None => match append {
+                UpdateBehaviour::Append => {
                     info!("Appending data, none found in comment");
                     format!("{} {}", comment, serialised)
-                } else {
+                }
+                UpdateBehaviour::Prepend => {
+                    info!("Prepending data, none found in comment");
+                    format!("{} {}", serialised, comment)
+                }
+                _ => {
                     return Err(UpdateError::NoDataInComment);
                 }
-            }
+            },
         };
         Ok(new_comment)
     }
