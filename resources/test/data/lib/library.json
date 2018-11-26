@@ -1,7 +1,7 @@
 {
   "tracks": [
     {
-      "location": "data/flac/Milenberg Joys - The 6-Alarm Six - Rappolo.flac",
+      "location": "resources/test/data/flac/Milenberg Joys - The 6-Alarm Six - Rappolo.flac",
       "filedata": {
         "ftype": "Flac"
       },
@@ -25,7 +25,7 @@
       }
     },
     {
-      "location": "data/flac/Countless Blues - The Kansas City Six - Eddie Druham.flac",
+      "location": "resources/test/data/flac/Countless Blues - The Kansas City Six - Eddie Druham.flac",
       "filedata": {
         "ftype": "Flac"
       },
@@ -49,7 +49,7 @@
       }
     },
     {
-      "location": "data/flac/09 - Jumpin' at the Woodside - Count Basie And His Orchestra.flac",
+      "location": "resources/test/data/flac/09 - Jumpin' at the Woodside - Count Basie And His Orchestra.flac",
       "filedata": {
         "ftype": "Flac"
       },
@@ -73,7 +73,7 @@
       }
     },
     {
-      "location": "data/mp3/09 - Jumpin' at the Woodside - Count Basie And His Orchestra.mp3",
+      "location": "resources/test/data/mp3/09 - Jumpin' at the Woodside - Count Basie And His Orchestra.mp3",
       "filedata": {
         "ftype": "Mp3"
       },
@@ -97,7 +97,7 @@
       }
     },
     {
-      "location": "data/mp3/Milenberg Joys - The 6-Alarm Six - Rappolo.mp3",
+      "location": "resources/test/data/mp3/Milenberg Joys - The 6-Alarm Six - Rappolo.mp3",
       "filedata": {
         "ftype": "Mp3"
       },
@@ -124,7 +124,7 @@
       }
     },
     {
-      "location": "data/mp3/Countless Blues - The Kansas City Six - Eddie Druham.mp3",
+      "location": "resources/test/data/mp3/Countless Blues - The Kansas City Six - Eddie Druham.mp3",
       "filedata": {
         "ftype": "Mp3"
       },
