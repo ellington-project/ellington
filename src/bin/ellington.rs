@@ -115,6 +115,8 @@ fn query_estimator(
     never: bool,
     f: impl Fn() -> Option<i64>,
 ) -> BpmE {
+    info!("Querying estimator '{}'", algorithm.print());
+
     // Force will never conflict with never, so we don't need to check it as well
     if force {
         return BpmE::from_option(f());
@@ -122,8 +124,9 @@ fn query_estimator(
     // Run through the caches to search for the algorithm
     for cache in caches {
         match cache.algs.get(&algorithm) {
+            Some(BpmE::NA) => info!("NA found in cache, ignoring"),
             Some(tmpo) => return tmpo.clone(),
-            _ => {}
+            _ => info!("Algorithm not in cache"),
         }
     }
 
@@ -204,6 +207,10 @@ fn query(matches: &ArgMatches) -> () {
             })
     });
 
+    // Get the (cached) track metadata from the library
+    let library_trackdata: Option<TrackMetadata> =
+        library_entry.clone().and_then(|e| e.metadata.clone());
+
     // Get the ellington data from that entry
     let library_eldata: EllingtonData = library_entry
         .and_then(|e| Some(e.eldata.clone()))
@@ -240,10 +247,10 @@ fn query(matches: &ArgMatches) -> () {
         .unwrap();
 
     // Check to see if we need to forcibly run them.
-    let force = matches.occurrences_of("force") > 0;
+    let force: bool = matches.occurrences_of("force") > 0;
 
     // Or if we're not allowed to run them!
-    let never = matches.occurrences_of("never") > 0;
+    let never: bool = matches.occurrences_of("never") > 0;
 
     /*
         4. Start iterating over estimators.
@@ -251,7 +258,7 @@ fn query(matches: &ArgMatches) -> () {
 
     // Create the ellington data for the estimators. This is where we will store the results of running our estimators.
     // Initialise it based on the "prefer" argument on the command line.
-    let caches = match matches.value_of("prefer_source").unwrap() {
+    let caches: Vec<EllingtonData> = match matches.value_of("prefer_source").unwrap() {
         "library" => vec![library_eldata, title_eldata, comment_eldata],
         "title" => vec![title_eldata, library_eldata, comment_eldata],
         "comments" => vec![comment_eldata, library_eldata, title_eldata],
@@ -262,6 +269,7 @@ fn query(matches: &ArgMatches) -> () {
     let mut ed = EllingtonData::empty();
 
     // Start with the "actual" value
+    // TODO: Should be able to read this from the library as well!
     if estimator == AlgorithmE::Actual.print() || estimator == "all" {
         info!("Running estimator {}", AlgorithmE::Actual.print());
         let tempo = query_estimator(AlgorithmE::Actual, &caches, force, never, || {
@@ -293,7 +301,7 @@ fn query(matches: &ArgMatches) -> () {
     /*
         5 - Write to the library if --pure is not specified
     */
-    if !matches.occurrences_of("force") > 0 {
+    if !matches.occurrences_of("pure") > 0 {
         // Check that we have a library in the first place!
         // This unwrap should be guaranteed to be safe!
         let mut new_library = library

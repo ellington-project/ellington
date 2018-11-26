@@ -1,0 +1,154 @@
+{
+  "tracks": [
+    {
+      "location": "data/flac/Milenberg Joys - The 6-Alarm Six - Rappolo.flac",
+      "filedata": {
+        "ftype": "Flac"
+      },
+      "metadata": {
+        "name": "Milenberg Joys",
+        "bpm": 230,
+        "comments": []
+      },
+      "eldata": {
+        "algs": {
+          "Actual": {
+            "Bpm": 230
+          },
+          "Naive": {
+            "Bpm": 236
+          },
+          "Bellson": {
+            "Bpm": 230
+          }
+        }
+      }
+    },
+    {
+      "location": "data/flac/Countless Blues - The Kansas City Six - Eddie Druham.flac",
+      "filedata": {
+        "ftype": "Flac"
+      },
+      "metadata": {
+        "name": "Countless Blues",
+        "bpm": 195,
+        "comments": []
+      },
+      "eldata": {
+        "algs": {
+          "Actual": {
+            "Bpm": 195
+          },
+          "Naive": {
+            "Bpm": 193
+          },
+          "Bellson": {
+            "Bpm": 197
+          }
+        }
+      }
+    },
+    {
+      "location": "data/flac/09 - Jumpin' at the Woodside - Count Basie And His Orchestra.flac",
+      "filedata": {
+        "ftype": "Flac"
+      },
+      "metadata": {
+        "name": "Jumpin' at the Woodside",
+        "bpm": 240,
+        "comments": []
+      },
+      "eldata": {
+        "algs": {
+          "Actual": {
+            "Bpm": 240
+          },
+          "Naive": {
+            "Bpm": 237
+          },
+          "Bellson": {
+            "Bpm": 235
+          }
+        }
+      }
+    },
+    {
+      "location": "data/mp3/09 - Jumpin' at the Woodside - Count Basie And His Orchestra.mp3",
+      "filedata": {
+        "ftype": "Mp3"
+      },
+      "metadata": {
+        "name": "Jumpin' at the Woodside",
+        "bpm": 240,
+        "comments": []
+      },
+      "eldata": {
+        "algs": {
+          "Actual": {
+            "Bpm": 240
+          },
+          "Naive": {
+            "Bpm": 239
+          },
+          "Bellson": {
+            "Bpm": 234
+          }
+        }
+      }
+    },
+    {
+      "location": "data/mp3/Milenberg Joys - The 6-Alarm Six - Rappolo.mp3",
+      "filedata": {
+        "ftype": "Mp3"
+      },
+      "metadata": {
+        "name": "Milenberg Joys",
+        "bpm": 230,
+        "comments": [
+          "https://archive.org/details/78_milenberg-joys_the-6-alarm-six-rappolo-jellyroll-morton-mares_gbia0001104a",
+          "https://archive.org/details/78_milenberg-joys_the-6-alarm-six-rappolo-jellyroll-morton-mares_gbia0001104a"
+        ]
+      },
+      "eldata": {
+        "algs": {
+          "Actual": {
+            "Bpm": 230
+          },
+          "Naive": {
+            "Bpm": 230
+          },
+          "Bellson": {
+            "Bpm": 229
+          }
+        }
+      }
+    },
+    {
+      "location": "data/mp3/Countless Blues - The Kansas City Six - Eddie Druham.mp3",
+      "filedata": {
+        "ftype": "Mp3"
+      },
+      "metadata": {
+        "name": "Countless Blues",
+        "bpm": 195,
+        "comments": [
+          "https://archive.org/details/78_countless-blues_the-kansas-city-six-eddie-druham-freddie-green-walter-paige-joe-jon_gbia0004728a",
+          "https://archive.org/details/78_countless-blues_the-kansas-city-six-eddie-druham-freddie-green-walter-paige-joe-jon_gbia0004728a"
+        ]
+      },
+      "eldata": {
+        "algs": {
+          "Actual": {
+            "Bpm": 195
+          },
+          "Naive": {
+            "Bpm": 194
+          },
+          "Bellson": {
+            "Bpm": 196
+          }
+        }
+      }
+    }
+  ]
+}

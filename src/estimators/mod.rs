@@ -82,9 +82,7 @@ impl TempoEstimator for BellsonTempoEstimator {
         }
         let call = BellsonCommand::default(audio_file);
         match call.run() {
-            Some((stdout, stderr)) => {
-                debug!("stdout: {:?}", stdout);
-                debug!("stderr: {:?}", stderr);
+            Some((stdout, _stderr)) => {
                 let captures = RE.captures(stdout.as_str())?;
 
                 debug!("Captures: {:?}", captures);
