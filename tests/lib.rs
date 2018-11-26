@@ -1,5 +1,8 @@
-extern crate assert_cmd;
 extern crate ellington;
+
+// other crates to get stuff working.
+extern crate assert_cmd;
+extern crate tempfile;
 #[macro_use]
 extern crate lazy_static;
 
@@ -15,7 +18,7 @@ lazy_static! {
             .join("test")
             .join("data");
 
-        assert!(d.exists(), "Folder containing test data does not exist!");
+        assert!(d.exists(), "Test data folder does not exist, failing.");
 
         d
     };
@@ -24,21 +27,34 @@ lazy_static! {
 lazy_static! {
     static ref LIBRARY_FILE: PathBuf = {
         let d = DATA_DIRECTORY.join("lib").join("library.json");
-        assert!(d.exists(), "Library of test data does not exist");
+        assert!(d.exists(), "Test library does not exist, failing.");
         d
     };
+}
+
+fn tmpdir() -> tempfile::TempDir {
+    tempfile::Builder::new().tempdir_in("./").unwrap()
+}
+
+fn tmpfile() -> tempfile::NamedTempFile {
+    tempfile::Builder::new().tempfile_in("./").unwrap()
 }
 
 #[test]
 fn no_args() {
     let mut cmd = Command::main_binary().unwrap();
     cmd.assert().success();
-    println!("Data directory: {:?}", DATA_DIRECTORY.to_str());
-    println!("LIBRARY FILE: {:?}", LIBRARY_FILE.to_str());
+    println!("Temp directory: {:?}", tmpdir().path().to_str());
 }
 
 #[test]
-fn simple_query() {
+fn initialise_empty_library() {
+    let tf = tmpfile();
+    let mut cmd = Command::main_binary().args(&["init", "empty", ""]);
+}
+
+#[test]
+fn initialise_fresh_library() {
     let mut cmd = Command::main_binary().unwrap();
     cmd.assert().success();
     println!("Data directory: {:?}", DATA_DIRECTORY.to_str());
