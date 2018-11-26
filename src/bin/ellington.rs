@@ -1,6 +1,7 @@
 /*
     ellington - the ellington tool for processing and bpming audio libraries
 */
+use std::fs;
 use std::path::PathBuf;
 
 #[macro_use]
@@ -65,7 +66,8 @@ fn init(matches: &ArgMatches) -> () {
             Library::from_itunes_xml(library_file)
         }),
         _ => None,
-    }.unwrap();
+    }
+    .unwrap();
 
     /*
         Step two, work out where to write the cache:
@@ -75,7 +77,8 @@ fn init(matches: &ArgMatches) -> () {
         .and_then(|l| {
             info!("Writing library to: {:?}", l);
             Some(l)
-        }).unwrap();
+        })
+        .unwrap();
 
     // Create directories for the library file
     match Path::new(library_file)
@@ -83,7 +86,8 @@ fn init(matches: &ArgMatches) -> () {
         .and_then(|p| {
             println!("Got path {:?}", p);
             Some(p)
-        }).or_else(|| {
+        })
+        .or_else(|| {
             println!("Could not get parent directory!");
             None
             // TODO: This code is quite useful, but brittle! It needs to be rethought...
@@ -132,40 +136,48 @@ fn query_estimator(
 }
 
 fn query(matches: &ArgMatches) -> () {
-    /*  A query runs in the following fashion: 
-        1 - Get the name of the file that we want to query information on. 
+    /*  A query runs in the following fashion:
+        1 - Get the name of the file that we want to query information on.
         2 - Load the cache, and read metadata from the audio file and library
-        3 - Select the list of estimators that we want to query. 
+        3 - Select the list of estimators that we want to query.
         4 - For each estimator:
-            > Check what our estimator preferences are. 
-                . If eager, we might as well just run them, and ignore the cache completely. 
-                . If lazy, we can run estimators after reading from the cache, if we have no values. 
-            > Append the result to the list of estimators 
+            > Check what our estimator preferences are.
+                . If eager, we might as well just run them, and ignore the cache completely.
+                . If lazy, we can run estimators after reading from the cache, if we have no values.
+            > Append the result to the list of estimators
         5 - Write to the library if --pure is not specified
-        6 - Print the output: 
-            > Check to see what kind of output the user wants: 
+        6 - Print the output:
+            > Check to see what kind of output the user wants:
                 . If substitution, substitute the ellingtondata with new data, in the format requested
                 . If report, check what format, and print it.
     */
 
     /*
-        1. Get the name of the audio file, and look up the ellington library that we've been passed. 
+        1. Get the name of the audio file, and look up the ellington library that we've been passed.
+
+        Do some hacky shit to get the canonical path of the audio file, so that when we pass it to stuff it's correct.
     */
+
     let audio_file: &str = matches
         .value_of("AUDIOFILE")
         .and_then(|ap| {
             info!("Processing audio file at {:?}", ap);
             Some(ap)
-        }).unwrap();
+        })
+        .unwrap();
+
+    // The canonical path of the audio
+    let audio_path: PathBuf = fs::canonicalize(audio_file).unwrap();
 
     let library_file: &str = matches
         .value_of("LIBRARY")
         .and_then(|l| {
             info!("Writing library to: {:?}", l);
             Some(l)
-        }).unwrap();
+        })
+        .unwrap();
 
-    /* 
+    /*
         2. Load data from the cache, and metadata from the audio file
     */
     // Load the library "cache"
@@ -173,7 +185,8 @@ fn query(matches: &ArgMatches) -> () {
         .and_then(|l| {
             info!("Read library successfully!");
             Some(l)
-        }).or_else(|| {
+        })
+        .or_else(|| {
             error!("Failed to read ellington library!");
             None
         });
@@ -184,7 +197,8 @@ fn query(matches: &ArgMatches) -> () {
             .and_then(|e| {
                 info!("Found entry in library!");
                 Some(e.clone())
-            }).or_else(|| {
+            })
+            .or_else(|| {
                 error!("Could not find track in library!");
                 None
             })
@@ -196,7 +210,7 @@ fn query(matches: &ArgMatches) -> () {
         .unwrap_or(EllingtonData::empty());
 
     // Load the track data from the audio file
-    let track_metadata: Option<TrackMetadata> = TrackMetadata::from_file(Path::new(audio_file));
+    let track_metadata: Option<TrackMetadata> = TrackMetadata::from_file(audio_path.as_path());
 
     // get data from the comments
     let comment_eldata: EllingtonData = track_metadata
@@ -215,14 +229,15 @@ fn query(matches: &ArgMatches) -> () {
     info!("Comment metadata: {:?}", comment_eldata);
 
     /*
-        3. Select the list of estimators that we want to query. 
+        3. Select the list of estimators that we want to query.
     */
     let estimator: &str = matches
         .value_of("estimators")
         .and_then(|e| {
-            info!("Running estimator: {:?}", e);
+            info!("Given estimator: {:?}", e);
             Some(e)
-        }).unwrap();
+        })
+        .unwrap();
 
     // Check to see if we need to forcibly run them.
     let force = matches.occurrences_of("force") > 0;
@@ -231,7 +246,7 @@ fn query(matches: &ArgMatches) -> () {
     let never = matches.occurrences_of("never") > 0;
 
     /*
-        4. Start iterating over estimators. 
+        4. Start iterating over estimators.
     */
 
     // Create the ellington data for the estimators. This is where we will store the results of running our estimators.
@@ -248,25 +263,30 @@ fn query(matches: &ArgMatches) -> () {
 
     // Start with the "actual" value
     if estimator == AlgorithmE::Actual.print() || estimator == "all" {
+        info!("Running estimator {}", AlgorithmE::Actual.print());
         let tempo = query_estimator(AlgorithmE::Actual, &caches, force, never, || {
-            TrackMetadata::from_file(Path::new(audio_file)).and_then(|tmd| tmd.bpm)
+            TrackMetadata::from_file(audio_path.as_path()).and_then(|tmd| tmd.bpm)
         });
         ed.algs.insert(AlgorithmE::Actual, tempo);
     }
 
     // Run bellson, and try to add the result.
     if estimator == AlgorithmE::Bellson.print() || estimator == "all" {
+        info!("Running estimator {}", AlgorithmE::Bellson.print());
         let tempo = query_estimator(AlgorithmE::Actual, &caches, force, never, || {
-            BellsonTempoEstimator::run(&PathBuf::from(audio_file))
+            BellsonTempoEstimator::run(&audio_path)
         });
+        info!("Got result {:?} from estimator.", tempo);
         ed.algs.insert(BellsonTempoEstimator::ALGORITHM, tempo);
     }
 
     // Run the naive estimator
     if estimator == AlgorithmE::Naive.print() || estimator == "all" {
+        info!("Running estimator {}", AlgorithmE::Naive.print());
         let tempo = query_estimator(AlgorithmE::Naive, &caches, force, never, || {
-            FfmpegNaiveTempoEstimator::run(&PathBuf::from(audio_file))
+            FfmpegNaiveTempoEstimator::run(&audio_path)
         });
+        info!("Got result {:?} from estimator.", tempo);
         ed.algs.insert(FfmpegNaiveTempoEstimator::ALGORITHM, tempo);
     }
 
@@ -288,8 +308,8 @@ fn query(matches: &ArgMatches) -> () {
     }
 
     /*
-        6 - Print the output: 
-            > Check to see what kind of output the user wants: 
+        6 - Print the output:
+            > Check to see what kind of output the user wants:
                 . If substitution, substitute the ellingtondata with new data, in the format requested
                 . If report, check what format, and print it.
     */
@@ -367,6 +387,9 @@ fn main() {
     match subcommands {
         ("init", Some(sub)) => init(sub),
         ("query", Some(sub)) => query(sub),
-        _ => appm.print_help().unwrap(),
+        _ => {
+            appm.print_help().unwrap();
+            println!();
+        }
     };
 }
