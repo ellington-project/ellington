@@ -32,9 +32,13 @@ nom = "4.0.0"
 talamel = { git = "https://github.com/AdamHarries/talamel.git" }
 assert_cmd = "0.10"
 tempfile = "3.0"
+difference = "2.0"
 
 [build-dependencies]
 commandspec = "0.10"
+assert_cmd = "0.10"
+tempfile = "3.0"
+difference = "2.0"
 
 [features]
 # This will download lots of data! 
