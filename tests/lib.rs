@@ -95,6 +95,7 @@ mod general {
 mod library {
     use super::*;
     #[test]
+    #[ignore]
     fn initialise_empty() {
         // Initialise a tempfile for the lib.
         let tf = tmpfile();
