@@ -1,6 +1,10 @@
 language: rust
 
-cache: cargo
+cache: 
+  directories: 
+    - $HOME/.cargo 
+    - $TRAVIS_BUILD_DIR/target
+    - .git/lfs
 
 os:
   - linux
@@ -20,6 +24,9 @@ rust:
 install:
   - if [ $TRAVIS_OS_NAME = linux ]; then cargo install --force cargo-deb; fi
   - cargo install --force cargo-script
+
+before_script: 
+  - git lfs pull
 
 script: 
   - cargo build --release -vv
