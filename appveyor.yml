@@ -81,6 +81,8 @@ environment:
   #    target: i686-pc-windows-gnu
       #cargoflags: --features "unstable"
 
+cache: 
+- '.git\lfs'
 
 ### Allowed failures ###
 
