@@ -137,7 +137,8 @@ impl ShellProgram for FfmpegCommand {
             self.samplerate.value(),
             // finally, tell ffmpeg to write to stdout
             "pipe:1",
-        ].iter()
+        ]
+        .iter()
         .map(|s| s.to_string())
         .collect()
     }

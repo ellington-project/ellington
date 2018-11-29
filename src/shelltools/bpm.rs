@@ -1,6 +1,6 @@
 /*
-    Officially deprecated, but useful in case anyone wants to use the 
-    "ShellProgram" infrastructure to call other programs to calculate BPM 
+    Officially deprecated, but useful in case anyone wants to use the
+    "ShellProgram" infrastructure to call other programs to calculate BPM
     information!
 */
 use shelltools::pipe::PipeCommand;

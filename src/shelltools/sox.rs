@@ -147,7 +147,8 @@ impl ShellProgram for SoxCommand {
             "raw",
             // and finally, specify that we want the command to write to stdout
             "-",
-        ].iter()
+        ]
+        .iter()
         .map(|s| s.to_string())
         .collect()
     }

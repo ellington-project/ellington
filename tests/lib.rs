@@ -41,6 +41,7 @@ lazy_static! {
     };
 }
 
+#[allow(dead_code)]
 fn tmpdir() -> tempfile::TempDir {
     let dir = tempfile::Builder::new().tempdir_in("./").unwrap();
     println!("Initialised temp dir: {}", dir.path().to_str().unwrap());
@@ -80,104 +81,192 @@ fn diff_files(computed: &PathBuf, gold: &PathBuf) -> bool {
     }
 }
 
-#[test]
-fn no_args() {
-    Command::main_binary().unwrap().assert().success();
+mod general {
+    use super::*;
+    #[test]
+    fn no_args() {
+        Command::main_binary().unwrap().assert().success();
+    }
 }
 
-#[test]
-fn initialise_empty_library() {
-    // Initialise a tempfile for the lib.
-    let tf = tmpfile();
-    // Run the command, assert that it's successful.
-    Command::main_binary()
-        .unwrap()
-        .args(&["init", "empty", tf.path().to_str().unwrap()])
-        .assert()
-        .success();
+mod library {
+    use super::*;
+    #[test]
+    fn initialise_empty() {
+        // Initialise a tempfile for the lib.
+        let tf = tmpfile();
+        // Run the command, assert that it's successful.
+        Command::main_binary()
+            .unwrap()
+            .args(&["init", "empty", tf.path().to_str().unwrap()])
+            .assert()
+            .success();
 
-    // Diff the computed and gold.
-    assert!(diff_files(
-        &tf.path().to_path_buf(),
-        &test_gold_dir.join("empty.json")
-    ));
+        // Diff the computed and gold.
+        assert!(diff_files(
+            &tf.path().to_path_buf(),
+            &test_gold_dir.join("empty.json")
+        ));
+    }
+
+    #[test]
+    fn initialise_fresh() {
+        // Initialise a tempfile for the lib
+        let tf = tmpfile();
+
+        // Run the command, assert that it's successful.
+        Command::main_binary()
+            .unwrap()
+            .args(&[
+                "init",
+                "directory",
+                tf.path().to_str().unwrap(),
+                "-d",
+                "resources/test/data", // we have to use the relative path
+            ])
+            .assert()
+            .success();
+
+        // Diff the computed and gold.
+        assert!(diff_files(
+            &tf.path().to_path_buf(),
+            &test_gold_dir.join("fresh_library.json")
+        ));
+    }
 }
 
-#[test]
-fn initialise_fresh_library() {
-    // Initialise a tempfile for the lib
-    let tf = tmpfile();
+mod query {
+    use super::*;
+    #[test]
+    fn mp3_prepend_to_userdata() {
+        let args = vec![
+            "query", // The command to run.
+            "resources/test/data/mp3/09 - Jumpin' at the Woodside - Count Basie And His Orchestra.mp3", // The audiofile to query information about
+            "resources/test/data/lib/library.json", // Specify a library to read data from
+            "-m",                                   // Specify that we want to update the userdata
+            "userdata",
+            "-u", // Specify userdata to prepend to.
+            "Test Userdata On Command Line",
+            "-o", // Specify that we want to update the userdata.
+            "update",
+            "-a", // report minimally
+            "-n", // don't run estimators
+            "-p", // don't modify the library
+        ];
 
-    // Run the command, assert that it's successful.
-    Command::main_binary()
-        .unwrap()
-        .args(&[
-            "init",
-            "directory",
-            tf.path().to_str().unwrap(),
-            "-d",
-            "resources/test/data", // we have to use the relative path
-        ])
-        .assert()
-        .success();
+        println!("Args: {}", args.join(" "));
 
-    // Diff the computed and gold.
-    assert!(diff_files(
-        &tf.path().to_path_buf(),
-        &test_gold_dir.join("fresh_library.json")
-    ));
-}
+        Command::main_binary()
+            .unwrap()
+            .args(&args)
+            .assert()
+            .success()
+            .stdout("[ed|a~240,n~239,b~240|] Test Userdata On Command Line\n");
+    }
 
-#[test]
-fn query_and_append_to_userdata() {
-    // Run the command, and get the output.
-    let args = vec![
-        "query", // The command to run.
-        "resources/test/data/mp3/09 - Jumpin' at the Woodside - Count Basie And His Orchestra.mp3", // The audiofile to query information about
-        "resources/test/data/lib/library.json", // Specify a library to read data from
-        "-m",                                   // Specify that we want to update the userdata
-        "userdata",
-        "-u", // Specify userdata to append to.
-        "Test Userdata On Command Line",
-        "-o", // Specify that we want to update the userdata.
-        "update",
-        "-a", // report minimally
-        "-n", // don't run estimators
-        "-p", // don't modify the library
-    ];
+    #[test]
+    fn mp3_update_minimial_userdata_pre() {
+        let args = vec![
+            "query", // The command to run.
+            "resources/test/data/mp3/09 - Jumpin' at the Woodside - Count Basie And His Orchestra.mp3", // The audiofile to query information about
+            "resources/test/data/lib/library.json", // Specify a library to read data from
+            "-m",                                   // Specify that we want to update the userdata
+            "userdata",
+            "-u", // Specify userdata to prepend to.
+            "[ed|a~4242,n~4242,b~4242|] Test Userdata Data Pre On Command Line",
+            "-o", // Specify that we want to update the userdata.
+            "update",
+            "-a", // report minimally
+            "-n", // don't run estimators
+            "-p", // don't modify the library
+        ];
 
-    println!("Args: {}", args.join(" "));
+        println!("Args: {}", args.join(" "));
 
-    Command::main_binary()
+        Command::main_binary()
+            .unwrap()
+            .args(&args)
+            .assert()
+            .success()
+            .stdout("[ed|a~240,n~239,b~240|] Test Userdata Data Pre On Command Line\n");
+    }
+
+    #[test]
+    fn mp3_update_minimial_userdata_post() {
+        let args = vec![
+            "query", // The command to run.
+            "resources/test/data/mp3/09 - Jumpin' at the Woodside - Count Basie And His Orchestra.mp3", // The audiofile to query information about
+            "resources/test/data/lib/library.json", // Specify a library to read data from
+            "-m",                                   // Specify that we want to update the userdata
+            "userdata",
+            "-u", // Specify userdata to prepend to.
+            "Test Userdata Data Post On Command Line [ed|a~4242,n~4242,b~4242|]",
+            "-o", // Specify that we want to update the userdata.
+            "update",
+            "-a", // report minimally
+            "-n", // don't run estimators
+            "-p", // don't modify the library
+        ];
+
+        println!("Args: {}", args.join(" "));
+
+        Command::main_binary()
+            .unwrap()
+            .args(&args)
+            .assert()
+            .success()
+            .stdout("Test Userdata Data Post On Command Line [ed|a~240,n~239,b~240|]\n");
+    }
+
+    #[test]
+    fn mp3_prepend_to_title() {
+        let args = vec![
+            "query", // The command to run.
+            "resources/test/data/mp3/09 - Jumpin' at the Woodside - Count Basie And His Orchestra.mp3", // The audiofile to query information about
+            "resources/test/data/lib/library.json", // Specify a library to read data from
+            "-m",                                   // Specify that we want to update the userdata
+            "title",
+            "-o", // Specify that we want to update the userdata.
+            "update",
+            "-a", // report minimally
+            "-n", // don't run estimators
+            "-p", // don't modify the library
+        ];
+
+        println!("Args: {}", args.join(" "));
+
+        Command::main_binary()
+            .unwrap()
+            .args(&args)
+            .assert()
+            .success()
+            .stdout("[ed|a~240,n~239,b~240|] Jumpin' at the Woodside\n");
+    }
+
+    #[test]
+    fn mp3_append_to_comments() {
+        let args = vec![
+            "query", // The command to run.
+            "resources/test/data/mp3/Milenberg Joys - The 6-Alarm Six - Rappolo.mp3", // The audiofile to query information about
+            "resources/test/data/lib/library.json", // Specify a library to read data from
+            "-m",                                   // Specify that we want to update the userdata
+            "comments",
+            "-o", // Specify that we want to update the userdata.
+            "update",
+            "-b", // Specify that we want to append to the userdata
+            "append",
+            //"-a", // report minimally
+            "-n", // don't run estimators
+            "-p", // don't modify the library
+        ];
+
+        println!("Args: {}", args.join(" "));
+
+        Command::main_binary()
         .unwrap()
         .args(&args)
         .assert()
         .success()
-        .stdout("[ed|a~240,n~239,b~240|] Test Userdata On Command Line\n");
-}
-
-#[test]
-fn query_and_append_to_title() {
-    // Run the command, and get the output.
-    let args = vec![
-        "query", // The command to run.
-        "resources/test/data/mp3/09 - Jumpin' at the Woodside - Count Basie And His Orchestra.mp3", // The audiofile to query information about
-        "resources/test/data/lib/library.json", // Specify a library to read data from
-        "-m",                                   // Specify that we want to update the userdata
-        "title",
-        "-o", // Specify that we want to update the userdata.
-        "update",
-        "-a", // report minimally
-        "-n", // don't run estimators
-        "-p", // don't modify the library
-    ];
-
-    println!("Args: {}", args.join(" "));
-
-    Command::main_binary()
-        .unwrap()
-        .args(&args)
-        .assert()
-        .success()
-        .stdout("[ed|a~240,n~239,b~240|] Jumpin' at the Woodside\n");
+        .stdout("https://archive.org/details/78_milenberg-joys_the-6-alarm-six-rappolo-jellyroll-morton-mares_gbia0001104a [ed| actual~230, naive~230, bellson~230 |]\n");
+    }
 }
