@@ -13,15 +13,17 @@ tell application "iTunes"
 		my WriteLog("	Path: " & (POSIX path of (get location of t)))
 		set pp to (POSIX path of (get location of t))
 		set qpath to quoted form of pp
-		set scr to "export PATH=$PATH:/usr/local/bin/:/Users/adam/projects/bellson/bin/; ~/projects/ellington/target/release/ellington oneshot --audiofile " & qpath
+		-- call the wrapper script
+		set scr to "../wrapper.sh" & qpath
 		if comment of t is missing value then
 			my WriteLog("	Comment: no comment in track")
-			
+			set udat to ""
+			set scr to scr & ""
 		else
 			my WriteLog("	Comment: " & comment of t)
 			set com to comment of t
 			set qcomment to quoted form of com
-			set scr to scr & " --comment " & qcomment
+			set scr to scr & qcomment
 		end if
 		
 		
@@ -34,23 +36,23 @@ tell application "iTunes"
 end tell
 
 on StartLog()
-	set this_file to (((path to desktop folder) as text) & "swinglog_itunes.txt")
+	set this_file to (POSIX path of "/tmp/swinglog_itunes.txt")
 	my write_to_file("Start of swing log", this_file, false)
 end StartLog
 
 on WriteLog(the_text)
 	set this_story to the_text & "
 "
-	set this_file to (((path to desktop folder) as text) & "swinglog_itunes.txt")
+	set this_file to (POSIX path of "/tmp/swinglog_itunes.txt")
 	my write_to_file(this_story, this_file, true)
 end WriteLog
 
 on write_to_file(this_data, target_file, append_data) -- (string, file path as string, boolean)
 	try
 		set the target_file to the target_file as text
-		set the open_target_file to Â
+		set the open_target_file to
 			open for access file target_file with write permission
-		if append_data is false then Â
+		if append_data is false then
 			set eof of the open_target_file to 0
 		write this_data to the open_target_file starting at eof
 		close access the open_target_file

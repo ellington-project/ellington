@@ -138,7 +138,7 @@ mod library {
 mod query {
     use super::*;
     #[test]
-    fn mp3_prepend_to_userdata() {
+    fn mp3_prepend_minimal_to_userdata() {
         let args = vec![
             "query", // The command to run.
             "resources/test/data/mp3/09 - Jumpin' at the Woodside - Count Basie And His Orchestra.mp3", // The audiofile to query information about
@@ -219,7 +219,7 @@ mod query {
     }
 
     #[test]
-    fn mp3_prepend_to_title() {
+    fn mp3_prepend_minimal_to_title() {
         let args = vec![
             "query", // The command to run.
             "resources/test/data/mp3/09 - Jumpin' at the Woodside - Count Basie And His Orchestra.mp3", // The audiofile to query information about

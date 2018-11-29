@@ -208,7 +208,7 @@ fn query(matches: &ArgMatches) -> () {
     });
 
     // Get the (cached) track metadata from the library
-    let library_trackdata: Option<TrackMetadata> =
+    let _library_trackdata: Option<TrackMetadata> =
         library_entry.clone().and_then(|e| e.metadata.clone());
 
     // Get the ellington data from that entry
