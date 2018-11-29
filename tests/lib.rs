@@ -28,6 +28,9 @@ lazy_static! {
 lazy_static! {
     static ref test_data_dir: PathBuf = {
         let d = test_resources_dir.join("data");
+        // Check to see that all the files exist.
+        assert!(d.join("mp3").join("09 - Jumpin' at the Woodside - Count Basie And His Orchestra.mp3").exists(), "Mp3s do not exist, failing!");
+        assert!(d.join("flac").join("09 - Jumpin' at the Woodside - Count Basie And His Orchestra.flac").exists(), "Flacs do not exist, failing!");
         assert!(d.exists(), "Test data folder does not exist, failing.");
         d
     };
