@@ -59,6 +59,23 @@ subcommands:
                 conflicts_with: empty
                 conflicts_with: itunes
                 conflicts_with: directory
+    
+    - dump: 
+        about: Dumps specific bits of data from a library so that other tools can use it. 
+        args: 
+            - LIBRARY: 
+                help: The ellington library to read values from 
+                required: false 
+                index: 1
+                default_value: ".config/ellington/library.json"
+            - value: 
+                help: The specific library metadata to dump. 
+                required: false
+                short: v 
+                long: value
+                takes_value: true
+                possible_values: ['location', 'title']
+                default_value: location
 
     - query:
         about: Query a file for tempo information, stored either in the file, in cache, or obtained from estimators.

@@ -1,6 +1,13 @@
 language: rust
 
-cache: cargo
+cache: 
+  directories: 
+    - $HOME/.cargo 
+    - $TRAVIS_BUILD_DIR/target
+    - .git/lfs
+
+git: 
+  lfs_skip_smudge: true
 
 os:
   - linux
@@ -11,7 +18,8 @@ rust:
   # - beta
   # - nightly 
 
-# before_install: 
+before_install: 
+  - if [ $TRAVIS_OS_NAME = osx ]; then brew install git-lfs; fi
 #   - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get update -qq; fi
 #   - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install ffmpeg; else brew install ffmpeg; fi
 #   - if [ $TRAVIS_OS_NAME = linux ]; then sudo apt-get install id3v2; else brew install id3v2; fi
@@ -20,6 +28,8 @@ rust:
 install:
   - if [ $TRAVIS_OS_NAME = linux ]; then cargo install --force cargo-deb; fi
   - cargo install --force cargo-script
+  - git lfs install
+  - git lfs pull
 
 script: 
   - cargo build --release -vv

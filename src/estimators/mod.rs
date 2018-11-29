@@ -85,9 +85,15 @@ impl TempoEstimator for BellsonTempoEstimator {
             Some((stdout, _stderr)) => {
                 let captures = RE.captures(stdout.as_str())?;
 
+                debug!("Captures: {:?}", captures);
+
                 let bpm = captures.get(1)?.as_str();
 
+                debug!("BPM: {:?}", bpm);
+
                 let bpm = bpm.parse::<i64>().ok()?;
+
+                debug!("bpm<i64>: {:?}", bpm);
 
                 Some(bpm)
             }

@@ -57,8 +57,8 @@ pub struct Library {
 
 impl Library {
     /*
-        Read a library from an itunes xml/plist file
-     */
+       Read a library from an itunes xml/plist file
+    */
     pub fn from_itunes_xml(filename: &str) -> Option<Library> {
         let file = File::open(filename).ok()?;
 
@@ -94,7 +94,8 @@ impl Library {
                 entries += 1;
 
                 Some(Entry::from_file(location))
-            }).collect();
+            })
+            .collect();
 
         info!(
             "Successfully read {} tracks from the itunes library, out of {} itunes entries",
@@ -106,9 +107,9 @@ impl Library {
     }
 
     /*
-        Read a library as a list of audio files, with one
-        audio file path per line
-     */
+       Read a library as a list of audio files, with one
+       audio file path per line
+    */
     pub fn from_stdin() -> Option<Library> {
         // each line in stdin is assumed to be a path to a track name
         let stdin = io::stdin();
@@ -120,7 +121,8 @@ impl Library {
                 info!("Got line: {:?}", l);
                 lines += 1;
                 l
-            }).filter_map(|l| l.ok())
+            })
+            .filter_map(|l| l.ok())
             .map(|line| Entry::from_file(PathBuf::from(line)))
             .collect();
         info!(
@@ -132,7 +134,7 @@ impl Library {
     }
 
     /*
-        Initialise an empty library 
+        Initialise an empty library
     */
     pub fn from_empty() -> Option<Library> {
         let tracks: Vec<Entry> = vec![];
@@ -140,9 +142,9 @@ impl Library {
     }
 
     /*
-        Read a library from a directory, recursively exploring the 
-        file hierarchy, and finding audio files.
-     */
+       Read a library from a directory, recursively exploring the
+       file hierarchy, and finding audio files.
+    */
     pub fn from_directory_rec(path: &PathBuf) -> Option<Library> {
         let mut entries = 0;
         let mut io_errors = 0;
@@ -167,13 +169,15 @@ impl Library {
                 }
                 entries += 1;
                 e
-            }).filter_map(|e| e.ok())
+            })
+            .filter_map(|e| e.ok())
             .filter_map(|e| FileMetadata::seq_audio_file(e.clone(), &e.path()))
             .map(|f| {
                 info!("Got audio file: {:?}", f);
                 audio_files += 1;
                 f
-            }).map(|f| Entry::from_file(f.path().to_path_buf()))
+            })
+            .map(|f| Entry::from_file(f.path().to_path_buf()))
             .collect();
 
         info!(
@@ -192,7 +196,7 @@ impl Library {
         Some(Library { tracks: tracks })
     }
 
-    /* 
+    /*
         Read a library from an ellington library file
     */
     pub fn read_from_file(path: &PathBuf) -> Option<Library> {
@@ -220,9 +224,9 @@ impl Library {
         }
     }
 
-    /* 
-        Write a library to a file
-     */
+    /*
+       Write a library to a file
+    */
     pub fn write_to_file(self: &Self, path: &PathBuf) -> Option<()> {
         let json: String = serde_json::to_string_pretty(self).expect("Couldn't serialize config");
         match fs::write(path, json) {
@@ -238,8 +242,8 @@ impl Library {
     }
 
     /*
-        Run an analysis pipeline over each audio track in the library
-     */
+       Run an analysis pipeline over each audio track in the library
+    */
     pub fn run_pipeline<P: TempoEstimator>(self: &mut Self) -> () {
         info!("Running tempo estimator over ellington library.");
         info!("Using estimator: {:?}", P::ALGORITHM);
@@ -279,7 +283,7 @@ impl Library {
         }
     }
 
-    /* 
+    /*
         Look up a track from a path
     */
     pub fn lookup(self: &Self, path: &PathBuf) -> Option<&Entry> {
@@ -292,7 +296,7 @@ impl Library {
     }
 
     /*
-        Set an entry to a new one. 
+        Set an entry to a new one.
     */
     pub fn update(self: &mut Self, path: &PathBuf, eldata: EllingtonData) -> () {
         let mut updated = false;
