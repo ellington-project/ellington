@@ -66,16 +66,16 @@ fn read_file(filename: String) -> String {
 fn diff_files(computed: &PathBuf, gold: &PathBuf) -> bool {
     // read the two files to strings.
     let computed_s = read_file(computed.to_str().unwrap().to_string());
-    // println!("Computed string:\n{}", computed_s);
 
     let gold_s = read_file(gold.to_str().unwrap().to_string());
-    // println!("Gold string:\n{}", gold_s);
 
     let ch = Changeset::new(computed_s.as_str(), gold_s.as_str(), "");
 
     if ch.distance == 0 {
         return true;
     } else {
+        println!("Computed: {}", computed_s);
+        println!("Gold: {}", gold_s);
         println!("Files differ: {}", ch);
         return false;
     }
