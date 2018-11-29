@@ -127,3 +127,57 @@ fn initialise_fresh_library() {
         &test_gold_dir.join("fresh_library.json")
     ));
 }
+
+#[test]
+fn query_and_append_to_userdata() {
+    // Run the command, and get the output.
+    let args = vec![
+        "query", // The command to run.
+        "resources/test/data/mp3/09 - Jumpin' at the Woodside - Count Basie And His Orchestra.mp3", // The audiofile to query information about
+        "resources/test/data/lib/library.json", // Specify a library to read data from
+        "-m",                                   // Specify that we want to update the userdata
+        "userdata",
+        "-u", // Specify userdata to append to.
+        "Test Userdata On Command Line",
+        "-o", // Specify that we want to update the userdata.
+        "update",
+        "-a", // report minimally
+        "-n", // don't run estimators
+        "-p", // don't modify the library
+    ];
+
+    println!("Args: {}", args.join(" "));
+
+    Command::main_binary()
+        .unwrap()
+        .args(&args)
+        .assert()
+        .success()
+        .stdout("[ed|a~240,n~239,b~240|] Test Userdata On Command Line\n");
+}
+
+#[test]
+fn query_and_append_to_title() {
+    // Run the command, and get the output.
+    let args = vec![
+        "query", // The command to run.
+        "resources/test/data/mp3/09 - Jumpin' at the Woodside - Count Basie And His Orchestra.mp3", // The audiofile to query information about
+        "resources/test/data/lib/library.json", // Specify a library to read data from
+        "-m",                                   // Specify that we want to update the userdata
+        "title",
+        "-o", // Specify that we want to update the userdata.
+        "update",
+        "-a", // report minimally
+        "-n", // don't run estimators
+        "-p", // don't modify the library
+    ];
+
+    println!("Args: {}", args.join(" "));
+
+    Command::main_binary()
+        .unwrap()
+        .args(&args)
+        .assert()
+        .success()
+        .stdout("[ed|a~240,n~239,b~240|] Jumpin' at the Woodside\n");
+}
