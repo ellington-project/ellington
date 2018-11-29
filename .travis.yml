@@ -6,6 +6,9 @@ cache:
     - $TRAVIS_BUILD_DIR/target
     - .git/lfs
 
+git: 
+  lfs_skip_smudge: true
+
 os:
   - linux
   - osx
@@ -24,8 +27,6 @@ rust:
 install:
   - if [ $TRAVIS_OS_NAME = linux ]; then cargo install --force cargo-deb; fi
   - cargo install --force cargo-script
-
-before_script: 
   - git lfs pull
 
 script: 
