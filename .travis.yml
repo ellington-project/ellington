@@ -28,6 +28,7 @@ before_install:
 install:
   - if [ $TRAVIS_OS_NAME = linux ]; then cargo install --force cargo-deb; fi
   - cargo install --force cargo-script
+  - git lfs install
   - git lfs pull
 
 script: 
