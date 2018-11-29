@@ -108,6 +108,43 @@ fn init(matches: &ArgMatches) -> () {
     library.write_to_file(&PathBuf::from(library_file));
 }
 
+// hacky shit
+fn dump(matches: &ArgMatches) -> () {
+    let library_file: &str = matches
+        .value_of("LIBRARY")
+        .and_then(|l| {
+            info!("Reading from library: {:?}", l);
+            Some(l)
+        })
+        .unwrap();
+
+    // Try to load it from a file:
+    let lib: Library = Library::read_from_file(&PathBuf::from(library_file))
+        .and_then(|l| {
+            info!("Read library successfully!");
+            Some(l)
+        })
+        .or_else(|| {
+            error!("Failed to read ellington library!");
+            None
+        })
+        .unwrap();
+
+    let data: char = match matches.value_of("value").unwrap() {
+        "location" => 'l',
+        "title" => 't',
+        _ => panic!("We should always get a value, this should not happen!"),
+    };
+
+    for track in lib.tracks {
+        if data == 'l' {
+            println!("{}", track.location.to_str().unwrap());
+        } else if data == 't' {
+            println!("{}", track.metadata.unwrap().name);
+        }
+    }
+}
+
 fn query_estimator(
     algorithm: AlgorithmE,
     caches: &Vec<EllingtonData>,
@@ -394,6 +431,7 @@ fn main() {
 
     match subcommands {
         ("init", Some(sub)) => init(sub),
+        ("dump", Some(sub)) => dump(sub),
         ("query", Some(sub)) => query(sub),
         _ => {
             appm.print_help().unwrap();
