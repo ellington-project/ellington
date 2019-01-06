@@ -32,5 +32,5 @@ IFS='
 
 for filename in `ellington dump $library`; do 
     echo $filename; 
-    ellington query "$filename" "$library" -f -p
+    ellington query "$filename" "$library" 
 done

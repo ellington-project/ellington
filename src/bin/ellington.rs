@@ -318,7 +318,7 @@ fn query(matches: &ArgMatches) -> () {
     // Run bellson, and try to add the result.
     if estimator == AlgorithmE::Bellson.print() || estimator == "all" {
         info!("Running estimator {}", AlgorithmE::Bellson.print());
-        let tempo = query_estimator(AlgorithmE::Actual, &caches, force, never, || {
+        let tempo = query_estimator(AlgorithmE::Bellson, &caches, force, never, || {
             BellsonTempoEstimator::run(&audio_path)
         });
         info!("Got result {:?} from estimator.", tempo);
@@ -366,8 +366,8 @@ fn query(matches: &ArgMatches) -> () {
             let minimal = matches.occurrences_of("minimal") > 0;
             let modification = UpdateBehaviour::parse(matches.value_of("modification").unwrap());
 
-            let trmeta =
-                track_metadata.unwrap_or_else(|| panic!("No metadata found for track, failing!"));
+            
+
             match matches.value_of("metadata") {
                 Some("none") => {
                     // If none - just print the formatted output
@@ -376,6 +376,8 @@ fn query(matches: &ArgMatches) -> () {
                 Some("title") => {
                     // If title, update the title
                     info!("Updating title data.");
+                    let trmeta =
+                track_metadata.unwrap_or_else(|| panic!("No metadata found for track, failing!"));
                     match ed.update_data(&trmeta.name, modification, minimal) {
                         Ok(s) => println!("{}", s),
                         Err(e) => panic!("Could not update metadata in string! Error: {:?}", e),
@@ -383,6 +385,8 @@ fn query(matches: &ArgMatches) -> () {
                 }
                 Some("comments") => {
                     info!("Updating data from comment 0!");
+                    let trmeta =
+                track_metadata.unwrap_or_else(|| panic!("No metadata found for track, failing!"));
                     match trmeta.comments {
                         Some(v) => match ed.update_data(&v[0], modification, minimal) {
                             Ok(s) => println!("{}", s),
