@@ -1,64 +1,55 @@
-my StartLog()
 tell application "Swinsian"
-	(*activate*)
-	set the script_text to ""
-	tell application "Script Editor"
-		"hello there!"
-	end tell
-	
+
+	(*set selected to the selected tracks in swinsian*)
 	set selected to selection of window 1
 	repeat with t in selected
-		my WriteLog("Track Name: " & name of t)
-		my WriteLog("	Path: " & path of t)
-		set pp to path of t
+		log ("")
+		log ("Track: " & name of t)
+
+		-- Get the path of the track, and quote it
+		log ("	Path:                    " & (POSIX path of (get location of t)))
+		set pp to (POSIX path of (get location of t))
 		set qpath to quoted form of pp
-		-- call the wrapper script
-		set scr to "../wrapper.sh" & qpath
+
+		-- call the wrapper script for the comment
+		set scr_comm to "../wrapper.sh " & qpath
 		if comment of t is missing value then
-			my WriteLog("	Comment: no comment in track")
+			log ("	Comment: no comment in track")
 			set udat to ""
-			set scr to scr & ""
+			set scr_comm to scr_comm & ""
 		else
-			my WriteLog("	Comment: " & comment of t)
+			log ("	Existing Comment:        " & comment of t)
 			set com to comment of t
 			set qcomment to quoted form of com
-			set scr to scr & qcomment
+			set scr_comm to scr_comm & " " & qcomment
 		end if
-		my WriteLog("	scr: " & scr)
-		set script_result to do shell script scr
-		my WriteLog("	scr_res: " & script_result)
-		set the comment of t to script_result
+
+		-- Call the wrapper script
+		log ("	Script call (comment):   " & scr_comm)
+		set script_result_comm to do shell script scr_comm
+		log ("	Script result (comment): " & script_result_comm)
+
+		-- set the comment of the track
+		set the comment of t to script_result_comm
+
+
+		-- get the path again, as it might have moved.
+		log ("	Path:                    " & (POSIX path of (get location of t)))
+		set pp to (POSIX path of (get location of t))
+		set qpath to quoted form of pp
+
+		-- call the wrapper script for the name
+		set scr_nam to "../wrapper.sh " & qpath
+		set nam to name of t
+		set qnam to quoted form of nam
+		set scr_nam to scr_nam & " " & qnam
+
+		-- Call the wrapper script
+		log ("	Script call (title):     " & scr_nam)
+		set script_result_nam to do shell script scr_nam
+		log ("	Script result (title):   " & script_result_nam)
+
+		-- set the name of the track
+		set the name of t to script_result_nam
 	end repeat
 end tell
-
-on StartLog()
-	set this_file to (POSIX path of "/tmp/swinglog_swinsian.txt")
-	my write_to_file("Start of swing log", this_file, false)
-end StartLog
-
-on WriteLog(the_text)
-	set this_story to the_text & "
-"
-	set this_file to (POSIX path of "/tmp/swinglog_swinsian.txt")
-	my write_to_file(this_story, this_file, true)
-end WriteLog
-
-on write_to_file(this_data, target_file, append_data) -- (string, file path as string, boolean)
-	try
-		set the target_file to the target_file as text
-		set the open_target_file to
-			open for access file target_file with write permission
-		if append_data is false then
-			set eof of the open_target_file to 0
-		write this_data to the open_target_file starting at eof
-		close access the open_target_file
-		log this_data
-		return true
-	on error
-		try
-			close access file target_file
-		end try
-		return false
-	end try
-end write_to_file
-
