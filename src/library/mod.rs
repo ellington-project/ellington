@@ -32,6 +32,7 @@ pub struct Entry {
 }
 
 impl Entry {
+    #[flame]
     pub fn from_file(path: PathBuf) -> Entry {
         // try to read some metadata from the track
         let filedata = FileMetadata::from_path(&path);
@@ -59,6 +60,7 @@ impl Library {
     /*
        Read a library from an itunes xml/plist file
     */
+    #[flame]
     pub fn from_itunes_xml(filename: &str) -> Option<Library> {
         let file = File::open(filename).ok()?;
 
@@ -110,6 +112,7 @@ impl Library {
        Read a library as a list of audio files, with one
        audio file path per line
     */
+    #[flame]
     pub fn from_stdin() -> Option<Library> {
         // each line in stdin is assumed to be a path to a track name
         let stdin = io::stdin();
@@ -136,6 +139,7 @@ impl Library {
     /*
         Initialise an empty library
     */
+    #[flame]
     pub fn from_empty() -> Option<Library> {
         let tracks: Vec<Entry> = vec![];
         Some(Library { tracks: tracks })
@@ -145,6 +149,7 @@ impl Library {
        Read a library from a directory, recursively exploring the
        file hierarchy, and finding audio files.
     */
+    #[flame]
     pub fn from_directory_rec(path: &PathBuf) -> Option<Library> {
         let mut entries = 0;
         let mut io_errors = 0;
@@ -199,6 +204,7 @@ impl Library {
     /*
         Read a library from an ellington library file
     */
+    #[flame]
     pub fn read_from_file(path: &PathBuf) -> Option<Library> {
         info!("Reading library from {:?}", path);
         let json = match fs::read_to_string(path) {
@@ -227,6 +233,7 @@ impl Library {
     /*
        Write a library to a file
     */
+    #[flame]
     pub fn write_to_file(self: &Self, path: &PathBuf) -> Option<()> {
         let json: String = serde_json::to_string_pretty(self).expect("Couldn't serialize config");
         match fs::write(path, json) {
@@ -244,6 +251,7 @@ impl Library {
     /*
        Run an analysis pipeline over each audio track in the library
     */
+    #[flame]
     pub fn run_pipeline<P: TempoEstimator>(self: &mut Self) -> () {
         info!("Running tempo estimator over ellington library.");
         info!("Using estimator: {:?}", P::ALGORITHM);
@@ -286,6 +294,7 @@ impl Library {
     /*
         Look up a track from a path
     */
+    #[flame]
     pub fn lookup(self: &Self, path: &PathBuf) -> Option<&Entry> {
         for entry in &self.tracks {
             if entry.location == *path {
@@ -298,6 +307,7 @@ impl Library {
     /*
         Set an entry to a new one.
     */
+    #[flame]
     pub fn update(self: &mut Self, path: &PathBuf, eldata: EllingtonData) -> () {
         let mut updated = false;
         for entry in &mut self.tracks {

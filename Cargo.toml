@@ -33,6 +33,8 @@ talamel = { git = "https://github.com/AdamHarries/talamel.git" }
 assert_cmd = "0.10"
 tempfile = "3.0"
 difference = "2.0"
+flame = "0.2.2"
+flamer = "0.3"
 
 [build-dependencies]
 commandspec = "0.10"
@@ -41,7 +43,7 @@ tempfile = "3.0"
 difference = "2.0"
 
 [features]
-# This will download lots of data! 
+# This will download lots of data!
 data_driven_tests = []
 extended_tests = []
 

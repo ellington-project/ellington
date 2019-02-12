@@ -18,6 +18,9 @@ use std::path::Path;
 
 // extern crate commandspec;
 // use commandspec::*;
+extern crate flame;
+#[macro_use]
+extern crate flamer;
 
 extern crate ellington;
 
@@ -43,7 +46,7 @@ use ellington::types::*;
 //     }
 // }
 
-// #[flame]
+#[flame]
 fn init(matches: &ArgMatches) -> () {
     /*
         Step one, work out what our audio source will be for tracks:
@@ -109,6 +112,7 @@ fn init(matches: &ArgMatches) -> () {
 }
 
 // hacky shit
+#[flame]
 fn dump(matches: &ArgMatches) -> () {
     let library_file: &str = matches
         .value_of("LIBRARY")
@@ -145,6 +149,7 @@ fn dump(matches: &ArgMatches) -> () {
     }
 }
 
+#[flame]
 fn query_estimator(
     algorithm: AlgorithmE,
     caches: &Vec<EllingtonData>,
@@ -175,6 +180,7 @@ fn query_estimator(
     }
 }
 
+#[flame]
 fn query(matches: &ArgMatches) -> () {
     /*  A query runs in the following fashion:
         1 - Get the name of the file that we want to query information on.
@@ -366,8 +372,6 @@ fn query(matches: &ArgMatches) -> () {
             let minimal = matches.occurrences_of("minimal") > 0;
             let modification = UpdateBehaviour::parse(matches.value_of("modification").unwrap());
 
-            
-
             match matches.value_of("metadata") {
                 Some("none") => {
                     // If none - just print the formatted output
@@ -376,8 +380,8 @@ fn query(matches: &ArgMatches) -> () {
                 Some("title") => {
                     // If title, update the title
                     info!("Updating title data.");
-                    let trmeta =
-                track_metadata.unwrap_or_else(|| panic!("No metadata found for track, failing!"));
+                    let trmeta = track_metadata
+                        .unwrap_or_else(|| panic!("No metadata found for track, failing!"));
                     match ed.update_data(&trmeta.name, modification, minimal) {
                         Ok(s) => println!("{}", s),
                         Err(e) => panic!("Could not update metadata in string! Error: {:?}", e),
@@ -385,8 +389,8 @@ fn query(matches: &ArgMatches) -> () {
                 }
                 Some("comments") => {
                     info!("Updating data from comment 0!");
-                    let trmeta =
-                track_metadata.unwrap_or_else(|| panic!("No metadata found for track, failing!"));
+                    let trmeta = track_metadata
+                        .unwrap_or_else(|| panic!("No metadata found for track, failing!"));
                     match trmeta.comments {
                         Some(v) => match ed.update_data(&v[0], modification, minimal) {
                             Ok(s) => println!("{}", s),
@@ -422,6 +426,7 @@ fn query(matches: &ArgMatches) -> () {
     };
 }
 
+#[flame]
 fn main() {
     env_logger::init();
     // get the command line arguments to the program
@@ -442,4 +447,9 @@ fn main() {
             println!();
         }
     };
+    {
+        use std::fs::File;
+        flame::dump_stdout();
+        // flame::dump_html(&mut File::create("flame-graph.html").unwrap()).unwrap();
+    }
 }

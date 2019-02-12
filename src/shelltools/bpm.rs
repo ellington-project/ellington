@@ -41,7 +41,7 @@ impl ShellProgram for BpmCall {
     }
 }
 
-// #[flame]
+#[flame]
 #[allow(dead_code)]
 pub fn bpm_track<T>(location: &PathBuf) -> Result<f64, ParseFloatError> {
     // pipe together a sox and a bpm call

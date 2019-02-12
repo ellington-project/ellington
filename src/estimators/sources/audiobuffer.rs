@@ -9,6 +9,7 @@ pub struct AudioBuffer {
 
 #[allow(dead_code)]
 impl AudioBuffer {
+    #[flame]
     pub fn from_stream<T: Read>(mut stream: T) -> AudioBuffer {
         const SAMPLES: usize = 8192;
 

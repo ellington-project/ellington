@@ -33,6 +33,7 @@ impl EllingtonData {
         EllingtonData { algs: map }
     }
 
+    #[flame]
     pub fn format(self: &Self, minimal: bool) -> UpdateResult<String> {
         let mut s = String::new();
         s.push_str("[ed|");
@@ -65,10 +66,12 @@ impl EllingtonData {
         Ok(s)
     }
 
+    #[flame]
     pub fn format_json(self: &Self) -> Option<String> {
         serde_json::to_string(self).ok()
     }
 
+    #[flame]
     pub fn format_readable(self: &Self) -> Option<String> {
         let mut output = String::new();
         for (alg, tmpo) in &self.algs {
@@ -77,6 +80,7 @@ impl EllingtonData {
         Some(output)
     }
 
+    #[flame]
     pub fn from_json<S: Into<String>>(json: S) -> Option<EllingtonData> {
         serde_json::from_str(json.into().as_str()).ok()
     }
@@ -94,7 +98,7 @@ impl EllingtonData {
             tag!(","),
             separated_pair!(
                 ws!(nom::alpha),
-                tag!("~"), 
+                tag!("~"),
                 ws!(
                     alt!(nom::digit| tag!("na"))
                 )
@@ -102,7 +106,7 @@ impl EllingtonData {
         )), tag!("|]"))
     );
 
-    // #[flame]
+    #[flame]
     pub fn parse(comment: &String) -> Option<EllingtonData> {
         let captures = Self::regex().captures(comment.as_str())?;
 
@@ -124,7 +128,7 @@ impl EllingtonData {
         }
     }
 
-    // #[flame]
+    #[flame]
     pub fn update_data(
         self: &Self,
         comment: &String,
@@ -162,6 +166,7 @@ impl EllingtonData {
     }
 
     // clear ellington data from a string, returning the new string
+    #[flame]
     pub fn clear_data(comment: &String) -> UpdateResult<String> {
         // test to see if there is any json data in the first place...
         match Self::regex()
