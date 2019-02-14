@@ -1,7 +1,7 @@
 use byteorder::*;
 use std::io::Read;
 
-const BUFFER_SIZE: usize = 8192;
+const BUFFER_SIZE: usize = 8;
 
 pub struct AudioStream<T: Read> {
     // the stream that we will read bytes from
