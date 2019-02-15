@@ -13,8 +13,6 @@ extern crate byteorder;
 
 extern crate percent_encoding;
 extern crate plist;
-extern crate rand;
-
 extern crate url;
 extern crate walkdir;
 
@@ -27,6 +25,8 @@ extern crate regex;
 #[macro_use]
 extern crate lazy_static;
 extern crate talamel;
+extern crate simple_bpm; 
+extern crate hodges; 
 
 pub mod estimators;
 pub mod library;

@@ -12,31 +12,32 @@ name = "ellington"
 path = "src/lib.rs"
 
 [dependencies]
-plist = "0.4"
+plist = "0.2"
 histogram = "0.6.9"
 byteorder = "1"
-clap = {version = "2.32", features = ["yaml"]}
-rand = "0.6.5"
-url = "1.7.2"
+clap = {version = "2.31.2", features = ["yaml"]}
+url = "1.7.0"
 percent-encoding = "1.0.1"
-serde = "1.0.87"
-serde_derive= "1.0.87"
+serde = "1.0.66"
+serde_derive= "1.0.66"
 serde_json = "1.0"
-regex = "1.1.0"
-lazy_static = "1.2.0"
+regex = "1.0.1"
+lazy_static = "1.0.1"
 walkdir = "2"
 log = "0.4"
-env_logger  = "0.6"
-commandspec = "0.12.2"
-nom = "4.2.0"
-talamel = { git = "https://github.com/AdamHarries/talamel.git" }
+env_logger  = "0.5.1"
+commandspec = "0.10"
+nom = "4.0.0"
 assert_cmd = "0.10"
 tempfile = "3.0"
 difference = "2.0"
 
+hodges = "0.1.0"
+simple_bpm = "0.2.0" 
+talamel =  "0.2.0"
+
 [build-dependencies]
-commandspec = "0.12.2"
-assert_cmd = "0.11"
+assert_cmd = "0.10"
 tempfile = "3.0"
 difference = "2.0"
 
