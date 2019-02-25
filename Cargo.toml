@@ -16,7 +16,6 @@ plist = "0.2"
 histogram = "0.6.9"
 byteorder = "1"
 clap = {version = "2.31.2", features = ["yaml"]}
-rand = "0.5.2"
 url = "1.7.0"
 percent-encoding = "1.0.1"
 serde = "1.0.66"
@@ -29,15 +28,17 @@ log = "0.4"
 env_logger  = "0.5.1"
 commandspec = "0.10"
 nom = "4.0.0"
-talamel = { git = "https://github.com/AdamHarries/talamel.git" }
 assert_cmd = "0.10"
 tempfile = "3.0"
 difference = "2.0"
 flame = "0.2.2"
 flamer = "0.3"
 
+hodges = "0.1.0"
+simple_bpm = "0.2.0" 
+talamel =  "0.2.0"
+
 [build-dependencies]
-commandspec = "0.10"
 assert_cmd = "0.10"
 tempfile = "3.0"
 difference = "2.0"

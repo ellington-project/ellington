@@ -1,15 +1,15 @@
 use regex::Regex;
 use shelltools::bellson::BellsonCommand;
-use shelltools::ffmpeg::FfmpegCommand;
+// use shelltools::ffmpeg::FfmpegCommand;
 use shelltools::generic::ShellProgram;
 use std::path::PathBuf;
 use types::AlgorithmE;
 
-pub mod algorithms;
+// pub mod algorithms;
 pub mod sources;
 
-use self::algorithms::naive::Naive;
-use self::sources::audiostream::AudioStream;
+use simple_bpm::*; 
+use hodges::*; 
 
 pub trait TempoEstimator {
     const ALGORITHM: AlgorithmE;
@@ -37,40 +37,13 @@ impl TempoEstimator for FfmpegNaiveTempoEstimator {
     const ALGORITHM: AlgorithmE = AlgorithmE::Naive;
     #[flame("FfmpegNaiveTempoEstimator")]
     fn run(audio_file: &PathBuf) -> Option<i64> {
-        let call = FfmpegCommand::default(&audio_file);
-        let mut child = match call.spawn() {
-            Err(e) => {
-                error!(
-                    "Failed to run ffmpeg for audio file {:?}, with io error {:?}",
-                    audio_file, e
-                );
-                None
-            }
-            Ok(c) => Some(c),
-        }?;
 
-        let result = {
-            let ffmpeg_stream = match &mut child.stdout {
-                Some(s) => Some(AudioStream::from_stream(s)),
-                None => {
-                    error!("Ffmpeg stream did not run properly!");
-                    None
-                }
-            }?;
+        let mut estimator = SimpleEstimator::with_accuracy(8); 
 
-            Some(Naive::default().analyse(ffmpeg_stream) as i64)
-        };
+        let state: State<&[f32]> =
+        State::from_file(audio_file.clone())?;
 
-        match child.wait() {
-            Err(e) => {
-                error!(
-                    "Failed to wait on ffmpeg child for audio file {:?}, with io error {:?}",
-                    audio_file, e
-                );
-                None
-            }
-            Ok(_) => result,
-        }
+        Some(estimator.analyse(state.flatten().cloned()) as i64)
     }
 }
 
