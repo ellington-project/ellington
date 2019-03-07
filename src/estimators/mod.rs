@@ -5,8 +5,10 @@ use std::path::PathBuf;
 use types::AlgorithmE;
 
 // pub mod algorithms;
-use hodges::*;
+// pub mod sources;
+
 use simple_bpm::*;
+use hodges::*;
 
 pub trait TempoEstimator {
     const ALGORITHM: AlgorithmE;
