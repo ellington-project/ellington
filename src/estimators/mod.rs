@@ -1,15 +1,12 @@
 use regex::Regex;
 use shelltools::bellson::BellsonCommand;
-// use shelltools::ffmpeg::FfmpegCommand;
 use shelltools::generic::ShellProgram;
 use std::path::PathBuf;
 use types::AlgorithmE;
 
 // pub mod algorithms;
-pub mod sources;
-
-use simple_bpm::*; 
-use hodges::*; 
+use hodges::*;
+use simple_bpm::*;
 
 pub trait TempoEstimator {
     const ALGORITHM: AlgorithmE;
@@ -37,11 +34,9 @@ impl TempoEstimator for FfmpegNaiveTempoEstimator {
     const ALGORITHM: AlgorithmE = AlgorithmE::Naive;
     #[flame("FfmpegNaiveTempoEstimator")]
     fn run(audio_file: &PathBuf) -> Option<i64> {
+        let mut estimator = SimpleEstimator::with_accuracy(8);
 
-        let mut estimator = SimpleEstimator::with_accuracy(8); 
-
-        let state: State<&[f32]> =
-        State::from_file(audio_file.clone())?;
+        let state: State<&[f32]> = State::from_file(audio_file.clone())?;
 
         Some(estimator.analyse(state.flatten().cloned()) as i64)
     }

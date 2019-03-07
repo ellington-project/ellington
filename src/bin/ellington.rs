@@ -449,7 +449,7 @@ fn main() {
     };
     {
         use std::fs::File;
-        flame::dump_stdout();
-        // flame::dump_html(&mut File::create("flame-graph.html").unwrap()).unwrap();
+        // flame::dump_stdout();
+        flame::dump_html(&mut File::create("ellington-flame-graph.html").unwrap()).unwrap();
     }
 }
