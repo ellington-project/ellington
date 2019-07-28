@@ -13,6 +13,7 @@ pub struct TrackMetadata {
 }
 
 impl TrackMetadata {
+    #[flame("TrackMetadata")]
     pub fn comment_metadata(self: &Self) -> EllingtonData {
         // initialise our array
         let mut algs: BTreeMap<Algorithm, Bpm> = BTreeMap::new();
@@ -37,6 +38,7 @@ impl TrackMetadata {
         EllingtonData { algs: algs }
     }
 
+    #[flame("TrackMetadata")]
     pub fn title_metadata(self: &Self) -> EllingtonData {
         // initialise our array
         let mut algs: BTreeMap<Algorithm, Bpm> = BTreeMap::new();
@@ -51,6 +53,7 @@ impl TrackMetadata {
         EllingtonData { algs: algs }
     }
 
+    #[flame("TrackMetadata")]
     pub fn from_file(location: &Path) -> Option<TrackMetadata> {
         info!("Reading track metadata from: {:?}", location);
         let tf = TalamelFile::new(location).ok()?;

@@ -31,6 +31,8 @@ nom = "4.2.0"
 assert_cmd = "0.11"
 tempfile = "3.0"
 difference = "2.0"
+flame = "0.2.2"
+flamer = "0.3"
 
 hodges = "0.1.0"
 simple_bpm = "0.2.1" 
@@ -42,7 +44,7 @@ tempfile = "3.0"
 difference = "2.0"
 
 [features]
-# This will download lots of data! 
+# This will download lots of data!
 data_driven_tests = []
 extended_tests = []
 

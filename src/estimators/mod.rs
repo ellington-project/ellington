@@ -1,6 +1,5 @@
 use regex::Regex;
 use shelltools::bellson::BellsonCommand;
-// use shelltools::ffmpeg::FfmpegCommand;
 use shelltools::generic::ShellProgram;
 use std::path::PathBuf;
 use types::AlgorithmE;
@@ -14,6 +13,7 @@ pub trait TempoEstimator {
 }
 
 // todo: find a better way of doing this! I assume this is slow?
+#[flame("Generic")]
 pub fn run_estimator(name: &str, audio_file: &PathBuf) -> Option<(i64, &'static str)> {
     match name {
         "naive" => FfmpegNaiveTempoEstimator::run(audio_file)
@@ -31,8 +31,8 @@ pub struct FfmpegNaiveTempoEstimator {}
 
 impl TempoEstimator for FfmpegNaiveTempoEstimator {
     const ALGORITHM: AlgorithmE = AlgorithmE::Naive;
+    #[flame("FfmpegNaiveTempoEstimator")]
     fn run(audio_file: &PathBuf) -> Option<i64> {
-
         let mut estimator = SimpleEstimator::with_accuracy(2); 
 
         let state: State<&[f32]> =
@@ -46,6 +46,7 @@ pub struct BellsonTempoEstimator {}
 
 impl TempoEstimator for BellsonTempoEstimator {
     const ALGORITHM: AlgorithmE = AlgorithmE::Bellson;
+    #[flame("BellsonTempoEstimator")]
     fn run(audio_file: &PathBuf) -> Option<i64> {
         lazy_static! {
             static ref RE: Regex = Regex::new(r"Mean: (\d+)").unwrap();

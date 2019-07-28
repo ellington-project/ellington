@@ -28,6 +28,10 @@ extern crate talamel;
 extern crate simple_bpm; 
 extern crate hodges; 
 
+extern crate flame;
+#[macro_use]
+extern crate flamer;
+
 pub mod estimators;
 pub mod library;
 pub mod shelltools;
