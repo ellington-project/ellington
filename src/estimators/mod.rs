@@ -33,7 +33,7 @@ impl TempoEstimator for FfmpegNaiveTempoEstimator {
     const ALGORITHM: AlgorithmE = AlgorithmE::Naive;
     fn run(audio_file: &PathBuf) -> Option<i64> {
 
-        let mut estimator = SimpleEstimator::with_accuracy(8); 
+        let mut estimator = SimpleEstimator::with_accuracy(2); 
 
         let state: State<&[f32]> =
         State::from_file(audio_file.clone())?;

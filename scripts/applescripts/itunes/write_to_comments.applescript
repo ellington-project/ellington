@@ -1,7 +1,16 @@
 tell application "iTunes"
 
+	if selection = {} then
+    	display dialog "No tracks selected." buttons {"Cancel"} default button 1 with icon 1
+	end if
+
+	set tracklist to selection
+
+	repeat with i from 1 to count of tracklist
+    	set t to item i of tracklist
+
 	(*set selected to tracks of application*)
-	repeat with t in ((get every file track))
+	-- repeat with t in ((get every file track))
 		log ("")
 		log ("Track: " & name of t)
 
