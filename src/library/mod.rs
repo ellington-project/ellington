@@ -25,10 +25,11 @@ use serde_json;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Entry {
-    pub location: PathBuf,
-    pub filedata: FileMetadata,
-    pub metadata: Option<TrackMetadata>,
-    pub eldata: EllingtonData,
+    pub location: PathBuf,      // Path of the track that this entry refers to
+    pub filedata: FileMetadata, // metadata about the file
+    pub metadata: Option<TrackMetadata>, // metadata stored int he track itself
+    pub eldata: EllingtonData,  // Ellington data
+    pub vsmarker: bool,         // Marker for ML purposes, is this track in the validation set (vs)?
 }
 
 impl Entry {
@@ -47,6 +48,7 @@ impl Entry {
             filedata: filedata,
             metadata: metadata,
             eldata: eldata,
+            vsmarker: false,
         }
     }
 }
@@ -156,6 +158,7 @@ impl Library {
         let mut io_successes = 0;
         let mut bad_files: BTreeSet<PathBuf> = BTreeSet::new();
         let mut audio_files = 0;
+        let mut ix = 0;
         let tracks: Vec<Entry> = WalkDir::new(path)
             .max_open(1)
             .contents_first(true)
@@ -183,6 +186,24 @@ impl Library {
                 f
             })
             .map(|f| Entry::from_file(f.path().to_path_buf()))
+            .map(|mut f| {
+                // One in N tracks should be in validation set.
+                // Set N to 10 for now.
+                let n = 10;
+                // We only care about tracks that we have proper data for
+                match f.eldata.algs.get(&AlgorithmE::Actual) {
+                    Some(_) => {
+                        if ix % n == 0 {
+                            f.vsmarker = true;
+                        } else {
+                            f.vsmarker = false;
+                        }
+                        ix = ix + 1;
+                    }
+                    _ => f.vsmarker = false, //do nothing, we don't want to use it for  validation
+                };
+                f
+            })
             .collect();
 
         info!(
